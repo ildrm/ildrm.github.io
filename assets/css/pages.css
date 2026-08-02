@@ -133,6 +133,7 @@ main{position:relative;z-index:3}
   .repo-columns{padding:9px 12px;border:1px solid rgba(120,232,255,.16);background:rgba(120,232,255,.06);color:var(--cyan);font:8px var(--mono);letter-spacing:.1em;text-transform:uppercase}
   .repo-list{margin:0;padding:0;list-style:none;border:1px solid rgba(120,232,255,.16);border-top:0;max-height:720px;overflow:auto;scrollbar-color:var(--cyan) var(--void-soft)}
   .repo-row{min-height:47px;padding:8px 12px;border-top:1px solid rgba(120,232,255,.09);background:transparent;color:var(--bone-dim)}
+  .repo-row[hidden]{display:none!important}
   .repo-row:nth-child(even){background:rgba(120,232,255,.025)}
   .repo-row:hover{background:rgba(217,255,99,.055)}
   .repo-index{color:var(--orange);font:9px var(--mono)}
