@@ -11,7 +11,7 @@
   var worker = null;
   var runner = null;
   var sourcePixels = null;
-  var totalShapes = 240;
+  var totalShapes = 3000;
   var shapeCount = 0;
   var paused = !!(window.__siteMotion && window.__siteMotion.paused);
   var ready = false;
@@ -112,7 +112,7 @@
   }
 
   function updateCaption(){
-    if (caption) caption.textContent = 'FIG. P-01 · GEOMETRIZE / ' + String(shapeCount).padStart(3, '0') + ' OF ' + totalShapes + ' SHAPES';
+    if (caption) caption.textContent = 'FIG. P-01 · GEOMETRIZE / ' + String(shapeCount).padStart(String(totalShapes).length, '0') + ' OF ' + totalShapes + ' SHAPES';
   }
 
   function announceUpdate(){
