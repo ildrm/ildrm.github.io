@@ -33,14 +33,14 @@ main{position:relative;z-index:3}
 
   /* DOM portrait remains the accessible/WebGL fallback; in WebGL it becomes a ghosted calibration plate. */
   .portrait-stage{
-    width:min(430px,33vw);aspect-ratio:1;justify-self:end;margin:0;position:relative;
+    width:min(390px,30vw);aspect-ratio:464/522;justify-self:end;margin:0;position:relative;
     transform-style:preserve-3d;perspective:1000px;animation:none;filter:drop-shadow(0 28px 60px rgba(0,0,0,.65));
   }
   .portrait-stage::before{
     inset:-20px;background:rgba(7,16,22,.62);border:1px solid var(--cyan);
     box-shadow:20px 24px 0 rgba(3,6,9,.7),0 0 60px rgba(120,232,255,.08);transform:translateZ(-34px) rotateY(-5deg)
   }
-  .portrait-stage::after{content:"PRIMITIVE.JS / 096 TRIANGULAR FACETS";left:auto;right:-45px;bottom:30px;background:var(--orange);color:var(--void);border:0;transform:translateZ(45px) rotate(90deg);transform-origin:right bottom;white-space:nowrap}
+  .portrait-stage::after{content:"LIVE GEOMETRIZE / CANVAS PRIMITIVES";left:auto;right:-45px;bottom:30px;background:var(--orange);color:var(--void);border:0;transform:translateZ(45px) rotate(90deg);transform-origin:right bottom;white-space:nowrap}
   .portrait-mat{inset:0;border:1px solid rgba(240,240,232,.5);outline:0;background:#111;transform:translateZ(18px) rotateY(-3deg);clip-path:polygon(0 0,94% 0,100% 6%,100% 100%,6% 100%,0 94%)}
   .portrait-mat::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 34%,rgba(120,232,255,.27) 49%,transparent 60%);mix-blend-mode:screen}
   .portrait-index{top:-12px;right:18px;border:1px solid var(--cyan);background:var(--void);color:var(--cyan);transform:translateZ(55px)}

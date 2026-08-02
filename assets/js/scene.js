@@ -198,7 +198,7 @@
         rail.position.set(item[1],item[2],.06);
         portraitRig.add(rail);
       });
-      var placeholder = new THREE.Mesh(new THREE.PlaneGeometry(1.64,1.64),new THREE.MeshStandardMaterial({color:0x132026,emissive:0x0a2b35,emissiveIntensity:.35,roughness:.34,metalness:.32}));
+      var placeholder = new THREE.Mesh(new THREE.PlaneGeometry(1.46,1.64),new THREE.MeshStandardMaterial({color:0x132026,emissive:0x0a2b35,emissiveIntensity:.35,roughness:.34,metalness:.32}));
       placeholder.position.z=.06;
       portraitRig.add(placeholder);
       portraitRig.userData.portrait=placeholder;
@@ -214,8 +214,9 @@
     }
 
     function buildPortraitTexture(portraitMesh){
-      var loader = new THREE.TextureLoader();
-      loader.load('assets/images/portrait-primitive.svg', function(texture){
+      var portraitCanvas = document.getElementById('portrait-canvas');
+
+      function applyTexture(texture){
         texture.colorSpace = THREE.SRGBColorSpace;
         texture.anisotropy = Math.min(4, renderer.capabilities.getMaxAnisotropy());
         portraitMesh.material.dispose();
@@ -225,7 +226,20 @@
         });
         document.body.classList.add('portrait-textured');
         renderStatic();
-      }, undefined, function(){ /* Accessible DOM image remains visible. */ });
+      }
+
+      if (portraitCanvas){
+        var canvasTexture = new THREE.CanvasTexture(portraitCanvas);
+        applyTexture(canvasTexture);
+        document.addEventListener('portrait:updated', function(){
+          canvasTexture.needsUpdate = true;
+          renderStatic();
+        });
+        return;
+      }
+
+      var loader = new THREE.TextureLoader();
+      loader.load('assets/images/shahin-ilderemi.png', applyTexture, undefined, function(){ /* Accessible DOM image remains visible. */ });
     }
 
     function applyPageComposition(){
