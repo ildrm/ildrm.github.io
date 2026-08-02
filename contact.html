@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Shahin Ilderemi Lotfabad for senior systems engineering, data, backend, frontend, and AI automation work." />
+  <title>Contact — Shahin Ilderemi Lotfabad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/pages.css" />
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.1/three.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script defer src="assets/js/site.js"></script>
+  <script defer src="assets/js/scene.js"></script>
+</head>
+<body data-page="contact">
+  <a class="skip-link" href="#main-content">Skip to portfolio content</a>
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+  <div class="hero-vignette" aria-hidden="true"></div>
+  <div class="page-transition" aria-hidden="true"></div>
+  <header class="hud-shell" aria-label="Observatory navigation">
+    <a class="hud-brand" href="index.html"><i aria-hidden="true"></i>SIL / ORBITAL</a>
+    <nav class="hud-nav" aria-label="Portfolio pages">
+      <label class="sr-only" for="page-select">Choose a portfolio page</label>
+      <select class="station-select" id="page-select" aria-label="Choose a portfolio page">
+        <option value="home" data-href="index.html">00 / Home</option>
+        <option value="projects" data-href="projects.html">01 / Projects</option>
+        <option value="experience" data-href="experience.html">02 / Experience</option>
+        <option value="contact" data-href="contact.html">03 / Contact</option>
+      </select>
+      <a href="index.html" data-coordinate="00">Home</a>
+      <a href="projects.html" data-coordinate="01">Projects</a>
+      <a href="experience.html" data-coordinate="02">Experience</a>
+      <a href="contact.html" data-coordinate="03" aria-current="page">Contact</a>
+    </nav>
+    <div class="hud-actions">
+      <div class="progress-orbit" aria-hidden="true"><span id="progress-bar"></span></div>
+      <button class="motion-toggle" id="motion-toggle" type="button" aria-pressed="false">Pause motion</button>
+    </div>
+  </header>
+  <div class="hud-status" aria-hidden="true"><i></i><span>Final seal aligned</span></div>
+  <div class="hud-telemetry" id="telemetry">LOCAL 00:00:00<br>DEPTH 000%</div>
+  <main id="main-content" class="page-main contact-main">
+    <section class="sheet seal-sheet" id="sheet-07" data-sheet="07">
+    <span class="clause">[0007]</span>
+    <h1>Filing &amp; Contact</h1>
+    <div class="seal-orbit" aria-hidden="true"></div>
+    <div class="signature-block">
+      <p>Filed electronically. No signature required.</p>
+      <div class="sig-line"></div>
+      <div class="sig-name">Shahin Ilderemi Lotfabad</div>
+      <div class="contact-links">
+        <a href="mailto:ildrm@hotmail.com">ildrm@hotmail.com</a>
+        <a href="https://github.com/ildrm" target="_blank" rel="noopener">github.com/ildrm</a>
+        <a href="https://linkedin.com/in/ildrm" target="_blank" rel="noopener">linkedin.com/in/ildrm</a>
+      </div>
+      <p>Mashhad, Iran — open to remote work and relocation</p>
+      <p id="filed-date"></p>
+    </div>
+  </section>
+  </main>
+  <footer class="foot">
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    END OF TRANSMISSION · SIL / SPATIAL SYSTEMS OBSERVATORY · 2026
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Six selected engineering exhibits and the complete verified register of 71 public GitHub repositories." />
+  <title>Projects — Shahin Ilderemi Lotfabad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/pages.css" />
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.1/three.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script defer src="assets/js/site.js"></script>
+  <script defer src="assets/js/scene.js"></script>
+</head>
+<body data-page="projects">
+  <a class="skip-link" href="#main-content">Skip to portfolio content</a>
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+  <div class="hero-vignette" aria-hidden="true"></div>
+  <div class="page-transition" aria-hidden="true"></div>
+  <header class="hud-shell" aria-label="Observatory navigation">
+    <a class="hud-brand" href="index.html"><i aria-hidden="true"></i>SIL / ORBITAL</a>
+    <nav class="hud-nav" aria-label="Portfolio pages">
+      <label class="sr-only" for="page-select">Choose a portfolio page</label>
+      <select class="station-select" id="page-select" aria-label="Choose a portfolio page">
+        <option value="home" data-href="index.html">00 / Home</option>
+        <option value="projects" data-href="projects.html">01 / Projects</option>
+        <option value="experience" data-href="experience.html">02 / Experience</option>
+        <option value="contact" data-href="contact.html">03 / Contact</option>
+      </select>
+      <a href="index.html" data-coordinate="00">Home</a>
+      <a href="projects.html" data-coordinate="01" aria-current="page">Projects</a>
+      <a href="experience.html" data-coordinate="02">Experience</a>
+      <a href="contact.html" data-coordinate="03">Contact</a>
+    </nav>
+    <div class="hud-actions">
+      <div class="progress-orbit" aria-hidden="true"><span id="progress-bar"></span></div>
+      <button class="motion-toggle" id="motion-toggle" type="button" aria-pressed="false">Pause motion</button>
+    </div>
+  </header>
+  <div class="hud-status" aria-hidden="true"><i></i><span>Repository vault online</span></div>
+  <div class="hud-telemetry" id="telemetry">LOCAL 00:00:00<br>DEPTH 000%</div>
+  <main id="main-content" class="page-main projects-main">
+    <section class="page-hero" aria-labelledby="projects-title" data-coordinate="01">
+      <div class="page-hero-inner">
+        <span class="page-code">CHAMBER 01 / REPOSITORY VAULT</span>
+        <h1 class="page-title" id="projects-title">Embodied systems.</h1>
+        <p class="page-deck"><strong>Seventy-one public repositories.</strong> Six selected exhibits and a searchable static archive spanning TypeScript, PHP, Python, Java, and experimental interface systems.</p>
+      </div>
+    </section>
+    <section class="sheet" id="sheet-03" data-sheet="03">
+    <span class="clause">[0003]</span>
+    <h2>Embodiments — Selected Works</h2>
+    <div class="fig-grid">
+
+      <article class="fig-card" data-tilt>
+        <div class="fig-head">
+          <span class="fig-label">FIG. 01</span>
+          <div class="cube-scene"><div class="cube">
+            <div class="face f-front"></div><div class="face f-back"></div>
+            <div class="face f-right"></div><div class="face f-left"></div>
+            <div class="face f-top"></div><div class="face f-bottom"></div>
+          </div></div>
+        </div>
+        <h3>Ham-Mahalleh</h3>
+        <p>A hyperlocal marketplace built end-to-end on a Turborepo monorepo: NestJS core API, twin Next.js 16 applications for public and admin surfaces, and PostGIS-backed location discovery.</p>
+        <div class="tags"><span>Next.js 16</span><span>React 19</span><span>NestJS</span><span>PostGIS</span></div>
+        <a class="fig-link" href="https://github.com/ildrm/ham-mahalleh" target="_blank" rel="noopener">View repository →</a>
+      </article>
+
+      <article class="fig-card" data-tilt>
+        <div class="fig-head">
+          <span class="fig-label">FIG. 02</span>
+          <div class="cube-scene"><div class="cube">
+            <div class="face f-front"></div><div class="face f-back"></div>
+            <div class="face f-right"></div><div class="face f-left"></div>
+            <div class="face f-top"></div><div class="face f-bottom"></div>
+          </div></div>
+        </div>
+        <h3>LogiCommerce</h3>
+        <p>A multi-tenant logistics and commerce platform unifying warehousing, shipping, and 1PL–5PL fulfillment under one storefront and role-aware operations console.</p>
+        <div class="tags"><span>Next.js</span><span>NestJS</span><span>Fastify</span><span>Multi-Tenant</span></div>
+        <a class="fig-link" href="https://github.com/ildrm/logicommerce-logistic-ecommerce" target="_blank" rel="noopener">View repository →</a>
+      </article>
+
+      <article class="fig-card" data-tilt>
+        <div class="fig-head">
+          <span class="fig-label">FIG. 03</span>
+          <div class="cube-scene"><div class="cube">
+            <div class="face f-front"></div><div class="face f-back"></div>
+            <div class="face f-right"></div><div class="face f-left"></div>
+            <div class="face f-top"></div><div class="face f-bottom"></div>
+          </div></div>
+        </div>
+        <h3>Telegram Ops</h3>
+        <p>A deny-by-default remote operations console — server commands issued through a Telegram bot, gated by approval workflows, TOTP, and pinned SSH host keys, with a full audit trail.</p>
+        <div class="tags"><span>Node.js</span><span>Security</span><span>Telegram Bot API</span></div>
+        <a class="fig-link" href="https://github.com/ildrm/telegram-ssh" target="_blank" rel="noopener">View repository →</a>
+      </article>
+
+      <article class="fig-card" data-tilt>
+        <div class="fig-head">
+          <span class="fig-label">FIG. 04</span>
+          <div class="cube-scene"><div class="cube">
+            <div class="face f-front"></div><div class="face f-back"></div>
+            <div class="face f-right"></div><div class="face f-left"></div>
+            <div class="face f-top"></div><div class="face f-bottom"></div>
+          </div></div>
+        </div>
+        <h3>BOOKGEN-AI</h3>
+        <p>A desktop application that plans, writes, and edits a complete manuscript from a single prompt, running on Gemini and exporting directly to DOCX and PDF.</p>
+        <div class="tags"><span>Python</span><span>PySide6</span><span>Gemini API</span></div>
+        <a class="fig-link" href="https://github.com/ildrm/google-book-writer" target="_blank" rel="noopener">View repository →</a>
+      </article>
+
+      <article class="fig-card" data-tilt>
+        <div class="fig-head">
+          <span class="fig-label">FIG. 05</span>
+          <div class="cube-scene"><div class="cube">
+            <div class="face f-front"></div><div class="face f-back"></div>
+            <div class="face f-right"></div><div class="face f-left"></div>
+            <div class="face f-top"></div><div class="face f-bottom"></div>
+          </div></div>
+        </div>
+        <h3>Servex</h3>
+        <p>A PHP microservices framework built after studying Moleculer's approach to distributed services — the applicant's own take on event-driven service architecture.</p>
+        <div class="tags"><span>PHP</span><span>Microservices</span><span>Event-Driven</span></div>
+        <a class="fig-link" href="https://github.com/ildrm/servex-php" target="_blank" rel="noopener">View repository →</a>
+      </article>
+
+      <article class="fig-card" data-tilt>
+        <div class="fig-head">
+          <span class="fig-label">FIG. 06</span>
+          <div class="cube-scene"><div class="cube">
+            <div class="face f-front"></div><div class="face f-back"></div>
+            <div class="face f-right"></div><div class="face f-left"></div>
+            <div class="face f-top"></div><div class="face f-bottom"></div>
+          </div></div>
+        </div>
+        <h3>Doris Jalali UDF</h3>
+        <p>A user-defined function adding native Jalali (Persian) calendar support to Apache Doris — a gap the applicant identified and closed, later open-sourced.</p>
+        <div class="tags"><span>Java</span><span>Apache Doris</span><span>UDF</span></div>
+        <a class="fig-link" href="https://github.com/ildrm/doris-jalali-date" target="_blank" rel="noopener">View repository →</a>
+      </article>
+
+    </div>
+
+    <div class="repo-register" aria-labelledby="repo-register-title">
+      <div class="repo-register-head">
+        <div>
+          <h3 id="repo-register-title">Complete public repository register</h3>
+          <p class="repo-register-meta">GitHub REST API verification · 2026-08-02 · Alphabetical by full repository name</p>
+        </div>
+        <div class="repo-count-stamp">71 PUBLIC REPOSITORIES<br/>59 ORIGINAL · 12 FORKS</div>
+      </div>
+
+      <form class="repo-controls" id="repo-controls" role="search" aria-label="Filter repository register">
+        <div class="repo-control">
+          <label for="repo-search">Repository name</label>
+          <input id="repo-search" type="search" autocomplete="off" placeholder="Search all 71 repositories" />
+        </div>
+        <div class="repo-control">
+          <label for="repo-language">Primary language</label>
+          <select id="repo-language">
+            <option value="">All languages</option>
+            <option value="html">HTML</option>
+            <option value="java">Java</option>
+            <option value="javascript">JavaScript</option>
+            <option value="jupyter notebook">Jupyter Notebook</option>
+            <option value="php">PHP</option>
+            <option value="python">Python</option>
+            <option value="typescript">TypeScript</option>
+            <option value="not specified">Not specified</option>
+          </select>
+        </div>
+        <div class="repo-control">
+          <label for="repo-status">Repository status</label>
+          <select id="repo-status">
+            <option value="">Originals &amp; forks</option>
+            <option value="original">Original only</option>
+            <option value="fork">Forks only</option>
+          </select>
+        </div>
+      </form>
+
+      <p class="repo-result" id="repo-result" role="status" aria-live="polite">Showing all 71 repositories.</p>
+      <div class="repo-columns" aria-hidden="true"><span>No.</span><span>Repository</span><span>Language</span><span>Status</span></div>
+      <ol class="repo-list" id="repo-list">
+        <li class="repo-row" data-name="acf-persian-dropdown-calendar" data-language="php" data-status="original">
+          <span class="repo-index">01</span>
+          <a class="repo-name" href="https://github.com/ildrm/acf-persian-dropdown-calendar" target="_blank" rel="noopener">acf-persian-dropdown-calendar</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="apertureflow" data-language="typescript" data-status="original">
+          <span class="repo-index">02</span>
+          <a class="repo-name" href="https://github.com/ildrm/apertureflow" target="_blank" rel="noopener">apertureflow</a>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="atlas-rag-as-service" data-language="python" data-status="original">
+          <span class="repo-index">03</span>
+          <a class="repo-name" href="https://github.com/ildrm/atlas-rag-as-service" target="_blank" rel="noopener">atlas-rag-as-service</a>
+          <span class="repo-language">Python</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="aurelia-hospitality-hotel-management-system" data-language="typescript" data-status="original">
+          <span class="repo-index">04</span>
+          <a class="repo-name" href="https://github.com/ildrm/aurelia-hospitality-hotel-management-system" target="_blank" rel="noopener">aurelia-hospitality-hotel-management-system</a>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="awesome-n8n-templates" data-language="not specified" data-status="fork">
+          <span class="repo-index">05</span>
+          <a class="repo-name" href="https://github.com/ildrm/awesome-n8n-templates" target="_blank" rel="noopener">awesome-n8n-templates</a>
+          <span class="repo-language">Not specified</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="backfill-ga4-to-bigquery" data-language="jupyter notebook" data-status="fork">
+          <span class="repo-index">06</span>
+          <a class="repo-name" href="https://github.com/ildrm/Backfill-GA4-to-BigQuery" target="_blank" rel="noopener">Backfill-GA4-to-BigQuery</a>
+          <span class="repo-language">Jupyter Notebook</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="claude-skills" data-language="python" data-status="fork">
+          <span class="repo-index">07</span>
+          <a class="repo-name" href="https://github.com/ildrm/claude-skills" target="_blank" rel="noopener">claude-skills</a>
+          <span class="repo-language">Python</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="direction-route" data-language="not specified" data-status="fork">
+          <span class="repo-index">08</span>
+          <a class="repo-name" href="https://github.com/ildrm/direction-route" target="_blank" rel="noopener">direction-route</a>
+          <span class="repo-language">Not specified</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="doris-jalali-date" data-language="java" data-status="original">
+          <span class="repo-index">09</span>
+          <a class="repo-name" href="https://github.com/ildrm/doris-jalali-date" target="_blank" rel="noopener">doris-jalali-date</a>
+          <span class="repo-language">Java</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="external-request-manager-pro" data-language="php" data-status="fork">
+          <span class="repo-index">10</span>
+          <a class="repo-name" href="https://github.com/ildrm/external-request-manager-pro" target="_blank" rel="noopener">external-request-manager-pro</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="ga-wp-integration" data-language="php" data-status="original">
+          <span class="repo-index">11</span>
+          <a class="repo-name" href="https://github.com/ildrm/ga-wp-integration" target="_blank" rel="noopener">ga-wp-integration</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="geo-araz" data-language="not specified" data-status="fork">
+          <span class="repo-index">12</span>
+          <a class="repo-name" href="https://github.com/ildrm/geo-araz" target="_blank" rel="noopener">geo-araz</a>
+          <span class="repo-language">Not specified</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="google-book-writer" data-language="python" data-status="original">
+          <span class="repo-index">13</span>
+          <a class="repo-name" href="https://github.com/ildrm/google-book-writer" target="_blank" rel="noopener">google-book-writer</a>
+          <span class="repo-language">Python</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="ham-mahalleh" data-language="typescript" data-status="original">
+          <span class="repo-index">14</span>
+          <a class="repo-name" href="https://github.com/ildrm/ham-mahalleh" target="_blank" rel="noopener">ham-mahalleh</a>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="html-voice-to-voice" data-language="html" data-status="original">
+          <span class="repo-index">15</span>
+          <a class="repo-name" href="https://github.com/ildrm/html-voice-to-voice" target="_blank" rel="noopener">html-voice-to-voice</a>
+          <span class="repo-language">HTML</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="ildrm" data-language="not specified" data-status="original">
+          <span class="repo-index">16</span>
+          <a class="repo-name" href="https://github.com/ildrm/ildrm" target="_blank" rel="noopener">ildrm</a>
+          <span class="repo-language">Not specified</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="ildrm.github.io" data-language="html" data-status="original">
+          <span class="repo-index">17</span>
+          <a class="repo-name" href="https://github.com/ildrm/ildrm.github.io" target="_blank" rel="noopener">ildrm.github.io</a>
+          <span class="repo-language">HTML</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="interviewflow-lite-interview-scheduling-platform" data-language="typescript" data-status="original">
+          <span class="repo-index">18</span>
+          <a class="repo-name" href="https://github.com/ildrm/interviewflow-lite-interview-scheduling-platform" target="_blank" rel="noopener">interviewflow-lite-interview-scheduling-platform</a>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="laravel-crm" data-language="php" data-status="original">
+          <span class="repo-index">19</span>
+          <a class="repo-name" href="https://github.com/ildrm/laravel-crm" target="_blank" rel="noopener">laravel-crm</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="laravel-ffmpeg" data-language="not specified" data-status="fork">
+          <span class="repo-index">20</span>
+          <a class="repo-name" href="https://github.com/ildrm/laravel-ffmpeg" target="_blank" rel="noopener">laravel-ffmpeg</a>
+          <span class="repo-language">Not specified</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="laravel-organization-document-manager" data-language="javascript" data-status="original">
+          <span class="repo-index">21</span>
+          <a class="repo-name" href="https://github.com/ildrm/laravel-organization-document-manager" target="_blank" rel="noopener">laravel-organization-document-manager</a>
+          <span class="repo-language">JavaScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="logicommerce-logistic-ecommerce" data-language="typescript" data-status="original">
+          <span class="repo-index">22</span>
+          <a class="repo-name" href="https://github.com/ildrm/logicommerce-logistic-ecommerce" target="_blank" rel="noopener">logicommerce-logistic-ecommerce</a>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="md2pdf-plantuml" data-language="python" data-status="original">
+          <span class="repo-index">23</span>
+          <a class="repo-name" href="https://github.com/ildrm/md2pdf-plantuml" target="_blank" rel="noopener">md2pdf-plantuml</a>
+          <span class="repo-language">Python</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="microservice-js" data-language="javascript" data-status="original">
+          <span class="repo-index">24</span>
+          <a class="repo-name" href="https://github.com/ildrm/microservice-js" target="_blank" rel="noopener">microservice-js</a>
+          <span class="repo-language">JavaScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="mui-php-form-builder" data-language="php" data-status="original">
+          <span class="repo-index">25</span>
+          <a class="repo-name" href="https://github.com/ildrm/mui-php-form-builder" target="_blank" rel="noopener">mui-php-form-builder</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="multi-dropdown-select-v1" data-language="typescript" data-status="original">
+          <span class="repo-index">26</span>
+          <a class="repo-name" href="https://github.com/ildrm/multi-dropdown-select-v1" target="_blank" rel="noopener">multi-dropdown-select-v1</a>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="multi-dropdown-select-v2" data-language="typescript" data-status="original">
+          <span class="repo-index">27</span>
+          <a class="repo-name" href="https://github.com/ildrm/multi-dropdown-select-v2" target="_blank" rel="noopener">multi-dropdown-select-v2</a>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="n8n-chat-ui" data-language="html" data-status="original">
+          <span class="repo-index">28</span>
+          <a class="repo-name" href="https://github.com/ildrm/n8n-chat-ui" target="_blank" rel="noopener">n8n-chat-ui</a>
+          <span class="repo-language">HTML</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="n8n-free-templates" data-language="not specified" data-status="fork">
+          <span class="repo-index">29</span>
+          <a class="repo-name" href="https://github.com/ildrm/n8n-free-templates" target="_blank" rel="noopener">n8n-free-templates</a>
+          <span class="repo-language">Not specified</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="offline-sports-photo-analysis" data-language="python" data-status="original">
+          <span class="repo-index">30</span>
+          <a class="repo-name" href="https://github.com/ildrm/offline-sports-photo-analysis" target="_blank" rel="noopener">offline-sports-photo-analysis</a>
+          <span class="repo-language">Python</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="open-source-ai-interview-platform" data-language="python" data-status="original">
+          <span class="repo-index">31</span>
+          <a class="repo-name" href="https://github.com/ildrm/open-source-ai-interview-platform" target="_blank" rel="noopener">open-source-ai-interview-platform</a>
+          <span class="repo-language">Python</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="overreacted" data-language="typescript" data-status="original">
+          <span class="repo-index">32</span>
+          <a class="repo-name" href="https://github.com/ildrm/overreacted" target="_blank" rel="noopener">overreacted</a>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="persian-crypto-scraper" data-language="php" data-status="original">
+          <span class="repo-index">33</span>
+          <a class="repo-name" href="https://github.com/ildrm/persian-crypto-scraper" target="_blank" rel="noopener">persian-crypto-scraper</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="php-advanced-telegram-uploader-service" data-language="php" data-status="original">
+          <span class="repo-index">34</span>
+          <a class="repo-name" href="https://github.com/ildrm/php-advanced-telegram-uploader-service" target="_blank" rel="noopener">php-advanced-telegram-uploader-service</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="php-d3" data-language="html" data-status="original">
+          <span class="repo-index">35</span>
+          <a class="repo-name" href="https://github.com/ildrm/php-d3" target="_blank" rel="noopener">php-d3</a>
+          <span class="repo-language">HTML</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="php-jsfuck" data-language="php" data-status="original">
+          <span class="repo-index">36</span>
+          <a class="repo-name" href="https://github.com/ildrm/php-jsfuck" target="_blank" rel="noopener">php-jsfuck</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="php-science-class" data-language="php" data-status="original">
+          <span class="repo-index">37</span>
+          <a class="repo-name" href="https://github.com/ildrm/php-science-class" target="_blank" rel="noopener">php-science-class</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="php-security" data-language="php" data-status="original">
+          <span class="repo-index">38</span>
+          <a class="repo-name" href="https://github.com/ildrm/php-security" target="_blank" rel="noopener">php-security</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="php-simple-telegram-uploader-service" data-language="php" data-status="original">
+          <span class="repo-index">39</span>
+          <a class="repo-name" href="https://github.com/ildrm/php-simple-telegram-uploader-service" target="_blank" rel="noopener">php-simple-telegram-uploader-service</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="podflow-podcast-scrapper" data-language="php" data-status="original">
+          <span class="repo-index">40</span>
+          <a class="repo-name" href="https://github.com/ildrm/podflow-podcast-scrapper" target="_blank" rel="noopener">podflow-podcast-scrapper</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="prestashop-to-woocommerce" data-language="python" data-status="original">
+          <span class="repo-index">41</span>
+          <a class="repo-name" href="https://github.com/ildrm/PrestaShop-to-WooCommerce" target="_blank" rel="noopener">PrestaShop-to-WooCommerce</a>
+          <span class="repo-language">Python</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="react-divar" data-language="not specified" data-status="fork">
+          <span class="repo-index">42</span>
+          <a class="repo-name" href="https://github.com/ildrm/react-divar" target="_blank" rel="noopener">react-divar</a>
+          <span class="repo-language">Not specified</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="servex-php" data-language="php" data-status="original">
+          <span class="repo-index">43</span>
+          <a class="repo-name" href="https://github.com/ildrm/servex-php" target="_blank" rel="noopener">servex-php</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="servex-service" data-language="php" data-status="original">
+          <span class="repo-index">44</span>
+          <a class="repo-name" href="https://github.com/ildrm/servex-service" target="_blank" rel="noopener">servex-service</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="servex-storage" data-language="php" data-status="original">
+          <span class="repo-index">45</span>
+          <a class="repo-name" href="https://github.com/ildrm/servex-storage" target="_blank" rel="noopener">servex-storage</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="servex-warehouse" data-language="php" data-status="original">
+          <span class="repo-index">46</span>
+          <a class="repo-name" href="https://github.com/ildrm/servex-warehouse" target="_blank" rel="noopener">servex-warehouse</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="superset" data-language="typescript" data-status="fork">
+          <span class="repo-index">47</span>
+          <a class="repo-name" href="https://github.com/ildrm/superset" target="_blank" rel="noopener">superset</a>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="talentsphere-linkedin-clone" data-language="typescript" data-status="original">
+          <span class="repo-index">48</span>
+          <a class="repo-name" href="https://github.com/ildrm/talentsphere-linkedin-clone" target="_blank" rel="noopener">talentsphere-linkedin-clone</a>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="telegram-anonymous-message-bot" data-language="php" data-status="original">
+          <span class="repo-index">49</span>
+          <a class="repo-name" href="https://github.com/ildrm/telegram-anonymous-message-bot" target="_blank" rel="noopener">telegram-anonymous-message-bot</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="telegram-auction-platform" data-language="php" data-status="original">
+          <span class="repo-index">50</span>
+          <a class="repo-name" href="https://github.com/ildrm/telegram-auction-platform" target="_blank" rel="noopener">telegram-auction-platform</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="telegram-crypto-financial-bot" data-language="php" data-status="original">
+          <span class="repo-index">51</span>
+          <a class="repo-name" href="https://github.com/ildrm/telegram-crypto-financial-bot" target="_blank" rel="noopener">telegram-crypto-financial-bot</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="telegram-manage-channel-bot" data-language="php" data-status="original">
+          <span class="repo-index">52</span>
+          <a class="repo-name" href="https://github.com/ildrm/telegram-manage-channel-bot" target="_blank" rel="noopener">telegram-manage-channel-bot</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="telegram-manage-group-bot" data-language="php" data-status="original">
+          <span class="repo-index">53</span>
+          <a class="repo-name" href="https://github.com/ildrm/telegram-manage-group-bot" target="_blank" rel="noopener">telegram-manage-group-bot</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="telegram-poll-bot" data-language="php" data-status="original">
+          <span class="repo-index">54</span>
+          <a class="repo-name" href="https://github.com/ildrm/telegram-poll-bot" target="_blank" rel="noopener">telegram-poll-bot</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="telegram-send-message-bot" data-language="php" data-status="original">
+          <span class="repo-index">55</span>
+          <a class="repo-name" href="https://github.com/ildrm/telegram-send-message-bot" target="_blank" rel="noopener">telegram-send-message-bot</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="telegram-ssh" data-language="php" data-status="original">
+          <span class="repo-index">56</span>
+          <a class="repo-name" href="https://github.com/ildrm/telegram-ssh" target="_blank" rel="noopener">telegram-ssh</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="telegram-woocommerce-bot" data-language="php" data-status="original">
+          <span class="repo-index">57</span>
+          <a class="repo-name" href="https://github.com/ildrm/telegram-woocommerce-bot" target="_blank" rel="noopener">telegram-woocommerce-bot</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="telegram-wordpress-bot" data-language="php" data-status="original">
+          <span class="repo-index">58</span>
+          <a class="repo-name" href="https://github.com/ildrm/telegram-wordpress-bot" target="_blank" rel="noopener">telegram-wordpress-bot</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="test-timetracker" data-language="php" data-status="original">
+          <span class="repo-index">59</span>
+          <a class="repo-name" href="https://github.com/ildrm/test-timetracker" target="_blank" rel="noopener">test-timetracker</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="url-shortener" data-language="not specified" data-status="fork">
+          <span class="repo-index">60</span>
+          <a class="repo-name" href="https://github.com/ildrm/URL-shortener" target="_blank" rel="noopener">URL-shortener</a>
+          <span class="repo-language">Not specified</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="voice-chat-openai" data-language="javascript" data-status="original">
+          <span class="repo-index">61</span>
+          <a class="repo-name" href="https://github.com/ildrm/voice-chat-openai" target="_blank" rel="noopener">voice-chat-openai</a>
+          <span class="repo-language">JavaScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wc-message-notifier" data-language="php" data-status="original">
+          <span class="repo-index">62</span>
+          <a class="repo-name" href="https://github.com/ildrm/wc-message-notifier" target="_blank" rel="noopener">wc-message-notifier</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wc-moadian-connector" data-language="php" data-status="original">
+          <span class="repo-index">63</span>
+          <a class="repo-name" href="https://github.com/ildrm/wc-moadian-connector" target="_blank" rel="noopener">wc-moadian-connector</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="windows-drag-and-drop" data-language="not specified" data-status="fork">
+          <span class="repo-index">64</span>
+          <a class="repo-name" href="https://github.com/ildrm/windows-drag-and-drop" target="_blank" rel="noopener">windows-drag-and-drop</a>
+          <span class="repo-language">Not specified</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="woocommerce-disable-gateway-by-coupon" data-language="php" data-status="original">
+          <span class="repo-index">65</span>
+          <a class="repo-name" href="https://github.com/ildrm/woocommerce-disable-gateway-by-coupon" target="_blank" rel="noopener">woocommerce-disable-gateway-by-coupon</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wordpress-helanak-kids-theme" data-language="php" data-status="original">
+          <span class="repo-index">66</span>
+          <a class="repo-name" href="https://github.com/ildrm/wordpress-helanak-kids-theme" target="_blank" rel="noopener">wordpress-helanak-kids-theme</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wordpress-otp-login-pro" data-language="php" data-status="original">
+          <span class="repo-index">67</span>
+          <a class="repo-name" href="https://github.com/ildrm/wordpress-otp-login-pro" target="_blank" rel="noopener">wordpress-otp-login-pro</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wp-msgway-sms" data-language="php" data-status="original">
+          <span class="repo-index">68</span>
+          <a class="repo-name" href="https://github.com/ildrm/wp-msgway-sms" target="_blank" rel="noopener">wp-msgway-sms</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wp-telegram-cloud-storage" data-language="php" data-status="original">
+          <span class="repo-index">69</span>
+          <a class="repo-name" href="https://github.com/ildrm/wp-telegram-cloud-storage" target="_blank" rel="noopener">wp-telegram-cloud-storage</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wp-ultimate-map-plugin" data-language="php" data-status="original">
+          <span class="repo-index">70</span>
+          <a class="repo-name" href="https://github.com/ildrm/wp-ultimate-map-plugin" target="_blank" rel="noopener">wp-ultimate-map-plugin</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wp-workflow-pipeline" data-language="php" data-status="original">
+          <span class="repo-index">71</span>
+          <a class="repo-name" href="https://github.com/ildrm/wp-workflow-pipeline" target="_blank" rel="noopener">wp-workflow-pipeline</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+      </ol>
+    </div>
+  </section>
+  </main>
+  <footer class="foot">
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="projects.html" aria-current="page">Projects</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    END OF TRANSMISSION · SIL / SPATIAL SYSTEMS OBSERVATORY · 2026
+  </footer>
+  <script defer src="assets/js/projects.js"></script>
+</body>
+</html>

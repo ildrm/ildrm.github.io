@@ -1,0 +1,62 @@
+:root{
+    --void:#030609;
+    --void-soft:#071016;
+    --ink:#0b151b;
+    --bone:#f0f0e8;
+    --bone-dim:#aab6b7;
+    --steel:#6d7e87;
+    --cyan:#78e8ff;
+    --orange:#ff775c;
+    --acid:#d9ff63;
+    --hair:rgba(120,232,255,.22);
+    --panel:rgba(7,16,22,.82);
+    --display:'Space Grotesk',sans-serif;
+    --mono:'IBM Plex Mono',monospace;
+  }
+
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;background:var(--void);overflow-x:clip}
+  body{
+    margin:0;
+    color:var(--bone);
+    background:
+      radial-gradient(circle at 72% 9%,rgba(120,232,255,.11),transparent 25rem),
+      linear-gradient(180deg,#030609 0%,#071016 45%,#030609 100%);
+    font-family:var(--display);
+    overflow-x:clip;
+    min-width:320px;
+  }
+  body::before{
+    content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.15;
+    background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.92' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.32'/%3E%3C/svg%3E");
+    mix-blend-mode:soft-light;
+  }
+  body::after{
+    content:"";position:fixed;inset:0;z-index:1;pointer-events:none;
+    background:linear-gradient(90deg,rgba(3,6,9,.8) 0%,transparent 35%,transparent 70%,rgba(3,6,9,.42) 100%);
+  }
+  a{color:inherit}
+  a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--acid);outline-offset:4px}
+  ::selection{background:var(--acid);color:var(--void)}
+
+  .skip-link{
+    position:fixed;top:10px;left:10px;z-index:200;transform:translateY(-180%);
+    background:var(--acid);color:var(--void);padding:10px 14px;font:600 12px var(--mono);
+  }
+  .skip-link:focus{transform:none}
+  .sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+  .station-select{display:none}
+  .hero,.sheet,.sheet h2{scroll-margin-top:92px}
+
+  #hero-canvas{
+    position:fixed!important;inset:0!important;width:100vw!important;height:100vh!important;
+    z-index:0!important;display:block;pointer-events:none;
+  }
+  .hero-vignette{
+    position:fixed;inset:0;z-index:1;pointer-events:none;
+    background:
+      linear-gradient(90deg,rgba(3,6,9,.9) 0%,rgba(3,6,9,.48) 38%,transparent 68%),
+      radial-gradient(circle at 72% 43%,transparent 14%,rgba(3,6,9,.24) 50%,rgba(3,6,9,.8) 100%);
+  }
+  .node-label{display:none!important}
+
