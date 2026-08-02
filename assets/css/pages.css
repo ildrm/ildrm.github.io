@@ -33,7 +33,7 @@ main{position:relative;z-index:3}
 
   /* DOM portrait remains the accessible/WebGL fallback; in WebGL it becomes a ghosted calibration plate. */
   .portrait-stage{
-    width:min(390px,30vw);aspect-ratio:464/522;justify-self:end;margin:0;position:relative;
+    width:min(390px,30vw);aspect-ratio:464/522;justify-self:end;margin:0;position:relative;z-index:6;isolation:isolate;
     transform-style:preserve-3d;perspective:1000px;animation:none;filter:drop-shadow(0 28px 60px rgba(0,0,0,.65));
   }
   .portrait-stage::before{
@@ -44,7 +44,6 @@ main{position:relative;z-index:3}
   .portrait-mat{inset:0;border:1px solid rgba(240,240,232,.5);outline:0;background:#111;transform:translateZ(18px) rotateY(-3deg);clip-path:polygon(0 0,94% 0,100% 6%,100% 100%,6% 100%,0 94%)}
   .portrait-mat::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 34%,rgba(120,232,255,.27) 49%,transparent 60%);mix-blend-mode:screen}
   .portrait-index{top:-12px;right:18px;border:1px solid var(--cyan);background:var(--void);color:var(--cyan);transform:translateZ(55px)}
-  body.webgl-ready.portrait-textured .portrait-stage{opacity:.12;filter:saturate(.4);transform:translateZ(-100px) rotateY(-10deg)}
 
   /* Stations — floating architectural planes */
   .sheet{
@@ -187,8 +186,7 @@ main{position:relative;z-index:3}
     .title-block{max-width:84vw;margin-bottom:26px;font-size:7.5px;gap:3px 12px}
     .hero-name{max-width:94%;font-size:clamp(48px,16vw,70px);line-height:.87;letter-spacing:-.065em}
     .hero-role{max-width:86%;font-size:9px;margin-bottom:24px}
-    .portrait-stage{position:absolute;right:-14px;bottom:5px;width:min(72vw,330px);opacity:.5}
-    body.webgl-ready.portrait-textured .portrait-stage{opacity:.08}
+    .portrait-stage{position:absolute;right:-14px;bottom:5px;width:min(72vw,330px);opacity:1}
     .hero-vignette{background:linear-gradient(180deg,rgba(3,6,9,.6) 0%,rgba(3,6,9,.06) 45%,rgba(3,6,9,.52) 100%)}
     .sheet,#sheet-01,#sheet-02,#sheet-03,#sheet-04,#sheet-05,#sheet-06{width:calc(100% - 24px);margin:90px 12px;min-height:0;padding:40px 22px 48px;backdrop-filter:blur(10px)}
     .sheet::after{right:10px;top:14px}.sheet h2{font-size:clamp(32px,10vw,46px);padding-right:18px}
@@ -225,9 +223,12 @@ main{position:relative;z-index:3}
 .page-main .sheet:first-of-type{margin-top:4vh}
 .home-preview{width:min(1180px,calc(100% - 72px));margin:clamp(100px,18vh,190px) auto}
 .home-preview .fig-grid{margin-bottom:25px}
-.home-preview .fig-card{grid-column:span 4}
+.home-preview .fig-card{display:flex;flex-direction:column;grid-column:span 4;clip-path:none}
+.home-preview .fig-card:nth-child(n){transform:none}
+.home-preview .fig-card .tags{margin-top:auto}
 .starred-status{margin:20px 0 0;color:var(--cyan);font:500 10px/1.5 var(--mono);text-transform:uppercase}
 .starred-card h3{overflow-wrap:anywhere}
+@media(max-width:1050px){.home-preview .fig-card{grid-column:span 6}}
 .projects-main #sheet-03{margin-top:3vh}
 .projects-main .repo-list{max-height:720px}
 .experience-main .timeline{transform-style:preserve-3d}

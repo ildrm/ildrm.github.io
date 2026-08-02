@@ -371,7 +371,7 @@
       intro.fromTo(world.scale,{x:.12,y:.12,z:.12},{x:mobile?.72:1,y:mobile?.72:1,z:mobile?.72:1,duration:1.65},0)
         .fromTo(world.rotation,{x:1.4,y:-2.3,z:.7},{x:.12,y:-.42,z:.03,duration:1.9},0)
         .fromTo('.identity-copy',{opacity:0,rotationY:-14,rotationX:7,z:-280},{opacity:1,rotationY:0,rotationX:0,z:0,duration:1.35},.18)
-        .fromTo('.portrait-stage',{opacity:0,rotationY:24,rotationX:-8,z:-360},{opacity:document.body.classList.contains('portrait-textured')?.12:1,rotationY:0,rotationX:0,z:0,duration:1.45},.28)
+        .fromTo('.portrait-stage',{opacity:0,rotationY:24,rotationX:-8,z:-360},{opacity:1,rotationY:0,rotationX:0,z:0,duration:1.45},.28)
         .fromTo('.hud-shell',{opacity:0,y:-30,rotationX:-30},{opacity:1,y:0,rotationX:0,duration:.8},.58);
 
       var stationStates=[
