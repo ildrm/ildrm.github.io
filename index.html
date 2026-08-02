@@ -1,12 +1,1387 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Shahin Ilderemi</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Shahin Ilderemi Lotfabad — Technical Dossier</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600;700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<style>
+  :root{
+    --navy: #0A1F33;
+    --navy-2: #0F2C47;
+    --navy-3: #133A5C;
+    --line: #8FD3FF;
+    --line-dim: #3E6A90;
+    --vellum: #F4EFE1;
+    --vellum-2: #EBE3CC;
+    --ink: #16202B;
+    --ink-soft: rgba(22,32,43,0.72);
+    --brass: #B78846;
+    --brass-light: #D8B276;
+    --rust: #A8402E;
+    --font-serif: 'IBM Plex Serif', Georgia, 'Times New Roman', serif;
+    --font-sans: 'IBM Plex Sans', -apple-system, system-ui, sans-serif;
+    --font-mono: 'IBM Plex Mono', ui-monospace, 'Courier New', monospace;
+  }
+
+  *{ box-sizing:border-box; }
+
+  html{ scroll-behavior:auto; overflow-x:clip; }
+
+  body{
+    margin:0;
+    background-color: var(--navy);
+    background-image:
+      linear-gradient(rgba(143,211,255,0.055) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(143,211,255,0.055) 1px, transparent 1px);
+    background-size: 42px 42px;
+    color: var(--vellum);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    overflow-x:clip;
+  }
+
+  a{ color: inherit; }
+  a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible{ outline: 2px solid var(--brass-light); outline-offset: 3px; }
+
+  /* ---------- HUD ---------- */
+  .hud{
+    position: fixed;
+    z-index: 60;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.09em;
+    color: rgba(180, 222, 255, 0.8);
+    pointer-events: none;
+    text-transform: uppercase;
+  }
+  .hud-mark{ top:18px; left:20px; font-size:13px; color: var(--brass-light); letter-spacing:.14em; pointer-events:auto; }
+  .hud-mark a{ text-decoration:none; border:1px solid var(--brass); padding:4px 9px; display:inline-block; }
+  .hud-telemetry{ top:18px; right:20px; text-align:right; line-height:1.6; }
+  .hud-spine{
+    left:16px; top:50%; transform:translateY(-50%);
+    writing-mode: vertical-rl; text-orientation:mixed;
+  }
+  .hud-geo{ bottom:18px; right:20px; text-align:right; line-height:1.6; }
+
+  @media (max-width: 720px){
+    .hud-spine{ display:none; }
+    .hud-telemetry, .hud-geo{ font-size:9.5px; }
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position: relative;
+    min-height: 100svh;
+    overflow: hidden;
+    display:grid;
+    place-items:center;
+    padding: 100px 46px 70px;
+  }
+  #hero-canvas{ position:absolute; inset:0; width:100%; height:100%; display:block; z-index:1; }
+  .hero-vignette{
+    position:absolute; inset:0; z-index:2; pointer-events:none;
+    background: radial-gradient(ellipse at 50% 45%, transparent 40%, rgba(10,31,51,0.75) 100%);
+  }
+  .node-label{
+    position:absolute; top:0; left:0; z-index:2;
+    font-family: var(--font-mono); font-size:10.5px; letter-spacing:.03em;
+    color: var(--line);
+    text-shadow: 0 0 8px rgba(10,31,51,0.95), 0 0 2px rgba(10,31,51,1);
+    white-space:nowrap; pointer-events:none; will-change:transform,opacity;
+  }
+
+  .hero-identity{
+    position:relative; z-index:5; width:min(1120px, 100%);
+    display:grid; grid-template-columns:minmax(0, 1.2fr) minmax(290px, .8fr);
+    align-items:center; gap:clamp(38px, 7vw, 92px); text-align:left;
+    perspective:1200px;
+  }
+  .identity-copy{ min-width:0; transform-style:preserve-3d; }
+
+  .title-block{
+    position:relative;
+    font-family: var(--font-mono); font-size:11px; letter-spacing:.08em;
+    border: 1px solid var(--brass); background: rgba(10,31,51,0.55); backdrop-filter: blur(2px);
+    padding: 14px 22px; margin:0 0 34px;
+    display:grid; grid-template-columns: auto auto; gap: 4px 26px;
+    text-align:left;
+    transform-style:preserve-3d;
+    animation: plate-arrival .9s .12s cubic-bezier(.2,.7,.2,1) both;
+  }
+  .title-block .k{ color: var(--brass-light); }
+  .title-block .v{ color: var(--vellum); }
+
+  .hero-name{
+    position:relative;
+    font-family: var(--font-serif); font-weight:600;
+    font-size: clamp(40px, 6.2vw, 76px);
+    line-height:1.05; letter-spacing:-0.01em;
+    margin: 0 0 16px;
+    text-wrap:balance;
+    animation: plate-arrival 1s .3s cubic-bezier(.2,.7,.2,1) both;
+  }
+  .hero-role{
+    position:relative;
+    font-family: var(--font-mono); text-transform:uppercase; letter-spacing:.14em;
+    font-size: 12.5px; color: var(--line);
+    line-height:1.7; max-width:690px; margin: 0 0 38px;
+    animation: plate-arrival 1s .48s cubic-bezier(.2,.7,.2,1) both;
+  }
+  @keyframes plate-arrival{
+    from{ opacity:0; transform:perspective(1000px) translateZ(-90px) rotateX(7deg) rotateY(-4deg); }
+    to{ opacity:1; transform:perspective(1000px) translateZ(0) rotateX(0) rotateY(0); }
+  }
+
+  .scroll-cue{
+    position:relative; display:inline-block;
+    font-family: var(--font-mono); font-size:11px; letter-spacing:.12em;
+    color: var(--brass-light); text-decoration:none;
+    border: 1px solid var(--brass); padding: 8px 16px;
+    transform-style:preserve-3d;
+    animation: plate-arrival 1s .66s cubic-bezier(.2,.7,.2,1) both;
+  }
+
+  .portrait-stage{
+    position:relative; margin:0; aspect-ratio:1 / 1; width:min(390px, 100%);
+    justify-self:end; transform-style:preserve-3d;
+    animation: specimen-arrival 1.15s .28s cubic-bezier(.2,.7,.2,1) both;
+    will-change:transform;
+  }
+  .portrait-stage::before{
+    content:""; position:absolute; inset:-14px; border:1px solid var(--brass);
+    background:var(--navy-2); transform:translateZ(-26px); box-shadow:18px 22px 0 rgba(4,15,25,.55);
+  }
+  .portrait-stage::after{
+    content:"SPECIMEN · SIL / VECTOR 096"; position:absolute; z-index:4; left:14px; bottom:14px;
+    padding:5px 8px; border:1px solid var(--brass); background:var(--navy);
+    color:var(--brass-light); font:10px/1.2 var(--font-mono); letter-spacing:.1em;
+    transform:translateZ(28px);
+  }
+  .portrait-mat{
+    position:absolute; inset:0; overflow:hidden; border:7px solid var(--vellum-2);
+    outline:1px solid var(--brass); background:var(--vellum-2); transform:translateZ(12px);
+  }
+  .portrait-mat svg{ display:block; width:100%; height:100%; }
+  .portrait-index{
+    position:absolute; z-index:5; top:-2px; right:14px; margin:0; padding:5px 8px;
+    border:1px solid var(--brass); background:var(--navy); color:var(--line);
+    font:10px/1.2 var(--font-mono); letter-spacing:.1em; transform:translateZ(34px);
+  }
+  @keyframes specimen-arrival{
+    from{ opacity:0; transform:perspective(1100px) translateZ(-130px) rotateX(7deg) rotateY(12deg); }
+    to{ opacity:1; transform:perspective(1100px) translateZ(0) rotateX(0) rotateY(-2deg); }
+  }
+
+  /* ---------- SHEETS ---------- */
+  .sheet{
+    position:relative;
+    max-width: 1040px;
+    margin: 46px auto;
+    background: var(--vellum);
+    color: var(--ink);
+    border: 1px solid var(--brass);
+    padding: 58px 66px 46px;
+    box-shadow: 0 40px 80px -30px rgba(0,0,0,0.55);
+    opacity:1; transform:none; transform-origin:50% 0; transform-style:preserve-3d;
+  }
+  .sheet.reveal-ready{
+    opacity:0; transform:perspective(1400px) translateZ(-70px) rotateX(4deg) rotateY(-1.5deg);
+    transition:opacity .8s ease, transform .8s cubic-bezier(.2,.7,.2,1);
+  }
+  .sheet.reveal-ready.visible{ opacity:1; transform:perspective(1400px) translateZ(0) rotateX(0) rotateY(0); }
+  .sheet::after{
+    content: "SHEET " attr(data-sheet) " OF 07";
+    position:absolute; bottom:16px; right:22px;
+    font-family: var(--font-mono); font-size:10px; letter-spacing:.14em;
+    color: var(--brass); opacity:0.75;
+  }
+  .reg{ position:absolute; width:15px; height:15px; border:1px solid var(--brass); border-radius:50%; opacity:0.55; pointer-events:none; }
+  .reg::before,.reg::after{ content:''; position:absolute; background:var(--brass); }
+  .reg::before{ left:50%; top:0; width:1px; height:100%; transform:translateX(-50%); }
+  .reg::after{ top:50%; left:0; height:1px; width:100%; transform:translateY(-50%); }
+  .reg.tl{ top:10px; left:10px; } .reg.tr{ top:10px; right:10px; }
+  .reg.bl{ bottom:10px; left:10px; } .reg.br{ bottom:10px; right:10px; }
+
+  .clause{
+    display:inline-block; font-family: var(--font-mono); font-size:11.5px; letter-spacing:.13em;
+    color: var(--rust); border:1px solid var(--rust); padding:3px 9px; margin-bottom:16px;
+  }
+  .sheet h2{
+    font-family: var(--font-serif); font-weight:600; margin:0 0 10px;
+    font-size: clamp(26px, 3.6vw, 36px); letter-spacing:-0.01em;
+    border-bottom: 2px solid var(--brass); padding-bottom:14px;
+  }
+  .sheet .lede{ font-size:17px; line-height:1.75; color: var(--ink); max-width:760px; margin-top:22px; }
+  .sheet .voice{ font-style:italic; color: var(--ink-soft); }
+
+  /* ---------- CLASSIFICATION GRID ---------- */
+  .classification-grid{
+    margin-top:26px; display:grid; grid-template-columns: repeat(auto-fit, minmax(230px,1fr)); gap:22px;
+  }
+  .class-item{ border-top: 2px solid var(--navy-3); padding-top:12px; }
+  .class-item .code{
+    display:inline-block; font-family: var(--font-mono); font-size:11px; letter-spacing:.1em;
+    background: var(--navy); color: var(--line); padding:3px 8px; margin-bottom:10px;
+  }
+  .class-item h3{ font-family: var(--font-serif); font-size:17px; margin:0 0 6px; }
+  .class-item p{ font-size:14px; line-height:1.6; color: var(--ink-soft); margin:0; }
+
+  /* ---------- FIG / PROJECT GRID ---------- */
+  .fig-grid{ margin-top:26px; display:grid; grid-template-columns: repeat(auto-fit, minmax(270px,1fr)); gap:26px; }
+  .fig-card{
+    background: var(--vellum-2); border: 1px solid var(--navy-3);
+    padding: 20px; transition: transform 0.16s ease;
+    transform-style: preserve-3d; will-change: transform;
+  }
+  .fig-card:hover{ box-shadow: 0 18px 30px -14px rgba(20,40,60,0.35); }
+  .fig-card:focus-within{ transform:perspective(700px) rotateX(-1.5deg) rotateY(1.5deg) translateZ(8px); box-shadow:0 18px 30px -14px rgba(20,40,60,.35); }
+  .fig-head{ display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px; }
+  .fig-label{ font-family: var(--font-mono); font-size:11px; letter-spacing:.1em; color: var(--rust); }
+  .fig-card h3{ font-family: var(--font-serif); font-size:19px; margin:0 0 8px; }
+  .fig-card p{ font-size:14px; line-height:1.6; color: var(--ink-soft); margin:0 0 14px; }
+  .tags{ margin-bottom:14px; }
+  .tags span{
+    display:inline-block; font-family: var(--font-mono); font-size:10.5px;
+    border:1px solid var(--line-dim); color: var(--navy-2); background: rgba(62,106,144,0.08);
+    padding:3px 7px; margin: 0 6px 6px 0;
+  }
+  .fig-link{ font-family: var(--font-mono); font-size:12.5px; letter-spacing:.04em; text-decoration:none; color: var(--navy-2); border-bottom:1px solid var(--brass); }
+
+  /* ---------- COMPLETE REPOSITORY REGISTER ---------- */
+  .repo-register{ margin-top:46px; border-top:3px double var(--brass); padding-top:28px; }
+  .repo-register-head{ display:grid; grid-template-columns:minmax(0, 1fr) auto; gap:18px; align-items:end; }
+  .repo-register h3{ font:600 clamp(21px, 2.8vw, 28px)/1.2 var(--font-serif); margin:0 0 7px; }
+  .repo-register-meta{ margin:0; color:var(--ink-soft); font:12px/1.55 var(--font-mono); }
+  .repo-count-stamp{
+    border:1px solid var(--rust); color:var(--rust); padding:8px 12px;
+    font:600 11px/1.25 var(--font-mono); letter-spacing:.08em; text-align:center;
+  }
+  .repo-controls{
+    display:grid; grid-template-columns:minmax(220px, 1fr) minmax(160px, .45fr) minmax(140px, .35fr);
+    gap:12px; margin:24px 0 12px; padding:14px; border:1px solid var(--brass); background:rgba(183,136,70,.08);
+  }
+  .repo-control{ display:grid; gap:5px; }
+  .repo-control label{ color:var(--navy-2); font:10px/1.3 var(--font-mono); letter-spacing:.1em; text-transform:uppercase; }
+  .repo-control input, .repo-control select{
+    width:100%; min-height:40px; border:1px solid var(--navy-3); border-radius:0;
+    background:var(--vellum); color:var(--ink); padding:8px 10px; font:14px/1.3 var(--font-sans);
+  }
+  .repo-result{ min-height:18px; margin:0 0 10px; color:var(--rust); font:11px/1.5 var(--font-mono); }
+  .repo-columns, .repo-row{
+    display:grid; grid-template-columns:42px minmax(0, 1fr) minmax(112px, .28fr) 82px;
+    gap:12px; align-items:center;
+  }
+  .repo-columns{
+    padding:8px 12px; background:var(--navy); color:var(--line);
+    font:10px/1.3 var(--font-mono); letter-spacing:.1em; text-transform:uppercase;
+  }
+  .repo-list{ list-style:none; padding:0; margin:0; border:1px solid var(--navy-3); border-top:0; }
+  .repo-row{ min-height:47px; padding:8px 12px; border-top:1px solid rgba(19,58,92,.32); font-size:13px; }
+  .repo-row:first-child{ border-top:0; }
+  .repo-row:nth-child(even){ background:rgba(62,106,144,.055); }
+  .repo-index{ color:var(--rust); font:10px/1.3 var(--font-mono); }
+  .repo-name{ min-width:0; overflow-wrap:anywhere; color:var(--navy-2); font:600 13px/1.35 var(--font-mono); text-decoration-thickness:1px; text-underline-offset:3px; }
+  .repo-language, .repo-status{ font:11px/1.35 var(--font-mono); }
+  .repo-language{ color:var(--ink-soft); overflow-wrap:anywhere; }
+  .repo-status{ text-transform:uppercase; letter-spacing:.06em; }
+  .repo-status[data-kind="fork"]{ color:var(--rust); }
+  .repo-row[hidden]{ display:none; }
+
+  /* CSS 3D cube icon */
+  .cube-scene{ width:42px; height:42px; perspective: 260px; flex-shrink:0; }
+  .cube{ width:100%; height:100%; position:relative; transform-style:preserve-3d; animation: spin3d 10s linear infinite; }
+  .face{ position:absolute; width:42px; height:42px; border:1px solid var(--line-dim); background: rgba(62,106,144,0.06); }
+  .f-front{ transform: translateZ(21px); }
+  .f-back{ transform: translateZ(-21px) rotateY(180deg); }
+  .f-right{ transform: translateX(21px) rotateY(90deg); }
+  .f-left{ transform: translateX(-21px) rotateY(-90deg); }
+  .f-top{ transform: translateY(-21px) rotateX(90deg); }
+  .f-bottom{ transform: translateY(21px) rotateX(-90deg); }
+  @keyframes spin3d{ from{ transform: rotateX(0deg) rotateY(0deg);} to{ transform: rotateX(360deg) rotateY(360deg);} }
+
+  /* ---------- TIMELINE ---------- */
+  .timeline{ position:relative; margin-top:30px; padding-left:30px; }
+  .timeline::before{ content:''; position:absolute; left:6px; top:4px; bottom:4px; width:2px; background: var(--brass); }
+  .tl-item{ position:relative; margin-bottom:26px; }
+  .tl-item::before{ content:''; position:absolute; left:-24px; top:5px; width:10px; height:10px; border-radius:50%; background: var(--brass); border:2px solid var(--vellum); }
+  .tl-date{ font-family: var(--font-mono); font-size:12px; letter-spacing:.08em; color: var(--rust); }
+  .tl-item h3{ font-family: var(--font-serif); font-size:18px; margin:6px 0 6px; }
+  .tl-item p{ font-size:14px; line-height:1.65; color: var(--ink-soft); margin:0; max-width:700px; }
+
+  /* ---------- EDU / PUB ---------- */
+  .edu-item{ border-top:2px solid var(--navy-3); padding-top:12px; margin-top:22px; }
+  .edu-item h3{ font-family: var(--font-serif); font-size:18px; margin:0 0 4px; }
+  .edu-item .tl-date{ display:block; margin-bottom:8px; }
+  .edu-item p{ font-size:14px; line-height:1.6; color: var(--ink-soft); margin:0; max-width:700px; }
+
+  .pub-list{ margin-top:24px; list-style:none; padding:0; }
+  .pub-list li{
+    font-family: var(--font-serif); font-size:16.5px; padding: 14px 0; border-bottom:1px solid var(--navy-3);
+  }
+  .pub-list li:first-child{ border-top:1px solid var(--navy-3); }
+  .pub-list .pub-no{ font-family: var(--font-mono); font-size:11px; color: var(--rust); margin-right:12px; }
+
+  /* ---------- SEAL / CONTACT ---------- */
+  .seal-sheet{
+    background: var(--navy-2); color: var(--vellum); border-color: var(--brass);
+    text-align:center; padding: 70px 40px 56px;
+  }
+  .seal-sheet h2{ border-bottom-color: var(--brass); color: var(--vellum); }
+  #seal-canvas{ width:170px; height:170px; display:block; margin: 10px auto 20px; }
+  .signature-block{ font-family: var(--font-mono); font-size:13px; letter-spacing:.03em; color: rgba(244,239,225,0.85); }
+  .sig-line{ width:220px; height:1px; background: var(--brass); margin: 18px auto; }
+  .sig-name{ font-family: var(--font-serif); font-size:20px; color: var(--vellum); margin: 4px 0 18px; }
+  .contact-links{ margin: 14px 0; }
+  .contact-links a{ display:inline-block; margin: 0 12px; text-decoration:none; border-bottom:1px solid var(--brass); padding-bottom:2px; }
+  #filed-date{ margin-top:22px; opacity:0.7; font-size:11px; }
+
+  footer.foot{
+    text-align:center; font-family: var(--font-mono); font-size:11px; letter-spacing:.1em;
+    color: rgba(180,222,255,0.5); padding: 30px 20px 60px;
+  }
+
+  @media (max-width:720px){
+    .sheet{ padding: 44px 26px 40px; margin: 30px 14px; }
+    .title-block{ grid-template-columns: 1fr; font-size:10px; padding:12px 16px; }
+    .hero{ min-height:auto; padding:100px 25px 76px; }
+    .hero-identity{ grid-template-columns:1fr; gap:48px; }
+    .identity-copy{ order:1; }
+    .portrait-stage{ order:2; justify-self:center; width:min(340px, 88vw); }
+    .hero-name{ font-size:clamp(39px, 13vw, 58px); }
+    .repo-register-head{ grid-template-columns:1fr; }
+    .repo-count-stamp{ justify-self:start; }
+    .repo-controls{ grid-template-columns:1fr; }
+    .repo-columns{ display:none; }
+    .repo-row{ grid-template-columns:32px minmax(0, 1fr); gap:4px 10px; padding:11px 12px; }
+    .repo-index{ grid-row:1 / span 2; align-self:start; padding-top:3px; }
+    .repo-name{ font-size:12.5px; }
+    .repo-language, .repo-status{ display:inline; font-size:10.5px; }
+    .repo-language::before{ content:"LANG · "; color:var(--navy-2); }
+    .repo-status{ grid-column:2; }
+    .repo-status::before{ content:"STATUS · "; color:var(--navy-2); }
+    .sheet.reveal-ready{ transform:perspective(1400px) translateZ(-28px) rotateX(3deg); }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .title-block, .hero-name, .hero-role, .scroll-cue, .portrait-stage{ animation:none !important; opacity:1 !important; transform:none !important; }
+    .cube{ animation:none !important; }
+    .sheet, .sheet.reveal-ready{ transition:none !important; opacity:1 !important; transform:none !important; }
+    .fig-card{ transition:none !important; }
+  }
+</style>
 </head>
 <body>
-  <h1>Shahin Ilderemi</h1>
-  <p>Senior Software Engineer · Tech Lead · Systems Architect</p>
+
+  <div class="hud hud-mark"><a href="#hero">SIL</a></div>
+  <div class="hud hud-telemetry" id="telemetry">LOCAL 00:00:00<br/>SCROLL 000%</div>
+  <div class="hud hud-spine">TECHNICAL DOSSIER · REV 2026.08 · CONFIDENTIAL</div>
+  <div class="hud hud-geo">36.2605°N&nbsp;59.6168°E<br/>MASHHAD, IRAN</div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-vignette"></div>
+
+    <div class="hero-identity">
+      <div class="identity-copy">
+        <div class="title-block">
+          <span class="k">APPLICANT</span><span class="v">SHAHIN ILDEREMI LOTFABAD</span>
+          <span class="k">CLASSIFICATION</span><span class="v">Backend · Data Engineering · AI Automation</span>
+          <span class="k">STATUS</span><span class="v">Open to Remote — Relocation Considered</span>
+          <span class="k">FILED AT</span><span class="v">Mashhad, Iran</span>
+        </div>
+
+        <h1 class="hero-name">Shahin Ilderemi<br/>Lotfabad</h1>
+        <p class="hero-role">Senior Systems Engineer — Backend · Data · Frontend · AI Automation</p>
+        <a class="scroll-cue" href="#sheet-01">VIEW SHEET 01 / 07</a>
+      </div>
+
+      <figure class="portrait-stage" data-portrait-tilt aria-labelledby="portrait-caption">
+        <div class="portrait-mat">
+          <!-- Generated with official ondras/primitive.js from https://avatars.githubusercontent.com/u/10987736?v=4; 96 triangle paths, embedded at build time. -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" clip-path="url(#clip)" role="img" aria-labelledby="portrait-title portrait-desc" data-generated-with="ondras/primitive.js" preserveAspectRatio="xMidYMid slice"><title id="portrait-title">Primitive vector portrait of Shahin Ilderemi Lotfabad</title><desc id="portrait-desc">A geometric triangle study generated from Shahin's public GitHub avatar using the official ondras primitive.js implementation.</desc><defs><clipPath id="clip" clipPathUnits="objectBoundingBox"><rect x="0" y="0" width="256" height="256"/></clipPath></defs><rect x="0" y="0" width="256" height="256" fill="rgb(139, 138, 107)"/><path d="M70,3L126,438L399,58Z" fill="rgb(236, 233, 201)" fill-opacity="0.93"/><path d="M-72,15L59,164L-7,296Z" fill="rgb(33, 18, 22)" fill-opacity="0.91"/><path d="M63,8L-98,-13L0,114Z" fill="rgb(18, 10, 5)" fill-opacity="1.00"/><path d="M75,105L52,64L89,74Z" fill="rgb(17, 4, 13)" fill-opacity="0.76"/><path d="M71,238L94,233L165,328Z" fill="rgb(0, 10, 26)" fill-opacity="0.87"/><path d="M27,183L38,229L133,177Z" fill="rgb(189, 211, 202)" fill-opacity="0.92"/><path d="M50,103L92,-1L28,41Z" fill="rgb(165, 44, 0)" fill-opacity="0.45"/><path d="M98,117L22,91L29,149Z" fill="rgb(255, 216, 196)" fill-opacity="0.83"/><path d="M37,165L79,120L54,221Z" fill="rgb(18, 0, 6)" fill-opacity="0.46"/><path d="M26,308L44,248L12,145Z" fill="rgb(17, 22, 30)" fill-opacity="1.00"/><path d="M18,75L89,60L51,36Z" fill="rgb(255, 155, 78)" fill-opacity="0.71"/><path d="M464,-16L83,225L67,141Z" fill="rgb(246, 241, 223)" fill-opacity="0.79"/><path d="M63,216L69,276L48,200Z" fill="rgb(0, 10, 32)" fill-opacity="0.82"/><path d="M27,59L8,108L35,158Z" fill="rgb(255, 42, 0)" fill-opacity="0.33"/><path d="M67,211L76,242L90,222Z" fill="rgb(0, 5, 18)" fill-opacity="0.79"/><path d="M50,62L45,95L68,108Z" fill="rgb(0, 0, 16)" fill-opacity="0.62"/><path d="M53,155L63,160L83,133Z" fill="rgb(233, 94, 143)" fill-opacity="0.90"/><path d="M321,229L247,185L80,227Z" fill="rgb(194, 194, 123)" fill-opacity="0.86"/><path d="M270,51L45,11L91,-148Z" fill="rgb(203, 201, 124)" fill-opacity="0.74"/><path d="M31,37L81,36L42,1Z" fill="rgb(0, 0, 2)" fill-opacity="0.75"/><path d="M45,96L43,26L15,117Z" fill="rgb(255, 136, 79)" fill-opacity="0.55"/><path d="M37,230L70,320L54,219Z" fill="rgb(124, 216, 255)" fill-opacity="0.88"/><path d="M29,179L55,231L20,187Z" fill="rgb(198, 255, 255)" fill-opacity="0.61"/><path d="M15,184L-46,192L20,203Z" fill="rgb(246, 21, 8)" fill-opacity="0.74"/><path d="M127,263L94,168L48,184Z" fill="rgb(226, 224, 185)" fill-opacity="0.87"/><path d="M208,257L83,280L134,233Z" fill="rgb(195, 196, 131)" fill-opacity="0.69"/><path d="M85,90L70,100L88,151Z" fill="rgb(233, 175, 153)" fill-opacity="0.78"/><path d="M83,70L15,78L50,83Z" fill="rgb(18, 0, 0)" fill-opacity="0.76"/><path d="M53,-17L82,48L155,125Z" fill="rgb(237, 240, 209)" fill-opacity="0.57"/><path d="M51,148L19,85L73,111Z" fill="rgb(255, 255, 246)" fill-opacity="0.58"/><path d="M58,83L68,90L65,77Z" fill="rgb(225, 255, 255)" fill-opacity="0.63"/><path d="M77,36L75,46L6,-10Z" fill="rgb(1, 0, 1)" fill-opacity="0.85"/><path d="M66,213L92,291L62,225Z" fill="rgb(173, 241, 255)" fill-opacity="0.82"/><path d="M63,124L90,128L86,104Z" fill="rgb(255, 147, 126)" fill-opacity="0.65"/><path d="M-26,177L82,130L20,186Z" fill="rgb(2, 0, 0)" fill-opacity="0.55"/><path d="M112,252L100,251L135,265Z" fill="rgb(0, 38, 121)" fill-opacity="0.67"/><path d="M80,147L46,193L58,165Z" fill="rgb(3, 0, 7)" fill-opacity="0.66"/><path d="M15,32L14,158L-104,274Z" fill="rgb(0, 0, 0)" fill-opacity="0.93"/><path d="M279,-14L197,19L260,38Z" fill="rgb(145, 143, 26)" fill-opacity="0.50"/><path d="M54,107L85,95L84,78Z" fill="rgb(0, 0, 10)" fill-opacity="0.59"/><path d="M94,237L86,240L84,219Z" fill="rgb(68, 145, 222)" fill-opacity="0.71"/><path d="M40,188L17,182L62,207Z" fill="rgb(201, 255, 255)" fill-opacity="0.66"/><path d="M20,126L35,148L66,142Z" fill="rgb(255, 135, 117)" fill-opacity="0.62"/><path d="M83,1L43,9L29,-18Z" fill="rgb(207, 206, 134)" fill-opacity="0.54"/><path d="M88,140L72,127L63,134Z" fill="rgb(49, 18, 25)" fill-opacity="0.61"/><path d="M31,239L20,202L47,219Z" fill="rgb(16, 72, 110)" fill-opacity="0.53"/><path d="M46,83L18,83L20,132Z" fill="rgb(255, 161, 111)" fill-opacity="0.55"/><path d="M24,253L0,377L15,252Z" fill="rgb(227, 236, 240)" fill-opacity="0.89"/><path d="M80,235L142,278L84,278Z" fill="rgb(0, 0, 3)" fill-opacity="0.83"/><path d="M87,77L28,34L70,40Z" fill="rgb(255, 122, 59)" fill-opacity="0.65"/><path d="M91,267L81,212L70,229Z" fill="rgb(0, 0, 6)" fill-opacity="0.60"/><path d="M215,91L98,126L75,28Z" fill="rgb(245, 242, 224)" fill-opacity="0.75"/><path d="M-74,118L57,153L47,188Z" fill="rgb(0, 0, 0)" fill-opacity="0.78"/><path d="M65,82L55,91L67,98Z" fill="rgb(179, 192, 254)" fill-opacity="0.68"/><path d="M76,94L85,99L66,106Z" fill="rgb(163, 136, 133)" fill-opacity="0.67"/><path d="M203,11L204,-25L163,37Z" fill="rgb(235, 231, 192)" fill-opacity="0.65"/><path d="M53,82L79,74L63,62Z" fill="rgb(0, 0, 0)" fill-opacity="0.62"/><path d="M98,126L126,189L58,189Z" fill="rgb(243, 241, 222)" fill-opacity="0.87"/><path d="M42,227L59,246L51,219Z" fill="rgb(184, 255, 255)" fill-opacity="0.65"/><path d="M69,232L68,213L54,199Z" fill="rgb(185, 242, 250)" fill-opacity="0.67"/><path d="M48,196L58,201L45,180Z" fill="rgb(0, 0, 12)" fill-opacity="0.50"/><path d="M225,223L249,229L309,201Z" fill="rgb(128, 126, 23)" fill-opacity="0.39"/><path d="M69,154L50,185L70,173Z" fill="rgb(0, 0, 0)" fill-opacity="0.70"/><path d="M67,128L48,149L75,138Z" fill="rgb(150, 43, 61)" fill-opacity="0.58"/><path d="M63,224L60,255L73,264Z" fill="rgb(0, 5, 24)" fill-opacity="0.75"/><path d="M68,10L81,49L189,47Z" fill="rgb(217, 216, 161)" fill-opacity="0.57"/><path d="M20,244L13,243L14,256Z" fill="rgb(32, 81, 133)" fill-opacity="0.63"/><path d="M47,183L60,183L69,212Z" fill="rgb(223, 231, 211)" fill-opacity="0.74"/><path d="M30,222L-4,263L-12,191Z" fill="rgb(0, 0, 0)" fill-opacity="0.87"/><path d="M-126,-10L42,6L30,66Z" fill="rgb(0, 0, 0)" fill-opacity="0.78"/><path d="M77,154L73,148L64,159Z" fill="rgb(139, 42, 80)" fill-opacity="0.68"/><path d="M91,244L93,227L119,279Z" fill="rgb(6, 7, 13)" fill-opacity="0.86"/><path d="M108,121L58,150L77,153Z" fill="rgb(255, 199, 222)" fill-opacity="0.48"/><path d="M18,248L15,198L45,264Z" fill="rgb(0, 0, 0)" fill-opacity="0.64"/><path d="M4,203L-86,172L20,193Z" fill="rgb(255, 27, 7)" fill-opacity="0.59"/><path d="M188,13L241,2L261,-114Z" fill="rgb(226, 223, 176)" fill-opacity="0.84"/><path d="M162,15L169,78L137,12Z" fill="rgb(232, 228, 193)" fill-opacity="0.55"/><path d="M55,103L70,106L43,79Z" fill="rgb(4, 0, 12)" fill-opacity="0.69"/><path d="M63,222L66,222L60,241Z" fill="rgb(156, 176, 194)" fill-opacity="0.60"/><path d="M70,23L161,13L40,1Z" fill="rgb(196, 196, 130)" fill-opacity="0.90"/><path d="M54,62L41,81L30,73Z" fill="rgb(255, 92, 29)" fill-opacity="0.49"/><path d="M11,-5L41,38L65,18Z" fill="rgb(1, 1, 1)" fill-opacity="0.66"/><path d="M12,104L51,100L46,93Z" fill="rgb(255, 186, 146)" fill-opacity="0.65"/><path d="M13,110L16,92L32,142Z" fill="rgb(241, 86, 55)" fill-opacity="0.74"/><path d="M57,147L43,151L25,139Z" fill="rgb(221, 81, 68)" fill-opacity="0.62"/><path d="M84,126L63,190L252,55Z" fill="rgb(242, 239, 220)" fill-opacity="0.87"/><path d="M75,236L69,250L95,302Z" fill="rgb(129, 235, 255)" fill-opacity="0.68"/><path d="M64,226L72,229L60,230Z" fill="rgb(190, 243, 250)" fill-opacity="0.57"/><path d="M163,190L329,183L157,46Z" fill="rgb(243, 240, 221)" fill-opacity="0.95"/><path d="M63,224L58,205L53,222Z" fill="rgb(0, 6, 10)" fill-opacity="0.60"/><path d="M87,81L73,70L64,105Z" fill="rgb(0, 0, 0)" fill-opacity="0.66"/><path d="M172,189L70,190L105,246Z" fill="rgb(217, 215, 161)" fill-opacity="0.61"/><path d="M47,227L31,180L49,194Z" fill="rgb(186, 255, 255)" fill-opacity="0.64"/><path d="M186,118L77,60L79,41Z" fill="rgb(242, 240, 222)" fill-opacity="0.62"/><path d="M82,135L61,133L61,138Z" fill="rgb(0, 0, 0)" fill-opacity="0.54"/><path d="M7,218L24,186L29,197Z" fill="rgb(2, 1, 6)" fill-opacity="0.74"/></svg>
+        </div>
+        <figcaption class="portrait-index" id="portrait-caption">FIG. P-01 · SOURCE: GITHUB AVATAR</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 0001 ABSTRACT -->
+  <section class="sheet" id="sheet-01" data-sheet="01">
+    <span class="clause">[0001]</span>
+    <h2>Abstract</h2>
+    <p class="lede">The applicant is a systems engineer with thirteen years of continuous practice spanning backend architecture, data infrastructure, and — more recently — applied artificial intelligence. Originating in computer hardware and embedded systems, the applicant's practice has since extended through PHP and Laravel service architecture, Node.js and NestJS backends, Apache-based data engineering pipelines, and, in select engagements, full React and Next.js interface delivery. The following dossier catalogs the applicant's field of expertise, prior engagements, and independent works, filed for review.</p>
+  </section>
+
+  <!-- 0002 FIELD OF EXPERTISE -->
+  <section class="sheet" id="sheet-02" data-sheet="02">
+    <span class="clause">[0002]</span>
+    <h2>Field of Expertise</h2>
+    <div class="classification-grid">
+      <div class="class-item">
+        <span class="code">BKD · 01</span>
+        <h3>Backend &amp; APIs</h3>
+        <p>PHP, Laravel, Symfony, Node.js, Express.js, NestJS, REST, GraphQL, Socket.IO</p>
+      </div>
+      <div class="class-item">
+        <span class="code">DAT · 02</span>
+        <h3>Data Engineering</h3>
+        <p>Apache Doris, Apache NiFi, Apache Flink, Apache Superset, Google BigQuery, Docker</p>
+      </div>
+      <div class="class-item">
+        <span class="code">FRT · 03</span>
+        <h3>Frontend Interfaces</h3>
+        <p>React, Next.js (App Router / RSC), TypeScript, Redux, Tailwind CSS</p>
+      </div>
+      <div class="class-item">
+        <span class="code">AI · 04</span>
+        <h3>AI &amp; Automation</h3>
+        <p>LLM integration, retrieval-augmented workflows, n8n, Ollama</p>
+      </div>
+      <div class="class-item">
+        <span class="code">INF · 05</span>
+        <h3>Infrastructure</h3>
+        <p>Linux administration, Docker, Git, CI/CD, MySQL, MongoDB, Redis</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 0003 EMBODIMENTS -->
+  <section class="sheet" id="sheet-03" data-sheet="03">
+    <span class="clause">[0003]</span>
+    <h2>Embodiments — Selected Works</h2>
+    <div class="fig-grid">
+
+      <article class="fig-card" data-tilt>
+        <div class="fig-head">
+          <span class="fig-label">FIG. 01</span>
+          <div class="cube-scene"><div class="cube">
+            <div class="face f-front"></div><div class="face f-back"></div>
+            <div class="face f-right"></div><div class="face f-left"></div>
+            <div class="face f-top"></div><div class="face f-bottom"></div>
+          </div></div>
+        </div>
+        <h3>Ham-Mahalleh</h3>
+        <p>A hyperlocal marketplace built end-to-end on a Turborepo monorepo: NestJS core API, twin Next.js 16 applications for public and admin surfaces, and PostGIS-backed location discovery.</p>
+        <div class="tags"><span>Next.js 16</span><span>React 19</span><span>NestJS</span><span>PostGIS</span></div>
+        <a class="fig-link" href="https://github.com/ildrm/ham-mahalleh" target="_blank" rel="noopener">View repository →</a>
+      </article>
+
+      <article class="fig-card" data-tilt>
+        <div class="fig-head">
+          <span class="fig-label">FIG. 02</span>
+          <div class="cube-scene"><div class="cube">
+            <div class="face f-front"></div><div class="face f-back"></div>
+            <div class="face f-right"></div><div class="face f-left"></div>
+            <div class="face f-top"></div><div class="face f-bottom"></div>
+          </div></div>
+        </div>
+        <h3>LogiCommerce</h3>
+        <p>A multi-tenant logistics and commerce platform unifying warehousing, shipping, and 1PL–5PL fulfillment under one storefront and role-aware operations console.</p>
+        <div class="tags"><span>Next.js</span><span>NestJS</span><span>Fastify</span><span>Multi-Tenant</span></div>
+        <a class="fig-link" href="https://github.com/ildrm/logicommerce-logistic-ecommerce" target="_blank" rel="noopener">View repository →</a>
+      </article>
+
+      <article class="fig-card" data-tilt>
+        <div class="fig-head">
+          <span class="fig-label">FIG. 03</span>
+          <div class="cube-scene"><div class="cube">
+            <div class="face f-front"></div><div class="face f-back"></div>
+            <div class="face f-right"></div><div class="face f-left"></div>
+            <div class="face f-top"></div><div class="face f-bottom"></div>
+          </div></div>
+        </div>
+        <h3>Telegram Ops</h3>
+        <p>A deny-by-default remote operations console — server commands issued through a Telegram bot, gated by approval workflows, TOTP, and pinned SSH host keys, with a full audit trail.</p>
+        <div class="tags"><span>Node.js</span><span>Security</span><span>Telegram Bot API</span></div>
+        <a class="fig-link" href="https://github.com/ildrm/telegram-ssh" target="_blank" rel="noopener">View repository →</a>
+      </article>
+
+      <article class="fig-card" data-tilt>
+        <div class="fig-head">
+          <span class="fig-label">FIG. 04</span>
+          <div class="cube-scene"><div class="cube">
+            <div class="face f-front"></div><div class="face f-back"></div>
+            <div class="face f-right"></div><div class="face f-left"></div>
+            <div class="face f-top"></div><div class="face f-bottom"></div>
+          </div></div>
+        </div>
+        <h3>BOOKGEN-AI</h3>
+        <p>A desktop application that plans, writes, and edits a complete manuscript from a single prompt, running on Gemini and exporting directly to DOCX and PDF.</p>
+        <div class="tags"><span>Python</span><span>PySide6</span><span>Gemini API</span></div>
+        <a class="fig-link" href="https://github.com/ildrm/google-book-writer" target="_blank" rel="noopener">View repository →</a>
+      </article>
+
+      <article class="fig-card" data-tilt>
+        <div class="fig-head">
+          <span class="fig-label">FIG. 05</span>
+          <div class="cube-scene"><div class="cube">
+            <div class="face f-front"></div><div class="face f-back"></div>
+            <div class="face f-right"></div><div class="face f-left"></div>
+            <div class="face f-top"></div><div class="face f-bottom"></div>
+          </div></div>
+        </div>
+        <h3>Servex</h3>
+        <p>A PHP microservices framework built after studying Moleculer's approach to distributed services — the applicant's own take on event-driven service architecture.</p>
+        <div class="tags"><span>PHP</span><span>Microservices</span><span>Event-Driven</span></div>
+        <a class="fig-link" href="https://github.com/ildrm/servex-php" target="_blank" rel="noopener">View repository →</a>
+      </article>
+
+      <article class="fig-card" data-tilt>
+        <div class="fig-head">
+          <span class="fig-label">FIG. 06</span>
+          <div class="cube-scene"><div class="cube">
+            <div class="face f-front"></div><div class="face f-back"></div>
+            <div class="face f-right"></div><div class="face f-left"></div>
+            <div class="face f-top"></div><div class="face f-bottom"></div>
+          </div></div>
+        </div>
+        <h3>Doris Jalali UDF</h3>
+        <p>A user-defined function adding native Jalali (Persian) calendar support to Apache Doris — a gap the applicant identified and closed, later open-sourced.</p>
+        <div class="tags"><span>Java</span><span>Apache Doris</span><span>UDF</span></div>
+        <a class="fig-link" href="https://github.com/ildrm/doris-jalali-date" target="_blank" rel="noopener">View repository →</a>
+      </article>
+
+    </div>
+
+    <div class="repo-register" aria-labelledby="repo-register-title">
+      <div class="repo-register-head">
+        <div>
+          <h3 id="repo-register-title">Complete public repository register</h3>
+          <p class="repo-register-meta">GitHub REST API verification · 2026-08-02 · Alphabetical by full repository name</p>
+        </div>
+        <div class="repo-count-stamp">71 PUBLIC REPOSITORIES<br/>59 ORIGINAL · 12 FORKS</div>
+      </div>
+
+      <form class="repo-controls" id="repo-controls" role="search" aria-label="Filter repository register">
+        <div class="repo-control">
+          <label for="repo-search">Repository name</label>
+          <input id="repo-search" type="search" autocomplete="off" placeholder="Search all 71 repositories" />
+        </div>
+        <div class="repo-control">
+          <label for="repo-language">Primary language</label>
+          <select id="repo-language">
+            <option value="">All languages</option>
+            <option value="html">HTML</option>
+            <option value="java">Java</option>
+            <option value="javascript">JavaScript</option>
+            <option value="jupyter notebook">Jupyter Notebook</option>
+            <option value="php">PHP</option>
+            <option value="python">Python</option>
+            <option value="typescript">TypeScript</option>
+            <option value="not specified">Not specified</option>
+          </select>
+        </div>
+        <div class="repo-control">
+          <label for="repo-status">Repository status</label>
+          <select id="repo-status">
+            <option value="">Originals &amp; forks</option>
+            <option value="original">Original only</option>
+            <option value="fork">Forks only</option>
+          </select>
+        </div>
+      </form>
+
+      <p class="repo-result" id="repo-result" role="status" aria-live="polite">Showing all 71 repositories.</p>
+      <div class="repo-columns" aria-hidden="true"><span>No.</span><span>Repository</span><span>Language</span><span>Status</span></div>
+      <ol class="repo-list" id="repo-list">
+        <li class="repo-row" data-name="acf-persian-dropdown-calendar" data-language="php" data-status="original">
+          <span class="repo-index">01</span>
+          <a class="repo-name" href="https://github.com/ildrm/acf-persian-dropdown-calendar" target="_blank" rel="noopener">acf-persian-dropdown-calendar</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="apertureflow" data-language="typescript" data-status="original">
+          <span class="repo-index">02</span>
+          <a class="repo-name" href="https://github.com/ildrm/apertureflow" target="_blank" rel="noopener">apertureflow</a>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="atlas-rag-as-service" data-language="python" data-status="original">
+          <span class="repo-index">03</span>
+          <a class="repo-name" href="https://github.com/ildrm/atlas-rag-as-service" target="_blank" rel="noopener">atlas-rag-as-service</a>
+          <span class="repo-language">Python</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="aurelia-hospitality-hotel-management-system" data-language="typescript" data-status="original">
+          <span class="repo-index">04</span>
+          <a class="repo-name" href="https://github.com/ildrm/aurelia-hospitality-hotel-management-system" target="_blank" rel="noopener">aurelia-hospitality-hotel-management-system</a>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="awesome-n8n-templates" data-language="not specified" data-status="fork">
+          <span class="repo-index">05</span>
+          <a class="repo-name" href="https://github.com/ildrm/awesome-n8n-templates" target="_blank" rel="noopener">awesome-n8n-templates</a>
+          <span class="repo-language">Not specified</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="backfill-ga4-to-bigquery" data-language="jupyter notebook" data-status="fork">
+          <span class="repo-index">06</span>
+          <a class="repo-name" href="https://github.com/ildrm/Backfill-GA4-to-BigQuery" target="_blank" rel="noopener">Backfill-GA4-to-BigQuery</a>
+          <span class="repo-language">Jupyter Notebook</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="claude-skills" data-language="python" data-status="fork">
+          <span class="repo-index">07</span>
+          <a class="repo-name" href="https://github.com/ildrm/claude-skills" target="_blank" rel="noopener">claude-skills</a>
+          <span class="repo-language">Python</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="direction-route" data-language="not specified" data-status="fork">
+          <span class="repo-index">08</span>
+          <a class="repo-name" href="https://github.com/ildrm/direction-route" target="_blank" rel="noopener">direction-route</a>
+          <span class="repo-language">Not specified</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="doris-jalali-date" data-language="java" data-status="original">
+          <span class="repo-index">09</span>
+          <a class="repo-name" href="https://github.com/ildrm/doris-jalali-date" target="_blank" rel="noopener">doris-jalali-date</a>
+          <span class="repo-language">Java</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="external-request-manager-pro" data-language="php" data-status="fork">
+          <span class="repo-index">10</span>
+          <a class="repo-name" href="https://github.com/ildrm/external-request-manager-pro" target="_blank" rel="noopener">external-request-manager-pro</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="ga-wp-integration" data-language="php" data-status="original">
+          <span class="repo-index">11</span>
+          <a class="repo-name" href="https://github.com/ildrm/ga-wp-integration" target="_blank" rel="noopener">ga-wp-integration</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="geo-araz" data-language="not specified" data-status="fork">
+          <span class="repo-index">12</span>
+          <a class="repo-name" href="https://github.com/ildrm/geo-araz" target="_blank" rel="noopener">geo-araz</a>
+          <span class="repo-language">Not specified</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="google-book-writer" data-language="python" data-status="original">
+          <span class="repo-index">13</span>
+          <a class="repo-name" href="https://github.com/ildrm/google-book-writer" target="_blank" rel="noopener">google-book-writer</a>
+          <span class="repo-language">Python</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="ham-mahalleh" data-language="typescript" data-status="original">
+          <span class="repo-index">14</span>
+          <a class="repo-name" href="https://github.com/ildrm/ham-mahalleh" target="_blank" rel="noopener">ham-mahalleh</a>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="html-voice-to-voice" data-language="html" data-status="original">
+          <span class="repo-index">15</span>
+          <a class="repo-name" href="https://github.com/ildrm/html-voice-to-voice" target="_blank" rel="noopener">html-voice-to-voice</a>
+          <span class="repo-language">HTML</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="ildrm" data-language="not specified" data-status="original">
+          <span class="repo-index">16</span>
+          <a class="repo-name" href="https://github.com/ildrm/ildrm" target="_blank" rel="noopener">ildrm</a>
+          <span class="repo-language">Not specified</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="ildrm.github.io" data-language="html" data-status="original">
+          <span class="repo-index">17</span>
+          <a class="repo-name" href="https://github.com/ildrm/ildrm.github.io" target="_blank" rel="noopener">ildrm.github.io</a>
+          <span class="repo-language">HTML</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="interviewflow-lite-interview-scheduling-platform" data-language="typescript" data-status="original">
+          <span class="repo-index">18</span>
+          <a class="repo-name" href="https://github.com/ildrm/interviewflow-lite-interview-scheduling-platform" target="_blank" rel="noopener">interviewflow-lite-interview-scheduling-platform</a>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="laravel-crm" data-language="php" data-status="original">
+          <span class="repo-index">19</span>
+          <a class="repo-name" href="https://github.com/ildrm/laravel-crm" target="_blank" rel="noopener">laravel-crm</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="laravel-ffmpeg" data-language="not specified" data-status="fork">
+          <span class="repo-index">20</span>
+          <a class="repo-name" href="https://github.com/ildrm/laravel-ffmpeg" target="_blank" rel="noopener">laravel-ffmpeg</a>
+          <span class="repo-language">Not specified</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="laravel-organization-document-manager" data-language="javascript" data-status="original">
+          <span class="repo-index">21</span>
+          <a class="repo-name" href="https://github.com/ildrm/laravel-organization-document-manager" target="_blank" rel="noopener">laravel-organization-document-manager</a>
+          <span class="repo-language">JavaScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="logicommerce-logistic-ecommerce" data-language="typescript" data-status="original">
+          <span class="repo-index">22</span>
+          <a class="repo-name" href="https://github.com/ildrm/logicommerce-logistic-ecommerce" target="_blank" rel="noopener">logicommerce-logistic-ecommerce</a>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="md2pdf-plantuml" data-language="python" data-status="original">
+          <span class="repo-index">23</span>
+          <a class="repo-name" href="https://github.com/ildrm/md2pdf-plantuml" target="_blank" rel="noopener">md2pdf-plantuml</a>
+          <span class="repo-language">Python</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="microservice-js" data-language="javascript" data-status="original">
+          <span class="repo-index">24</span>
+          <a class="repo-name" href="https://github.com/ildrm/microservice-js" target="_blank" rel="noopener">microservice-js</a>
+          <span class="repo-language">JavaScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="mui-php-form-builder" data-language="php" data-status="original">
+          <span class="repo-index">25</span>
+          <a class="repo-name" href="https://github.com/ildrm/mui-php-form-builder" target="_blank" rel="noopener">mui-php-form-builder</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="multi-dropdown-select-v1" data-language="typescript" data-status="original">
+          <span class="repo-index">26</span>
+          <a class="repo-name" href="https://github.com/ildrm/multi-dropdown-select-v1" target="_blank" rel="noopener">multi-dropdown-select-v1</a>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="multi-dropdown-select-v2" data-language="typescript" data-status="original">
+          <span class="repo-index">27</span>
+          <a class="repo-name" href="https://github.com/ildrm/multi-dropdown-select-v2" target="_blank" rel="noopener">multi-dropdown-select-v2</a>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="n8n-chat-ui" data-language="html" data-status="original">
+          <span class="repo-index">28</span>
+          <a class="repo-name" href="https://github.com/ildrm/n8n-chat-ui" target="_blank" rel="noopener">n8n-chat-ui</a>
+          <span class="repo-language">HTML</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="n8n-free-templates" data-language="not specified" data-status="fork">
+          <span class="repo-index">29</span>
+          <a class="repo-name" href="https://github.com/ildrm/n8n-free-templates" target="_blank" rel="noopener">n8n-free-templates</a>
+          <span class="repo-language">Not specified</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="offline-sports-photo-analysis" data-language="python" data-status="original">
+          <span class="repo-index">30</span>
+          <a class="repo-name" href="https://github.com/ildrm/offline-sports-photo-analysis" target="_blank" rel="noopener">offline-sports-photo-analysis</a>
+          <span class="repo-language">Python</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="open-source-ai-interview-platform" data-language="python" data-status="original">
+          <span class="repo-index">31</span>
+          <a class="repo-name" href="https://github.com/ildrm/open-source-ai-interview-platform" target="_blank" rel="noopener">open-source-ai-interview-platform</a>
+          <span class="repo-language">Python</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="overreacted" data-language="typescript" data-status="original">
+          <span class="repo-index">32</span>
+          <a class="repo-name" href="https://github.com/ildrm/overreacted" target="_blank" rel="noopener">overreacted</a>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="persian-crypto-scraper" data-language="php" data-status="original">
+          <span class="repo-index">33</span>
+          <a class="repo-name" href="https://github.com/ildrm/persian-crypto-scraper" target="_blank" rel="noopener">persian-crypto-scraper</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="php-advanced-telegram-uploader-service" data-language="php" data-status="original">
+          <span class="repo-index">34</span>
+          <a class="repo-name" href="https://github.com/ildrm/php-advanced-telegram-uploader-service" target="_blank" rel="noopener">php-advanced-telegram-uploader-service</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="php-d3" data-language="html" data-status="original">
+          <span class="repo-index">35</span>
+          <a class="repo-name" href="https://github.com/ildrm/php-d3" target="_blank" rel="noopener">php-d3</a>
+          <span class="repo-language">HTML</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="php-jsfuck" data-language="php" data-status="original">
+          <span class="repo-index">36</span>
+          <a class="repo-name" href="https://github.com/ildrm/php-jsfuck" target="_blank" rel="noopener">php-jsfuck</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="php-science-class" data-language="php" data-status="original">
+          <span class="repo-index">37</span>
+          <a class="repo-name" href="https://github.com/ildrm/php-science-class" target="_blank" rel="noopener">php-science-class</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="php-security" data-language="php" data-status="original">
+          <span class="repo-index">38</span>
+          <a class="repo-name" href="https://github.com/ildrm/php-security" target="_blank" rel="noopener">php-security</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="php-simple-telegram-uploader-service" data-language="php" data-status="original">
+          <span class="repo-index">39</span>
+          <a class="repo-name" href="https://github.com/ildrm/php-simple-telegram-uploader-service" target="_blank" rel="noopener">php-simple-telegram-uploader-service</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="podflow-podcast-scrapper" data-language="php" data-status="original">
+          <span class="repo-index">40</span>
+          <a class="repo-name" href="https://github.com/ildrm/podflow-podcast-scrapper" target="_blank" rel="noopener">podflow-podcast-scrapper</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="prestashop-to-woocommerce" data-language="python" data-status="original">
+          <span class="repo-index">41</span>
+          <a class="repo-name" href="https://github.com/ildrm/PrestaShop-to-WooCommerce" target="_blank" rel="noopener">PrestaShop-to-WooCommerce</a>
+          <span class="repo-language">Python</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="react-divar" data-language="not specified" data-status="fork">
+          <span class="repo-index">42</span>
+          <a class="repo-name" href="https://github.com/ildrm/react-divar" target="_blank" rel="noopener">react-divar</a>
+          <span class="repo-language">Not specified</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="servex-php" data-language="php" data-status="original">
+          <span class="repo-index">43</span>
+          <a class="repo-name" href="https://github.com/ildrm/servex-php" target="_blank" rel="noopener">servex-php</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="servex-service" data-language="php" data-status="original">
+          <span class="repo-index">44</span>
+          <a class="repo-name" href="https://github.com/ildrm/servex-service" target="_blank" rel="noopener">servex-service</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="servex-storage" data-language="php" data-status="original">
+          <span class="repo-index">45</span>
+          <a class="repo-name" href="https://github.com/ildrm/servex-storage" target="_blank" rel="noopener">servex-storage</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="servex-warehouse" data-language="php" data-status="original">
+          <span class="repo-index">46</span>
+          <a class="repo-name" href="https://github.com/ildrm/servex-warehouse" target="_blank" rel="noopener">servex-warehouse</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="superset" data-language="typescript" data-status="fork">
+          <span class="repo-index">47</span>
+          <a class="repo-name" href="https://github.com/ildrm/superset" target="_blank" rel="noopener">superset</a>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="talentsphere-linkedin-clone" data-language="typescript" data-status="original">
+          <span class="repo-index">48</span>
+          <a class="repo-name" href="https://github.com/ildrm/talentsphere-linkedin-clone" target="_blank" rel="noopener">talentsphere-linkedin-clone</a>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="telegram-anonymous-message-bot" data-language="php" data-status="original">
+          <span class="repo-index">49</span>
+          <a class="repo-name" href="https://github.com/ildrm/telegram-anonymous-message-bot" target="_blank" rel="noopener">telegram-anonymous-message-bot</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="telegram-auction-platform" data-language="php" data-status="original">
+          <span class="repo-index">50</span>
+          <a class="repo-name" href="https://github.com/ildrm/telegram-auction-platform" target="_blank" rel="noopener">telegram-auction-platform</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="telegram-crypto-financial-bot" data-language="php" data-status="original">
+          <span class="repo-index">51</span>
+          <a class="repo-name" href="https://github.com/ildrm/telegram-crypto-financial-bot" target="_blank" rel="noopener">telegram-crypto-financial-bot</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="telegram-manage-channel-bot" data-language="php" data-status="original">
+          <span class="repo-index">52</span>
+          <a class="repo-name" href="https://github.com/ildrm/telegram-manage-channel-bot" target="_blank" rel="noopener">telegram-manage-channel-bot</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="telegram-manage-group-bot" data-language="php" data-status="original">
+          <span class="repo-index">53</span>
+          <a class="repo-name" href="https://github.com/ildrm/telegram-manage-group-bot" target="_blank" rel="noopener">telegram-manage-group-bot</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="telegram-poll-bot" data-language="php" data-status="original">
+          <span class="repo-index">54</span>
+          <a class="repo-name" href="https://github.com/ildrm/telegram-poll-bot" target="_blank" rel="noopener">telegram-poll-bot</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="telegram-send-message-bot" data-language="php" data-status="original">
+          <span class="repo-index">55</span>
+          <a class="repo-name" href="https://github.com/ildrm/telegram-send-message-bot" target="_blank" rel="noopener">telegram-send-message-bot</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="telegram-ssh" data-language="php" data-status="original">
+          <span class="repo-index">56</span>
+          <a class="repo-name" href="https://github.com/ildrm/telegram-ssh" target="_blank" rel="noopener">telegram-ssh</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="telegram-woocommerce-bot" data-language="php" data-status="original">
+          <span class="repo-index">57</span>
+          <a class="repo-name" href="https://github.com/ildrm/telegram-woocommerce-bot" target="_blank" rel="noopener">telegram-woocommerce-bot</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="telegram-wordpress-bot" data-language="php" data-status="original">
+          <span class="repo-index">58</span>
+          <a class="repo-name" href="https://github.com/ildrm/telegram-wordpress-bot" target="_blank" rel="noopener">telegram-wordpress-bot</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="test-timetracker" data-language="php" data-status="original">
+          <span class="repo-index">59</span>
+          <a class="repo-name" href="https://github.com/ildrm/test-timetracker" target="_blank" rel="noopener">test-timetracker</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="url-shortener" data-language="not specified" data-status="fork">
+          <span class="repo-index">60</span>
+          <a class="repo-name" href="https://github.com/ildrm/URL-shortener" target="_blank" rel="noopener">URL-shortener</a>
+          <span class="repo-language">Not specified</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="voice-chat-openai" data-language="javascript" data-status="original">
+          <span class="repo-index">61</span>
+          <a class="repo-name" href="https://github.com/ildrm/voice-chat-openai" target="_blank" rel="noopener">voice-chat-openai</a>
+          <span class="repo-language">JavaScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wc-message-notifier" data-language="php" data-status="original">
+          <span class="repo-index">62</span>
+          <a class="repo-name" href="https://github.com/ildrm/wc-message-notifier" target="_blank" rel="noopener">wc-message-notifier</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wc-moadian-connector" data-language="php" data-status="original">
+          <span class="repo-index">63</span>
+          <a class="repo-name" href="https://github.com/ildrm/wc-moadian-connector" target="_blank" rel="noopener">wc-moadian-connector</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="windows-drag-and-drop" data-language="not specified" data-status="fork">
+          <span class="repo-index">64</span>
+          <a class="repo-name" href="https://github.com/ildrm/windows-drag-and-drop" target="_blank" rel="noopener">windows-drag-and-drop</a>
+          <span class="repo-language">Not specified</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="woocommerce-disable-gateway-by-coupon" data-language="php" data-status="original">
+          <span class="repo-index">65</span>
+          <a class="repo-name" href="https://github.com/ildrm/woocommerce-disable-gateway-by-coupon" target="_blank" rel="noopener">woocommerce-disable-gateway-by-coupon</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wordpress-helanak-kids-theme" data-language="php" data-status="original">
+          <span class="repo-index">66</span>
+          <a class="repo-name" href="https://github.com/ildrm/wordpress-helanak-kids-theme" target="_blank" rel="noopener">wordpress-helanak-kids-theme</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wordpress-otp-login-pro" data-language="php" data-status="original">
+          <span class="repo-index">67</span>
+          <a class="repo-name" href="https://github.com/ildrm/wordpress-otp-login-pro" target="_blank" rel="noopener">wordpress-otp-login-pro</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wp-msgway-sms" data-language="php" data-status="original">
+          <span class="repo-index">68</span>
+          <a class="repo-name" href="https://github.com/ildrm/wp-msgway-sms" target="_blank" rel="noopener">wp-msgway-sms</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wp-telegram-cloud-storage" data-language="php" data-status="original">
+          <span class="repo-index">69</span>
+          <a class="repo-name" href="https://github.com/ildrm/wp-telegram-cloud-storage" target="_blank" rel="noopener">wp-telegram-cloud-storage</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wp-ultimate-map-plugin" data-language="php" data-status="original">
+          <span class="repo-index">70</span>
+          <a class="repo-name" href="https://github.com/ildrm/wp-ultimate-map-plugin" target="_blank" rel="noopener">wp-ultimate-map-plugin</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wp-workflow-pipeline" data-language="php" data-status="original">
+          <span class="repo-index">71</span>
+          <a class="repo-name" href="https://github.com/ildrm/wp-workflow-pipeline" target="_blank" rel="noopener">wp-workflow-pipeline</a>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 0004 PRIOR ART -->
+  <section class="sheet" id="sheet-04" data-sheet="04">
+    <span class="clause">[0004]</span>
+    <h2>Prior Art — Professional Record</h2>
+    <div class="timeline">
+      <div class="tl-item">
+        <span class="tl-date">2025</span>
+        <h3>Data Engineer — Eghamat24</h3>
+        <p>Configured Apache Doris, NiFi, and Superset pipelines in Docker; developed and open-sourced a Jalali-calendar UDF for Apache Doris; built chatbot automation with n8n and Ollama.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-date">2024 – 2025</span>
+        <h3>Senior Developer — InoFac (White Designers Holding)</h3>
+        <p>Built the React admin dashboard for Minerio, a blockchain-based game, integrating a NestJS backend, Telegram bot systems, and early LLM automation.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-date">2024 – 2025</span>
+        <h3>Senior Web Developer — Eghamat24</h3>
+        <p>Developed WordPress and Laravel features for a tourism platform, including SMS/Telegram integrations and B2B WooCommerce workflows.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-date">2023 – 2024</span>
+        <h3>Senior Technical Support Lead — CheetPost (Golrang Industrial Group)</h3>
+        <p>Owned release-readiness — issue triage, bug-fix validation, and final review — while assigning and tracking development work across the team.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-date">2019 – 2021</span>
+        <h3>Senior WordPress Developer — Realtyna (United States, remote contract)</h3>
+        <p>Two years as a remote contractor for a US real estate technology company — plugin development and CRM integrations sustained across time zones.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-date">2019 – 2020</span>
+        <h3>Senior Web Developer — 32Negin</h3>
+        <p>Built both client-facing and admin interfaces in React for a Wikipedia-style content platform, integrated with GraphQL and MongoDB.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-date">2012 – 2019</span>
+        <h3>Earlier Engagements</h3>
+        <p>Pars White Yas, Hosh Pazhooh Khorasan, CAMA (Cyprus), RASEF, and Arzesh Network — PHP/Laravel systems, WordPress platforms, and Node.js APIs across five additional engagements.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 0005 EDUCATION -->
+  <section class="sheet" id="sheet-05" data-sheet="05">
+    <span class="clause">[0005]</span>
+    <h2>Education</h2>
+    <div class="edu-item">
+      <span class="tl-date">2016 – 2022</span>
+      <h3>M.S. Software Engineering — Islamic Azad University of Mashhad</h3>
+      <p>Research in graph problems in social networks, decision-support systems, and search-engine content indexing; developed a method for generating backend APIs from drag-and-drop modeled entities.</p>
+    </div>
+    <div class="edu-item">
+      <span class="tl-date">2009 – 2012</span>
+      <h3>B.S. Computer Hardware Engineering — Khorasan Institution of Higher Education</h3>
+    </div>
+    <div class="edu-item">
+      <span class="tl-date">2007 – 2009</span>
+      <h3>A.S. Computer Hardware — Khorasan Institution of Higher Education</h3>
+    </div>
+  </section>
+
+  <!-- 0006 PUBLICATIONS -->
+  <section class="sheet" id="sheet-06" data-sheet="06">
+    <span class="clause">[0006]</span>
+    <h2>Publications</h2>
+    <ul class="pub-list">
+      <li><span class="pub-no">01</span>Building Modern Enterprise Systems: An Implementation Guide to PBC Architecture</li>
+      <li><span class="pub-no">02</span>Laravel at Lightspeed: High-Performance Applications with RoadRunner</li>
+      <li><span class="pub-no">03</span>Mastering MySQL Performance: Optimization Techniques for Modern Applications and CMS Platforms</li>
+    </ul>
+  </section>
+
+  <!-- 0007 SEAL / CONTACT -->
+  <section class="sheet seal-sheet" id="sheet-07" data-sheet="07">
+    <span class="clause">[0007]</span>
+    <h2>Filing &amp; Contact</h2>
+    <canvas id="seal-canvas"></canvas>
+    <div class="signature-block">
+      <p>Filed electronically. No signature required.</p>
+      <div class="sig-line"></div>
+      <div class="sig-name">Shahin Ilderemi Lotfabad</div>
+      <div class="contact-links">
+        <a href="mailto:ildrm@hotmail.com">ildrm@hotmail.com</a>
+        <a href="https://github.com/ildrm" target="_blank" rel="noopener">github.com/ildrm</a>
+        <a href="https://linkedin.com/in/ildrm" target="_blank" rel="noopener">linkedin.com/in/ildrm</a>
+      </div>
+      <p>Mashhad, Iran — open to remote work and relocation</p>
+      <p id="filed-date"></p>
+    </div>
+  </section>
+
+  <footer class="foot">END OF DOSSIER · SIL-2026 · ALL CLAUSES FILED</footer>
+
+  <!-- reg marks injected + 3D reveal + telemetry + progressive filtering/tilt -->
+  <script>
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    document.querySelectorAll('.sheet').forEach(function(s){
+      ['tl','tr','bl','br'].forEach(function(pos){
+        var m = document.createElement('span');
+        m.className = 'reg ' + pos;
+        s.appendChild(m);
+      });
+    });
+
+    if (!reduceMotion && 'IntersectionObserver' in window){
+      var sheets = document.querySelectorAll('.sheet');
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+          if (e.isIntersecting){
+            e.target.classList.add('visible');
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.01, rootMargin:'0px 0px -4% 0px' });
+      sheets.forEach(function(s){
+        s.classList.add('reveal-ready');
+        io.observe(s);
+      });
+    }
+
+    function pad(n){ return String(n).padStart(2,'0'); }
+    function updateTelemetry(){
+      var now = new Date();
+      var scrollMax = document.body.scrollHeight - window.innerHeight;
+      var pct = scrollMax > 0 ? Math.min(100, Math.round((window.scrollY / scrollMax) * 100)) : 0;
+      var el = document.getElementById('telemetry');
+      if (el) el.innerHTML = 'LOCAL ' + pad(now.getHours()) + ':' + pad(now.getMinutes()) + ':' + pad(now.getSeconds()) + '<br/>SCROLL ' + String(pct).padStart(3,'0') + '%';
+    }
+    setInterval(updateTelemetry, 1000);
+    window.addEventListener('scroll', updateTelemetry, { passive:true });
+    updateTelemetry();
+
+    var filedEl = document.getElementById('filed-date');
+    if (filedEl){
+      var d = new Date();
+      var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+      filedEl.textContent = 'Filed on ' + d.getDate() + ' ' + months[d.getMonth()] + ' ' + d.getFullYear();
+    }
+
+    document.querySelectorAll('[data-tilt]').forEach(function(card){
+      if (reduceMotion || !window.matchMedia('(pointer:fine)').matches) return;
+      card.addEventListener('pointermove', function(e){
+        var r = card.getBoundingClientRect();
+        var px = (e.clientX - r.left) / r.width - 0.5;
+        var py = (e.clientY - r.top) / r.height - 0.5;
+        card.style.transform = 'perspective(700px) rotateX(' + (-py*8).toFixed(2) + 'deg) rotateY(' + (px*10).toFixed(2) + 'deg) translateZ(4px)';
+      });
+      card.addEventListener('pointerleave', function(){ card.style.transform = ''; });
+    });
+
+    var portrait = document.querySelector('[data-portrait-tilt]');
+    if (portrait && !reduceMotion && window.matchMedia('(pointer:fine)').matches){
+      portrait.addEventListener('pointermove', function(e){
+        var r = portrait.getBoundingClientRect();
+        var px = (e.clientX - r.left) / r.width - 0.5;
+        var py = (e.clientY - r.top) / r.height - 0.5;
+        portrait.style.transform = 'perspective(1100px) rotateX(' + (-py*7).toFixed(2) + 'deg) rotateY(' + (px*9-2).toFixed(2) + 'deg) translateZ(10px)';
+      });
+      portrait.addEventListener('pointerleave', function(){ portrait.style.transform = ''; });
+    }
+
+    var repoSearch = document.getElementById('repo-search');
+    var repoLanguage = document.getElementById('repo-language');
+    var repoStatus = document.getElementById('repo-status');
+    var repoResult = document.getElementById('repo-result');
+    var repoRows = Array.from(document.querySelectorAll('.repo-row'));
+    function filterRepositories(){
+      var query = repoSearch ? repoSearch.value.trim().toLowerCase() : '';
+      var language = repoLanguage ? repoLanguage.value : '';
+      var status = repoStatus ? repoStatus.value : '';
+      var shown = 0;
+      repoRows.forEach(function(row){
+        var matches = (!query || row.dataset.name.indexOf(query) !== -1) &&
+          (!language || row.dataset.language === language) &&
+          (!status || row.dataset.status === status);
+        row.hidden = !matches;
+        if (matches) shown++;
+      });
+      if (repoResult){
+        repoResult.textContent = shown === 71 ? 'Showing all 71 repositories.' : 'Showing ' + shown + ' of 71 repositories.';
+      }
+    }
+    if (repoSearch) repoSearch.addEventListener('input', filterRepositories);
+    if (repoLanguage) repoLanguage.addEventListener('change', filterRepositories);
+    if (repoStatus) repoStatus.addEventListener('change', filterRepositories);
+    var repoControls = document.getElementById('repo-controls');
+    if (repoControls) repoControls.addEventListener('submit', function(e){ e.preventDefault(); });
+  </script>
+
+  <!-- three.js hero lattice -->
+  <script>
+  (function(){
+    var canvas = document.getElementById('hero-canvas');
+    var hero = document.getElementById('hero');
+    if (!canvas || typeof THREE === 'undefined') return;
+
+    var renderer;
+    try {
+      renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias:true, alpha:true });
+    } catch (error) {
+      canvas.hidden = true;
+      return;
+    }
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+
+    var scene = new THREE.Scene();
+    var camera = new THREE.PerspectiveCamera(45, 1, 0.1, 100);
+    camera.position.set(0, 0, 9);
+
+    var group = new THREE.Group();
+    scene.add(group);
+
+    var coreGeo = new THREE.IcosahedronGeometry(0.5, 1);
+    var coreMat = new THREE.MeshBasicMaterial({ color: 0xB78846, wireframe:true });
+    var core = new THREE.Mesh(coreGeo, coreMat);
+    group.add(core);
+
+    var skillsFull = ["PHP","Laravel","Node.js","NestJS","React","Next.js","GraphQL","Apache Doris","Apache NiFi","Apache Flink","BigQuery","Docker","LLM / RAG","n8n","Ollama","TypeScript","MongoDB","MySQL","Redis","WordPress"];
+    var skillsShort = ["PHP","Laravel","Node.js","React","Next.js","Apache Doris","LLM / RAG","TypeScript","MySQL","Docker"];
+    var skills = (window.innerWidth < 700) ? skillsShort : skillsFull;
+
+    var nodeMat = new THREE.MeshBasicMaterial({ color: 0x8FD3FF });
+    var nodeGeo = new THREE.SphereGeometry(0.07, 8, 8);
+    var lineMat = new THREE.LineBasicMaterial({ color: 0x2E5E86, transparent:true, opacity:0.55 });
+    var radius = 3.4;
+    var labels = [];
+
+    skills.forEach(function(name, i){
+      var y = 1 - (i / (skills.length - 1)) * 2;
+      var r = Math.sqrt(Math.max(0, 1 - y*y));
+      var theta = Math.PI * (3 - Math.sqrt(5)) * i;
+      var x = Math.cos(theta) * r;
+      var z = Math.sin(theta) * r;
+      var pos = new THREE.Vector3(x*radius, y*radius, z*radius);
+
+      var node = new THREE.Mesh(nodeGeo, nodeMat);
+      node.position.copy(pos);
+      group.add(node);
+
+      var pts = [new THREE.Vector3(0,0,0), pos];
+      var geo = new THREE.BufferGeometry().setFromPoints(pts);
+      var line = new THREE.Line(geo, lineMat);
+      group.add(line);
+
+      var el = document.createElement('div');
+      el.className = 'node-label';
+      el.textContent = name;
+      hero.appendChild(el);
+      labels.push({ el: el, pos: pos });
+    });
+
+    var targetRotX = 0, targetRotY = 0, autoY = 0;
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && window.matchMedia('(pointer:fine)').matches){
+      window.addEventListener('pointermove', function(e){
+        var nx = (e.clientX / window.innerWidth) * 2 - 1;
+        var ny = (e.clientY / window.innerHeight) * 2 - 1;
+        targetRotY = nx * 0.4;
+        targetRotX = ny * 0.2;
+      }, { passive:true });
+    }
+
+    function resize(){
+      var w = canvas.clientWidth || hero.clientWidth;
+      var h = canvas.clientHeight || hero.clientHeight;
+      renderer.setSize(w, h, false);
+      camera.aspect = w / h;
+      camera.updateProjectionMatrix();
+    }
+
+    function updateLabels(){
+      var w = canvas.clientWidth, h = canvas.clientHeight;
+      labels.forEach(function(item){
+        var v = item.pos.clone();
+        group.localToWorld(v);
+        v.project(camera);
+        var x = (v.x * 0.5 + 0.5) * w;
+        var y = (1 - (v.y * 0.5 + 0.5)) * h;
+        item.el.style.transform = 'translate(calc(' + x.toFixed(1) + 'px - 50%), calc(' + y.toFixed(1) + 'px - 50%))';
+        var behind = v.z > 1;
+        item.el.style.opacity = behind ? 0.12 : Math.max(0.25, 1 - v.z * 0.55);
+      });
+    }
+
+    function animate(){
+      autoY += 0.0018;
+      group.rotation.y = autoY + targetRotY * 0.3;
+      group.rotation.x += (targetRotX * 0.3 - group.rotation.x) * 0.05;
+      core.rotation.y -= 0.01;
+      core.rotation.x += 0.006;
+      renderer.render(scene, camera);
+      updateLabels();
+      requestAnimationFrame(animate);
+    }
+
+    resize();
+    window.addEventListener('resize', resize);
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+      renderer.render(scene, camera);
+      updateLabels();
+    } else {
+      animate();
+    }
+  })();
+  </script>
+
+  <!-- three.js footer seal -->
+  <script>
+  (function(){
+    var canvas = document.getElementById('seal-canvas');
+    if (!canvas || typeof THREE === 'undefined') return;
+
+    var renderer;
+    try {
+      renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias:true, alpha:true });
+    } catch (error) {
+      canvas.hidden = true;
+      return;
+    }
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+
+    var scene = new THREE.Scene();
+    var camera = new THREE.PerspectiveCamera(40, 1, 0.1, 50);
+    camera.position.z = 5;
+
+    var group = new THREE.Group();
+    var ringGeo = new THREE.TorusGeometry(1.35, 0.035, 8, 64);
+    var ringMat = new THREE.MeshBasicMaterial({ color: 0xB78846 });
+    group.add(new THREE.Mesh(ringGeo, ringMat));
+
+    var innerGeo = new THREE.IcosahedronGeometry(0.85, 0);
+    var innerMat = new THREE.MeshBasicMaterial({ color: 0x8FD3FF, wireframe:true });
+    var inner = new THREE.Mesh(innerGeo, innerMat);
+    group.add(inner);
+
+    scene.add(group);
+
+    function resize(){
+      var s = canvas.clientWidth || 170;
+      renderer.setSize(s, canvas.clientHeight || 170, false);
+      camera.aspect = 1;
+      camera.updateProjectionMatrix();
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function animate(){
+      group.rotation.y += 0.006;
+      inner.rotation.x -= 0.01;
+      renderer.render(scene, camera);
+      requestAnimationFrame(animate);
+    }
+    if (reduceMotion) {
+      renderer.render(scene, camera);
+    } else {
+      animate();
+    }
+  })();
+  </script>
+
 </body>
 </html>
