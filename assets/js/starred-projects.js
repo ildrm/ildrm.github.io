@@ -6,6 +6,7 @@
   if (!grid) return;
 
   var username = grid.dataset.githubUser || 'ildrm';
+  var repositoryFilter = grid.dataset.starredFilter || 'all';
   var apiUrl = 'https://api.github.com/users/' + encodeURIComponent(username) + '/starred';
 
   function formatCount(value){
@@ -26,9 +27,47 @@
     parent.appendChild(scene);
   }
 
+  function getOrigin(repository){
+    var owner = repository.owner && repository.owner.login ? repository.owner.login : '';
+    var isMine = owner.toLowerCase() === username.toLowerCase();
+    if (isMine && repository.fork) return { label:'MY FORK', kind:'mine-fork' };
+    if (isMine) return { label:'MY PROJECT', kind:'mine' };
+    if (repository.fork) return { label:'FORKED PROJECT', kind:'fork' };
+    return { label:'EXTERNAL PROJECT', kind:'external' };
+  }
+
+  function createOriginBadge(origin){
+    var badge = document.createElement('span');
+    badge.className = 'repo-origin';
+    badge.dataset.origin = origin.kind;
+    badge.textContent = origin.label;
+    return badge;
+  }
+
+  function labelFallbackCards(){
+    Array.from(grid.querySelectorAll('.fig-card')).forEach(function(card){
+      var head = card.querySelector('.fig-head');
+      var label = head && head.querySelector('.fig-label');
+      var link = card.querySelector('.fig-link');
+      if (!head || !label || !link || head.querySelector('.repo-origin')) return;
+
+      var annotations = document.createElement('div');
+      var owner = '';
+      try { owner = new URL(link.href).pathname.split('/')[1] || ''; } catch (error) { owner = ''; }
+      annotations.className = 'fig-annotations';
+      annotations.appendChild(label);
+      annotations.appendChild(createOriginBadge({
+        label:owner.toLowerCase() === username.toLowerCase() ? 'MY PROJECT' : 'EXTERNAL PROJECT',
+        kind:owner.toLowerCase() === username.toLowerCase() ? 'mine' : 'external'
+      }));
+      head.insertBefore(annotations, head.firstChild);
+    });
+  }
+
   function createCard(repository, index){
     var card = document.createElement('article');
     var head = document.createElement('div');
+    var annotations = document.createElement('div');
     var label = document.createElement('span');
     var title = document.createElement('h3');
     var description = document.createElement('p');
@@ -41,7 +80,10 @@
     head.className = 'fig-head';
     label.className = 'fig-label';
     label.textContent = 'STAR ' + String(index + 1).padStart(2, '0');
-    head.appendChild(label);
+    annotations.className = 'fig-annotations';
+    annotations.appendChild(label);
+    annotations.appendChild(createOriginBadge(getOrigin(repository)));
+    head.appendChild(annotations);
     addCube(head);
 
     title.textContent = repository.name;
@@ -73,7 +115,11 @@
       fragment.appendChild(createCard(repository, index));
     });
     grid.replaceChildren(fragment);
-    if (status) status.textContent = repositories.length + ' starred repositories synced from GitHub.';
+    if (status){
+      status.textContent = repositoryFilter === 'owned'
+        ? repositories.length + ' projects owned and starred by ' + username + '.'
+        : repositories.length + ' starred repositories synced from GitHub.';
+    }
     if (window.ScrollTrigger) window.ScrollTrigger.refresh();
   }
 
@@ -100,13 +146,24 @@
     return repositories;
   }
 
+  labelFallbackCards();
+
   fetchStarredRepositories()
     .then(function(repositories){
+      if (repositoryFilter === 'owned'){
+        repositories = repositories.filter(function(repository){
+          return repository.owner && repository.owner.login && repository.owner.login.toLowerCase() === username.toLowerCase();
+        });
+      }
       if (!repositories.length) throw new Error('No public starred repositories were returned');
       renderRepositories(repositories);
     })
     .catch(function(error){
-      if (status) status.textContent = 'GitHub is temporarily unavailable. Showing the default selection.';
+      if (status){
+        status.textContent = grid.children.length
+          ? 'GitHub is temporarily unavailable. Showing the default selection.'
+          : 'GitHub is temporarily unavailable. Starred projects could not be loaded.';
+      }
       console.warn('Unable to load starred repositories:', error);
     });
 })();

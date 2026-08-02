@@ -99,7 +99,11 @@ main{position:relative;z-index:3}
   .fig-card:hover{border-color:var(--cyan);box-shadow:0 30px 80px rgba(0,0,0,.45),0 0 45px rgba(120,232,255,.08)}
   .fig-card:hover::before{transform:translateX(100%)}
   .fig-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:54px}
+  .fig-annotations{display:grid;justify-items:start;gap:8px}
   .fig-label{color:var(--orange);font:500 9px var(--mono);letter-spacing:.14em}
+  .repo-origin{padding:4px 6px;border:1px solid rgba(120,232,255,.3);color:var(--cyan);font:500 8px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase}
+  .repo-origin[data-origin="mine"]{border-color:rgba(217,255,99,.45);color:var(--acid)}
+  .repo-origin[data-origin="mine-fork"],.repo-origin[data-origin="fork"]{border-color:rgba(255,119,92,.48);color:var(--orange)}
   .fig-card h3{margin:0 0 12px;color:var(--bone);font:600 25px/1.05 var(--display);letter-spacing:-.025em}
   .fig-card p{margin:0 0 22px;color:var(--bone-dim);font:13px/1.65 var(--display)}
   .tags{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 25px}
@@ -228,12 +232,12 @@ main{position:relative;z-index:3}
 .page-main .sheet:first-of-type{margin-top:4vh}
 .home-preview{width:min(1180px,calc(100% - 72px));margin:clamp(100px,18vh,190px) auto}
 .home-preview .fig-grid{margin-bottom:25px}
-.home-preview .fig-card{display:flex;flex-direction:column;grid-column:span 4;clip-path:none}
-.home-preview .fig-card:nth-child(n){transform:none}
-.home-preview .fig-card .tags{margin-top:auto}
+.starred-grid .fig-card{display:flex;flex-direction:column;grid-column:span 4;clip-path:none}
+.starred-grid .fig-card:nth-child(n){transform:none}
+.starred-grid .fig-card .tags{margin-top:auto}
 .starred-status{margin:20px 0 0;color:var(--cyan);font:500 10px/1.5 var(--mono);text-transform:uppercase}
 .starred-card h3{overflow-wrap:anywhere}
-@media(max-width:1050px){.home-preview .fig-card{grid-column:span 6}}
+@media(max-width:1050px){.starred-grid .fig-card{grid-column:span 6}}
 .projects-main #sheet-03{margin-top:3vh}
 .projects-main .repo-list{max-height:720px}
 .experience-main .timeline{transform-style:preserve-3d}
