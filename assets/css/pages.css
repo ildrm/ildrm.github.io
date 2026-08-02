@@ -146,6 +146,11 @@ main{position:relative;z-index:3}
   .tl-date{color:var(--orange);font:500 9px var(--mono);letter-spacing:.12em}
   .tl-item h3{margin:18px 0 10px;color:var(--bone);font:600 18px/1.25 var(--display)}
   .tl-item p{margin:0;color:var(--bone-dim);font:12px/1.65 var(--display)}
+  .tl-item .tl-meta{color:var(--cyan);font:500 9px/1.5 var(--mono);letter-spacing:.08em;text-transform:uppercase}
+  .tl-details{margin:18px 0 0;padding:0 0 0 17px;color:var(--bone-dim);font:12px/1.65 var(--display)}
+  .tl-details li+li{margin-top:6px}
+  .tl-item .tl-tech{margin-top:20px;padding-top:14px;border-top:1px solid rgba(120,232,255,.13);color:var(--steel);font:9px/1.65 var(--mono)}
+  .tl-tech strong{display:block;margin-bottom:5px;color:var(--acid);font-weight:500;letter-spacing:.1em;text-transform:uppercase}
   .edu-item{position:relative;margin:0;padding:26px 0;border-top:1px solid rgba(120,232,255,.16)}
   .edu-item h3{margin:9px 0;color:var(--bone);font:600 19px/1.35 var(--display)}
   .edu-item p{margin:0;color:var(--bone-dim);font:12px/1.7 var(--display)}
