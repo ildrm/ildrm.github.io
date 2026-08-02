@@ -16,6 +16,7 @@
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script defer src="assets/js/site.js"></script>
   <script defer src="assets/js/scene.js"></script>
+  <script defer src="assets/js/starred-projects.js"></script>
 </head>
 <body data-page="home">
   <a class="skip-link" href="#main-content">Skip to portfolio content</a>
@@ -107,8 +108,9 @@
     <section class="sheet home-preview" id="selected-work" data-sheet="03">
       <span class="clause">[0003]</span>
       <h2>Selected works</h2>
-      <p class="lede">A concise window into a seventy-one-repository body of work spanning commerce, logistics, secure automation, data systems, and applied AI.</p>
-      <div class="fig-grid">
+      <p class="lede">A live collection of the public repositories I have starred on GitHub, ordered by the date they were added.</p>
+      <p class="starred-status" id="starred-status" role="status" aria-live="polite">Loading starred repositories from GitHub...</p>
+      <div class="fig-grid" id="starred-projects" data-github-user="ildrm">
 <article class="fig-card" data-tilt>
         <div class="fig-head">
           <span class="fig-label">FIG. 01</span>
@@ -152,7 +154,7 @@
         <a class="fig-link" href="https://github.com/ildrm/telegram-ssh" target="_blank" rel="noopener">View repository →</a>
       </article>
       </div>
-      <a class="page-link" href="projects.html">Enter the complete repository vault</a>
+      <a class="page-link" href="https://github.com/ildrm?tab=stars" target="_blank" rel="noopener">View starred repositories on GitHub</a>
     </section>
   </main>
   <footer class="foot">

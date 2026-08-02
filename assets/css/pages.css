@@ -226,6 +226,8 @@ main{position:relative;z-index:3}
 .home-preview{width:min(1180px,calc(100% - 72px));margin:clamp(100px,18vh,190px) auto}
 .home-preview .fig-grid{margin-bottom:25px}
 .home-preview .fig-card{grid-column:span 4}
+.starred-status{margin:20px 0 0;color:var(--cyan);font:500 10px/1.5 var(--mono);text-transform:uppercase}
+.starred-card h3{overflow-wrap:anywhere}
 .projects-main #sheet-03{margin-top:3vh}
 .projects-main .repo-list{max-height:720px}
 .experience-main .timeline{transform-style:preserve-3d}
