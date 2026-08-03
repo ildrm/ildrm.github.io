@@ -1,0 +1,37 @@
+name: Refresh starred repositories
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 */6 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-starred-repositories
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the site
+        uses: actions/checkout@v7
+
+      - name: Refresh the repository snapshot
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/update-starred-repositories.mjs
+
+      - name: Commit an updated snapshot
+        run: |
+          git add assets/data/starred-repositories.json
+          if git diff --cached --quiet; then
+            echo "The snapshot is already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: refresh starred repositories"
+          git push

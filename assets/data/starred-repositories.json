@@ -1,0 +1,918 @@
+{
+  "username": "ildrm",
+  "generated_at": "2026-08-03T15:14:33.557Z",
+  "repositories": [
+    {
+      "name": "wordpress-develop",
+      "full_name": "WordPress/wordpress-develop",
+      "html_url": "https://github.com/WordPress/wordpress-develop",
+      "description": "WordPress Develop, Git-ified. Synced from git://develop.git.wordpress.org/, including branches and tags! This repository is just a mirror of the WordPress subversion repository. Please include a link to a pre-existing ticket on https://core.trac.wordpress.org/ with every pull request.",
+      "fork": false,
+      "owner": {
+        "login": "WordPress"
+      },
+      "language": "PHP",
+      "stargazers_count": 3395
+    },
+    {
+      "name": "jcode",
+      "full_name": "webtekdigitalai-tech/jcode",
+      "html_url": "https://github.com/webtekdigitalai-tech/jcode",
+      "description": "The most RAM effiecent harness",
+      "fork": true,
+      "owner": {
+        "login": "webtekdigitalai-tech"
+      },
+      "language": null,
+      "stargazers_count": 3
+    },
+    {
+      "name": "wc-moadian-connector",
+      "full_name": "ildrm/wc-moadian-connector",
+      "html_url": "https://github.com/ildrm/wc-moadian-connector",
+      "description": "اتصال فروشگاه ووکامرس به سامانه مودیان مالیاتی ایران",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "PHP",
+      "stargazers_count": 4
+    },
+    {
+      "name": "geo-araz",
+      "full_name": "arazshah/geo-araz",
+      "html_url": "https://github.com/arazshah/geo-araz",
+      "description": null,
+      "fork": false,
+      "owner": {
+        "login": "arazshah"
+      },
+      "language": "JavaScript",
+      "stargazers_count": 6
+    },
+    {
+      "name": "unlim-cloud",
+      "full_name": "inulute/unlim-cloud",
+      "html_url": "https://github.com/inulute/unlim-cloud",
+      "description": "UnlimCloud provides unlimited cloud storage for your files, utilizing Telegram as the storage solution. Simply log in using your Telegram ID, and you are good to go.",
+      "fork": false,
+      "owner": {
+        "login": "inulute"
+      },
+      "language": "HTML",
+      "stargazers_count": 975
+    },
+    {
+      "name": "offline-sports-photo-analysis",
+      "full_name": "ildrm/offline-sports-photo-analysis",
+      "html_url": "https://github.com/ildrm/offline-sports-photo-analysis",
+      "description": "Offline open-source Python toolkit for soccer and sports photo analysis. Detect players, balls, referees, poses, faces, apparent emotions, blur, OCR, depth, EXIF metadata and spatial relationships using local official or community models. Generates annotated images, JSON data and searchable HTML reports—no cloud APIs.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "Python",
+      "stargazers_count": 1
+    },
+    {
+      "name": "aurelia-hospitality-hotel-management-system",
+      "full_name": "ildrm/aurelia-hospitality-hotel-management-system",
+      "html_url": "https://github.com/ildrm/aurelia-hospitality-hotel-management-system",
+      "description": "Open-source Hotel Management System (PMS) built with Laravel and FilamentPHP. Features hotel reservations, room management, bookings, guests, pricing, invoices, housekeeping, staff management, reports, multi-property support, REST API, and modern admin dashboard. Ideal for hotels, resorts, hostels, and hospitality software.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "TypeScript",
+      "stargazers_count": 1
+    },
+    {
+      "name": "telegram-auction-platform",
+      "full_name": "ildrm/telegram-auction-platform",
+      "html_url": "https://github.com/ildrm/telegram-auction-platform",
+      "description": "Telegram auction bot built for live bidding, auction automation, participant management, real-time notifications, and seamless Telegram Bot API integration. Ideal for online marketplaces, e-commerce, digital communities, and developers building auction platforms.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "PHP",
+      "stargazers_count": 1
+    },
+    {
+      "name": "open-source-ai-interview-platform",
+      "full_name": "ildrm/open-source-ai-interview-platform",
+      "html_url": "https://github.com/ildrm/open-source-ai-interview-platform",
+      "description": "Open-source, self-hosted AI interview platform for human-reviewed hiring workflows. Includes job templates, candidate invitations, consent and device checks, live interview rooms, transcription, evidence-based scoring, reviewer approval, audit logs, and role-based access. Built with React, FastAPI, Whisper, Llama, LiveKit, Docker, and Kubernetes.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "Python",
+      "stargazers_count": 1
+    },
+    {
+      "name": "atlas-rag-as-service",
+      "full_name": "ildrm/atlas-rag-as-service",
+      "html_url": "https://github.com/ildrm/atlas-rag-as-service",
+      "description": "Open-source RAG as a Service (RAGaaS) platform for building AI knowledge APIs with Retrieval-Augmented Generation. Ingest documents, create embeddings, search with vectors, and serve LLM-powered applications through a scalable REST API.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "Python",
+      "stargazers_count": 1
+    },
+    {
+      "name": "talentsphere-linkedin-clone",
+      "full_name": "ildrm/talentsphere-linkedin-clone",
+      "html_url": "https://github.com/ildrm/talentsphere-linkedin-clone",
+      "description": "TalentSphere is an open-source LinkedIn clone and EU-first employment platform built with React, TypeScript, Node.js, Turborepo, and PostgreSQL. It combines job search, professional networking, applications, ATS, recruiting CRM, workplace reviews, learning, GDPR privacy, and governed AI.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "TypeScript",
+      "stargazers_count": 1
+    },
+    {
+      "name": "apertureflow",
+      "full_name": "ildrm/apertureflow",
+      "html_url": "https://github.com/ildrm/apertureflow",
+      "description": "AI-powered photography workflow platform for automatic photo culling, image quality assessment, duplicate detection, blur detection, smart photo selection, and post-processing automation. Built for photographers, studios, and computer vision developers.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "TypeScript",
+      "stargazers_count": 1
+    },
+    {
+      "name": "interviewflow-lite-interview-scheduling-platform",
+      "full_name": "ildrm/interviewflow-lite-interview-scheduling-platform",
+      "html_url": "https://github.com/ildrm/interviewflow-lite-interview-scheduling-platform",
+      "description": "Open-source, self-hosted interview scheduling and recruiting orchestration platform for hiring teams. Supports candidate self-scheduling, interviewer pools, panel interviews, rooms, calendar sync, scorecards, debriefs, hiring decisions, audit logs, ATS webhooks, Next.js, NestJS, MySQL, Docker Compose, CalDAV, ICS, and OpenAPI.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "TypeScript",
+      "stargazers_count": 1
+    },
+    {
+      "name": "servex-service",
+      "full_name": "ildrm/servex-service",
+      "html_url": "https://github.com/ildrm/servex-service",
+      "description": "The Servex Service project is a lightweight test service designed for the Servex PHP Framework, providing a simple Order service as an example for developers to create and integrate custom services within the Servex ecosystem.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "PHP",
+      "stargazers_count": 2
+    },
+    {
+      "name": "servex-php",
+      "full_name": "ildrm/servex-php",
+      "html_url": "https://github.com/ildrm/servex-php",
+      "description": "Servex is a PHP microservices framework inspired by Moleculer, designed for building scalable, event-driven, and distributed applications with support for service management, event handling, caching, and message brokers like RabbitMQ and Kafka.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "PHP",
+      "stargazers_count": 4
+    },
+    {
+      "name": "google-book-writer",
+      "full_name": "ildrm/google-book-writer",
+      "html_url": "https://github.com/ildrm/google-book-writer",
+      "description": "BOOKGEN-AI is a desktop AI writing tool that uses Google Gemini to turn a book idea into a complete manuscript through a structured workflow for planning, outlining, chapter writing, memory management, editing, and export. It supports multiple languages and lets users save, resume, and export their generated books as DOCX, PDF, Markdown, or TXT.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "Python",
+      "stargazers_count": 1
+    },
+    {
+      "name": "wordpress-helanak-kids-theme",
+      "full_name": "ildrm/wordpress-helanak-kids-theme",
+      "html_url": "https://github.com/ildrm/wordpress-helanak-kids-theme",
+      "description": null,
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "PHP",
+      "stargazers_count": 1
+    },
+    {
+      "name": "php-simple-telegram-uploader-service",
+      "full_name": "ildrm/php-simple-telegram-uploader-service",
+      "html_url": "https://github.com/ildrm/php-simple-telegram-uploader-service",
+      "description": "Lightweight PHP Telegram Uploader Service for uploading files, images, videos, and documents to Telegram using the Bot API. Simple to integrate, fast, and reliable, with REST API support, secure file handling, and an easy-to-use architecture for PHP applications, automation, backups, and cloud workflows.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "PHP",
+      "stargazers_count": 1
+    },
+    {
+      "name": "php-advanced-telegram-uploader-service",
+      "full_name": "ildrm/php-advanced-telegram-uploader-service",
+      "html_url": "https://github.com/ildrm/php-advanced-telegram-uploader-service",
+      "description": "Advanced PHP Telegram Uploader Service for uploading large files, images, videos, and documents to Telegram via Bot API or MTProto. Features secure uploads, queue processing, resumable transfers, API integration, and scalable architecture for automation, cloud storage, and enterprise PHP applications.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "PHP",
+      "stargazers_count": 1
+    },
+    {
+      "name": "podflow-podcast-scrapper",
+      "full_name": "ildrm/podflow-podcast-scrapper",
+      "html_url": "https://github.com/ildrm/podflow-podcast-scrapper",
+      "description": "PodFlow Podcast Scraper is an open-source podcast aggregation and scraping platform that automatically collects episodes, metadata, and feeds from multiple podcast sources. It streamlines podcast discovery, content synchronization, and data organization, providing a scalable foundation for podcast directories and analytics applications.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "PHP",
+      "stargazers_count": 1
+    },
+    {
+      "name": "telegram-ssh",
+      "full_name": "ildrm/telegram-ssh",
+      "html_url": "https://github.com/ildrm/telegram-ssh",
+      "description": "Telegram SSH is an open-source Telegram bot that lets users securely create, manage, and monitor SSH accounts through a simple chat interface. It automates account provisioning, user management, expiration handling, and server administration, making SSH services easy to deploy and manage.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "PHP",
+      "stargazers_count": 1
+    },
+    {
+      "name": "logicommerce-logistic-ecommerce",
+      "full_name": "ildrm/logicommerce-logistic-ecommerce",
+      "html_url": "https://github.com/ildrm/logicommerce-logistic-ecommerce",
+      "description": "Logicommerce is a modular open-source platform that unifies logistics and eCommerce into a single ecosystem. It supports 1PL–5PL operations with warehouse, inventory, shipping, order, supplier, and marketplace management, providing a scalable foundation for modern supply chain and multi-vendor commerce solutions.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "TypeScript",
+      "stargazers_count": 1
+    },
+    {
+      "name": "ham-mahalleh",
+      "full_name": "ildrm/ham-mahalleh",
+      "html_url": "https://github.com/ildrm/ham-mahalleh",
+      "description": "پلتفرم هم‌محله یک مارکت‌پلیس محلی و چندفروشنده است که با هدف اتصال فروشندگان و خریداران یک منطقه طراحی شده است. این پروژه امکاناتی مانند مدیریت فروشگاه، محصولات، سفارش‌ها، کاربران، پرداخت و پنل مدیریتی را فراهم می‌کند و بستری مناسب برای توسعه بازارهای آنلاین محلی و منطقه‌ای است.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "TypeScript",
+      "stargazers_count": 1
+    },
+    {
+      "name": "9router",
+      "full_name": "decolua/9router",
+      "html_url": "https://github.com/decolua/9router",
+      "description": "Unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot, Antigravity to FREE Claude/GPT/Gemini via 40+ providers. Auto-fallback, RTK -40% tokens, never hit limits.",
+      "fork": false,
+      "owner": {
+        "login": "decolua"
+      },
+      "language": "JavaScript",
+      "stargazers_count": 24549
+    },
+    {
+      "name": "pinion",
+      "full_name": "pinoox/pinion",
+      "html_url": "https://github.com/pinoox/pinion",
+      "description": "Resumable Upload Protocol for PHP",
+      "fork": false,
+      "owner": {
+        "login": "pinoox"
+      },
+      "language": "PHP",
+      "stargazers_count": 3
+    },
+    {
+      "name": "system_prompts_leaks",
+      "full_name": "asgeirtj/system_prompts_leaks",
+      "html_url": "https://github.com/asgeirtj/system_prompts_leaks",
+      "description": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 5, Claude Design, Claude Code. OpenAI - ChatGPT GPT-5.6-Sol, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
+      "fork": false,
+      "owner": {
+        "login": "asgeirtj"
+      },
+      "language": "JavaScript",
+      "stargazers_count": 62112
+    },
+    {
+      "name": "hazm",
+      "full_name": "roshan-research/hazm",
+      "html_url": "https://github.com/roshan-research/hazm",
+      "description": "Persian NLP Toolkit",
+      "fork": false,
+      "owner": {
+        "login": "roshan-research"
+      },
+      "language": "Python",
+      "stargazers_count": 1414
+    },
+    {
+      "name": "superset",
+      "full_name": "apache/superset",
+      "html_url": "https://github.com/apache/superset",
+      "description": "Apache Superset is a Data Visualization and Data Exploration Platform",
+      "fork": false,
+      "owner": {
+        "login": "apache"
+      },
+      "language": "Python",
+      "stargazers_count": 74128
+    },
+    {
+      "name": "claude-skills",
+      "full_name": "alirezarezvani/claude-skills",
+      "html_url": "https://github.com/alirezarezvani/claude-skills",
+      "description": "345 Claude Code skills & agent skills & plugins (30+ Agents, 70+ custom commands, 330+ skills, customizable references, scripts)for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents — engineering, marketing, product, compliance, C-level advisory, research, business operations, commercial & finance, and your daily productivity skills.",
+      "fork": false,
+      "owner": {
+        "login": "alirezarezvani"
+      },
+      "language": "Python",
+      "stargazers_count": 23709
+    },
+    {
+      "name": "BaleTunnel",
+      "full_name": "theermia/BaleTunnel",
+      "html_url": "https://github.com/theermia/BaleTunnel",
+      "description": "BaleTunnel is a network tunneling tool that leverages the infrastructure of Bale Messenger combined with the WebRTC protocol to bypass heavy internet restrictions. ",
+      "fork": false,
+      "owner": {
+        "login": "theermia"
+      },
+      "language": "Python",
+      "stargazers_count": 101
+    },
+    {
+      "name": "bricks_login_element",
+      "full_name": "arashDA/bricks_login_element",
+      "html_url": "https://github.com/arashDA/bricks_login_element",
+      "description": null,
+      "fork": false,
+      "owner": {
+        "login": "arashDA"
+      },
+      "language": "PHP",
+      "stargazers_count": 1
+    },
+    {
+      "name": "Kimi-K2.5",
+      "full_name": "MoonshotAI/Kimi-K2.5",
+      "html_url": "https://github.com/MoonshotAI/Kimi-K2.5",
+      "description": "Open Visual Agentic Intelligence",
+      "fork": false,
+      "owner": {
+        "login": "MoonshotAI"
+      },
+      "language": null,
+      "stargazers_count": 2294
+    },
+    {
+      "name": "DeepSeek-V3",
+      "full_name": "deepseek-ai/DeepSeek-V3",
+      "html_url": "https://github.com/deepseek-ai/DeepSeek-V3",
+      "description": null,
+      "fork": false,
+      "owner": {
+        "login": "deepseek-ai"
+      },
+      "language": "Python",
+      "stargazers_count": 104089
+    },
+    {
+      "name": "llama",
+      "full_name": "meta-llama/llama",
+      "html_url": "https://github.com/meta-llama/llama",
+      "description": "Inference code for Llama models",
+      "fork": false,
+      "owner": {
+        "login": "meta-llama"
+      },
+      "language": "Python",
+      "stargazers_count": 59535
+    },
+    {
+      "name": "gemma",
+      "full_name": "google-deepmind/gemma",
+      "html_url": "https://github.com/google-deepmind/gemma",
+      "description": "Gemma open-weight LLM library, from Google DeepMind",
+      "fork": false,
+      "owner": {
+        "login": "google-deepmind"
+      },
+      "language": "Python",
+      "stargazers_count": 5620
+    },
+    {
+      "name": "external-request-manager-pro",
+      "full_name": "YusufBahrami/external-request-manager-pro",
+      "html_url": "https://github.com/YusufBahrami/external-request-manager-pro",
+      "description": null,
+      "fork": false,
+      "owner": {
+        "login": "YusufBahrami"
+      },
+      "language": "PHP",
+      "stargazers_count": 3
+    },
+    {
+      "name": "harness-sdk",
+      "full_name": "strands-agents/harness-sdk",
+      "html_url": "https://github.com/strands-agents/harness-sdk",
+      "description": "Build an agent harness and control it end-to-end. Open-source SDK for production AI agents in Python & TypeScript - any model, any cloud.",
+      "fork": false,
+      "owner": {
+        "login": "strands-agents"
+      },
+      "language": "Python",
+      "stargazers_count": 6778
+    },
+    {
+      "name": "ComfyUI-3D-Pack",
+      "full_name": "MrForExample/ComfyUI-3D-Pack",
+      "html_url": "https://github.com/MrForExample/ComfyUI-3D-Pack",
+      "description": "An extensive node suite that enables ComfyUI to process 3D inputs (Mesh & UV Texture, etc) using cutting edge algorithms (3DGS, NeRF, etc.)",
+      "fork": false,
+      "owner": {
+        "login": "MrForExample"
+      },
+      "language": "Python",
+      "stargazers_count": 3825
+    },
+    {
+      "name": "URL-shortener",
+      "full_name": "sajadfallahdoost/URL-shortener",
+      "html_url": "https://github.com/sajadfallahdoost/URL-shortener",
+      "description": null,
+      "fork": false,
+      "owner": {
+        "login": "sajadfallahdoost"
+      },
+      "language": "Python",
+      "stargazers_count": 19
+    },
+    {
+      "name": "direction-route",
+      "full_name": "sajadfallahdoost/direction-route",
+      "html_url": "https://github.com/sajadfallahdoost/direction-route",
+      "description": "route backend service",
+      "fork": false,
+      "owner": {
+        "login": "sajadfallahdoost"
+      },
+      "language": "Python",
+      "stargazers_count": 37
+    },
+    {
+      "name": "vllm",
+      "full_name": "vllm-project/vllm",
+      "html_url": "https://github.com/vllm-project/vllm",
+      "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
+      "fork": false,
+      "owner": {
+        "login": "vllm-project"
+      },
+      "language": "Python",
+      "stargazers_count": 88077
+    },
+    {
+      "name": "doris",
+      "full_name": "apache/doris",
+      "html_url": "https://github.com/apache/doris",
+      "description": "Apache Doris is a real-time analytics and hybrid search database for AI agents.",
+      "fork": false,
+      "owner": {
+        "login": "apache"
+      },
+      "language": "Java",
+      "stargazers_count": 15709
+    },
+    {
+      "name": "awesome-n8n-templates",
+      "full_name": "ildrm/awesome-n8n-templates",
+      "html_url": "https://github.com/ildrm/awesome-n8n-templates",
+      "description": "Supercharge your workflow automation with this curated collection of n8n templates! Instantly connect your favorite apps-like Gmail, Telegram, Google Drive, Slack, and more-with ready-to-use, AI-powered automations. Save time, boost productivity, and unlock the true potential of n8n in just a few clicks.",
+      "fork": true,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": null,
+      "stargazers_count": 1
+    },
+    {
+      "name": "ClickHouse",
+      "full_name": "ClickHouse/ClickHouse",
+      "html_url": "https://github.com/ClickHouse/ClickHouse",
+      "description": "ClickHouse® is a real-time analytics database management system",
+      "fork": false,
+      "owner": {
+        "login": "ClickHouse"
+      },
+      "language": "C++",
+      "stargazers_count": 49024
+    },
+    {
+      "name": "windows-drag-and-drop",
+      "full_name": "mohammademami2005/windows-drag-and-drop",
+      "html_url": "https://github.com/mohammademami2005/windows-drag-and-drop",
+      "description": null,
+      "fork": false,
+      "owner": {
+        "login": "mohammademami2005"
+      },
+      "language": "CSS",
+      "stargazers_count": 3
+    },
+    {
+      "name": "eitaa-forwarder",
+      "full_name": "BaseMax/eitaa-forwarder",
+      "html_url": "https://github.com/BaseMax/eitaa-forwarder",
+      "description": "Eitaa Forwarder is a Telegram bot and web scraper built in Go that captures posts from Eitaa channels and automatically forwards them to a designated Telegram chat or channel. It collects various post elements including text, images, timestamps, and metadata like forwarding or reply details.",
+      "fork": false,
+      "owner": {
+        "login": "BaseMax"
+      },
+      "language": "Go",
+      "stargazers_count": 5
+    },
+    {
+      "name": "docker-wordpress-ioncube-sourceguardian",
+      "full_name": "BaseMax/docker-wordpress-ioncube-sourceguardian",
+      "html_url": "https://github.com/BaseMax/docker-wordpress-ioncube-sourceguardian",
+      "description": "⚙️ A ready-to-use Docker setup for WordPress (PHP 8.1) with ionCube & SourceGuardian loaders pre-installed - plus essential PHP extensions & CLI tools for development.",
+      "fork": false,
+      "owner": {
+        "login": "BaseMax"
+      },
+      "language": "Dockerfile",
+      "stargazers_count": 4
+    },
+    {
+      "name": "n8n-free-templates",
+      "full_name": "ildrm/n8n-free-templates",
+      "html_url": "https://github.com/ildrm/n8n-free-templates",
+      "description": " A curated set of 200+ plug-and-play n8n workflows that fuse classic automation with today’s AI stack—vector DBs, embeddings, and LLMs. Import any JSON, add your creds, hit Activate, and you’re live. Built to demo, prototype, or drop straight into production.",
+      "fork": true,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": null,
+      "stargazers_count": 1
+    },
+    {
+      "name": "Backfill-GA4-to-BigQuery",
+      "full_name": "aliasoblomov/Backfill-GA4-to-BigQuery",
+      "html_url": "https://github.com/aliasoblomov/Backfill-GA4-to-BigQuery",
+      "description": "Backfill-GA4-to-BigQuery\" repository offers a solution for users to backfill their GA4 data into BigQuery. This is useful for those who need historical data from the start of their GA4 property, as GA4 data is typically only available in BigQuery after linking the two services. Our solution provides a complete backfill of data to BigQuery",
+      "fork": false,
+      "owner": {
+        "login": "aliasoblomov"
+      },
+      "language": "Jupyter Notebook",
+      "stargazers_count": 102
+    },
+    {
+      "name": "WaterCrawl",
+      "full_name": "watercrawl/WaterCrawl",
+      "html_url": "https://github.com/watercrawl/WaterCrawl",
+      "description": "Transform Web Content into LLM-Ready Data",
+      "fork": false,
+      "owner": {
+        "login": "watercrawl"
+      },
+      "language": "TypeScript",
+      "stargazers_count": 2009
+    },
+    {
+      "name": "awesome-n8n-templates",
+      "full_name": "enescingoz/awesome-n8n-templates",
+      "html_url": "https://github.com/enescingoz/awesome-n8n-templates",
+      "description": "280+ free n8n automation templates — ready-to-use workflows for Gmail, Telegram, Slack, Discord, WhatsApp, Google Drive, Notion, OpenAI, and more. AI agents, RAG   chatbots, email automation, social media, DevOps, and document processing. The largest open-source n8n template collection.",
+      "fork": false,
+      "owner": {
+        "login": "enescingoz"
+      },
+      "language": null,
+      "stargazers_count": 24390
+    },
+    {
+      "name": "voice-chat",
+      "full_name": "code3-dev/voice-chat",
+      "html_url": "https://github.com/code3-dev/voice-chat",
+      "description": "Modern Socket.IO Voice Chat Application",
+      "fork": false,
+      "owner": {
+        "login": "code3-dev"
+      },
+      "language": "JavaScript",
+      "stargazers_count": 14
+    },
+    {
+      "name": "n8n",
+      "full_name": "n8n-io/n8n",
+      "html_url": "https://github.com/n8n-io/n8n",
+      "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "fork": false,
+      "owner": {
+        "login": "n8n-io"
+      },
+      "language": "TypeScript",
+      "stargazers_count": 199176
+    },
+    {
+      "name": "filament-google-maps",
+      "full_name": "cheesegrits/filament-google-maps",
+      "html_url": "https://github.com/cheesegrits/filament-google-maps",
+      "description": "Google Maps package for Filament PHP",
+      "fork": false,
+      "owner": {
+        "login": "cheesegrits"
+      },
+      "language": "PHP",
+      "stargazers_count": 326
+    },
+    {
+      "name": "legacy-site",
+      "full_name": "filamentphp/legacy-site",
+      "html_url": "https://github.com/filamentphp/legacy-site",
+      "description": "Please visit https://filamentphp.com/author to manage your plugins!",
+      "fork": false,
+      "owner": {
+        "login": "filamentphp"
+      },
+      "language": "Blade",
+      "stargazers_count": 313
+    },
+    {
+      "name": "moleculer",
+      "full_name": "moleculerjs/moleculer",
+      "html_url": "https://github.com/moleculerjs/moleculer",
+      "description": ":rocket: Progressive microservices framework for Node.js",
+      "fork": false,
+      "owner": {
+        "login": "moleculerjs"
+      },
+      "language": "JavaScript",
+      "stargazers_count": 6377
+    },
+    {
+      "name": "express",
+      "full_name": "expressjs/express",
+      "html_url": "https://github.com/expressjs/express",
+      "description": "Fast, unopinionated, minimalist web framework for node.",
+      "fork": false,
+      "owner": {
+        "login": "expressjs"
+      },
+      "language": "JavaScript",
+      "stargazers_count": 69299
+    },
+    {
+      "name": "whisper",
+      "full_name": "openai/whisper",
+      "html_url": "https://github.com/openai/whisper",
+      "description": "Robust Speech Recognition via Large-Scale Weak Supervision",
+      "fork": false,
+      "owner": {
+        "login": "openai"
+      },
+      "language": "Python",
+      "stargazers_count": 106529
+    },
+    {
+      "name": "filament",
+      "full_name": "filamentphp/filament",
+      "html_url": "https://github.com/filamentphp/filament",
+      "description": "A powerful open-source UI framework for Laravel • Build and ship apps & admin panels fast with Livewire",
+      "fork": false,
+      "owner": {
+        "login": "filamentphp"
+      },
+      "language": "PHP",
+      "stargazers_count": 31689
+    },
+    {
+      "name": "Reactjs-Divar",
+      "full_name": "hwssein/Reactjs-Divar",
+      "html_url": "https://github.com/hwssein/Reactjs-Divar",
+      "description": null,
+      "fork": false,
+      "owner": {
+        "login": "hwssein"
+      },
+      "language": "JavaScript",
+      "stargazers_count": 4
+    },
+    {
+      "name": "laravel",
+      "full_name": "laravel/laravel",
+      "html_url": "https://github.com/laravel/laravel",
+      "description": "Laravel is a web application framework with expressive, elegant syntax. We’ve already laid the foundation for your next big idea — freeing you to create without sweating the small things.",
+      "fork": false,
+      "owner": {
+        "login": "laravel"
+      },
+      "language": "Blade",
+      "stargazers_count": 84749
+    },
+    {
+      "name": "cakephp",
+      "full_name": "cakephp/cakephp",
+      "html_url": "https://github.com/cakephp/cakephp",
+      "description": "CakePHP: The Rapid Development Framework for PHP - Official Repository",
+      "fork": false,
+      "owner": {
+        "login": "cakephp"
+      },
+      "language": "PHP",
+      "stargazers_count": 8794
+    },
+    {
+      "name": "YetiForceCRM",
+      "full_name": "YetiForceCompany/YetiForceCRM",
+      "html_url": "https://github.com/YetiForceCompany/YetiForceCRM",
+      "description": "We've moved! For more information, visit https://github.com/YetiForceCompany/YetiForce",
+      "fork": false,
+      "owner": {
+        "login": "YetiForceCompany"
+      },
+      "language": "PHP",
+      "stargazers_count": 1793
+    },
+    {
+      "name": "bitmovin-player-web-samples",
+      "full_name": "bitmovin/bitmovin-player-web-samples",
+      "html_url": "https://github.com/bitmovin/bitmovin-player-web-samples",
+      "description": "Showcases build around the Bitmovin Adaptive Streaming Player, demonstrating usage and capabilities of the HTML5 based HLS and MPEG-DASH player, as well as the Flash based Fallback.",
+      "fork": false,
+      "owner": {
+        "login": "bitmovin"
+      },
+      "language": "HTML",
+      "stargazers_count": 102
+    },
+    {
+      "name": "bitmovinvideo-wordpress",
+      "full_name": "bitmovin/bitmovinvideo-wordpress",
+      "html_url": "https://github.com/bitmovin/bitmovinvideo-wordpress",
+      "description": "The Bitmovin Wordpress Plugin",
+      "fork": false,
+      "owner": {
+        "login": "bitmovin"
+      },
+      "language": "PHP",
+      "stargazers_count": 4
+    },
+    {
+      "name": "Ext-JS-4",
+      "full_name": "One-com/Ext-JS-4",
+      "html_url": "https://github.com/One-com/Ext-JS-4",
+      "description": "Ext JS 4 checkin for patch development",
+      "fork": false,
+      "owner": {
+        "login": "One-com"
+      },
+      "language": "JavaScript",
+      "stargazers_count": 13
+    },
+    {
+      "name": "openlayers",
+      "full_name": "openlayers/openlayers",
+      "html_url": "https://github.com/openlayers/openlayers",
+      "description": "OpenLayers",
+      "fork": false,
+      "owner": {
+        "login": "openlayers"
+      },
+      "language": "JavaScript",
+      "stargazers_count": 12527
+    },
+    {
+      "name": "d3",
+      "full_name": "d3/d3",
+      "html_url": "https://github.com/d3/d3",
+      "description": "Bring data to life with SVG, Canvas and HTML. :bar_chart::chart_with_upwards_trend::tada:",
+      "fork": false,
+      "owner": {
+        "login": "d3"
+      },
+      "language": "Shell",
+      "stargazers_count": 113322
+    },
+    {
+      "name": "Leaflet",
+      "full_name": "Leaflet/Leaflet",
+      "html_url": "https://github.com/Leaflet/Leaflet",
+      "description": "🍃 JavaScript library for mobile-friendly interactive maps 🇺🇦",
+      "fork": false,
+      "owner": {
+        "login": "Leaflet"
+      },
+      "language": "JavaScript",
+      "stargazers_count": 45443
+    },
+    {
+      "name": "magento2",
+      "full_name": "magento/magento2",
+      "html_url": "https://github.com/magento/magento2",
+      "description": "Prior to making any Submission(s), you must sign an Adobe Contributor License Agreement, available here at: https://opensource.adobe.com/cla.html. All Submissions you make to Adobe Inc. and its affiliates, assigns and subsidiaries (collectively “Adobe”) are subject to the terms of the Adobe Contributor License Agreement.",
+      "fork": false,
+      "owner": {
+        "login": "magento"
+      },
+      "language": "PHP",
+      "stargazers_count": 12154
+    },
+    {
+      "name": "opencart",
+      "full_name": "opencart/opencart",
+      "html_url": "https://github.com/opencart/opencart",
+      "description": "A free shopping cart system. OpenCart is an open source PHP-based online e-commerce solution.",
+      "fork": false,
+      "owner": {
+        "login": "opencart"
+      },
+      "language": "PHP",
+      "stargazers_count": 8173
+    },
+    {
+      "name": "WordPress",
+      "full_name": "WordPress/WordPress",
+      "html_url": "https://github.com/WordPress/WordPress",
+      "description": "WordPress, Git-ified. This repository is just a mirror of the WordPress subversion repository. Please do not send pull requests. Submit pull requests to https://github.com/WordPress/wordpress-develop and patches to https://core.trac.wordpress.org/ instead.",
+      "fork": false,
+      "owner": {
+        "login": "WordPress"
+      },
+      "language": "PHP",
+      "stargazers_count": 21306
+    },
+    {
+      "name": "jquery-ui",
+      "full_name": "jquery/jquery-ui",
+      "html_url": "https://github.com/jquery/jquery-ui",
+      "description": "The official jQuery user interface library.",
+      "fork": false,
+      "owner": {
+        "login": "jquery"
+      },
+      "language": "JavaScript",
+      "stargazers_count": 11328
+    },
+    {
+      "name": "jquery",
+      "full_name": "jquery/jquery",
+      "html_url": "https://github.com/jquery/jquery",
+      "description": "jQuery JavaScript Library",
+      "fork": false,
+      "owner": {
+        "login": "jquery"
+      },
+      "language": "JavaScript",
+      "stargazers_count": 59788
+    },
+    {
+      "name": "angular.js",
+      "full_name": "angular/angular.js",
+      "html_url": "https://github.com/angular/angular.js",
+      "description": "AngularJS - HTML enhanced for web apps!",
+      "fork": false,
+      "owner": {
+        "login": "angular"
+      },
+      "language": "JavaScript",
+      "stargazers_count": 58562
+    },
+    {
+      "name": "PersianDate4MySQL",
+      "full_name": "zoghal/PersianDate4MySQL",
+      "html_url": "https://github.com/zoghal/PersianDate4MySQL",
+      "description": "pDate is a Gregorian / Jalali(Shamsi) date convertor functions for MySQL 5.1+",
+      "fork": false,
+      "owner": {
+        "login": "zoghal"
+      },
+      "language": null,
+      "stargazers_count": 186
+    }
+  ]
+}

@@ -7,7 +7,8 @@
 
   var username = grid.dataset.githubUser || 'ildrm';
   var repositoryFilter = grid.dataset.starredFilter || 'all';
-  var apiUrl = 'https://api.github.com/users/' + encodeURIComponent(username) + '/starred';
+  var snapshotUrl = 'assets/data/starred-repositories.json';
+  var requestTimeout = 8000;
 
   function formatCount(value){
     return new Intl.NumberFormat('en').format(value || 0);
@@ -118,32 +119,38 @@
     if (status){
       status.textContent = repositoryFilter === 'owned'
         ? repositories.length + ' projects owned and starred by ' + username + '.'
-        : repositories.length + ' starred repositories synced from GitHub.';
+        : repositories.length + ' starred repositories from the latest GitHub snapshot.';
     }
     if (window.ScrollTrigger) window.ScrollTrigger.refresh();
   }
 
   async function fetchStarredRepositories(){
-    var repositories = [];
-    var page = 1;
+    var controller = typeof AbortController === 'function' ? new AbortController() : null;
+    var timeout;
+    var timeoutPromise = new Promise(function(resolve, reject){
+      timeout = window.setTimeout(function(){
+        if (controller) controller.abort();
+        reject(new Error('Repository snapshot request timed out'));
+      }, requestTimeout);
+    });
+    var options = { cache:'no-cache' };
+    if (controller) options.signal = controller.signal;
 
-    while (page <= 10){
-      var response = await fetch(apiUrl + '?per_page=100&page=' + page, {
-        headers:{
-          Accept:'application/vnd.github+json',
-          'X-GitHub-Api-Version':'2022-11-28'
-        }
-      });
-      if (!response.ok) throw new Error('GitHub API returned ' + response.status);
+    try {
+      var response = await Promise.race([
+        fetch(snapshotUrl, options),
+        timeoutPromise
+      ]);
+      if (!response.ok) throw new Error('Repository snapshot returned ' + response.status);
 
-      var batch = await response.json();
-      if (!Array.isArray(batch)) throw new Error('GitHub API returned an unexpected response');
-      repositories = repositories.concat(batch);
-      if (batch.length < 100) return repositories;
-      page += 1;
+      var snapshot = await response.json();
+      if (!snapshot || !Array.isArray(snapshot.repositories)){
+        throw new Error('Repository snapshot has an unexpected format');
+      }
+      return snapshot.repositories;
+    } finally {
+      window.clearTimeout(timeout);
     }
-
-    return repositories;
   }
 
   labelFallbackCards();
@@ -161,9 +168,9 @@
     .catch(function(error){
       if (status){
         status.textContent = grid.children.length
-          ? 'GitHub is temporarily unavailable. Showing the default selection.'
-          : 'GitHub is temporarily unavailable. Starred projects could not be loaded.';
+          ? 'The repository snapshot could not be loaded. Showing the default selection.'
+          : 'The repository snapshot could not be loaded. Starred projects are temporarily unavailable.';
       }
-      console.warn('Unable to load starred repositories:', error);
+      console.warn('Unable to load the starred repository snapshot:', error);
     });
 })();
