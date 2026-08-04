@@ -1,7 +1,7 @@
 <h1 align="center">Shahin Ilderemi</h1>
 
 <p align="center">
-  <strong>Senior Software Engineer · Tech Lead · Systems Architect · AI Developer</strong>
+  <strong>Senior Software Engineer — Full-Stack · Data Engineering · AI Integration</strong>
 </p>
 
 <p align="center">
