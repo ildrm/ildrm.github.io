@@ -1,6 +1,6 @@
 {
   "username": "ildrm",
-  "generated_at": "2026-08-07T03:15:40.747Z",
+  "generated_at": "2026-08-07T07:39:56.623Z",
   "repositories": [
     {
       "name": "wordpress-develop",
@@ -288,7 +288,7 @@
         "login": "decolua"
       },
       "language": "JavaScript",
-      "stargazers_count": 24840
+      "stargazers_count": 24856
     },
     {
       "name": "pinion",
@@ -312,7 +312,7 @@
         "login": "asgeirtj"
       },
       "language": "JavaScript",
-      "stargazers_count": 62475
+      "stargazers_count": 62486
     },
     {
       "name": "hazm",
@@ -336,7 +336,7 @@
         "login": "apache"
       },
       "language": "Python",
-      "stargazers_count": 74168
+      "stargazers_count": 74173
     },
     {
       "name": "claude-skills",
@@ -348,7 +348,7 @@
         "login": "alirezarezvani"
       },
       "language": "Python",
-      "stargazers_count": 23937
+      "stargazers_count": 23954
     },
     {
       "name": "BaleTunnel",
@@ -396,7 +396,7 @@
         "login": "deepseek-ai"
       },
       "language": "Python",
-      "stargazers_count": 104122
+      "stargazers_count": 104123
     },
     {
       "name": "llama",
@@ -408,7 +408,7 @@
         "login": "meta-llama"
       },
       "language": "Python",
-      "stargazers_count": 59543
+      "stargazers_count": 59545
     },
     {
       "name": "gemma",
@@ -444,7 +444,7 @@
         "login": "strands-agents"
       },
       "language": "Python",
-      "stargazers_count": 6826
+      "stargazers_count": 6827
     },
     {
       "name": "ComfyUI-3D-Pack",
@@ -492,7 +492,7 @@
         "login": "vllm-project"
       },
       "language": "Python",
-      "stargazers_count": 88385
+      "stargazers_count": 88406
     },
     {
       "name": "doris",
@@ -504,7 +504,7 @@
         "login": "apache"
       },
       "language": "Java",
-      "stargazers_count": 15735
+      "stargazers_count": 15737
     },
     {
       "name": "awesome-n8n-templates",
@@ -528,7 +528,7 @@
         "login": "ClickHouse"
       },
       "language": "C++",
-      "stargazers_count": 49101
+      "stargazers_count": 49104
     },
     {
       "name": "windows-drag-and-drop",
@@ -612,7 +612,7 @@
         "login": "enescingoz"
       },
       "language": null,
-      "stargazers_count": 24499
+      "stargazers_count": 24503
     },
     {
       "name": "voice-chat",
@@ -636,7 +636,7 @@
         "login": "n8n-io"
       },
       "language": "TypeScript",
-      "stargazers_count": 199634
+      "stargazers_count": 199656
     },
     {
       "name": "filament-google-maps",
@@ -684,7 +684,7 @@
         "login": "expressjs"
       },
       "language": "JavaScript",
-      "stargazers_count": 69348
+      "stargazers_count": 69351
     },
     {
       "name": "whisper",
@@ -696,7 +696,7 @@
         "login": "openai"
       },
       "language": "Python",
-      "stargazers_count": 106793
+      "stargazers_count": 106805
     },
     {
       "name": "filament",
@@ -708,7 +708,7 @@
         "login": "filamentphp"
       },
       "language": "PHP",
-      "stargazers_count": 31723
+      "stargazers_count": 31725
     },
     {
       "name": "Reactjs-Divar",
@@ -732,7 +732,7 @@
         "login": "laravel"
       },
       "language": "Blade",
-      "stargazers_count": 84774
+      "stargazers_count": 84775
     },
     {
       "name": "cakephp",
@@ -816,7 +816,7 @@
         "login": "d3"
       },
       "language": "Shell",
-      "stargazers_count": 113361
+      "stargazers_count": 113371
     },
     {
       "name": "Leaflet",
@@ -840,7 +840,7 @@
         "login": "magento"
       },
       "language": "PHP",
-      "stargazers_count": 12163
+      "stargazers_count": 12164
     },
     {
       "name": "opencart",
@@ -864,7 +864,7 @@
         "login": "WordPress"
       },
       "language": "PHP",
-      "stargazers_count": 21313
+      "stargazers_count": 21315
     },
     {
       "name": "jquery-ui",
@@ -888,7 +888,7 @@
         "login": "jquery"
       },
       "language": "JavaScript",
-      "stargazers_count": 59787
+      "stargazers_count": 59790
     },
     {
       "name": "angular.js",
