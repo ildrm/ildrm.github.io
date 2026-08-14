@@ -1,6 +1,6 @@
 {
   "username": "ildrm",
-  "generated_at": "2026-08-13T19:18:57.546Z",
+  "generated_at": "2026-08-14T02:44:43.434Z",
   "repositories": [
     {
       "name": "brain-tumor-mri-classifier",
@@ -60,7 +60,7 @@
         "login": "microsoft"
       },
       "language": "Python",
-      "stargazers_count": 331
+      "stargazers_count": 332
     },
     {
       "name": "nobat-consultation-reservation-and-appointment-system",
@@ -360,7 +360,7 @@
         "login": "decolua"
       },
       "language": "JavaScript",
-      "stargazers_count": 25365
+      "stargazers_count": 25386
     },
     {
       "name": "pinion",
@@ -384,7 +384,7 @@
         "login": "asgeirtj"
       },
       "language": "JavaScript",
-      "stargazers_count": 62839
+      "stargazers_count": 62861
     },
     {
       "name": "hazm",
@@ -408,7 +408,7 @@
         "login": "apache"
       },
       "language": "Python",
-      "stargazers_count": 74256
+      "stargazers_count": 74259
     },
     {
       "name": "claude-skills",
@@ -420,7 +420,7 @@
         "login": "alirezarezvani"
       },
       "language": "Python",
-      "stargazers_count": 24386
+      "stargazers_count": 24396
     },
     {
       "name": "BaleTunnel",
@@ -468,7 +468,7 @@
         "login": "deepseek-ai"
       },
       "language": "Python",
-      "stargazers_count": 104190
+      "stargazers_count": 104211
     },
     {
       "name": "llama",
@@ -492,7 +492,7 @@
         "login": "google-deepmind"
       },
       "language": "Python",
-      "stargazers_count": 5653
+      "stargazers_count": 5655
     },
     {
       "name": "external-request-manager-pro",
@@ -516,7 +516,7 @@
         "login": "strands-agents"
       },
       "language": "Python",
-      "stargazers_count": 6902
+      "stargazers_count": 6904
     },
     {
       "name": "ComfyUI-3D-Pack",
@@ -564,7 +564,7 @@
         "login": "vllm-project"
       },
       "language": "Python",
-      "stargazers_count": 88982
+      "stargazers_count": 88999
     },
     {
       "name": "doris",
@@ -576,7 +576,7 @@
         "login": "apache"
       },
       "language": "Java",
-      "stargazers_count": 15762
+      "stargazers_count": 15766
     },
     {
       "name": "awesome-n8n-templates",
@@ -600,7 +600,7 @@
         "login": "ClickHouse"
       },
       "language": "C++",
-      "stargazers_count": 49229
+      "stargazers_count": 49234
     },
     {
       "name": "windows-drag-and-drop",
@@ -684,7 +684,7 @@
         "login": "enescingoz"
       },
       "language": null,
-      "stargazers_count": 24657
+      "stargazers_count": 24664
     },
     {
       "name": "voice-chat",
@@ -708,7 +708,7 @@
         "login": "n8n-io"
       },
       "language": "TypeScript",
-      "stargazers_count": 200517
+      "stargazers_count": 200539
     },
     {
       "name": "filament-google-maps",
@@ -756,7 +756,7 @@
         "login": "expressjs"
       },
       "language": "JavaScript",
-      "stargazers_count": 69354
+      "stargazers_count": 69356
     },
     {
       "name": "whisper",
@@ -768,7 +768,7 @@
         "login": "openai"
       },
       "language": "Python",
-      "stargazers_count": 107228
+      "stargazers_count": 107238
     },
     {
       "name": "filament",
@@ -780,7 +780,7 @@
         "login": "filamentphp"
       },
       "language": "PHP",
-      "stargazers_count": 31783
+      "stargazers_count": 31789
     },
     {
       "name": "Reactjs-Divar",
@@ -876,7 +876,7 @@
         "login": "openlayers"
       },
       "language": "JavaScript",
-      "stargazers_count": 12538
+      "stargazers_count": 12539
     },
     {
       "name": "d3",
@@ -900,7 +900,7 @@
         "login": "Leaflet"
       },
       "language": "JavaScript",
-      "stargazers_count": 45479
+      "stargazers_count": 45480
     },
     {
       "name": "magento2",
@@ -936,7 +936,7 @@
         "login": "WordPress"
       },
       "language": "PHP",
-      "stargazers_count": 21335
+      "stargazers_count": 21336
     },
     {
       "name": "jquery-ui",
@@ -948,7 +948,7 @@
         "login": "jquery"
       },
       "language": "JavaScript",
-      "stargazers_count": 11331
+      "stargazers_count": 11330
     },
     {
       "name": "jquery",
@@ -960,7 +960,7 @@
         "login": "jquery"
       },
       "language": "JavaScript",
-      "stargazers_count": 59784
+      "stargazers_count": 59786
     },
     {
       "name": "angular.js",
