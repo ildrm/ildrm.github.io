@@ -1,7 +1,79 @@
 {
   "username": "ildrm",
-  "generated_at": "2026-08-25T07:07:03.644Z",
+  "generated_at": "2026-08-25T13:10:25.387Z",
   "repositories": [
+    {
+      "name": "lms",
+      "full_name": "ildrm/lms",
+      "html_url": "https://github.com/ildrm/lms",
+      "description": "Open-source multilingual learning management system (LMS) for courses, cohorts, assessments, exams, creator tools, credentials, and professional growth. Built with Next.js, NestJS, PostgreSQL, Drizzle, Redis/BullMQ, Meilisearch, and S3, featuring i18n/RTL, permissions, media processing, search, analytics, and scalable modular architecture.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "TypeScript",
+      "stargazers_count": 1
+    },
+    {
+      "name": "wc-product-importer",
+      "full_name": "ildrm/wc-product-importer",
+      "html_url": "https://github.com/ildrm/wc-product-importer",
+      "description": "WooCommerce Product Importer is a WordPress plugin for bulk importing and updating products from CSV files. It supports field mapping, categories, images, and variable products to speed up store migration and product management.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "PHP",
+      "stargazers_count": 1
+    },
+    {
+      "name": "humanity-economy",
+      "full_name": "ildrm/humanity-economy",
+      "html_url": "https://github.com/ildrm/humanity-economy",
+      "description": "Humanity Economy is an open-source Python research toolkit and dashboard for cross-country macroeconomic analysis using official data, transparent evidence gates, provenance, confidence and sensitivity scoring. Compare inflation, growth, labour, inequality, household pressure and economic risk with reproducible JSON and interactive HTML reports.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "Python",
+      "stargazers_count": 1
+    },
+    {
+      "name": "kavosh-market-intelligence",
+      "full_name": "ildrm/kavosh-market-intelligence",
+      "html_url": "https://github.com/ildrm/kavosh-market-intelligence",
+      "description": "Kavosh is a bilingual English/Persian market-intelligence platform for crypto and FX trading research. It combines deterministic market analysis, evidence, provenance, freshness, disagreement, and invalidation into an explainable decision-support workstation powered by Next.js, NestJS, BullMQ, and TimescaleDB.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "TypeScript",
+      "stargazers_count": 1
+    },
+    {
+      "name": "casaura-real-estate",
+      "full_name": "ildrm/casaura-real-estate",
+      "html_url": "https://github.com/ildrm/casaura-real-estate",
+      "description": "Casaura is an API-first, multi-tenant real estate marketplace and agency platform built with Laravel and Next.js. It combines property listings, agency workflows, RESO data ingestion, collaborative discovery, AI-powered search, Stripe billing and promotion tools in a production-ready, scalable architecture.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "PHP",
+      "stargazers_count": 1
+    },
+    {
+      "name": "trading-holder",
+      "full_name": "ildrm/trading-holder",
+      "html_url": "https://github.com/ildrm/trading-holder",
+      "description": "Open-source multi-tenant investment management and portfolio accounting platform for funds and asset managers. Supports NAV, double-entry fund accounting, investor onboarding, cash flows, trading, reconciliation, risk controls, fees, statements, audit trails, and investor portal. Built with React, Fastify, PostgreSQL, Docker, Terraform, and AWS.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "TypeScript",
+      "stargazers_count": 1
+    },
     {
       "name": "awesome-llm-apps",
       "full_name": "Shubhamsaboo/awesome-llm-apps",
@@ -12,7 +84,7 @@
         "login": "Shubhamsaboo"
       },
       "language": "Python",
-      "stargazers_count": 133974
+      "stargazers_count": 134020
     },
     {
       "name": "llama-swap",
@@ -24,7 +96,7 @@
         "login": "mostlygeek"
       },
       "language": "Go",
-      "stargazers_count": 5467
+      "stargazers_count": 5468
     },
     {
       "name": "paperclip",
@@ -36,7 +108,7 @@
         "login": "paperclipai"
       },
       "language": "TypeScript",
-      "stargazers_count": 79322
+      "stargazers_count": 79337
     },
     {
       "name": "ubuntu-hardener",
@@ -192,7 +264,7 @@
         "login": "microsoft"
       },
       "language": "Python",
-      "stargazers_count": 817
+      "stargazers_count": 818
     },
     {
       "name": "mlvc",
@@ -504,7 +576,7 @@
         "login": "decolua"
       },
       "language": "JavaScript",
-      "stargazers_count": 26254
+      "stargazers_count": 26284
     },
     {
       "name": "pinion",
@@ -528,7 +600,7 @@
         "login": "asgeirtj"
       },
       "language": "JavaScript",
-      "stargazers_count": 63508
+      "stargazers_count": 63519
     },
     {
       "name": "hazm",
@@ -552,7 +624,7 @@
         "login": "apache"
       },
       "language": "Python",
-      "stargazers_count": 74453
+      "stargazers_count": 74458
     },
     {
       "name": "claude-skills",
@@ -564,7 +636,7 @@
         "login": "alirezarezvani"
       },
       "language": "Python",
-      "stargazers_count": 24926
+      "stargazers_count": 24950
     },
     {
       "name": "BaleTunnel",
@@ -612,7 +684,7 @@
         "login": "deepseek-ai"
       },
       "language": "Python",
-      "stargazers_count": 104410
+      "stargazers_count": 104412
     },
     {
       "name": "llama",
@@ -624,7 +696,7 @@
         "login": "meta-llama"
       },
       "language": "Python",
-      "stargazers_count": 59576
+      "stargazers_count": 59579
     },
     {
       "name": "gemma",
@@ -636,7 +708,7 @@
         "login": "google-deepmind"
       },
       "language": "Python",
-      "stargazers_count": 5692
+      "stargazers_count": 5693
     },
     {
       "name": "external-request-manager-pro",
@@ -660,7 +732,7 @@
         "login": "strands-agents"
       },
       "language": "Python",
-      "stargazers_count": 6994
+      "stargazers_count": 7001
     },
     {
       "name": "ComfyUI-3D-Pack",
@@ -708,7 +780,7 @@
         "login": "vllm-project"
       },
       "language": "Python",
-      "stargazers_count": 89938
+      "stargazers_count": 89988
     },
     {
       "name": "doris",
@@ -720,7 +792,7 @@
         "login": "apache"
       },
       "language": "C++",
-      "stargazers_count": 15811
+      "stargazers_count": 15812
     },
     {
       "name": "awesome-n8n-templates",
@@ -744,7 +816,7 @@
         "login": "ClickHouse"
       },
       "language": "C++",
-      "stargazers_count": 49434
+      "stargazers_count": 49440
     },
     {
       "name": "windows-drag-and-drop",
@@ -768,7 +840,7 @@
         "login": "BaseMax"
       },
       "language": "Go",
-      "stargazers_count": 7
+      "stargazers_count": 8
     },
     {
       "name": "docker-wordpress-ioncube-sourceguardian",
@@ -828,7 +900,7 @@
         "login": "enescingoz"
       },
       "language": null,
-      "stargazers_count": 24924
+      "stargazers_count": 24927
     },
     {
       "name": "voice-chat",
@@ -852,7 +924,7 @@
         "login": "n8n-io"
       },
       "language": "TypeScript",
-      "stargazers_count": 202336
+      "stargazers_count": 202369
     },
     {
       "name": "filament-google-maps",
@@ -900,7 +972,7 @@
         "login": "expressjs"
       },
       "language": "JavaScript",
-      "stargazers_count": 69396
+      "stargazers_count": 69393
     },
     {
       "name": "whisper",
@@ -912,7 +984,7 @@
         "login": "openai"
       },
       "language": "Python",
-      "stargazers_count": 107900
+      "stargazers_count": 107909
     },
     {
       "name": "filament",
@@ -924,7 +996,7 @@
         "login": "filamentphp"
       },
       "language": "PHP",
-      "stargazers_count": 31881
+      "stargazers_count": 31886
     },
     {
       "name": "Reactjs-Divar",
@@ -948,7 +1020,7 @@
         "login": "laravel"
       },
       "language": "Blade",
-      "stargazers_count": 84865
+      "stargazers_count": 84868
     },
     {
       "name": "cakephp",
@@ -960,7 +1032,7 @@
         "login": "cakephp"
       },
       "language": "PHP",
-      "stargazers_count": 8796
+      "stargazers_count": 8795
     },
     {
       "name": "YetiForceCRM",
@@ -1020,7 +1092,7 @@
         "login": "openlayers"
       },
       "language": "JavaScript",
-      "stargazers_count": 12553
+      "stargazers_count": 12554
     },
     {
       "name": "d3",
@@ -1032,7 +1104,7 @@
         "login": "d3"
       },
       "language": "Shell",
-      "stargazers_count": 113545
+      "stargazers_count": 113544
     },
     {
       "name": "Leaflet",
@@ -1044,7 +1116,7 @@
         "login": "Leaflet"
       },
       "language": "JavaScript",
-      "stargazers_count": 45514
+      "stargazers_count": 45517
     },
     {
       "name": "magento2",
@@ -1080,7 +1152,7 @@
         "login": "WordPress"
       },
       "language": "PHP",
-      "stargazers_count": 21363
+      "stargazers_count": 21365
     },
     {
       "name": "jquery-ui",
