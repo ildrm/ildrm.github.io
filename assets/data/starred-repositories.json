@@ -1,7 +1,19 @@
 {
   "username": "ildrm",
-  "generated_at": "2026-08-26T13:15:46.870Z",
+  "generated_at": "2026-08-26T20:01:35.424Z",
   "repositories": [
+    {
+      "name": "cinemadad-cinema-booking-system",
+      "full_name": "ildrm/cinemadad-cinema-booking-system",
+      "html_url": "https://github.com/ildrm/cinemadad-cinema-booking-system",
+      "description": "Open-source, production-ready cinema booking system and multi-tenant movie ticket booking platform built with Next.js, NestJS, TypeScript, PostgreSQL, Prisma, Redis and BullMQ. Features real-time seat selection, payments, QR tickets, cinema management, screening schedules, operator/admin dashboards, RBAC, WebSockets and gate scanning.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "TypeScript",
+      "stargazers_count": 1
+    },
     {
       "name": "nexus-warehouse-management-system",
       "full_name": "ildrm/nexus-warehouse-management-system",
@@ -108,7 +120,7 @@
         "login": "Shubhamsaboo"
       },
       "language": "Python",
-      "stargazers_count": 134503
+      "stargazers_count": 134583
     },
     {
       "name": "llama-swap",
@@ -120,7 +132,7 @@
         "login": "mostlygeek"
       },
       "language": "Go",
-      "stargazers_count": 5475
+      "stargazers_count": 5480
     },
     {
       "name": "paperclip",
@@ -132,7 +144,7 @@
         "login": "paperclipai"
       },
       "language": "TypeScript",
-      "stargazers_count": 79407
+      "stargazers_count": 79427
     },
     {
       "name": "ubuntu-hardener",
@@ -600,7 +612,7 @@
         "login": "decolua"
       },
       "language": "JavaScript",
-      "stargazers_count": 26377
+      "stargazers_count": 26404
     },
     {
       "name": "pinion",
@@ -624,7 +636,7 @@
         "login": "asgeirtj"
       },
       "language": "JavaScript",
-      "stargazers_count": 63595
+      "stargazers_count": 63617
     },
     {
       "name": "hazm",
@@ -648,7 +660,7 @@
         "login": "apache"
       },
       "language": "Python",
-      "stargazers_count": 74467
+      "stargazers_count": 74470
     },
     {
       "name": "claude-skills",
@@ -660,7 +672,7 @@
         "login": "alirezarezvani"
       },
       "language": "Python",
-      "stargazers_count": 25004
+      "stargazers_count": 25028
     },
     {
       "name": "BaleTunnel",
@@ -732,7 +744,7 @@
         "login": "google-deepmind"
       },
       "language": "Python",
-      "stargazers_count": 5694
+      "stargazers_count": 5695
     },
     {
       "name": "external-request-manager-pro",
@@ -756,7 +768,7 @@
         "login": "strands-agents"
       },
       "language": "Python",
-      "stargazers_count": 7013
+      "stargazers_count": 7018
     },
     {
       "name": "ComfyUI-3D-Pack",
@@ -804,7 +816,7 @@
         "login": "vllm-project"
       },
       "language": "Python",
-      "stargazers_count": 90109
+      "stargazers_count": 90139
     },
     {
       "name": "doris",
@@ -816,7 +828,7 @@
         "login": "apache"
       },
       "language": "C++",
-      "stargazers_count": 15816
+      "stargazers_count": 15817
     },
     {
       "name": "awesome-n8n-templates",
@@ -840,7 +852,7 @@
         "login": "ClickHouse"
       },
       "language": "C++",
-      "stargazers_count": 49458
+      "stargazers_count": 49464
     },
     {
       "name": "windows-drag-and-drop",
@@ -924,7 +936,7 @@
         "login": "enescingoz"
       },
       "language": null,
-      "stargazers_count": 24949
+      "stargazers_count": 24959
     },
     {
       "name": "voice-chat",
@@ -948,7 +960,7 @@
         "login": "n8n-io"
       },
       "language": "TypeScript",
-      "stargazers_count": 202486
+      "stargazers_count": 202522
     },
     {
       "name": "filament-google-maps",
@@ -996,7 +1008,7 @@
         "login": "expressjs"
       },
       "language": "JavaScript",
-      "stargazers_count": 69394
+      "stargazers_count": 69395
     },
     {
       "name": "whisper",
@@ -1008,7 +1020,7 @@
         "login": "openai"
       },
       "language": "Python",
-      "stargazers_count": 107961
+      "stargazers_count": 107970
     },
     {
       "name": "filament",
@@ -1020,7 +1032,7 @@
         "login": "filamentphp"
       },
       "language": "PHP",
-      "stargazers_count": 31892
+      "stargazers_count": 31897
     },
     {
       "name": "Reactjs-Divar",
@@ -1044,7 +1056,7 @@
         "login": "laravel"
       },
       "language": "Blade",
-      "stargazers_count": 84870
+      "stargazers_count": 84876
     },
     {
       "name": "cakephp",
@@ -1056,7 +1068,7 @@
         "login": "cakephp"
       },
       "language": "PHP",
-      "stargazers_count": 8795
+      "stargazers_count": 8796
     },
     {
       "name": "YetiForceCRM",
@@ -1128,7 +1140,7 @@
         "login": "d3"
       },
       "language": "Shell",
-      "stargazers_count": 113555
+      "stargazers_count": 113558
     },
     {
       "name": "Leaflet",
@@ -1140,7 +1152,7 @@
         "login": "Leaflet"
       },
       "language": "JavaScript",
-      "stargazers_count": 45519
+      "stargazers_count": 45524
     },
     {
       "name": "magento2",
@@ -1176,7 +1188,7 @@
         "login": "WordPress"
       },
       "language": "PHP",
-      "stargazers_count": 21367
+      "stargazers_count": 21368
     },
     {
       "name": "jquery-ui",
@@ -1200,7 +1212,7 @@
         "login": "jquery"
       },
       "language": "JavaScript",
-      "stargazers_count": 59772
+      "stargazers_count": 59773
     },
     {
       "name": "angular.js",
@@ -1212,7 +1224,7 @@
         "login": "angular"
       },
       "language": "JavaScript",
-      "stargazers_count": 58533
+      "stargazers_count": 58532
     },
     {
       "name": "PersianDate4MySQL",
