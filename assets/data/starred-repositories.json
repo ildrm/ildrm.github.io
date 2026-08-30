@@ -1,7 +1,31 @@
 {
   "username": "ildrm",
-  "generated_at": "2026-08-30T05:22:34.902Z",
+  "generated_at": "2026-08-30T11:53:10.518Z",
   "repositories": [
+    {
+      "name": "woocommerce-advanced-reports",
+      "full_name": "ildrm/woocommerce-advanced-reports",
+      "html_url": "https://github.com/ildrm/woocommerce-advanced-reports",
+      "description": "WooCommerce Advanced Reports is a powerful WordPress analytics plugin for product, order, customer, inventory and sales reporting with HPOS support, Jalali/Gregorian dates, CSV/XLSX export, print views, RFM analytics, saved reports, scheduled email reports and caching.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "PHP",
+      "stargazers_count": 1
+    },
+    {
+      "name": "woocommerce-advanced-report-builder",
+      "full_name": "ildrm/woocommerce-advanced-report-builder",
+      "html_url": "https://github.com/ildrm/woocommerce-advanced-report-builder",
+      "description": "Advanced WooCommerce report builder for WordPress with custom datasets, product types, categories, attributes, variations, filters, formulas, pivots, dashboards, CSV/XLSX export, Jalali/Gregorian dates, HPOS support, ACF/CPT integration, scheduled reports, alerts, analytics and business intelligence.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "PHP",
+      "stargazers_count": 1
+    },
     {
       "name": "ledgerly-international-accounting-platform",
       "full_name": "ildrm/ledgerly-international-accounting-platform",
@@ -144,7 +168,7 @@
         "login": "Shubhamsaboo"
       },
       "language": "Python",
-      "stargazers_count": 135175
+      "stargazers_count": 135214
     },
     {
       "name": "llama-swap",
@@ -156,7 +180,7 @@
         "login": "mostlygeek"
       },
       "language": "Go",
-      "stargazers_count": 5515
+      "stargazers_count": 5517
     },
     {
       "name": "paperclip",
@@ -168,7 +192,7 @@
         "login": "paperclipai"
       },
       "language": "TypeScript",
-      "stargazers_count": 79649
+      "stargazers_count": 79670
     },
     {
       "name": "ubuntu-hardener",
@@ -636,7 +660,7 @@
         "login": "decolua"
       },
       "language": "JavaScript",
-      "stargazers_count": 26650
+      "stargazers_count": 26667
     },
     {
       "name": "pinion",
@@ -660,7 +684,7 @@
         "login": "asgeirtj"
       },
       "language": "JavaScript",
-      "stargazers_count": 63811
+      "stargazers_count": 63824
     },
     {
       "name": "hazm",
@@ -684,7 +708,7 @@
         "login": "apache"
       },
       "language": "Python",
-      "stargazers_count": 74535
+      "stargazers_count": 74536
     },
     {
       "name": "claude-skills",
@@ -696,7 +720,7 @@
         "login": "alirezarezvani"
       },
       "language": "Python",
-      "stargazers_count": 25226
+      "stargazers_count": 25237
     },
     {
       "name": "BaleTunnel",
@@ -744,7 +768,7 @@
         "login": "deepseek-ai"
       },
       "language": "Python",
-      "stargazers_count": 104440
+      "stargazers_count": 104441
     },
     {
       "name": "llama",
@@ -768,7 +792,7 @@
         "login": "google-deepmind"
       },
       "language": "Python",
-      "stargazers_count": 5702
+      "stargazers_count": 5703
     },
     {
       "name": "external-request-manager-pro",
@@ -804,7 +828,7 @@
         "login": "MrForExample"
       },
       "language": "Python",
-      "stargazers_count": 3854
+      "stargazers_count": 3853
     },
     {
       "name": "URL-shortener",
@@ -840,7 +864,7 @@
         "login": "vllm-project"
       },
       "language": "Python",
-      "stargazers_count": 90440
+      "stargazers_count": 90465
     },
     {
       "name": "doris",
@@ -852,7 +876,7 @@
         "login": "apache"
       },
       "language": "C++",
-      "stargazers_count": 15831
+      "stargazers_count": 15832
     },
     {
       "name": "awesome-n8n-templates",
@@ -876,7 +900,7 @@
         "login": "ClickHouse"
       },
       "language": "C++",
-      "stargazers_count": 49530
+      "stargazers_count": 49535
     },
     {
       "name": "windows-drag-and-drop",
@@ -948,7 +972,7 @@
         "login": "watercrawl"
       },
       "language": "TypeScript",
-      "stargazers_count": 2143
+      "stargazers_count": 2146
     },
     {
       "name": "awesome-n8n-templates",
@@ -960,7 +984,7 @@
         "login": "enescingoz"
       },
       "language": null,
-      "stargazers_count": 25019
+      "stargazers_count": 25026
     },
     {
       "name": "voice-chat",
@@ -984,7 +1008,7 @@
         "login": "n8n-io"
       },
       "language": "TypeScript",
-      "stargazers_count": 202827
+      "stargazers_count": 202833
     },
     {
       "name": "filament-google-maps",
@@ -1032,7 +1056,7 @@
         "login": "expressjs"
       },
       "language": "JavaScript",
-      "stargazers_count": 69404
+      "stargazers_count": 69405
     },
     {
       "name": "whisper",
@@ -1044,7 +1068,7 @@
         "login": "openai"
       },
       "language": "Python",
-      "stargazers_count": 108137
+      "stargazers_count": 108145
     },
     {
       "name": "filament",
@@ -1056,7 +1080,7 @@
         "login": "filamentphp"
       },
       "language": "PHP",
-      "stargazers_count": 31925
+      "stargazers_count": 31926
     },
     {
       "name": "Reactjs-Divar",
@@ -1080,7 +1104,7 @@
         "login": "laravel"
       },
       "language": "Blade",
-      "stargazers_count": 84895
+      "stargazers_count": 84894
     },
     {
       "name": "cakephp",
@@ -1164,7 +1188,7 @@
         "login": "d3"
       },
       "language": "Shell",
-      "stargazers_count": 113575
+      "stargazers_count": 113577
     },
     {
       "name": "Leaflet",
@@ -1176,7 +1200,7 @@
         "login": "Leaflet"
       },
       "language": "JavaScript",
-      "stargazers_count": 45532
+      "stargazers_count": 45533
     },
     {
       "name": "magento2",
@@ -1200,7 +1224,7 @@
         "login": "opencart"
       },
       "language": "PHP",
-      "stargazers_count": 8189
+      "stargazers_count": 8190
     },
     {
       "name": "WordPress",
