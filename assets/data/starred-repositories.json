@@ -1,7 +1,67 @@
 {
   "username": "ildrm",
-  "generated_at": "2026-08-30T21:03:50.302Z",
+  "generated_at": "2026-08-31T05:31:57.515Z",
   "repositories": [
+    {
+      "name": "wordpress-appbridge-api-gateway",
+      "full_name": "ildrm/wordpress-appbridge-api-gateway",
+      "html_url": "https://github.com/ildrm/wordpress-appbridge-api-gateway",
+      "description": "Secure WordPress REST API gateway plugin for mobile apps, headless WordPress/PWA frontends and automation. Features bearer authentication, refresh-token rotation, CORS, rate limiting, HMAC webhooks, notifications and device sessions, with WooCommerce, ACF, Gravity Forms, Flutter, React Native, Android and iOS support.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "PHP",
+      "stargazers_count": 1
+    },
+    {
+      "name": "ilderemi-advanced-slider",
+      "full_name": "ildrm/ilderemi-advanced-slider",
+      "html_url": "https://github.com/ildrm/ilderemi-advanced-slider",
+      "description": "Lightweight, accessible WordPress slider and carousel plugin with responsive layouts, autoplay, touch/drag, video, lazy loading and RTL support. Build reusable sliders from images, posts, WooCommerce products and ACF galleries, with native Elementor, Gutenberg, Bricks and Beaver Builder integrations.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "PHP",
+      "stargazers_count": 1
+    },
+    {
+      "name": "wordpress-aegisguard-security",
+      "full_name": "ildrm/wordpress-aegisguard-security",
+      "html_url": "https://github.com/ildrm/wordpress-aegisguard-security",
+      "description": "AegisGuard Security is an open-source WordPress security plugin featuring a Web Application Firewall (WAF), malware scanner, file integrity monitoring, TOTP MFA, brute-force/login protection, WordPress hardening, audit logs, incident detection, encrypted quarantine, WP-CLI tools, and WooCommerce security monitoring.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "PHP",
+      "stargazers_count": 1
+    },
+    {
+      "name": "memoria-recording-memories",
+      "full_name": "ildrm/memoria-recording-memories",
+      "html_url": "https://github.com/ildrm/memoria-recording-memories",
+      "description": "Memoria is an open-source, self-hosted, privacy-first personal diary, digital journal, memory vault and selective publishing platform built with Laravel, Filament and Livewire. Record and search private memories, share with secure expiring links, and publish selected stories with privacy review, scheduling, RSS and social delivery.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "PHP",
+      "stargazers_count": 1
+    },
+    {
+      "name": "wordpress-apexpress-performance",
+      "full_name": "ildrm/wordpress-apexpress-performance",
+      "html_url": "https://github.com/ildrm/wordpress-apexpress-performance",
+      "description": "ApexPress Performance is a security-focused WordPress optimization plugin for faster sites: page caching, cache warming, HTML/CSS/JS optimization, WebP/AVIF images, lazy loading, WooCommerce-safe caching, CDN/Cloudflare integration, Core Web Vitals monitoring, database cleanup, REST API and WP-CLI.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "PHP",
+      "stargazers_count": 1
+    },
     {
       "name": "telegram-wordpress-bot",
       "full_name": "ildrm/telegram-wordpress-bot",
@@ -204,7 +264,7 @@
         "login": "Shubhamsaboo"
       },
       "language": "Python",
-      "stargazers_count": 135279
+      "stargazers_count": 135323
     },
     {
       "name": "llama-swap",
@@ -216,7 +276,7 @@
         "login": "mostlygeek"
       },
       "language": "Go",
-      "stargazers_count": 5524
+      "stargazers_count": 5526
     },
     {
       "name": "paperclip",
@@ -228,7 +288,7 @@
         "login": "paperclipai"
       },
       "language": "TypeScript",
-      "stargazers_count": 79700
+      "stargazers_count": 79716
     },
     {
       "name": "ubuntu-hardener",
@@ -372,7 +432,7 @@
         "login": "msmahdinejad"
       },
       "language": "Python",
-      "stargazers_count": 27
+      "stargazers_count": 28
     },
     {
       "name": "DCVC",
@@ -420,7 +480,7 @@
         "login": "WordPress"
       },
       "language": "PHP",
-      "stargazers_count": 3428
+      "stargazers_count": 3429
     },
     {
       "name": "jcode",
@@ -468,7 +528,7 @@
         "login": "inulute"
       },
       "language": "HTML",
-      "stargazers_count": 987
+      "stargazers_count": 988
     },
     {
       "name": "offline-sports-photo-analysis",
@@ -696,7 +756,7 @@
         "login": "decolua"
       },
       "language": "JavaScript",
-      "stargazers_count": 26696
+      "stargazers_count": 26739
     },
     {
       "name": "pinion",
@@ -720,7 +780,7 @@
         "login": "asgeirtj"
       },
       "language": "JavaScript",
-      "stargazers_count": 63841
+      "stargazers_count": 63859
     },
     {
       "name": "hazm",
@@ -744,7 +804,7 @@
         "login": "apache"
       },
       "language": "Python",
-      "stargazers_count": 74543
+      "stargazers_count": 74550
     },
     {
       "name": "claude-skills",
@@ -756,7 +816,7 @@
         "login": "alirezarezvani"
       },
       "language": "Python",
-      "stargazers_count": 25264
+      "stargazers_count": 25277
     },
     {
       "name": "BaleTunnel",
@@ -804,7 +864,7 @@
         "login": "deepseek-ai"
       },
       "language": "Python",
-      "stargazers_count": 104438
+      "stargazers_count": 104439
     },
     {
       "name": "llama",
@@ -816,7 +876,7 @@
         "login": "meta-llama"
       },
       "language": "Python",
-      "stargazers_count": 59585
+      "stargazers_count": 59584
     },
     {
       "name": "gemma",
@@ -828,7 +888,7 @@
         "login": "google-deepmind"
       },
       "language": "Python",
-      "stargazers_count": 5705
+      "stargazers_count": 5706
     },
     {
       "name": "external-request-manager-pro",
@@ -852,7 +912,7 @@
         "login": "strands-agents"
       },
       "language": "Python",
-      "stargazers_count": 7059
+      "stargazers_count": 7071
     },
     {
       "name": "ComfyUI-3D-Pack",
@@ -900,7 +960,7 @@
         "login": "vllm-project"
       },
       "language": "Python",
-      "stargazers_count": 90505
+      "stargazers_count": 90539
     },
     {
       "name": "doris",
@@ -912,7 +972,7 @@
         "login": "apache"
       },
       "language": "C++",
-      "stargazers_count": 15833
+      "stargazers_count": 15836
     },
     {
       "name": "awesome-n8n-templates",
@@ -936,7 +996,7 @@
         "login": "ClickHouse"
       },
       "language": "C++",
-      "stargazers_count": 49545
+      "stargazers_count": 49548
     },
     {
       "name": "windows-drag-and-drop",
@@ -1008,7 +1068,7 @@
         "login": "watercrawl"
       },
       "language": "TypeScript",
-      "stargazers_count": 2149
+      "stargazers_count": 2152
     },
     {
       "name": "awesome-n8n-templates",
@@ -1020,7 +1080,7 @@
         "login": "enescingoz"
       },
       "language": null,
-      "stargazers_count": 25032
+      "stargazers_count": 25040
     },
     {
       "name": "voice-chat",
@@ -1044,7 +1104,7 @@
         "login": "n8n-io"
       },
       "language": "TypeScript",
-      "stargazers_count": 202877
+      "stargazers_count": 202917
     },
     {
       "name": "filament-google-maps",
@@ -1080,7 +1140,7 @@
         "login": "moleculerjs"
       },
       "language": "JavaScript",
-      "stargazers_count": 6375
+      "stargazers_count": 6376
     },
     {
       "name": "express",
@@ -1092,7 +1152,7 @@
         "login": "expressjs"
       },
       "language": "JavaScript",
-      "stargazers_count": 69410
+      "stargazers_count": 69413
     },
     {
       "name": "whisper",
@@ -1104,7 +1164,7 @@
         "login": "openai"
       },
       "language": "Python",
-      "stargazers_count": 108159
+      "stargazers_count": 108174
     },
     {
       "name": "filament",
@@ -1116,7 +1176,7 @@
         "login": "filamentphp"
       },
       "language": "PHP",
-      "stargazers_count": 31926
+      "stargazers_count": 31928
     },
     {
       "name": "Reactjs-Divar",
@@ -1140,7 +1200,7 @@
         "login": "laravel"
       },
       "language": "Blade",
-      "stargazers_count": 84899
+      "stargazers_count": 84898
     },
     {
       "name": "cakephp",
@@ -1164,7 +1224,7 @@
         "login": "YetiForceCompany"
       },
       "language": "PHP",
-      "stargazers_count": 1792
+      "stargazers_count": 1791
     },
     {
       "name": "bitmovin-player-web-samples",
@@ -1224,7 +1284,7 @@
         "login": "d3"
       },
       "language": "Shell",
-      "stargazers_count": 113580
+      "stargazers_count": 113582
     },
     {
       "name": "Leaflet",
@@ -1248,7 +1308,7 @@
         "login": "magento"
       },
       "language": "PHP",
-      "stargazers_count": 12170
+      "stargazers_count": 12171
     },
     {
       "name": "opencart",
@@ -1260,7 +1320,7 @@
         "login": "opencart"
       },
       "language": "PHP",
-      "stargazers_count": 8189
+      "stargazers_count": 8191
     },
     {
       "name": "WordPress",
@@ -1272,7 +1332,7 @@
         "login": "WordPress"
       },
       "language": "PHP",
-      "stargazers_count": 21372
+      "stargazers_count": 21373
     },
     {
       "name": "jquery-ui",
