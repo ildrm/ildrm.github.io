@@ -1,7 +1,55 @@
 {
   "username": "ildrm",
-  "generated_at": "2026-09-03T04:21:30.127Z",
+  "generated_at": "2026-09-03T11:12:31.244Z",
   "repositories": [
+    {
+      "name": "wordpress-maildesk",
+      "full_name": "ildrm/wordpress-maildesk",
+      "html_url": "https://github.com/ildrm/wordpress-maildesk",
+      "description": "MailDesk for WordPress is a secure, open-source, self-hosted webmail and email client plugin for WordPress Admin. Features multi-account IMAP sync, SMTP sending, Gmail/Outlook-style inbox, drafts, contacts, signatures, templates, rules, shared access, encrypted credentials, REST API, diagnostics, and extensible PHP mail transports.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "PHP",
+      "stargazers_count": 1
+    },
+    {
+      "name": "wordpress-keycloak-bridge",
+      "full_name": "ildrm/wordpress-keycloak-bridge",
+      "html_url": "https://github.com/ildrm/wordpress-keycloak-bridge",
+      "description": "WP Keycloak Bridge is a secure WordPress plugin for Keycloak SSO using OpenID Connect (OIDC), OAuth 2.0, PKCE and JWT. Includes JIT user provisioning, role/group mapping, profile sync, single and backchannel logout, and Keycloak bearer-token authentication for the WordPress REST API.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "PHP",
+      "stargazers_count": 1
+    },
+    {
+      "name": "wordpress-optigraph-seo",
+      "full_name": "ildrm/wordpress-optigraph-seo",
+      "html_url": "https://github.com/ildrm/wordpress-optigraph-seo",
+      "description": "OptiGraph SEO is a WordPress SEO plugin for technical SEO, schema.org/JSON-LD, XML sitemaps, redirects, Open Graph, WooCommerce SEO, content and link analysis, site audits, AEO/GEO and AI search optimization. Includes llms.txt, AI crawler controls, REST API, WP-CLI, structured metadata and safe AI-assisted SEO workflows for modern sites and stores.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "PHP",
+      "stargazers_count": 1
+    },
+    {
+      "name": "woocommerce-loyaltyforge",
+      "full_name": "ildrm/woocommerce-loyaltyforge",
+      "html_url": "https://github.com/ildrm/woocommerce-loyaltyforge",
+      "description": "LoyaltyForge is a WooCommerce loyalty and rewards plugin for customer points, membership tiers, referrals, reward coupons, earning campaigns, point expiration and refund reversals. Features an auditable points ledger, HPOS & Cart/Checkout Blocks support, REST APIs, customer dashboards, admin tools and extensible loyalty automation for online shops.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "PHP",
+      "stargazers_count": 1
+    },
     {
       "name": "python-deblurring",
       "full_name": "ildrm/python-deblurring",
@@ -288,7 +336,7 @@
         "login": "Shubhamsaboo"
       },
       "language": "Python",
-      "stargazers_count": 135800
+      "stargazers_count": 135854
     },
     {
       "name": "llama-swap",
@@ -300,7 +348,7 @@
         "login": "mostlygeek"
       },
       "language": "Go",
-      "stargazers_count": 5561
+      "stargazers_count": 5566
     },
     {
       "name": "paperclip",
@@ -312,7 +360,7 @@
         "login": "paperclipai"
       },
       "language": "TypeScript",
-      "stargazers_count": 79898
+      "stargazers_count": 79924
     },
     {
       "name": "ubuntu-hardener",
@@ -456,7 +504,7 @@
         "login": "msmahdinejad"
       },
       "language": "Python",
-      "stargazers_count": 33
+      "stargazers_count": 34
     },
     {
       "name": "DCVC",
@@ -468,7 +516,7 @@
         "login": "microsoft"
       },
       "language": "Python",
-      "stargazers_count": 824
+      "stargazers_count": 825
     },
     {
       "name": "mlvc",
@@ -780,7 +828,7 @@
         "login": "decolua"
       },
       "language": "JavaScript",
-      "stargazers_count": 26954
+      "stargazers_count": 26982
     },
     {
       "name": "pinion",
@@ -804,7 +852,7 @@
         "login": "asgeirtj"
       },
       "language": "JavaScript",
-      "stargazers_count": 64046
+      "stargazers_count": 64072
     },
     {
       "name": "hazm",
@@ -828,7 +876,7 @@
         "login": "apache"
       },
       "language": "Python",
-      "stargazers_count": 74600
+      "stargazers_count": 74609
     },
     {
       "name": "claude-skills",
@@ -840,7 +888,7 @@
         "login": "alirezarezvani"
       },
       "language": "Python",
-      "stargazers_count": 25438
+      "stargazers_count": 25451
     },
     {
       "name": "BaleTunnel",
@@ -852,7 +900,7 @@
         "login": "theermia"
       },
       "language": "Python",
-      "stargazers_count": 102
+      "stargazers_count": 103
     },
     {
       "name": "bricks_login_element",
@@ -876,7 +924,7 @@
         "login": "MoonshotAI"
       },
       "language": null,
-      "stargazers_count": 2306
+      "stargazers_count": 2308
     },
     {
       "name": "DeepSeek-V3",
@@ -888,7 +936,7 @@
         "login": "deepseek-ai"
       },
       "language": "Python",
-      "stargazers_count": 104432
+      "stargazers_count": 104433
     },
     {
       "name": "llama",
@@ -900,7 +948,7 @@
         "login": "meta-llama"
       },
       "language": "Python",
-      "stargazers_count": 59585
+      "stargazers_count": 59586
     },
     {
       "name": "gemma",
@@ -912,7 +960,7 @@
         "login": "google-deepmind"
       },
       "language": "Python",
-      "stargazers_count": 5711
+      "stargazers_count": 5712
     },
     {
       "name": "external-request-manager-pro",
@@ -936,7 +984,7 @@
         "login": "strands-agents"
       },
       "language": "Python",
-      "stargazers_count": 7129
+      "stargazers_count": 7138
     },
     {
       "name": "ComfyUI-3D-Pack",
@@ -984,7 +1032,7 @@
         "login": "vllm-project"
       },
       "language": "Python",
-      "stargazers_count": 90825
+      "stargazers_count": 90870
     },
     {
       "name": "doris",
@@ -996,7 +1044,7 @@
         "login": "apache"
       },
       "language": "C++",
-      "stargazers_count": 15851
+      "stargazers_count": 15853
     },
     {
       "name": "awesome-n8n-templates",
@@ -1020,7 +1068,7 @@
         "login": "ClickHouse"
       },
       "language": "C++",
-      "stargazers_count": 49618
+      "stargazers_count": 49624
     },
     {
       "name": "windows-drag-and-drop",
@@ -1092,7 +1140,7 @@
         "login": "watercrawl"
       },
       "language": "TypeScript",
-      "stargazers_count": 2158
+      "stargazers_count": 2157
     },
     {
       "name": "awesome-n8n-templates",
@@ -1104,7 +1152,7 @@
         "login": "enescingoz"
       },
       "language": null,
-      "stargazers_count": 25127
+      "stargazers_count": 25129
     },
     {
       "name": "voice-chat",
@@ -1128,7 +1176,7 @@
         "login": "n8n-io"
       },
       "language": "TypeScript",
-      "stargazers_count": 203181
+      "stargazers_count": 203209
     },
     {
       "name": "filament-google-maps",
@@ -1176,7 +1224,7 @@
         "login": "expressjs"
       },
       "language": "JavaScript",
-      "stargazers_count": 69418
+      "stargazers_count": 69416
     },
     {
       "name": "whisper",
@@ -1188,7 +1236,7 @@
         "login": "openai"
       },
       "language": "Python",
-      "stargazers_count": 108343
+      "stargazers_count": 108350
     },
     {
       "name": "filament",
@@ -1200,7 +1248,7 @@
         "login": "filamentphp"
       },
       "language": "PHP",
-      "stargazers_count": 31961
+      "stargazers_count": 31967
     },
     {
       "name": "Reactjs-Divar",
@@ -1224,7 +1272,7 @@
         "login": "laravel"
       },
       "language": "Blade",
-      "stargazers_count": 84921
+      "stargazers_count": 84924
     },
     {
       "name": "cakephp",
@@ -1296,7 +1344,7 @@
         "login": "openlayers"
       },
       "language": "JavaScript",
-      "stargazers_count": 12565
+      "stargazers_count": 12566
     },
     {
       "name": "d3",
@@ -1308,7 +1356,7 @@
         "login": "d3"
       },
       "language": "Shell",
-      "stargazers_count": 113601
+      "stargazers_count": 113600
     },
     {
       "name": "Leaflet",
@@ -1320,7 +1368,7 @@
         "login": "Leaflet"
       },
       "language": "JavaScript",
-      "stargazers_count": 45556
+      "stargazers_count": 45559
     },
     {
       "name": "magento2",
@@ -1332,7 +1380,7 @@
         "login": "magento"
       },
       "language": "PHP",
-      "stargazers_count": 12171
+      "stargazers_count": 12173
     },
     {
       "name": "opencart",
@@ -1356,7 +1404,7 @@
         "login": "WordPress"
       },
       "language": "PHP",
-      "stargazers_count": 21379
+      "stargazers_count": 21378
     },
     {
       "name": "jquery-ui",
@@ -1380,7 +1428,7 @@
         "login": "jquery"
       },
       "language": "JavaScript",
-      "stargazers_count": 59780
+      "stargazers_count": 59779
     },
     {
       "name": "angular.js",
@@ -1392,7 +1440,7 @@
         "login": "angular"
       },
       "language": "JavaScript",
-      "stargazers_count": 58519
+      "stargazers_count": 58518
     },
     {
       "name": "PersianDate4MySQL",
