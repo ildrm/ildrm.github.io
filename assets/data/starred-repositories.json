@@ -1,6 +1,6 @@
 {
   "username": "ildrm",
-  "generated_at": "2026-09-06T04:36:33.451Z",
+  "generated_at": "2026-09-06T10:54:26.259Z",
   "repositories": [
     {
       "name": "python-seo-auditor",
@@ -12,18 +12,6 @@
         "login": "ildrm"
       },
       "language": "Python",
-      "stargazers_count": 1
-    },
-    {
-      "name": "economy-os",
-      "full_name": "ildrm/economy-os",
-      "html_url": "https://github.com/ildrm/economy-os",
-      "description": "EconomyOS is an open-source economic intelligence and research platform for point-in-time economic data, causal inference, forecasting, scenario analysis, systemic risk, and economic modeling. Built with TypeScript, Next.js, NestJS, PostgreSQL/TimescaleDB, and Temporal, with provenance, governance, and reproducible research.",
-      "fork": false,
-      "owner": {
-        "login": "ildrm"
-      },
-      "language": "TypeScript",
       "stargazers_count": 1
     },
     {
@@ -384,7 +372,7 @@
         "login": "Shubhamsaboo"
       },
       "language": "Python",
-      "stargazers_count": 136270
+      "stargazers_count": 136316
     },
     {
       "name": "llama-swap",
@@ -396,7 +384,7 @@
         "login": "mostlygeek"
       },
       "language": "Go",
-      "stargazers_count": 5584
+      "stargazers_count": 5585
     },
     {
       "name": "paperclip",
@@ -408,7 +396,7 @@
         "login": "paperclipai"
       },
       "language": "TypeScript",
-      "stargazers_count": 80072
+      "stargazers_count": 80078
     },
     {
       "name": "ubuntu-hardener",
@@ -876,7 +864,7 @@
         "login": "decolua"
       },
       "language": "JavaScript",
-      "stargazers_count": 27188
+      "stargazers_count": 27212
     },
     {
       "name": "pinion",
@@ -894,13 +882,13 @@
       "name": "system_prompts_leaks",
       "full_name": "asgeirtj/system_prompts_leaks",
       "html_url": "https://github.com/asgeirtj/system_prompts_leaks",
-      "description": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 5, Claude Design, Claude Code. OpenAI - ChatGPT GPT-5.6-Sol, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
+      "description": "Extracted system prompts from Anthropic - Claude Fable 5.1, Opus 5, Claude Design, Claude Code. OpenAI - ChatGPT GPT-6-Astra, Codex. Google - Gemini 3.8 Flash, 3.1 Pro, Antigravity. xAI - Grok, Grok Bot, Cursor, Kimi and more! Updated regularly.",
       "fork": false,
       "owner": {
         "login": "asgeirtj"
       },
       "language": "JavaScript",
-      "stargazers_count": 64237
+      "stargazers_count": 64258
     },
     {
       "name": "hazm",
@@ -924,7 +912,7 @@
         "login": "apache"
       },
       "language": "Python",
-      "stargazers_count": 74660
+      "stargazers_count": 74663
     },
     {
       "name": "claude-skills",
@@ -936,7 +924,7 @@
         "login": "alirezarezvani"
       },
       "language": "Python",
-      "stargazers_count": 25583
+      "stargazers_count": 25594
     },
     {
       "name": "BaleTunnel",
@@ -984,7 +972,7 @@
         "login": "deepseek-ai"
       },
       "language": "Python",
-      "stargazers_count": 104438
+      "stargazers_count": 104436
     },
     {
       "name": "llama",
@@ -1032,7 +1020,7 @@
         "login": "strands-agents"
       },
       "language": "Python",
-      "stargazers_count": 7162
+      "stargazers_count": 7163
     },
     {
       "name": "ComfyUI-3D-Pack",
@@ -1080,7 +1068,7 @@
         "login": "vllm-project"
       },
       "language": "Python",
-      "stargazers_count": 91048
+      "stargazers_count": 91067
     },
     {
       "name": "doris",
@@ -1116,7 +1104,7 @@
         "login": "ClickHouse"
       },
       "language": "C++",
-      "stargazers_count": 49664
+      "stargazers_count": 49665
     },
     {
       "name": "windows-drag-and-drop",
@@ -1200,7 +1188,7 @@
         "login": "enescingoz"
       },
       "language": null,
-      "stargazers_count": 25181
+      "stargazers_count": 25187
     },
     {
       "name": "voice-chat",
@@ -1224,7 +1212,7 @@
         "login": "n8n-io"
       },
       "language": "TypeScript",
-      "stargazers_count": 203492
+      "stargazers_count": 203510
     },
     {
       "name": "filament-google-maps",
@@ -1272,7 +1260,7 @@
         "login": "expressjs"
       },
       "language": "JavaScript",
-      "stargazers_count": 69429
+      "stargazers_count": 69439
     },
     {
       "name": "whisper",
@@ -1284,7 +1272,7 @@
         "login": "openai"
       },
       "language": "Python",
-      "stargazers_count": 108542
+      "stargazers_count": 108566
     },
     {
       "name": "filament",
@@ -1320,7 +1308,7 @@
         "login": "laravel"
       },
       "language": "Blade",
-      "stargazers_count": 84934
+      "stargazers_count": 84935
     },
     {
       "name": "cakephp",
@@ -1404,7 +1392,7 @@
         "login": "d3"
       },
       "language": "Shell",
-      "stargazers_count": 113647
+      "stargazers_count": 113652
     },
     {
       "name": "Leaflet",
@@ -1416,7 +1404,7 @@
         "login": "Leaflet"
       },
       "language": "JavaScript",
-      "stargazers_count": 45572
+      "stargazers_count": 45573
     },
     {
       "name": "magento2",
@@ -1440,7 +1428,7 @@
         "login": "opencart"
       },
       "language": "PHP",
-      "stargazers_count": 8195
+      "stargazers_count": 8193
     },
     {
       "name": "WordPress",
