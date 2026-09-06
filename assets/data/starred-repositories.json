@@ -1,6 +1,6 @@
 {
   "username": "ildrm",
-  "generated_at": "2026-09-06T15:26:53.166Z",
+  "generated_at": "2026-09-06T20:22:45.505Z",
   "repositories": [
     {
       "name": "python-seo-auditor",
@@ -12,6 +12,18 @@
         "login": "ildrm"
       },
       "language": "Python",
+      "stargazers_count": 1
+    },
+    {
+      "name": "economy-os",
+      "full_name": "ildrm/economy-os",
+      "html_url": "https://github.com/ildrm/economy-os",
+      "description": "EconomyOS is an open-source economic intelligence and research platform for point-in-time economic data, causal inference, forecasting, scenario analysis, systemic risk, and economic modeling. Built with TypeScript, Next.js, NestJS, PostgreSQL/TimescaleDB, and Temporal, with provenance, governance, and reproducible research.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "TypeScript",
       "stargazers_count": 1
     },
     {
@@ -372,7 +384,7 @@
         "login": "Shubhamsaboo"
       },
       "language": "Python",
-      "stargazers_count": 136356
+      "stargazers_count": 136394
     },
     {
       "name": "llama-swap",
@@ -384,7 +396,7 @@
         "login": "mostlygeek"
       },
       "language": "Go",
-      "stargazers_count": 5586
+      "stargazers_count": 5587
     },
     {
       "name": "paperclip",
@@ -396,7 +408,7 @@
         "login": "paperclipai"
       },
       "language": "TypeScript",
-      "stargazers_count": 80089
+      "stargazers_count": 80099
     },
     {
       "name": "ubuntu-hardener",
@@ -864,7 +876,7 @@
         "login": "decolua"
       },
       "language": "JavaScript",
-      "stargazers_count": 27238
+      "stargazers_count": 27258
     },
     {
       "name": "pinion",
@@ -888,7 +900,7 @@
         "login": "asgeirtj"
       },
       "language": "JavaScript",
-      "stargazers_count": 64272
+      "stargazers_count": 64278
     },
     {
       "name": "hazm",
@@ -912,7 +924,7 @@
         "login": "apache"
       },
       "language": "Python",
-      "stargazers_count": 74663
+      "stargazers_count": 74666
     },
     {
       "name": "claude-skills",
@@ -924,7 +936,7 @@
         "login": "alirezarezvani"
       },
       "language": "Python",
-      "stargazers_count": 25599
+      "stargazers_count": 25614
     },
     {
       "name": "BaleTunnel",
@@ -972,7 +984,7 @@
         "login": "deepseek-ai"
       },
       "language": "Python",
-      "stargazers_count": 104435
+      "stargazers_count": 104436
     },
     {
       "name": "llama",
@@ -984,7 +996,7 @@
         "login": "meta-llama"
       },
       "language": "Python",
-      "stargazers_count": 59596
+      "stargazers_count": 59595
     },
     {
       "name": "gemma",
@@ -1020,7 +1032,7 @@
         "login": "strands-agents"
       },
       "language": "Python",
-      "stargazers_count": 7163
+      "stargazers_count": 7164
     },
     {
       "name": "ComfyUI-3D-Pack",
@@ -1068,7 +1080,7 @@
         "login": "vllm-project"
       },
       "language": "Python",
-      "stargazers_count": 91081
+      "stargazers_count": 91095
     },
     {
       "name": "doris",
@@ -1104,7 +1116,7 @@
         "login": "ClickHouse"
       },
       "language": "C++",
-      "stargazers_count": 49666
+      "stargazers_count": 49671
     },
     {
       "name": "windows-drag-and-drop",
@@ -1188,7 +1200,7 @@
         "login": "enescingoz"
       },
       "language": null,
-      "stargazers_count": 25192
+      "stargazers_count": 25196
     },
     {
       "name": "voice-chat",
@@ -1212,7 +1224,7 @@
         "login": "n8n-io"
       },
       "language": "TypeScript",
-      "stargazers_count": 203526
+      "stargazers_count": 203546
     },
     {
       "name": "filament-google-maps",
@@ -1260,7 +1272,7 @@
         "login": "expressjs"
       },
       "language": "JavaScript",
-      "stargazers_count": 69445
+      "stargazers_count": 69452
     },
     {
       "name": "whisper",
@@ -1272,7 +1284,7 @@
         "login": "openai"
       },
       "language": "Python",
-      "stargazers_count": 108588
+      "stargazers_count": 108613
     },
     {
       "name": "filament",
@@ -1284,7 +1296,7 @@
         "login": "filamentphp"
       },
       "language": "PHP",
-      "stargazers_count": 31998
+      "stargazers_count": 32001
     },
     {
       "name": "Reactjs-Divar",
@@ -1308,7 +1320,7 @@
         "login": "laravel"
       },
       "language": "Blade",
-      "stargazers_count": 84935
+      "stargazers_count": 84936
     },
     {
       "name": "cakephp",
@@ -1392,7 +1404,7 @@
         "login": "d3"
       },
       "language": "Shell",
-      "stargazers_count": 113654
+      "stargazers_count": 113659
     },
     {
       "name": "Leaflet",
@@ -1404,7 +1416,7 @@
         "login": "Leaflet"
       },
       "language": "JavaScript",
-      "stargazers_count": 45573
+      "stargazers_count": 45575
     },
     {
       "name": "magento2",
@@ -1440,7 +1452,7 @@
         "login": "WordPress"
       },
       "language": "PHP",
-      "stargazers_count": 21390
+      "stargazers_count": 21392
     },
     {
       "name": "jquery-ui",
