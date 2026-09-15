@@ -1,6 +1,6 @@
 {
   "username": "ildrm",
-  "generated_at": "2026-09-15T11:42:20.783Z",
+  "generated_at": "2026-09-15T16:57:45.276Z",
   "repositories": [
     {
       "name": "wanderline-social-travel-platform",
@@ -492,7 +492,7 @@
         "login": "Shubhamsaboo"
       },
       "language": "Python",
-      "stargazers_count": 138284
+      "stargazers_count": 138311
     },
     {
       "name": "llama-swap",
@@ -504,7 +504,7 @@
         "login": "mostlygeek"
       },
       "language": "Go",
-      "stargazers_count": 5670
+      "stargazers_count": 5672
     },
     {
       "name": "paperclip",
@@ -516,7 +516,7 @@
         "login": "paperclipai"
       },
       "language": "TypeScript",
-      "stargazers_count": 80722
+      "stargazers_count": 80741
     },
     {
       "name": "ubuntu-hardener",
@@ -984,7 +984,7 @@
         "login": "decolua"
       },
       "language": "JavaScript",
-      "stargazers_count": 28815
+      "stargazers_count": 28859
     },
     {
       "name": "pinion",
@@ -1008,7 +1008,7 @@
         "login": "asgeirtj"
       },
       "language": "JavaScript",
-      "stargazers_count": 67092
+      "stargazers_count": 67132
     },
     {
       "name": "hazm",
@@ -1020,7 +1020,7 @@
         "login": "roshan-research"
       },
       "language": "Python",
-      "stargazers_count": 1422
+      "stargazers_count": 1423
     },
     {
       "name": "superset",
@@ -1032,7 +1032,7 @@
         "login": "apache"
       },
       "language": "Python",
-      "stargazers_count": 74766
+      "stargazers_count": 74768
     },
     {
       "name": "claude-skills",
@@ -1044,7 +1044,7 @@
         "login": "alirezarezvani"
       },
       "language": "Python",
-      "stargazers_count": 25975
+      "stargazers_count": 25987
     },
     {
       "name": "BaleTunnel",
@@ -1080,7 +1080,7 @@
         "login": "MoonshotAI"
       },
       "language": null,
-      "stargazers_count": 2308
+      "stargazers_count": 2307
     },
     {
       "name": "DeepSeek-V3",
@@ -1092,7 +1092,7 @@
         "login": "deepseek-ai"
       },
       "language": "Python",
-      "stargazers_count": 104454
+      "stargazers_count": 104458
     },
     {
       "name": "llama",
@@ -1104,7 +1104,7 @@
         "login": "meta-llama"
       },
       "language": "Python",
-      "stargazers_count": 59615
+      "stargazers_count": 59616
     },
     {
       "name": "gemma",
@@ -1140,7 +1140,7 @@
         "login": "strands-agents"
       },
       "language": "Python",
-      "stargazers_count": 7249
+      "stargazers_count": 7256
     },
     {
       "name": "ComfyUI-3D-Pack",
@@ -1188,7 +1188,7 @@
         "login": "vllm-project"
       },
       "language": "Python",
-      "stargazers_count": 91813
+      "stargazers_count": 91843
     },
     {
       "name": "doris",
@@ -1200,7 +1200,7 @@
         "login": "apache"
       },
       "language": "Java",
-      "stargazers_count": 15914
+      "stargazers_count": 15916
     },
     {
       "name": "awesome-n8n-templates",
@@ -1224,7 +1224,7 @@
         "login": "ClickHouse"
       },
       "language": "C++",
-      "stargazers_count": 49901
+      "stargazers_count": 49907
     },
     {
       "name": "windows-drag-and-drop",
@@ -1308,7 +1308,7 @@
         "login": "enescingoz"
       },
       "language": null,
-      "stargazers_count": 25366
+      "stargazers_count": 25374
     },
     {
       "name": "voice-chat",
@@ -1332,7 +1332,7 @@
         "login": "n8n-io"
       },
       "language": "TypeScript",
-      "stargazers_count": 204361
+      "stargazers_count": 204384
     },
     {
       "name": "filament-google-maps",
@@ -1380,7 +1380,7 @@
         "login": "expressjs"
       },
       "language": "JavaScript",
-      "stargazers_count": 69450
+      "stargazers_count": 69449
     },
     {
       "name": "whisper",
@@ -1392,7 +1392,7 @@
         "login": "openai"
       },
       "language": "Python",
-      "stargazers_count": 109135
+      "stargazers_count": 109164
     },
     {
       "name": "filament",
@@ -1404,7 +1404,7 @@
         "login": "filamentphp"
       },
       "language": "PHP",
-      "stargazers_count": 32062
+      "stargazers_count": 32068
     },
     {
       "name": "Reactjs-Divar",
@@ -1428,7 +1428,7 @@
         "login": "laravel"
       },
       "language": "Blade",
-      "stargazers_count": 84958
+      "stargazers_count": 84961
     },
     {
       "name": "cakephp",
@@ -1524,7 +1524,7 @@
         "login": "Leaflet"
       },
       "language": "JavaScript",
-      "stargazers_count": 45618
+      "stargazers_count": 45619
     },
     {
       "name": "magento2",
@@ -1560,7 +1560,7 @@
         "login": "WordPress"
       },
       "language": "PHP",
-      "stargazers_count": 21422
+      "stargazers_count": 21423
     },
     {
       "name": "jquery-ui",
@@ -1596,7 +1596,7 @@
         "login": "angular"
       },
       "language": "JavaScript",
-      "stargazers_count": 58510
+      "stargazers_count": 58511
     },
     {
       "name": "PersianDate4MySQL",
