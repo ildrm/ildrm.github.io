@@ -1,7 +1,91 @@
 {
   "username": "ildrm",
-  "generated_at": "2026-09-21T04:53:11.076Z",
+  "generated_at": "2026-09-21T12:45:28.642Z",
   "repositories": [
+    {
+      "name": "be-human",
+      "full_name": "ildrm/be-human",
+      "html_url": "https://github.com/ildrm/be-human",
+      "description": null,
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "TypeScript",
+      "stargazers_count": 1
+    },
+    {
+      "name": "persian_tts",
+      "full_name": "ildrm/persian_tts",
+      "html_url": "https://github.com/ildrm/persian_tts",
+      "description": "Persian text-to-speech with voice cloning, fully offline on CPU (ONNX + torch paths)",
+      "fork": true,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": null,
+      "stargazers_count": 1
+    },
+    {
+      "name": "wordpress-orchestrix-forms",
+      "full_name": "ildrm/wordpress-orchestrix-forms",
+      "html_url": "https://github.com/ildrm/wordpress-orchestrix-forms",
+      "description": "Open-source WordPress form builder and low-code workflow platform for forms, surveys, quizzes, payment forms, data collection, and workflow automation. Server-rendered and progressively enhanced, with PHP/TypeScript architecture, shortcode embedding, extensibility, and production-focused testing.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "PHP",
+      "stargazers_count": 1
+    },
+    {
+      "name": "asteria-financial-platform",
+      "full_name": "ildrm/asteria-financial-platform",
+      "html_url": "https://github.com/ildrm/asteria-financial-platform",
+      "description": "Open-source WordPress financial analytics and paper trading plugin for portfolio simulation, watchlists, synthetic OHLCV market data, risk metrics (Sharpe, VaR, drawdown), Black-Scholes options, bond and FX models, REST APIs, and local-first fintech research—no external market-data service required.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "PHP",
+      "stargazers_count": 1
+    },
+    {
+      "name": "poulix-platform",
+      "full_name": "ildrm/poulix-platform",
+      "html_url": "https://github.com/ildrm/poulix-platform",
+      "description": "Poulix-Platform is a full-stack financial application.  ",
+      "fork": true,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": null,
+      "stargazers_count": 1
+    },
+    {
+      "name": "woocommerce-marketplace-suite",
+      "full_name": "ildrm/woocommerce-marketplace-suite",
+      "html_url": "https://github.com/ildrm/woocommerce-marketplace-suite",
+      "description": "Open-source modular multi-vendor marketplace framework for WooCommerce with vendor lifecycle management, product ownership, commission primitives, double-entry ledger foundations, REST APIs, idempotent financial operations, and HPOS/Cart & Checkout Blocks compatibility for secure WordPress marketplace development.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "PHP",
+      "stargazers_count": 1
+    },
+    {
+      "name": "wordpress-multilingual",
+      "full_name": "ildrm/wordpress-multilingual",
+      "html_url": "https://github.com/ildrm/wordpress-multilingual",
+      "description": "Open-source performance-first multilingual plugin for WordPress with unlimited languages, translation relationships, string translation, translation memory, hreflang, language switcher, REST API, WP-CLI, multisite support, and indexed relational storage for scalable multilingual sites.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "PHP",
+      "stargazers_count": 1
+    },
     {
       "name": "persian_tts",
       "full_name": "nimaone/persian_tts",
@@ -12,7 +96,7 @@
         "login": "nimaone"
       },
       "language": "Python",
-      "stargazers_count": 143
+      "stargazers_count": 151
     },
     {
       "name": "poulix-platform",
@@ -552,7 +636,7 @@
         "login": "Shubhamsaboo"
       },
       "language": "Python",
-      "stargazers_count": 139198
+      "stargazers_count": 139257
     },
     {
       "name": "llama-swap",
@@ -564,7 +648,7 @@
         "login": "mostlygeek"
       },
       "language": "Go",
-      "stargazers_count": 5716
+      "stargazers_count": 5718
     },
     {
       "name": "paperclip",
@@ -576,7 +660,7 @@
         "login": "paperclipai"
       },
       "language": "TypeScript",
-      "stargazers_count": 81148
+      "stargazers_count": 81174
     },
     {
       "name": "ubuntu-hardener",
@@ -1044,7 +1128,7 @@
         "login": "decolua"
       },
       "language": "JavaScript",
-      "stargazers_count": 29482
+      "stargazers_count": 29511
     },
     {
       "name": "pinion",
@@ -1068,7 +1152,7 @@
         "login": "asgeirtj"
       },
       "language": "JavaScript",
-      "stargazers_count": 67897
+      "stargazers_count": 67941
     },
     {
       "name": "hazm",
@@ -1092,7 +1176,7 @@
         "login": "apache"
       },
       "language": "Python",
-      "stargazers_count": 74861
+      "stargazers_count": 74870
     },
     {
       "name": "claude-skills",
@@ -1104,7 +1188,7 @@
         "login": "alirezarezvani"
       },
       "language": "Python",
-      "stargazers_count": 26191
+      "stargazers_count": 26205
     },
     {
       "name": "BaleTunnel",
@@ -1152,7 +1236,7 @@
         "login": "deepseek-ai"
       },
       "language": "Python",
-      "stargazers_count": 104471
+      "stargazers_count": 104475
     },
     {
       "name": "llama",
@@ -1176,7 +1260,7 @@
         "login": "google-deepmind"
       },
       "language": "Python",
-      "stargazers_count": 5740
+      "stargazers_count": 5741
     },
     {
       "name": "external-request-manager-pro",
@@ -1200,7 +1284,7 @@
         "login": "strands-agents"
       },
       "language": "Python",
-      "stargazers_count": 7382
+      "stargazers_count": 7386
     },
     {
       "name": "ComfyUI-3D-Pack",
@@ -1248,7 +1332,7 @@
         "login": "vllm-project"
       },
       "language": "Python",
-      "stargazers_count": 92275
+      "stargazers_count": 92324
     },
     {
       "name": "doris",
@@ -1260,7 +1344,7 @@
         "login": "apache"
       },
       "language": "Java",
-      "stargazers_count": 15971
+      "stargazers_count": 15976
     },
     {
       "name": "awesome-n8n-templates",
@@ -1284,7 +1368,7 @@
         "login": "ClickHouse"
       },
       "language": "C++",
-      "stargazers_count": 50000
+      "stargazers_count": 50003
     },
     {
       "name": "windows-drag-and-drop",
@@ -1368,7 +1452,7 @@
         "login": "enescingoz"
       },
       "language": null,
-      "stargazers_count": 25490
+      "stargazers_count": 25495
     },
     {
       "name": "voice-chat",
@@ -1392,7 +1476,7 @@
         "login": "n8n-io"
       },
       "language": "TypeScript",
-      "stargazers_count": 205495
+      "stargazers_count": 205536
     },
     {
       "name": "filament-google-maps",
@@ -1440,7 +1524,7 @@
         "login": "expressjs"
       },
       "language": "JavaScript",
-      "stargazers_count": 69460
+      "stargazers_count": 69453
     },
     {
       "name": "whisper",
@@ -1452,7 +1536,7 @@
         "login": "openai"
       },
       "language": "Python",
-      "stargazers_count": 109413
+      "stargazers_count": 109425
     },
     {
       "name": "filament",
@@ -1464,7 +1548,7 @@
         "login": "filamentphp"
       },
       "language": "PHP",
-      "stargazers_count": 32092
+      "stargazers_count": 32093
     },
     {
       "name": "Reactjs-Divar",
@@ -1488,7 +1572,7 @@
         "login": "laravel"
       },
       "language": "Blade",
-      "stargazers_count": 84988
+      "stargazers_count": 84989
     },
     {
       "name": "cakephp",
@@ -1560,7 +1644,7 @@
         "login": "openlayers"
       },
       "language": "JavaScript",
-      "stargazers_count": 12582
+      "stargazers_count": 12583
     },
     {
       "name": "d3",
@@ -1572,7 +1656,7 @@
         "login": "d3"
       },
       "language": "Shell",
-      "stargazers_count": 113748
+      "stargazers_count": 113751
     },
     {
       "name": "Leaflet",
@@ -1584,7 +1668,7 @@
         "login": "Leaflet"
       },
       "language": "JavaScript",
-      "stargazers_count": 45640
+      "stargazers_count": 45642
     },
     {
       "name": "magento2",
@@ -1632,7 +1716,7 @@
         "login": "jquery"
       },
       "language": "JavaScript",
-      "stargazers_count": 11336
+      "stargazers_count": 11335
     },
     {
       "name": "jquery",
@@ -1644,7 +1728,7 @@
         "login": "jquery"
       },
       "language": "JavaScript",
-      "stargazers_count": 59786
+      "stargazers_count": 59785
     },
     {
       "name": "angular.js",
@@ -1656,7 +1740,7 @@
         "login": "angular"
       },
       "language": "JavaScript",
-      "stargazers_count": 58505
+      "stargazers_count": 58506
     },
     {
       "name": "PersianDate4MySQL",
