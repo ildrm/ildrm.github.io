@@ -1,7 +1,19 @@
 {
   "username": "ildrm",
-  "generated_at": "2026-09-24T17:09:04.262Z",
+  "generated_at": "2026-09-24T21:29:35.581Z",
   "repositories": [
+    {
+      "name": "project-qr",
+      "full_name": "ildrm/project-qr",
+      "html_url": "https://github.com/ildrm/project-qr",
+      "description": "Smart Gallery QR is a WordPress QR code plugin for creating secure digital galleries and shareable experiences with dynamic QR codes, encrypted image/PDF media, access control, invitations, workspace roles, scan analytics, and a React admin interface. Build private, public, password-protected, member-only or unlisted galleries.",
+      "fork": false,
+      "owner": {
+        "login": "ildrm"
+      },
+      "language": "PHP",
+      "stargazers_count": 1
+    },
     {
       "name": "wordpress-navigation-studio",
       "full_name": "ildrm/wordpress-navigation-studio",
@@ -24,7 +36,7 @@
         "login": "woocommerce"
       },
       "language": "PHP",
-      "stargazers_count": 10535
+      "stargazers_count": 10534
     },
     {
       "name": "All-Url-Uploader",
@@ -48,7 +60,7 @@
         "login": "nextlevelbuilder"
       },
       "language": "Python",
-      "stargazers_count": 130335
+      "stargazers_count": 130381
     },
     {
       "name": "digikala-mcp",
@@ -60,7 +72,7 @@
         "login": "mmdju"
       },
       "language": "JavaScript",
-      "stargazers_count": 117
+      "stargazers_count": 118
     },
     {
       "name": "divar-mcp",
@@ -72,7 +84,7 @@
         "login": "mmdju"
       },
       "language": "JavaScript",
-      "stargazers_count": 63
+      "stargazers_count": 64
     },
     {
       "name": "envkit-releases",
@@ -96,7 +108,7 @@
         "login": "bilawalsidhu"
       },
       "language": "JavaScript",
-      "stargazers_count": 42294
+      "stargazers_count": 42405
     },
     {
       "name": "be-human",
@@ -231,9 +243,9 @@
       "stargazers_count": 1
     },
     {
-      "name": "wp-sso",
-      "full_name": "ildrm/wp-sso",
-      "html_url": "https://github.com/ildrm/wp-sso",
+      "name": "wordpress-sso-provider",
+      "full_name": "ildrm/wordpress-sso-provider",
+      "html_url": "https://github.com/ildrm/wordpress-sso-provider",
       "description": "WordPress SSO Provider is a security-focused IAM and Single Sign-On foundation for WordPress. It includes application management, OAuth 2.0 + PKCE primitives, OpenID Connect discovery, SCIM filtering, CAS tickets, encrypted secrets, audit logging, REST admin APIs, policy/claims/session services, and extensible protocol adapters for modern sites.",
       "fork": false,
       "owner": {
@@ -732,7 +744,7 @@
         "login": "Shubhamsaboo"
       },
       "language": "Python",
-      "stargazers_count": 139637
+      "stargazers_count": 139654
     },
     {
       "name": "llama-swap",
@@ -756,7 +768,7 @@
         "login": "paperclipai"
       },
       "language": "TypeScript",
-      "stargazers_count": 81974
+      "stargazers_count": 82481
     },
     {
       "name": "ubuntu-hardener",
@@ -1224,7 +1236,7 @@
         "login": "decolua"
       },
       "language": "JavaScript",
-      "stargazers_count": 29751
+      "stargazers_count": 29759
     },
     {
       "name": "pinion",
@@ -1248,7 +1260,7 @@
         "login": "asgeirtj"
       },
       "language": "JavaScript",
-      "stargazers_count": 68233
+      "stargazers_count": 68257
     },
     {
       "name": "hazm",
@@ -1272,7 +1284,7 @@
         "login": "apache"
       },
       "language": "Python",
-      "stargazers_count": 74911
+      "stargazers_count": 74916
     },
     {
       "name": "claude-skills",
@@ -1284,7 +1296,7 @@
         "login": "alirezarezvani"
       },
       "language": "Python",
-      "stargazers_count": 26398
+      "stargazers_count": 26407
     },
     {
       "name": "BaleTunnel",
@@ -1332,7 +1344,7 @@
         "login": "deepseek-ai"
       },
       "language": "Python",
-      "stargazers_count": 104487
+      "stargazers_count": 104488
     },
     {
       "name": "llama",
@@ -1344,7 +1356,7 @@
         "login": "meta-llama"
       },
       "language": "Python",
-      "stargazers_count": 59616
+      "stargazers_count": 59617
     },
     {
       "name": "gemma",
@@ -1380,7 +1392,7 @@
         "login": "strands-agents"
       },
       "language": "Python",
-      "stargazers_count": 8164
+      "stargazers_count": 8216
     },
     {
       "name": "ComfyUI-3D-Pack",
@@ -1428,7 +1440,7 @@
         "login": "vllm-project"
       },
       "language": "Python",
-      "stargazers_count": 92625
+      "stargazers_count": 92639
     },
     {
       "name": "doris",
@@ -1548,7 +1560,7 @@
         "login": "enescingoz"
       },
       "language": null,
-      "stargazers_count": 25556
+      "stargazers_count": 25558
     },
     {
       "name": "voice-chat",
@@ -1572,7 +1584,7 @@
         "login": "n8n-io"
       },
       "language": "TypeScript",
-      "stargazers_count": 205864
+      "stargazers_count": 205885
     },
     {
       "name": "filament-google-maps",
@@ -1620,7 +1632,7 @@
         "login": "expressjs"
       },
       "language": "JavaScript",
-      "stargazers_count": 69469
+      "stargazers_count": 69470
     },
     {
       "name": "whisper",
@@ -1632,7 +1644,7 @@
         "login": "openai"
       },
       "language": "Python",
-      "stargazers_count": 109553
+      "stargazers_count": 109561
     },
     {
       "name": "filament",
@@ -1668,7 +1680,7 @@
         "login": "laravel"
       },
       "language": "Blade",
-      "stargazers_count": 85008
+      "stargazers_count": 85007
     },
     {
       "name": "cakephp",
@@ -1752,7 +1764,7 @@
         "login": "d3"
       },
       "language": "Shell",
-      "stargazers_count": 113765
+      "stargazers_count": 113764
     },
     {
       "name": "Leaflet",
@@ -1764,7 +1776,7 @@
         "login": "Leaflet"
       },
       "language": "JavaScript",
-      "stargazers_count": 45665
+      "stargazers_count": 45664
     },
     {
       "name": "magento2",
@@ -1788,7 +1800,7 @@
         "login": "opencart"
       },
       "language": "PHP",
-      "stargazers_count": 8201
+      "stargazers_count": 8200
     },
     {
       "name": "WordPress",
@@ -1800,7 +1812,7 @@
         "login": "WordPress"
       },
       "language": "PHP",
-      "stargazers_count": 21433
+      "stargazers_count": 21432
     },
     {
       "name": "jquery-ui",
@@ -1812,7 +1824,7 @@
         "login": "jquery"
       },
       "language": "JavaScript",
-      "stargazers_count": 11335
+      "stargazers_count": 11334
     },
     {
       "name": "jquery",
@@ -1824,7 +1836,7 @@
         "login": "jquery"
       },
       "language": "JavaScript",
-      "stargazers_count": 59787
+      "stargazers_count": 59786
     },
     {
       "name": "angular.js",
@@ -1836,7 +1848,7 @@
         "login": "angular"
       },
       "language": "JavaScript",
-      "stargazers_count": 58505
+      "stargazers_count": 58504
     },
     {
       "name": "PersianDate4MySQL",
