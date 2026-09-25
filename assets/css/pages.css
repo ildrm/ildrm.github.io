@@ -250,10 +250,11 @@ body[data-page="contact"] .hero-vignette{background:radial-gradient(circle at 68
 .secondary-action:hover{background:rgba(120,232,255,.14)}
 .scroll-cue{font-size:11px;text-transform:uppercase}
 .portrait-mat picture{display:block;width:100%;height:100%}
+/* Keep the source visible until the first painted frame, then reveal the live canvas. */
 .portrait-source{opacity:1}
 .portrait-canvas{opacity:0}
-.portrait-complete .portrait-source{opacity:.25}
-.portrait-complete .portrait-canvas{opacity:.9}
+.portrait-ready .portrait-source{opacity:0}
+.portrait-ready .portrait-canvas{opacity:1}
 .portrait-failed .portrait-source{opacity:1}
 .portrait-failed .portrait-canvas{opacity:0}
 .sheet{backdrop-filter:none;box-shadow:0 30px 70px rgba(0,0,0,.36)}
@@ -392,6 +393,7 @@ body[data-page="projects"] .hud-telemetry,body[data-page="projects"] .progress-o
   .hud-shell{top:10px;left:10px;right:10px;height:54px;padding:0 8px 0 12px}
   .hud-brand{font-size:11px;letter-spacing:.04em}
   .motion-toggle{width:72px;min-height:38px;padding:2px 4px;font-size:9px;line-height:1.1;white-space:normal}
+  .no-webgl.portrait-geometrizing .motion-toggle{display:block}
   .hero-name{line-height:.94}
   .classification-grid{grid-template-columns:1fr;gap:12px;background:transparent}
   .class-item:nth-child(n){grid-column:auto;min-height:0}

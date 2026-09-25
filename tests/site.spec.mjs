@@ -123,6 +123,41 @@ test('reduced motion keeps content visible', async ({ page }) => {
   await expect(page.locator('body')).toHaveClass(/no-webgl/);
 });
 
+test('portrait painting is visible and changes before it completes', async ({ page }) => {
+  await page.route('https://cdnjs.cloudflare.com/**', route => route.abort());
+  for (const width of [375, 1280]) {
+    await page.setViewportSize({ width, height: 900 });
+    await page.goto('/');
+    await page.waitForFunction(() => {
+      const caption = document.getElementById('portrait-caption')?.textContent || '';
+      const count = Number((caption.match(/GEOMETRIZE \/ (\d+) OF/) || [])[1]);
+      return count >= 30 && count < 3000;
+    }, null, { timeout: 90000 });
+    await expect.poll(() => page.locator('.portrait-canvas').evaluate(canvas => Number(getComputedStyle(canvas).opacity))).toBe(1);
+    await expect.poll(() => page.locator('.portrait-source').evaluate(source => Number(getComputedStyle(source).opacity))).toBe(0);
+    const first = await page.evaluate(() => {
+      const canvas = document.getElementById('portrait-canvas');
+      const pixels = canvas.getContext('2d').getImageData(0, 0, canvas.width, canvas.height).data;
+      let checksum = 0;
+      for (let index = 0; index < pixels.length; index += 31) checksum = (checksum * 31 + pixels[index]) >>> 0;
+      return { count: Number((document.getElementById('portrait-caption').textContent.match(/GEOMETRIZE \/ (\d+) OF/) || [])[1]), checksum };
+    });
+    await page.waitForFunction(previous => {
+      const count = Number((document.getElementById('portrait-caption')?.textContent.match(/GEOMETRIZE \/ (\d+) OF/) || [])[1]);
+      return count >= previous + 30;
+    }, first.count, { timeout: 90000 });
+    const secondChecksum = await page.evaluate(() => {
+      const canvas = document.getElementById('portrait-canvas');
+      const pixels = canvas.getContext('2d').getImageData(0, 0, canvas.width, canvas.height).data;
+      let checksum = 0;
+      for (let index = 0; index < pixels.length; index += 31) checksum = (checksum * 31 + pixels[index]) >>> 0;
+      return checksum;
+    });
+    expect(secondChecksum, `painted pixels at ${width}px`).not.toBe(first.checksum);
+    if (width === 375) await expect(page.locator('.motion-toggle')).toBeVisible();
+  }
+});
+
 test('motion control persists and WebGL failure leaves content readable', async ({ page }) => {
   await page.setViewportSize({ width: 1280, height: 900 });
   await page.route('https://cdnjs.cloudflare.com/**', route => route.abort());
@@ -135,6 +170,12 @@ test('motion control persists and WebGL failure leaves content readable', async 
   await expect(page.locator('.hero-intro')).toBeVisible();
   await expect(page.locator('.portrait-source')).toBeVisible();
   await page.waitForFunction(() => document.body.classList.contains('no-webgl'));
+  await page.waitForFunction(() => document.body.classList.contains('portrait-geometrizing'));
+  await expect(page.locator('.portrait-source')).toHaveCSS('opacity', '1');
+  await expect(page.locator('.portrait-canvas')).toHaveCSS('opacity', '0');
+  await page.locator('.motion-toggle').click();
+  await page.waitForFunction(() => document.body.classList.contains('portrait-ready'));
+  await expect(page.locator('.portrait-canvas')).toHaveCSS('opacity', '1');
 });
 
 test('representative widths have no horizontal overflow', async ({ page }) => {
