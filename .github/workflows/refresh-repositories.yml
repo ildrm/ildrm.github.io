@@ -1,15 +1,15 @@
-name: Refresh starred repositories
+name: Refresh public repositories
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '17 */6 * * *'
+    - cron: '17 3 * * *'
 
 permissions:
   contents: write
 
 concurrency:
-  group: refresh-starred-repositories
+  group: refresh-repositories
   cancel-in-progress: true
 
 jobs:
@@ -19,19 +19,24 @@ jobs:
       - name: Check out the site
         uses: actions/checkout@v7
 
-      - name: Refresh the repository snapshot
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+
+      - name: Refresh repository data and static pages
         env:
           GITHUB_TOKEN: ${{ github.token }}
-        run: node scripts/update-starred-repositories.mjs
+        run: node scripts/update-repositories.mjs
 
-      - name: Commit an updated snapshot
+      - name: Commit content changes
         run: |
-          git add assets/data/starred-repositories.json
+          git add assets/data/repositories.json index.html projects.html
           if git diff --cached --quiet; then
-            echo "The snapshot is already current."
+            echo "Repository content is current."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "chore: refresh starred repositories"
+          git commit -m "chore: refresh public repository content"
           git push

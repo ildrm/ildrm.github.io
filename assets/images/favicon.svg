@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="SI orbital mark">
+  <rect width="64" height="64" rx="10" fill="#030609"/>
+  <circle cx="32" cy="32" r="22" fill="none" stroke="#78e8ff" stroke-width="2"/>
+  <ellipse cx="32" cy="32" rx="27" ry="11" transform="rotate(-32 32 32)" fill="none" stroke="#ff775c" stroke-width="2"/>
+  <circle cx="50" cy="20" r="4" fill="#d9ff63"/>
+  <text x="32" y="40" text-anchor="middle" fill="#f0f0e8" font-family="Arial,sans-serif" font-size="22" font-weight="700">SI</text>
+</svg>

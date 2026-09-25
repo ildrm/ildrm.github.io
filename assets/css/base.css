@@ -1,10 +1,13 @@
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url('../fonts/space-grotesk.woff2') format('woff2')}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/ibm-plex-mono-400.woff2') format('woff2')}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:500 600;font-display:swap;src:url('../fonts/ibm-plex-mono-500.woff2') format('woff2')}
 :root{
     --void:#030609;
     --void-soft:#071016;
     --ink:#0b151b;
     --bone:#f0f0e8;
     --bone-dim:#aab6b7;
-    --steel:#6d7e87;
+    --steel:#9aafb8;
     --cyan:#78e8ff;
     --orange:#ff775c;
     --acid:#d9ff63;
@@ -45,8 +48,8 @@
   }
   .skip-link:focus{transform:none}
   .sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
-  .station-select{display:none}
   .hero,.sheet,.sheet h2{scroll-margin-top:92px}
+  .mobile-nav{display:none}
 
   #hero-canvas{
     position:fixed!important;inset:0!important;width:100vw!important;height:100vh!important;
@@ -58,5 +61,4 @@
       linear-gradient(90deg,rgba(3,6,9,.9) 0%,rgba(3,6,9,.48) 38%,transparent 68%),
       radial-gradient(circle at 72% 43%,transparent 14%,rgba(3,6,9,.24) 50%,rgba(3,6,9,.8) 100%);
   }
-  .node-label{display:none!important}
 

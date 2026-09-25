@@ -45,18 +45,11 @@
     if (telemetry) telemetry.innerHTML = pageLabel + ' / LOCAL ' + pad(now.getHours()) + ':' + pad(now.getMinutes()) + ':' + pad(now.getSeconds()) + '<br>DEPTH ' + String(Math.round(progress * 100)).padStart(3, '0') + '%';
     if (bar) bar.style.width = (progress * 100).toFixed(2) + '%';
   }
-  window.addEventListener('scroll', updateTelemetry, { passive:true });
-  window.addEventListener('resize', updateTelemetry, { passive:true });
-  window.setInterval(updateTelemetry, 1000);
-  updateTelemetry();
-
-  var selector = document.getElementById('page-select');
-  if (selector){
-    selector.value = body.dataset.page || 'home';
-    selector.addEventListener('change', function(){
-      var option = selector.options[selector.selectedIndex];
-      if (option && option.dataset.href) window.location.href = option.dataset.href;
-    });
+  if (body.dataset.page !== 'projects'){
+    window.addEventListener('scroll', updateTelemetry, { passive:true });
+    window.addEventListener('resize', updateTelemetry, { passive:true });
+    window.setInterval(updateTelemetry, 1000);
+    updateTelemetry();
   }
 
   function anchorOffset(){ return window.innerWidth <= 760 ? 76 : 92; }
@@ -67,28 +60,6 @@
   }
   window.addEventListener('hashchange', function(){ window.setTimeout(alignHash, 35); });
   window.addEventListener('load', function(){ window.setTimeout(alignHash, 80); });
-
-  var filed = document.getElementById('filed-date');
-  if (filed){
-    var today = new Date();
-    filed.textContent = 'Filed on ' + today.toLocaleDateString('en-GB', { day:'2-digit', month:'long', year:'numeric' });
-  }
-
-  var internalLinks = Array.from(document.querySelectorAll('a[href$=".html"], a[href*=".html#"]'));
-  internalLinks.forEach(function(link){
-    link.addEventListener('click', function(event){
-      if (event.defaultPrevented || event.metaKey || event.ctrlKey || event.shiftKey || link.target === '_blank' || reduceMotion || !window.gsap) return;
-      var destination = new URL(link.href, location.href);
-      if (destination.origin !== location.origin || destination.href === location.href) return;
-      event.preventDefault();
-      body.classList.add('is-leaving');
-      gsap.to('.page-transition', { scaleY:1, duration:.36, ease:'power2.inOut', onComplete:function(){ location.href = destination.href; } });
-    });
-  });
-
-  if (!reduceMotion && window.gsap){
-    gsap.fromTo('.page-transition', { scaleY:1, transformOrigin:'top' }, { scaleY:0, duration:.48, ease:'power2.inOut', clearProps:'transformOrigin' });
-  }
 
   document.addEventListener('visibilitychange', function(){
     window.dispatchEvent(new CustomEvent('site:visibility', { detail:{ hidden:document.hidden } }));

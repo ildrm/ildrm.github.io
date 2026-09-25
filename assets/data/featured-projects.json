@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "logicommerce-logistic-ecommerce",
+    "label": "LogiCommerce",
+    "summary": "A modular logistics and commerce platform covering warehouse, inventory, shipping, suppliers, and marketplace operations.",
+    "focus": ["Logistics", "Commerce", "TypeScript"]
+  },
+  {
+    "slug": "ham-mahalleh",
+    "label": "Ham-Mahalleh",
+    "summary": "A local, multi-vendor marketplace connecting neighborhood sellers and buyers with store, product, order, and payment management.",
+    "focus": ["Marketplace", "NestJS", "Next.js"]
+  },
+  {
+    "slug": "atlas-rag-as-service",
+    "label": "Atlas RAG as a Service",
+    "summary": "An open-source knowledge API for document ingestion, embeddings, vector search, and retrieval-augmented applications.",
+    "focus": ["AI", "RAG", "Python"]
+  },
+  {
+    "slug": "doris-jalali-date",
+    "label": "Doris Jalali Date",
+    "summary": "Java user-defined functions that add Jalali calendar conversion and date operations to Apache Doris.",
+    "focus": ["Data engineering", "Apache Doris", "Java"]
+  },
+  {
+    "slug": "northstar-seo",
+    "label": "Northstar SEO",
+    "summary": "An open-source technical SEO crawler for asynchronous site analysis, on-page checks, and issue prioritization.",
+    "focus": ["SEO", "Crawler", "TypeScript"]
+  },
+  {
+    "slug": "wp-workflow-pipeline",
+    "label": "WordPress Workflow Pipeline",
+    "summary": "A WordPress plugin for fetching, processing, and publishing content through configurable automation workflows.",
+    "focus": ["WordPress", "Automation", "PHP"]
+  }
+]

@@ -1,39 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Six selected engineering exhibits and the complete verified register of 71 public GitHub repositories." />
-  <title>Projects — Shahin Ilderemi Lotfabad</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/base.css" />
-  <link rel="stylesheet" href="assets/css/components.css" />
-  <link rel="stylesheet" href="assets/css/pages.css" />
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.1/three.min.js"></script>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software Engineering Projects | Shahin Ilderemi</title>
+  <meta name="description" content="Explore Shahin Ilderemi&#39;s original open-source projects in logistics, commerce, AI, data engineering, SEO, and WordPress, plus his public GitHub repository archive.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#030609">
+  <link rel="canonical" href="https://ildrm.com/projects.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Shahin Ilderemi">
+  <meta property="og:title" content="Software Engineering Projects | Shahin Ilderemi">
+  <meta property="og:description" content="Selected original projects and a searchable archive of public GitHub repositories.">
+  <meta property="og:url" content="https://ildrm.com/projects.html">
+  <meta property="og:image" content="https://ildrm.com/assets/images/social-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Shahin Ilderemi — Senior Software Engineer and Technical Lead">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Software Engineering Projects | Shahin Ilderemi">
+  <meta name="twitter:description" content="Selected original projects and a searchable archive of public GitHub repositories.">
+  <meta name="twitter:image" content="https://ildrm.com/assets/images/social-preview.png">
+  <meta name="twitter:image:alt" content="Shahin Ilderemi — Senior Software Engineer and Technical Lead">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="assets/fonts/space-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
   <script defer src="assets/js/site.js"></script>
-  <script defer src="assets/js/scene.js"></script>
-  <script defer src="assets/js/starred-projects.js"></script>
+  <script defer src="assets/js/visual-loader.js"></script>
+  <script defer src="assets/js/projects.js"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","about":{"@id":"https://ildrm.com/#shahin"},"@id":"https://ildrm.com/projects.html#page","url":"https://ildrm.com/projects.html","name":"Software Engineering Projects | Shahin Ilderemi","isPartOf":{"@id":"https://ildrm.com/#website"},"breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://ildrm.com/"},{"@type":"ListItem","position":2,"name":"Projects","item":"https://ildrm.com/projects.html"}]},"mainEntity":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"name":"LogiCommerce","url":"https://github.com/ildrm/logicommerce-logistic-ecommerce"},{"@type":"ListItem","position":2,"name":"Ham-Mahalleh","url":"https://github.com/ildrm/ham-mahalleh"},{"@type":"ListItem","position":3,"name":"Atlas RAG as a Service","url":"https://github.com/ildrm/atlas-rag-as-service"},{"@type":"ListItem","position":4,"name":"Doris Jalali Date","url":"https://github.com/ildrm/doris-jalali-date"},{"@type":"ListItem","position":5,"name":"Northstar SEO","url":"https://github.com/ildrm/northstar-seo"},{"@type":"ListItem","position":6,"name":"WordPress Workflow Pipeline","url":"https://github.com/ildrm/wp-workflow-pipeline"}]}}</script>
 </head>
 <body data-page="projects">
   <a class="skip-link" href="#main-content">Skip to portfolio content</a>
   <canvas id="hero-canvas" aria-hidden="true"></canvas>
   <div class="hero-vignette" aria-hidden="true"></div>
-  <div class="page-transition" aria-hidden="true"></div>
   <header class="hud-shell" aria-label="Observatory navigation">
-    <a class="hud-brand" href="index.html"><i aria-hidden="true"></i>SIL / ORBITAL</a>
+    <a class="hud-brand" href="/"><i aria-hidden="true"></i>SI / SHAHIN ILDEREMI</a>
     <nav class="hud-nav" aria-label="Portfolio pages">
-      <label class="sr-only" for="page-select">Choose a portfolio page</label>
-      <select class="station-select" id="page-select" aria-label="Choose a portfolio page">
-        <option value="home" data-href="index.html">00 / Home</option>
-        <option value="projects" data-href="projects.html">01 / Projects</option>
-        <option value="experience" data-href="experience.html">02 / Experience</option>
-        <option value="contact" data-href="contact.html">03 / Contact</option>
-      </select>
-      <a href="index.html" data-coordinate="00">Home</a>
+      <details class="mobile-nav"><summary>Menu</summary><div class="mobile-nav-links"><a href="/">Home</a><a href="projects.html" aria-current="page">Projects</a><a href="experience.html">Experience</a><a href="contact.html">Contact</a></div></details>
+      <a href="/" data-coordinate="00">Home</a>
       <a href="projects.html" data-coordinate="01" aria-current="page">Projects</a>
       <a href="experience.html" data-coordinate="02">Experience</a>
       <a href="contact.html" data-coordinate="03">Contact</a>
@@ -44,501 +53,900 @@
     </div>
   </header>
   <div class="hud-status" aria-hidden="true"><i></i><span>Repository vault online</span></div>
-  <div class="hud-telemetry" id="telemetry">LOCAL 00:00:00<br>DEPTH 000%</div>
+  <div class="hud-telemetry" id="telemetry" aria-hidden="true">LOCAL 00:00:00<br>DEPTH 000%</div>
   <main id="main-content" class="page-main projects-main">
     <section class="page-hero" aria-labelledby="projects-title" data-coordinate="01">
       <div class="page-hero-inner">
         <span class="page-code">CHAMBER 01 / REPOSITORY VAULT</span>
-        <h1 class="page-title" id="projects-title">Embodied systems.</h1>
-        <p class="page-deck"><strong>Seventy-one public repositories.</strong> Projects I own and have starred, followed by a searchable static archive spanning TypeScript, PHP, Python, Java, and experimental interface systems.</p>
+        <h1 class="page-title" id="projects-title">Engineering projects.</h1>
+        <p class="page-deck">Selected original work and a complete public repository archive, with forks clearly labeled. Explore the code, search by name or description, or <a href="contact.html">get in touch about a project</a>.</p>
       </div>
     </section>
-    <section class="sheet" id="sheet-03" data-sheet="03">
-    <span class="clause">[0003]</span>
-    <h2>Embodiments — Selected Works</h2>
-    <p class="starred-status" id="starred-status" role="status" aria-live="polite">Loading the owned and starred project snapshot...</p>
-    <div class="fig-grid starred-grid" id="starred-projects" data-github-user="ildrm" data-starred-filter="owned"></div>
-
-    <div class="repo-register" aria-labelledby="repo-register-title">
-      <div class="repo-register-head">
-        <div>
-          <h3 id="repo-register-title">Complete public repository register</h3>
-          <p class="repo-register-meta">GitHub REST API verification · 2026-08-02 · Alphabetical by full repository name</p>
-        </div>
-        <div class="repo-count-stamp">71 PUBLIC REPOSITORIES<br/>59 ORIGINAL · 12 FORKS</div>
+    <section class="sheet" id="sheet-03" data-sheet="03" aria-labelledby="featured-title">
+      <span class="clause">[0003]</span>
+      <h2 id="featured-title">Featured work</h2>
+      <p class="lede">Original repositories selected for their engineering scope. Each card links to source code and documentation.</p>
+      <div class="fig-grid featured-grid">
+      <article class="fig-card featured-card">
+        <div class="fig-head"><span class="fig-label">FIG. 01</span><span class="repo-origin" data-origin="mine">Original work</span></div>
+        <h3>LogiCommerce</h3>
+        <p>A modular logistics and commerce platform covering warehouse, inventory, shipping, suppliers, and marketplace operations.</p>
+        <div class="tags"><span>Logistics</span><span>Commerce</span><span>TypeScript</span></div>
+        <a class="fig-link" href="https://github.com/ildrm/logicommerce-logistic-ecommerce" target="_blank" rel="noopener noreferrer">View LogiCommerce repository</a>
+      </article>
+      <article class="fig-card featured-card">
+        <div class="fig-head"><span class="fig-label">FIG. 02</span><span class="repo-origin" data-origin="mine">Original work</span></div>
+        <h3>Ham-Mahalleh</h3>
+        <p>A local, multi-vendor marketplace connecting neighborhood sellers and buyers with store, product, order, and payment management.</p>
+        <div class="tags"><span>Marketplace</span><span>NestJS</span><span>Next.js</span></div>
+        <a class="fig-link" href="https://github.com/ildrm/ham-mahalleh" target="_blank" rel="noopener noreferrer">View Ham-Mahalleh repository</a>
+      </article>
+      <article class="fig-card featured-card">
+        <div class="fig-head"><span class="fig-label">FIG. 03</span><span class="repo-origin" data-origin="mine">Original work</span></div>
+        <h3>Atlas RAG as a Service</h3>
+        <p>An open-source knowledge API for document ingestion, embeddings, vector search, and retrieval-augmented applications.</p>
+        <div class="tags"><span>AI</span><span>RAG</span><span>Python</span></div>
+        <a class="fig-link" href="https://github.com/ildrm/atlas-rag-as-service" target="_blank" rel="noopener noreferrer">View Atlas RAG as a Service repository</a>
+      </article>
+      <article class="fig-card featured-card">
+        <div class="fig-head"><span class="fig-label">FIG. 04</span><span class="repo-origin" data-origin="mine">Original work</span></div>
+        <h3>Doris Jalali Date</h3>
+        <p>Java user-defined functions that add Jalali calendar conversion and date operations to Apache Doris.</p>
+        <div class="tags"><span>Data engineering</span><span>Apache Doris</span><span>Java</span></div>
+        <a class="fig-link" href="https://github.com/ildrm/doris-jalali-date" target="_blank" rel="noopener noreferrer">View Doris Jalali Date repository</a>
+      </article>
+      <article class="fig-card featured-card">
+        <div class="fig-head"><span class="fig-label">FIG. 05</span><span class="repo-origin" data-origin="mine">Original work</span></div>
+        <h3>Northstar SEO</h3>
+        <p>An open-source technical SEO crawler for asynchronous site analysis, on-page checks, and issue prioritization.</p>
+        <div class="tags"><span>SEO</span><span>Crawler</span><span>TypeScript</span></div>
+        <a class="fig-link" href="https://github.com/ildrm/northstar-seo" target="_blank" rel="noopener noreferrer">View Northstar SEO repository</a>
+      </article>
+      <article class="fig-card featured-card">
+        <div class="fig-head"><span class="fig-label">FIG. 06</span><span class="repo-origin" data-origin="mine">Original work</span></div>
+        <h3>WordPress Workflow Pipeline</h3>
+        <p>A WordPress plugin for fetching, processing, and publishing content through configurable automation workflows.</p>
+        <div class="tags"><span>WordPress</span><span>Automation</span><span>PHP</span></div>
+        <a class="fig-link" href="https://github.com/ildrm/wp-workflow-pipeline" target="_blank" rel="noopener noreferrer">View WordPress Workflow Pipeline repository</a>
+      </article>
       </div>
-
-      <form class="repo-controls" id="repo-controls" role="search" aria-label="Filter repository register">
-        <div class="repo-control">
-          <label for="repo-search">Repository name</label>
-          <input id="repo-search" type="search" autocomplete="off" placeholder="Search all 71 repositories" />
-        </div>
-        <div class="repo-control">
-          <label for="repo-language">Primary language</label>
-          <select id="repo-language">
-            <option value="">All languages</option>
-            <option value="html">HTML</option>
-            <option value="java">Java</option>
-            <option value="javascript">JavaScript</option>
-            <option value="jupyter notebook">Jupyter Notebook</option>
-            <option value="php">PHP</option>
-            <option value="python">Python</option>
-            <option value="typescript">TypeScript</option>
-            <option value="not specified">Not specified</option>
-          </select>
-        </div>
-        <div class="repo-control">
-          <label for="repo-status">Repository status</label>
-          <select id="repo-status">
-            <option value="">Originals &amp; forks</option>
-            <option value="original">Original only</option>
-            <option value="fork">Forks only</option>
-          </select>
-        </div>
-      </form>
-
-      <p class="repo-result" id="repo-result" role="status" aria-live="polite">Showing all 71 repositories.</p>
-      <div class="repo-columns" aria-hidden="true"><span>No.</span><span>Repository</span><span>Language</span><span>Status</span></div>
-      <ol class="repo-list" id="repo-list">
-        <li class="repo-row" data-name="acf-persian-dropdown-calendar" data-language="php" data-status="original">
-          <span class="repo-index">01</span>
-          <a class="repo-name" href="https://github.com/ildrm/acf-persian-dropdown-calendar" target="_blank" rel="noopener">acf-persian-dropdown-calendar</a>
+      <div class="repo-register">
+        <div class="repo-register-head"><div><h2 id="repo-register-title">Public repository archive</h2><p class="repo-register-meta">All public repositories under my GitHub account, including forks. Data refreshes from the GitHub API.</p></div>
+          <p class="repo-count-stamp">135 public repositories<br>111 original · 24 forks</p></div>
+        <form class="repo-controls" id="repo-controls" role="search" aria-label="Filter repositories">
+          <div class="repo-control"><label for="repo-search">Search repositories</label><input id="repo-search" type="search" autocomplete="off" placeholder="Search names and descriptions"></div>
+          <div class="repo-control"><label for="repo-language">Primary language</label><select id="repo-language"><option value="">All languages</option><option value="html">HTML</option><option value="java">Java</option><option value="javascript">JavaScript</option><option value="jupyter notebook">Jupyter Notebook</option><option value="not specified">Not specified</option><option value="php">PHP</option><option value="python">Python</option><option value="rust">Rust</option><option value="typescript">TypeScript</option></select></div>
+          <div class="repo-control"><label for="repo-status">Repository type</label><select id="repo-status"><option value="">Originals and forks</option><option value="original">Original only</option><option value="fork">Forks only</option></select></div>
+          <div class="repo-control"><label for="repo-sort">Sort by</label><select id="repo-sort"><option value="name">Name A–Z</option><option value="name-desc">Name Z–A</option><option value="language">Language</option></select></div>
+          <button class="sr-only" type="submit">Apply filters</button>
+        </form>
+        <p class="repo-result" id="repo-result" role="status" aria-live="polite">Showing all 135 repositories.</p>
+        <p class="repo-empty" id="repo-empty" hidden>No repositories match these filters. Try a different search or reset the filters.</p>
+        <div class="repo-columns" aria-hidden="true"><span>No.</span><span>Repository</span><span>Language</span><span>Type</span></div>
+        <ol class="repo-list" id="repo-list">
+        <li class="repo-row" data-name="acf-persian-dropdown-calendar" data-search="acf-persian-dropdown-calendar wordpress advanced custom field (acf) jalali datepicker" data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">01</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/acf-persian-dropdown-calendar" target="_blank" rel="noopener noreferrer">acf-persian-dropdown-calendar</a><span class="repo-summary">Wordpress Advanced Custom Field (ACF) Jalali DatePicker</span></div>
           <span class="repo-language">PHP</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="apertureflow" data-language="typescript" data-status="original">
-          <span class="repo-index">02</span>
-          <a class="repo-name" href="https://github.com/ildrm/apertureflow" target="_blank" rel="noopener">apertureflow</a>
-          <span class="repo-language">TypeScript</span>
-          <span class="repo-status" data-kind="original">Original</span>
-        </li>
-        <li class="repo-row" data-name="atlas-rag-as-service" data-language="python" data-status="original">
-          <span class="repo-index">03</span>
-          <a class="repo-name" href="https://github.com/ildrm/atlas-rag-as-service" target="_blank" rel="noopener">atlas-rag-as-service</a>
-          <span class="repo-language">Python</span>
-          <span class="repo-status" data-kind="original">Original</span>
-        </li>
-        <li class="repo-row" data-name="aurelia-hospitality-hotel-management-system" data-language="typescript" data-status="original">
-          <span class="repo-index">04</span>
-          <a class="repo-name" href="https://github.com/ildrm/aurelia-hospitality-hotel-management-system" target="_blank" rel="noopener">aurelia-hospitality-hotel-management-system</a>
-          <span class="repo-language">TypeScript</span>
-          <span class="repo-status" data-kind="original">Original</span>
-        </li>
-        <li class="repo-row" data-name="awesome-n8n-templates" data-language="not specified" data-status="fork">
-          <span class="repo-index">05</span>
-          <a class="repo-name" href="https://github.com/ildrm/awesome-n8n-templates" target="_blank" rel="noopener">awesome-n8n-templates</a>
+        <li class="repo-row" data-name="all-url-uploader" data-search="all-url-uploader a simple telegram bot, upload media file| video to telegram using the direct download link. (youtube, mediafire, google drive, mega drive, etc)" data-language="not specified" data-status="fork">
+          <span class="repo-index" aria-hidden="true">02</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/All-Url-Uploader" target="_blank" rel="noopener noreferrer">All-Url-Uploader</a><span class="repo-summary">A simple telegram Bot, Upload Media File| video To telegram using the direct download link. (youtube, Mediafire, google drive, mega drive, etc)</span></div>
           <span class="repo-language">Not specified</span>
           <span class="repo-status" data-kind="fork">Fork</span>
         </li>
-        <li class="repo-row" data-name="backfill-ga4-to-bigquery" data-language="jupyter notebook" data-status="fork">
-          <span class="repo-index">06</span>
-          <a class="repo-name" href="https://github.com/ildrm/Backfill-GA4-to-BigQuery" target="_blank" rel="noopener">Backfill-GA4-to-BigQuery</a>
+        <li class="repo-row" data-name="apertureflow" data-search="apertureflow ai-powered photography workflow platform for automatic photo culling, image quality assessment, duplicate detection, blur detection, smart photo selection, and post-processing automation. built for photographers, studios, and computer vision developers." data-language="typescript" data-status="original">
+          <span class="repo-index" aria-hidden="true">03</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/apertureflow" target="_blank" rel="noopener noreferrer">apertureflow</a><span class="repo-summary">AI-powered photography workflow platform for automatic photo culling, image quality assessment, duplicate detection, blur detection, smart photo selection, and post-processing automation. Built for photographers, studios, and computer vision developers.</span></div>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="asset-token" data-search="asset-token generic asset tokenization and digital asset management platform for registering assets, ownership units, rights, restrictions, offerings, transfers, portfolios, custody, valuations, distributions, and compliance. built for tokenized real-world assets, digital assets, investment products, and programmable ownership." data-language="typescript" data-status="original">
+          <span class="repo-index" aria-hidden="true">04</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/asset-token" target="_blank" rel="noopener noreferrer">asset-token</a><span class="repo-summary">Generic asset tokenization and digital asset management platform for registering assets, ownership units, rights, restrictions, offerings, transfers, portfolios, custody, valuations, distributions, and compliance. Built for tokenized real-world assets, digital assets, investment products, and programmable ownership.</span></div>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="asteria-financial-platform" data-search="asteria-financial-platform open-source wordpress financial analytics and paper trading plugin for portfolio simulation, watchlists, synthetic ohlcv market data, risk metrics (sharpe, var, drawdown), black-scholes options, bond and fx models, rest apis, and local-first fintech research—no external market-data service required." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">05</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/asteria-financial-platform" target="_blank" rel="noopener noreferrer">asteria-financial-platform</a><span class="repo-summary">Open-source WordPress financial analytics and paper trading plugin for portfolio simulation, watchlists, synthetic OHLCV market data, risk metrics (Sharpe, VaR, drawdown), Black-Scholes options, bond and FX models, REST APIs, and local-first fintech research—no external market-data service required.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="atlas-qr-menu-service" data-search="atlas-qr-menu-service atlasqr is an open-source multi-tenant qr menu and digital catalog saas for restaurants, cafes and local businesses. create dynamic qr code menus, service and price lists with multilingual/rtl content, pwa support, analytics, rbac and secure tenant isolation. built using: next.js, nestjs, typescript, postgresql, redis, turborepo and tailwind css 4." data-language="typescript" data-status="original">
+          <span class="repo-index" aria-hidden="true">06</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/atlas-qr-menu-service" target="_blank" rel="noopener noreferrer">atlas-qr-menu-service</a><span class="repo-summary">AtlasQR is an open-source multi-tenant QR menu and digital catalog SaaS for restaurants, cafes and local businesses. Create dynamic QR code menus, service and price lists with multilingual/RTL content, PWA support, analytics, RBAC and secure tenant isolation. Built using: Next.js, NestJS, TypeScript, PostgreSQL, Redis, Turborepo and Tailwind CSS 4.</span></div>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="atlas-rag-as-service" data-search="atlas-rag-as-service open-source rag as a service (ragaas) platform for building ai knowledge apis with retrieval-augmented generation. ingest documents, create embeddings, search with vectors, and serve llm-powered applications through a scalable rest api." data-language="python" data-status="original">
+          <span class="repo-index" aria-hidden="true">07</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/atlas-rag-as-service" target="_blank" rel="noopener noreferrer">atlas-rag-as-service</a><span class="repo-summary">Open-source RAG as a Service (RAGaaS) platform for building AI knowledge APIs with Retrieval-Augmented Generation. Ingest documents, create embeddings, search with vectors, and serve LLM-powered applications through a scalable REST API.</span></div>
+          <span class="repo-language">Python</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="aurelia-hospitality-hotel-management-system" data-search="aurelia-hospitality-hotel-management-system open-source hotel management system (pms) built with laravel and filamentphp. features hotel reservations, room management, bookings, guests, pricing, invoices, housekeeping, staff management, reports, multi-property support, rest api, and modern admin dashboard. ideal for hotels, resorts, hostels, and hospitality software." data-language="typescript" data-status="original">
+          <span class="repo-index" aria-hidden="true">08</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/aurelia-hospitality-hotel-management-system" target="_blank" rel="noopener noreferrer">aurelia-hospitality-hotel-management-system</a><span class="repo-summary">Open-source Hotel Management System (PMS) built with Laravel and FilamentPHP. Features hotel reservations, room management, bookings, guests, pricing, invoices, housekeeping, staff management, reports, multi-property support, REST API, and modern admin dashboard. Ideal for hotels, resorts, hostels, and hospitality software.</span></div>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="awesome-llm-apps" data-search="awesome-llm-apps 100+ ai agents, agent skills and rag apps - free and open source." data-language="not specified" data-status="fork">
+          <span class="repo-index" aria-hidden="true">09</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/awesome-llm-apps" target="_blank" rel="noopener noreferrer">awesome-llm-apps</a><span class="repo-summary">100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.</span></div>
+          <span class="repo-language">Not specified</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="awesome-n8n-templates" data-search="awesome-n8n-templates supercharge your workflow automation with this curated collection of n8n templates! instantly connect your favorite apps-like gmail, telegram, google drive, slack, and more-with ready-to-use, ai-powered automations. save time, boost productivity, and unlock the true potential of n8n in just a few clicks." data-language="not specified" data-status="fork">
+          <span class="repo-index" aria-hidden="true">10</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/awesome-n8n-templates" target="_blank" rel="noopener noreferrer">awesome-n8n-templates</a><span class="repo-summary">Supercharge your workflow automation with this curated collection of n8n templates! Instantly connect your favorite apps-like Gmail, Telegram, Google Drive, Slack, and more-with ready-to-use, AI-powered automations. Save time, boost productivity, and unlock the true potential of n8n in just a few clicks.</span></div>
+          <span class="repo-language">Not specified</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="backfill-ga4-to-bigquery" data-search="backfill-ga4-to-bigquery backfill-ga4-to-bigquery&quot; repository offers a solution for users to backfill their ga4 data into bigquery. this is useful for those who need historical data from the start of their ga4 property, as ga4 data is typically only available in bigquery after linking the two services. our solution provides a complete backfill of data to bigquery" data-language="jupyter notebook" data-status="fork">
+          <span class="repo-index" aria-hidden="true">11</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/Backfill-GA4-to-BigQuery" target="_blank" rel="noopener noreferrer">Backfill-GA4-to-BigQuery</a><span class="repo-summary">Backfill-GA4-to-BigQuery&quot; repository offers a solution for users to backfill their GA4 data into BigQuery. This is useful for those who need historical data from the start of their GA4 property, as GA4 data is typically only available in BigQuery after linking the two services. Our solution provides a complete backfill of data to BigQuery</span></div>
           <span class="repo-language">Jupyter Notebook</span>
           <span class="repo-status" data-kind="fork">Fork</span>
         </li>
-        <li class="repo-row" data-name="claude-skills" data-language="python" data-status="fork">
-          <span class="repo-index">07</span>
-          <a class="repo-name" href="https://github.com/ildrm/claude-skills" target="_blank" rel="noopener">claude-skills</a>
+        <li class="repo-row" data-name="be-human" data-search="be-human be human is an open-source, privacy-first life planning and personal productivity platform for realistic goals, capacity check-ins, constraint-based scheduling, household sharing, and explainable planning. built with next.js, nestjs, fastify, postgresql, typescript, docker, and evidence-aware domain logic." data-language="typescript" data-status="original">
+          <span class="repo-index" aria-hidden="true">12</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/be-human" target="_blank" rel="noopener noreferrer">be-human</a><span class="repo-summary">Be Human is an open-source, privacy-first life planning and personal productivity platform for realistic goals, capacity check-ins, constraint-based scheduling, household sharing, and explainable planning. Built with Next.js, NestJS, Fastify, PostgreSQL, TypeScript, Docker, and evidence-aware domain logic.</span></div>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="casaura-real-estate" data-search="casaura-real-estate casaura is an api-first, multi-tenant real estate marketplace and agency platform built with laravel and next.js. it combines property listings, agency workflows, reso data ingestion, collaborative discovery, ai-powered search, stripe billing and promotion tools in a production-ready, scalable architecture." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">13</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/casaura-real-estate" target="_blank" rel="noopener noreferrer">casaura-real-estate</a><span class="repo-summary">Casaura is an API-first, multi-tenant real estate marketplace and agency platform built with Laravel and Next.js. It combines property listings, agency workflows, RESO data ingestion, collaborative discovery, AI-powered search, Stripe billing and promotion tools in a production-ready, scalable architecture.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="cinemadad-cinema-booking-system" data-search="cinemadad-cinema-booking-system open-source, production-ready cinema booking system and multi-tenant movie ticket booking platform built with next.js, nestjs, typescript, postgresql, prisma, redis and bullmq. features real-time seat selection, payments, qr tickets, cinema management, screening schedules, operator/admin dashboards, rbac, websockets and gate scanning." data-language="typescript" data-status="original">
+          <span class="repo-index" aria-hidden="true">14</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/cinemadad-cinema-booking-system" target="_blank" rel="noopener noreferrer">cinemadad-cinema-booking-system</a><span class="repo-summary">Open-source, production-ready cinema booking system and multi-tenant movie ticket booking platform built with Next.js, NestJS, TypeScript, PostgreSQL, Prisma, Redis and BullMQ. Features real-time seat selection, payments, QR tickets, cinema management, screening schedules, operator/admin dashboards, RBAC, WebSockets and gate scanning.</span></div>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="claude-skills" data-search="claude-skills 313+ claude code skills &amp; agent skills &amp; plugins for claude code, codex, gemini cli, cursor, and 8 more coding agents — engineering, marketing, product, compliance, c-level advisory, research, business operations, commercial &amp; finance, and your daily productivity skills." data-language="python" data-status="fork">
+          <span class="repo-index" aria-hidden="true">15</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/claude-skills" target="_blank" rel="noopener noreferrer">claude-skills</a><span class="repo-summary">313+ Claude Code skills &amp; agent skills &amp; plugins for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents — engineering, marketing, product, compliance, C-level advisory, research, business operations, commercial &amp; finance, and your daily productivity skills.</span></div>
           <span class="repo-language">Python</span>
           <span class="repo-status" data-kind="fork">Fork</span>
         </li>
-        <li class="repo-row" data-name="direction-route" data-language="not specified" data-status="fork">
-          <span class="repo-index">08</span>
-          <a class="repo-name" href="https://github.com/ildrm/direction-route" target="_blank" rel="noopener">direction-route</a>
+        <li class="repo-row" data-name="countries-investment-model" data-search="countries-investment-model a python-based country investment analysis framework that uses official central-bank and macroeconomic data to detect economic regimes, evaluate inflation, growth, interest rates and liquidity, and score assets such as stocks, bonds, gold, currencies and real estate across multiple countries." data-language="python" data-status="original">
+          <span class="repo-index" aria-hidden="true">16</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/countries-investment-model" target="_blank" rel="noopener noreferrer">countries-investment-model</a><span class="repo-summary">A Python-based country investment analysis framework that uses official central-bank and macroeconomic data to detect economic regimes, evaluate inflation, growth, interest rates and liquidity, and score assets such as stocks, bonds, gold, currencies and real estate across multiple countries.</span></div>
+          <span class="repo-language">Python</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="digikala-mcp" data-search="digikala-mcp mcp server for digikala: search, compare and price-check products on iran&#39;s largest marketplace. read-only, no api key. 16 tools, hosted on cloudflare workers." data-language="not specified" data-status="fork">
+          <span class="repo-index" aria-hidden="true">17</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/digikala-mcp" target="_blank" rel="noopener noreferrer">digikala-mcp</a><span class="repo-summary">MCP server for Digikala: search, compare and price-check products on Iran&#39;s largest marketplace. Read-only, no API key. 16 tools, hosted on Cloudflare Workers.</span></div>
           <span class="repo-language">Not specified</span>
           <span class="repo-status" data-kind="fork">Fork</span>
         </li>
-        <li class="repo-row" data-name="doris-jalali-date" data-language="java" data-status="original">
-          <span class="repo-index">09</span>
-          <a class="repo-name" href="https://github.com/ildrm/doris-jalali-date" target="_blank" rel="noopener">doris-jalali-date</a>
+        <li class="repo-row" data-name="direction-route" data-search="direction-route route backend service" data-language="not specified" data-status="fork">
+          <span class="repo-index" aria-hidden="true">18</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/direction-route" target="_blank" rel="noopener noreferrer">direction-route</a><span class="repo-summary">route backend service</span></div>
+          <span class="repo-language">Not specified</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="divar-mcp" data-search="divar-mcp mcp server for divar — search, compare and analyze classified ads. read-only, no api key." data-language="not specified" data-status="fork">
+          <span class="repo-index" aria-hidden="true">19</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/divar-mcp" target="_blank" rel="noopener noreferrer">divar-mcp</a><span class="repo-summary">MCP server for Divar — search, compare and analyze classified ads. Read-only, no API key.</span></div>
+          <span class="repo-language">Not specified</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="doodle-guide-for-drawing" data-search="doodle-guide-for-drawing doodleguide is a privacy-first, browser-based drawing tutor that turns black-and-white line art into ordered vector strokes and animates a pencil along the path. built with html, css and javascript, it uses image processing, skeletonization, graph traversal, svg animation, speed control, and local-only processing." data-language="javascript" data-status="original">
+          <span class="repo-index" aria-hidden="true">20</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/doodle-guide-for-drawing" target="_blank" rel="noopener noreferrer">doodle-guide-for-drawing</a><span class="repo-summary">DoodleGuide is a privacy-first, browser-based drawing tutor that turns black-and-white line art into ordered vector strokes and animates a pencil along the path. Built with HTML, CSS and JavaScript, it uses image processing, skeletonization, graph traversal, SVG animation, speed control, and local-only processing.</span></div>
+          <span class="repo-language">JavaScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="doris-jalali-date" data-search="doris-jalali-date a set of java udfs for apache doris enabling jalali (persian) calendar date conversions and operations." data-language="java" data-status="original">
+          <span class="repo-index" aria-hidden="true">21</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/doris-jalali-date" target="_blank" rel="noopener noreferrer">doris-jalali-date</a><span class="repo-summary">A set of Java UDFs for Apache Doris enabling Jalali (Persian) calendar date conversions and operations.</span></div>
           <span class="repo-language">Java</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="external-request-manager-pro" data-language="php" data-status="fork">
-          <span class="repo-index">10</span>
-          <a class="repo-name" href="https://github.com/ildrm/external-request-manager-pro" target="_blank" rel="noopener">external-request-manager-pro</a>
-          <span class="repo-language">PHP</span>
-          <span class="repo-status" data-kind="fork">Fork</span>
-        </li>
-        <li class="repo-row" data-name="ga-wp-integration" data-language="php" data-status="original">
-          <span class="repo-index">11</span>
-          <a class="repo-name" href="https://github.com/ildrm/ga-wp-integration" target="_blank" rel="noopener">ga-wp-integration</a>
-          <span class="repo-language">PHP</span>
+        <li class="repo-row" data-name="economy-os" data-search="economy-os economyos is an open-source economic intelligence and research platform for point-in-time economic data, causal inference, forecasting, scenario analysis, systemic risk, and economic modeling. built with typescript, next.js, nestjs, postgresql/timescaledb, and temporal, with provenance, governance, and reproducible research." data-language="typescript" data-status="original">
+          <span class="repo-index" aria-hidden="true">22</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/economy-os" target="_blank" rel="noopener noreferrer">economy-os</a><span class="repo-summary">EconomyOS is an open-source economic intelligence and research platform for point-in-time economic data, causal inference, forecasting, scenario analysis, systemic risk, and economic modeling. Built with TypeScript, Next.js, NestJS, PostgreSQL/TimescaleDB, and Temporal, with provenance, governance, and reproducible research.</span></div>
+          <span class="repo-language">TypeScript</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="geo-araz" data-language="not specified" data-status="fork">
-          <span class="repo-index">12</span>
-          <a class="repo-name" href="https://github.com/ildrm/geo-araz" target="_blank" rel="noopener">geo-araz</a>
+        <li class="repo-row" data-name="envkit-releases" data-search="envkit-releases envkit — free local development environment for windows &amp; macos: nginx/apache, multiple php versions, mysql/mariadb,   postgresql, redis, mongodb, mailpit, node.js, trusted .test https, and a built-in mcp server for ai-assistant control.   a laragon/xampp/herd alternative." data-language="not specified" data-status="fork">
+          <span class="repo-index" aria-hidden="true">23</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/envkit-releases" target="_blank" rel="noopener noreferrer">envkit-releases</a><span class="repo-summary">EnvKit — free local development environment for Windows &amp; macOS: nginx/Apache, multiple PHP versions, MySQL/MariaDB,   PostgreSQL, Redis, MongoDB, Mailpit, Node.js, trusted .test HTTPS, and a built-in MCP server for AI-assistant control.   A Laragon/XAMPP/Herd alternative.</span></div>
           <span class="repo-language">Not specified</span>
           <span class="repo-status" data-kind="fork">Fork</span>
         </li>
-        <li class="repo-row" data-name="google-book-writer" data-language="python" data-status="original">
-          <span class="repo-index">13</span>
-          <a class="repo-name" href="https://github.com/ildrm/google-book-writer" target="_blank" rel="noopener">google-book-writer</a>
+        <li class="repo-row" data-name="external-request-manager-pro" data-search="external-request-manager-pro no description provided on github." data-language="php" data-status="fork">
+          <span class="repo-index" aria-hidden="true">24</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/external-request-manager-pro" target="_blank" rel="noopener noreferrer">external-request-manager-pro</a><span class="repo-summary">No description provided on GitHub.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="ferrum-api-postman-clone" data-search="ferrum-api-postman-clone ferrum api is a local-first, native postman alternative built in rust for api development, rest api testing, and http requests. organize collections, environments, variables, and history in a fast egui desktop app with sqlite persistence, streamed responses, secure secret storage, and cross-platform support for windows, linux, and macos." data-language="rust" data-status="original">
+          <span class="repo-index" aria-hidden="true">25</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/ferrum-api-postman-clone" target="_blank" rel="noopener noreferrer">ferrum-api-postman-clone</a><span class="repo-summary">Ferrum API is a local-first, native Postman alternative built in Rust for API development, REST API testing, and HTTP requests. Organize collections, environments, variables, and history in a fast egui desktop app with SQLite persistence, streamed responses, secure secret storage, and cross-platform support for Windows, Linux, and macOS.</span></div>
+          <span class="repo-language">Rust</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="foreign-exchange-crisis-early-warning-system" data-search="foreign-exchange-crisis-early-warning-system fx-cpm is an open-source foreign exchange crisis early warning system for probabilistic forecasting of currency, banking, sovereign, monetary, political and conflict risks. it combines regime-aware forex indicators, macro-financial data, calibrated models, historical backtesting, alerts, and professional html/pdf risk reports." data-language="python" data-status="original">
+          <span class="repo-index" aria-hidden="true">26</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/foreign-exchange-crisis-early-warning-system" target="_blank" rel="noopener noreferrer">foreign-exchange-crisis-early-warning-system</a><span class="repo-summary">FX-CPM is an open-source foreign exchange crisis early warning system for probabilistic forecasting of currency, banking, sovereign, monetary, political and conflict risks. It combines regime-aware Forex indicators, macro-financial data, calibrated models, historical backtesting, alerts, and professional HTML/PDF risk reports.</span></div>
           <span class="repo-language">Python</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="ham-mahalleh" data-language="typescript" data-status="original">
-          <span class="repo-index">14</span>
-          <a class="repo-name" href="https://github.com/ildrm/ham-mahalleh" target="_blank" rel="noopener">ham-mahalleh</a>
-          <span class="repo-language">TypeScript</span>
-          <span class="repo-status" data-kind="original">Original</span>
-        </li>
-        <li class="repo-row" data-name="html-voice-to-voice" data-language="html" data-status="original">
-          <span class="repo-index">15</span>
-          <a class="repo-name" href="https://github.com/ildrm/html-voice-to-voice" target="_blank" rel="noopener">html-voice-to-voice</a>
-          <span class="repo-language">HTML</span>
-          <span class="repo-status" data-kind="original">Original</span>
-        </li>
-        <li class="repo-row" data-name="ildrm" data-language="not specified" data-status="original">
-          <span class="repo-index">16</span>
-          <a class="repo-name" href="https://github.com/ildrm/ildrm" target="_blank" rel="noopener">ildrm</a>
-          <span class="repo-language">Not specified</span>
-          <span class="repo-status" data-kind="original">Original</span>
-        </li>
-        <li class="repo-row" data-name="ildrm.github.io" data-language="html" data-status="original">
-          <span class="repo-index">17</span>
-          <a class="repo-name" href="https://github.com/ildrm/ildrm.github.io" target="_blank" rel="noopener">ildrm.github.io</a>
-          <span class="repo-language">HTML</span>
-          <span class="repo-status" data-kind="original">Original</span>
-        </li>
-        <li class="repo-row" data-name="interviewflow-lite-interview-scheduling-platform" data-language="typescript" data-status="original">
-          <span class="repo-index">18</span>
-          <a class="repo-name" href="https://github.com/ildrm/interviewflow-lite-interview-scheduling-platform" target="_blank" rel="noopener">interviewflow-lite-interview-scheduling-platform</a>
-          <span class="repo-language">TypeScript</span>
-          <span class="repo-status" data-kind="original">Original</span>
-        </li>
-        <li class="repo-row" data-name="laravel-crm" data-language="php" data-status="original">
-          <span class="repo-index">19</span>
-          <a class="repo-name" href="https://github.com/ildrm/laravel-crm" target="_blank" rel="noopener">laravel-crm</a>
+        <li class="repo-row" data-name="ga-wp-integration" data-search="ga-wp-integration the google analytics wp integration plugin seamlessly tracks wordpress and woocommerce events with google analytics via gtm, offering customizable mappings and seo-enhancing insights." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">27</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/ga-wp-integration" target="_blank" rel="noopener noreferrer">ga-wp-integration</a><span class="repo-summary">The Google Analytics WP Integration plugin seamlessly tracks WordPress and WooCommerce events with Google Analytics via GTM, offering customizable mappings and SEO-enhancing insights.</span></div>
           <span class="repo-language">PHP</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="laravel-ffmpeg" data-language="not specified" data-status="fork">
-          <span class="repo-index">20</span>
-          <a class="repo-name" href="https://github.com/ildrm/laravel-ffmpeg" target="_blank" rel="noopener">laravel-ffmpeg</a>
+        <li class="repo-row" data-name="geo-araz" data-search="geo-araz no description provided on github." data-language="not specified" data-status="fork">
+          <span class="repo-index" aria-hidden="true">28</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/geo-araz" target="_blank" rel="noopener noreferrer">geo-araz</a><span class="repo-summary">No description provided on GitHub.</span></div>
           <span class="repo-language">Not specified</span>
           <span class="repo-status" data-kind="fork">Fork</span>
         </li>
-        <li class="repo-row" data-name="laravel-organization-document-manager" data-language="javascript" data-status="original">
-          <span class="repo-index">21</span>
-          <a class="repo-name" href="https://github.com/ildrm/laravel-organization-document-manager" target="_blank" rel="noopener">laravel-organization-document-manager</a>
+        <li class="repo-row" data-name="gods-eye-view" data-search="gods-eye-view a spy satellite simulator in your browser, except the data is real. live open source spatial intelligence on a photorealistic 3d globe." data-language="not specified" data-status="fork">
+          <span class="repo-index" aria-hidden="true">29</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/gods-eye-view" target="_blank" rel="noopener noreferrer">gods-eye-view</a><span class="repo-summary">A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.</span></div>
+          <span class="repo-language">Not specified</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="google-book-writer" data-search="google-book-writer bookgen-ai is a desktop ai writing tool that uses google gemini to turn a book idea into a complete manuscript through a structured workflow for planning, outlining, chapter writing, memory management, editing, and export. it supports multiple languages and lets users save, resume, and export their generated books as docx, pdf, markdown, or txt." data-language="python" data-status="original">
+          <span class="repo-index" aria-hidden="true">30</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/google-book-writer" target="_blank" rel="noopener noreferrer">google-book-writer</a><span class="repo-summary">BOOKGEN-AI is a desktop AI writing tool that uses Google Gemini to turn a book idea into a complete manuscript through a structured workflow for planning, outlining, chapter writing, memory management, editing, and export. It supports multiple languages and lets users save, resume, and export their generated books as DOCX, PDF, Markdown, or TXT.</span></div>
+          <span class="repo-language">Python</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="ham-mahalleh" data-search="ham-mahalleh پلتفرم هم‌محله یک مارکت‌پلیس محلی و چندفروشنده است که با هدف اتصال فروشندگان و خریداران یک منطقه طراحی شده است. این پروژه امکاناتی مانند مدیریت فروشگاه، محصولات، سفارش‌ها، کاربران، پرداخت و پنل مدیریتی را فراهم می‌کند و بستری مناسب برای توسعه بازارهای آنلاین محلی و منطقه‌ای است." data-language="typescript" data-status="original">
+          <span class="repo-index" aria-hidden="true">31</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/ham-mahalleh" target="_blank" rel="noopener noreferrer">ham-mahalleh</a><span class="repo-summary">پلتفرم هم‌محله یک مارکت‌پلیس محلی و چندفروشنده است که با هدف اتصال فروشندگان و خریداران یک منطقه طراحی شده است. این پروژه امکاناتی مانند مدیریت فروشگاه، محصولات، سفارش‌ها، کاربران، پرداخت و پنل مدیریتی را فراهم می‌کند و بستری مناسب برای توسعه بازارهای آنلاین محلی و منطقه‌ای است.</span></div>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="html-voice-to-voice" data-search="html-voice-to-voice no description provided on github." data-language="html" data-status="original">
+          <span class="repo-index" aria-hidden="true">32</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/html-voice-to-voice" target="_blank" rel="noopener noreferrer">html-voice-to-voice</a><span class="repo-summary">No description provided on GitHub.</span></div>
+          <span class="repo-language">HTML</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="humanity-economy" data-search="humanity-economy humanity economy is an open-source python research toolkit and dashboard for cross-country macroeconomic analysis using official data, transparent evidence gates, provenance, confidence and sensitivity scoring. compare inflation, growth, labour, inequality, household pressure and economic risk with reproducible json and interactive html reports." data-language="python" data-status="original">
+          <span class="repo-index" aria-hidden="true">33</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/humanity-economy" target="_blank" rel="noopener noreferrer">humanity-economy</a><span class="repo-summary">Humanity Economy is an open-source Python research toolkit and dashboard for cross-country macroeconomic analysis using official data, transparent evidence gates, provenance, confidence and sensitivity scoring. Compare inflation, growth, labour, inequality, household pressure and economic risk with reproducible JSON and interactive HTML reports.</span></div>
+          <span class="repo-language">Python</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="ilderemi-advanced-slider" data-search="ilderemi-advanced-slider lightweight, accessible wordpress slider and carousel plugin with responsive layouts, autoplay, touch/drag, video, lazy loading and rtl support. build reusable sliders from images, posts, woocommerce products and acf galleries, with native elementor, gutenberg, bricks and beaver builder integrations." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">34</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/ilderemi-advanced-slider" target="_blank" rel="noopener noreferrer">ilderemi-advanced-slider</a><span class="repo-summary">Lightweight, accessible WordPress slider and carousel plugin with responsive layouts, autoplay, touch/drag, video, lazy loading and RTL support. Build reusable sliders from images, posts, WooCommerce products and ACF galleries, with native Elementor, Gutenberg, Bricks and Beaver Builder integrations.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="ildrm" data-search="ildrm config files for my github profile." data-language="not specified" data-status="original">
+          <span class="repo-index" aria-hidden="true">35</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/ildrm" target="_blank" rel="noopener noreferrer">ildrm</a><span class="repo-summary">Config files for my GitHub profile.</span></div>
+          <span class="repo-language">Not specified</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="ildrm.github.io" data-search="ildrm.github.io no description provided on github." data-language="html" data-status="original">
+          <span class="repo-index" aria-hidden="true">36</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/ildrm.github.io" target="_blank" rel="noopener noreferrer">ildrm.github.io</a><span class="repo-summary">No description provided on GitHub.</span></div>
+          <span class="repo-language">HTML</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="image-steganography-lab" data-search="image-steganography-lab image steganography lab is a python 3.11+ toolkit for image steganography, data hiding and watermarking research. it provides a registry of 128 techniques—including lsb, pvd, edge-adaptive, palette, coding, dct/dwt and transform-domain methods—with cli/menu workflows, capacity checks, verification, compression and optional aes-256-gcm encryption." data-language="python" data-status="original">
+          <span class="repo-index" aria-hidden="true">37</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/image-steganography-lab" target="_blank" rel="noopener noreferrer">image-steganography-lab</a><span class="repo-summary">Image Steganography Lab is a Python 3.11+ toolkit for image steganography, data hiding and watermarking research. It provides a registry of 128 techniques—including LSB, PVD, edge-adaptive, palette, coding, DCT/DWT and transform-domain methods—with CLI/menu workflows, capacity checks, verification, compression and optional AES-256-GCM encryption.</span></div>
+          <span class="repo-language">Python</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="interviewflow-lite-interview-scheduling-platform" data-search="interviewflow-lite-interview-scheduling-platform open-source, self-hosted interview scheduling and recruiting orchestration platform for hiring teams. supports candidate self-scheduling, interviewer pools, panel interviews, rooms, calendar sync, scorecards, debriefs, hiring decisions, audit logs, ats webhooks, next.js, nestjs, mysql, docker compose, caldav, ics, and openapi." data-language="typescript" data-status="original">
+          <span class="repo-index" aria-hidden="true">38</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/interviewflow-lite-interview-scheduling-platform" target="_blank" rel="noopener noreferrer">interviewflow-lite-interview-scheduling-platform</a><span class="repo-summary">Open-source, self-hosted interview scheduling and recruiting orchestration platform for hiring teams. Supports candidate self-scheduling, interviewer pools, panel interviews, rooms, calendar sync, scorecards, debriefs, hiring decisions, audit logs, ATS webhooks, Next.js, NestJS, MySQL, Docker Compose, CalDAV, ICS, and OpenAPI.</span></div>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="iranian-cities-with-symbolic-elements" data-search="iranian-cities-with-symbolic-elements open iran cities dataset covering 1,456 iranian cities across 31 provinces for solar hijri 1403 (2024/25), with normalized persian administrative records linked to curated symbolic elements: landmarks, cultural heritage, archaeological sites, religious places, and natural features. csv and excel data for research, mapping, and web projects." data-language="not specified" data-status="original">
+          <span class="repo-index" aria-hidden="true">39</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/iranian-cities-with-symbolic-elements" target="_blank" rel="noopener noreferrer">iranian-cities-with-symbolic-elements</a><span class="repo-summary">Open Iran cities dataset covering 1,456 Iranian cities across 31 provinces for Solar Hijri 1403 (2024/25), with normalized Persian administrative records linked to curated symbolic elements: landmarks, cultural heritage, archaeological sites, religious places, and natural features. CSV and Excel data for research, mapping, and web projects.</span></div>
+          <span class="repo-language">Not specified</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="kavosh-market-intelligence" data-search="kavosh-market-intelligence kavosh is a bilingual english/persian market-intelligence platform for crypto and fx trading research. it combines deterministic market analysis, evidence, provenance, freshness, disagreement, and invalidation into an explainable decision-support workstation powered by next.js, nestjs, bullmq, and timescaledb." data-language="typescript" data-status="original">
+          <span class="repo-index" aria-hidden="true">40</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/kavosh-market-intelligence" target="_blank" rel="noopener noreferrer">kavosh-market-intelligence</a><span class="repo-summary">Kavosh is a bilingual English/Persian market-intelligence platform for crypto and FX trading research. It combines deterministic market analysis, evidence, provenance, freshness, disagreement, and invalidation into an explainable decision-support workstation powered by Next.js, NestJS, BullMQ, and TimescaleDB.</span></div>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="laravel-crm" data-search="laravel-crm open-source laravel 13 crm built with php 8.3+ and filament 4 for customer relationship management and sales workflows. manage leads, contacts, companies, deals, tasks, projects, campaigns, activities, public forms, reports, rest apis, role-based permissions, queued email, audit logs, encrypted integrations, and secure backups." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">41</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/laravel-crm" target="_blank" rel="noopener noreferrer">laravel-crm</a><span class="repo-summary">Open-source Laravel 13 CRM built with PHP 8.3+ and Filament 4 for customer relationship management and sales workflows. Manage leads, contacts, companies, deals, tasks, projects, campaigns, activities, public forms, reports, REST APIs, role-based permissions, queued email, audit logs, encrypted integrations, and secure backups.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="laravel-ffmpeg" data-search="laravel-ffmpeg this package provides an integration with ffmpeg for laravel. laravel&#39;s filesystem handles the storage of the files." data-language="not specified" data-status="fork">
+          <span class="repo-index" aria-hidden="true">42</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/laravel-ffmpeg" target="_blank" rel="noopener noreferrer">laravel-ffmpeg</a><span class="repo-summary">This package provides an integration with FFmpeg for Laravel. Laravel&#39;s Filesystem handles the storage of the files.</span></div>
+          <span class="repo-language">Not specified</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="laravel-organization-document-manager" data-search="laravel-organization-document-manager laravel organization document manager is a multi-tenant laravel and filament system for building forms, managing documents and attachments, automating email reminders, organizing private and team chats, generating reports, and controlling role-based access, with english, persian, and jalali date support for organizations of all sizes and workflows!" data-language="javascript" data-status="original">
+          <span class="repo-index" aria-hidden="true">43</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/laravel-organization-document-manager" target="_blank" rel="noopener noreferrer">laravel-organization-document-manager</a><span class="repo-summary">Laravel Organization Document Manager is a multi-tenant Laravel and Filament system for building forms, managing documents and attachments, automating email reminders, organizing private and team chats, generating reports, and controlling role-based access, with English, Persian, and Jalali date support for organizations of all sizes and workflows!</span></div>
           <span class="repo-language">JavaScript</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="logicommerce-logistic-ecommerce" data-language="typescript" data-status="original">
-          <span class="repo-index">22</span>
-          <a class="repo-name" href="https://github.com/ildrm/logicommerce-logistic-ecommerce" target="_blank" rel="noopener">logicommerce-logistic-ecommerce</a>
+        <li class="repo-row" data-name="learn-beam-lms" data-search="learn-beam-lms open-source multilingual learning management system (lms) for courses, cohorts, assessments, exams, creator tools, credentials, and professional growth. built with next.js, nestjs, postgresql, drizzle, redis/bullmq, meilisearch, and s3, featuring i18n/rtl, permissions, media processing, search, analytics, and scalable modular architecture." data-language="typescript" data-status="original">
+          <span class="repo-index" aria-hidden="true">44</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/learn-beam-lms" target="_blank" rel="noopener noreferrer">learn-beam-lms</a><span class="repo-summary">Open-source multilingual learning management system (LMS) for courses, cohorts, assessments, exams, creator tools, credentials, and professional growth. Built with Next.js, NestJS, PostgreSQL, Drizzle, Redis/BullMQ, Meilisearch, and S3, featuring i18n/RTL, permissions, media processing, search, analytics, and scalable modular architecture.</span></div>
           <span class="repo-language">TypeScript</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="md2pdf-plantuml" data-language="python" data-status="original">
-          <span class="repo-index">23</span>
-          <a class="repo-name" href="https://github.com/ildrm/md2pdf-plantuml" target="_blank" rel="noopener">md2pdf-plantuml</a>
+        <li class="repo-row" data-name="ledgerly-international-accounting-platform" data-search="ledgerly-international-accounting-platform ledgerly is an open-source international multi-tenant accounting platform with an immutable double-entry ledger, exact decimal money, multi-currency primitives, journal posting/reversals, trial balance, fiscal periods, audit trails, rest/openapi, postgresql rls, and 11-language rtl/jalali localization. built with typescript, next.js and nestjs." data-language="typescript" data-status="original">
+          <span class="repo-index" aria-hidden="true">45</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/ledgerly-international-accounting-platform" target="_blank" rel="noopener noreferrer">ledgerly-international-accounting-platform</a><span class="repo-summary">Ledgerly is an open-source international multi-tenant accounting platform with an immutable double-entry ledger, exact decimal money, multi-currency primitives, journal posting/reversals, trial balance, fiscal periods, audit trails, REST/OpenAPI, PostgreSQL RLS, and 11-language RTL/Jalali localization. Built with TypeScript, Next.js and NestJS.</span></div>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="logicommerce-logistic-ecommerce" data-search="logicommerce-logistic-ecommerce logicommerce is a modular open-source platform that unifies logistics and ecommerce into a single ecosystem. it supports 1pl–5pl operations with warehouse, inventory, shipping, order, supplier, and marketplace management, providing a scalable foundation for modern supply chain and multi-vendor commerce solutions." data-language="typescript" data-status="original">
+          <span class="repo-index" aria-hidden="true">46</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/logicommerce-logistic-ecommerce" target="_blank" rel="noopener noreferrer">logicommerce-logistic-ecommerce</a><span class="repo-summary">Logicommerce is a modular open-source platform that unifies logistics and eCommerce into a single ecosystem. It supports 1PL–5PL operations with warehouse, inventory, shipping, order, supplier, and marketplace management, providing a scalable foundation for modern supply chain and multi-vendor commerce solutions.</span></div>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="madar-investment-operations-platform" data-search="madar-investment-operations-platform open-source multi-tenant investment management and portfolio accounting platform for funds and asset managers. supports nav, double-entry fund accounting, investor onboarding, cash flows, trading, reconciliation, risk controls, fees, statements, audit trails, and investor portal. built with react, fastify, postgresql, docker, terraform, and aws." data-language="typescript" data-status="original">
+          <span class="repo-index" aria-hidden="true">47</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/madar-investment-operations-platform" target="_blank" rel="noopener noreferrer">madar-investment-operations-platform</a><span class="repo-summary">Open-source multi-tenant investment management and portfolio accounting platform for funds and asset managers. Supports NAV, double-entry fund accounting, investor onboarding, cash flows, trading, reconciliation, risk controls, fees, statements, audit trails, and investor portal. Built with React, Fastify, PostgreSQL, Docker, Terraform, and AWS.</span></div>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="md2pdf-plantuml" data-search="md2pdf-plantuml a fast and automated markdown-to-pdf converter that detects plantuml diagrams, renders them in parallel, and embeds them seamlessly into the final document." data-language="python" data-status="original">
+          <span class="repo-index" aria-hidden="true">48</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/md2pdf-plantuml" target="_blank" rel="noopener noreferrer">md2pdf-plantuml</a><span class="repo-summary">A fast and automated Markdown-to-PDF converter that detects PlantUML diagrams, renders them in parallel, and embeds them seamlessly into the final document.</span></div>
           <span class="repo-language">Python</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="microservice-js" data-language="javascript" data-status="original">
-          <span class="repo-index">24</span>
-          <a class="repo-name" href="https://github.com/ildrm/microservice-js" target="_blank" rel="noopener">microservice-js</a>
+        <li class="repo-row" data-name="media-studio" data-search="media-studio media studio is a free, open-source ffmpeg gui and media converter for windows, macos, and linux. convert and compress video, audio, and images with batch processing, presets, ffprobe inspection, live job progress, advanced codec controls, and local-only processing. built with python and pyside6 as a private, cross-platform desktop media converter." data-language="python" data-status="original">
+          <span class="repo-index" aria-hidden="true">49</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/media-studio" target="_blank" rel="noopener noreferrer">media-studio</a><span class="repo-summary">Media Studio is a free, open-source FFmpeg GUI and media converter for Windows, macOS, and Linux. Convert and compress video, audio, and images with batch processing, presets, FFprobe inspection, live job progress, advanced codec controls, and local-only processing. Built with Python and PySide6 as a private, cross-platform desktop media converter.</span></div>
+          <span class="repo-language">Python</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="memoria-recording-memories" data-search="memoria-recording-memories memoria is an open-source, self-hosted, privacy-first personal diary, digital journal, memory vault, and selective publishing platform built with laravel 13, filament 5, livewire 4, blade, and tailwind css 4. record, organize, search, share, and selectively publish memories with privacy review, scheduling, rss, and social delivery." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">50</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/memoria-recording-memories" target="_blank" rel="noopener noreferrer">memoria-recording-memories</a><span class="repo-summary">Memoria is an open-source, self-hosted, privacy-first personal diary, digital journal, memory vault, and selective publishing platform built with Laravel 13, Filament 5, Livewire 4, Blade, and Tailwind CSS 4. Record, organize, search, share, and selectively publish memories with privacy review, scheduling, RSS, and social delivery.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="microservice-js" data-search="microservice-js no description provided on github." data-language="javascript" data-status="original">
+          <span class="repo-index" aria-hidden="true">51</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/microservice-js" target="_blank" rel="noopener noreferrer">microservice-js</a><span class="repo-summary">No description provided on GitHub.</span></div>
           <span class="repo-language">JavaScript</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="mui-php-form-builder" data-language="php" data-status="original">
-          <span class="repo-index">25</span>
-          <a class="repo-name" href="https://github.com/ildrm/mui-php-form-builder" target="_blank" rel="noopener">mui-php-form-builder</a>
+        <li class="repo-row" data-name="mui-php-form-builder" data-search="mui-php-form-builder no description provided on github." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">52</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/mui-php-form-builder" target="_blank" rel="noopener noreferrer">mui-php-form-builder</a><span class="repo-summary">No description provided on GitHub.</span></div>
           <span class="repo-language">PHP</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="multi-dropdown-select-v1" data-language="typescript" data-status="original">
-          <span class="repo-index">26</span>
-          <a class="repo-name" href="https://github.com/ildrm/multi-dropdown-select-v1" target="_blank" rel="noopener">multi-dropdown-select-v1</a>
+        <li class="repo-row" data-name="multi-dropdown-select-v1" data-search="multi-dropdown-select-v1 no description provided on github." data-language="typescript" data-status="original">
+          <span class="repo-index" aria-hidden="true">53</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/multi-dropdown-select-v1" target="_blank" rel="noopener noreferrer">multi-dropdown-select-v1</a><span class="repo-summary">No description provided on GitHub.</span></div>
           <span class="repo-language">TypeScript</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="multi-dropdown-select-v2" data-language="typescript" data-status="original">
-          <span class="repo-index">27</span>
-          <a class="repo-name" href="https://github.com/ildrm/multi-dropdown-select-v2" target="_blank" rel="noopener">multi-dropdown-select-v2</a>
+        <li class="repo-row" data-name="multi-dropdown-select-v2" data-search="multi-dropdown-select-v2 no description provided on github." data-language="typescript" data-status="original">
+          <span class="repo-index" aria-hidden="true">54</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/multi-dropdown-select-v2" target="_blank" rel="noopener noreferrer">multi-dropdown-select-v2</a><span class="repo-summary">No description provided on GitHub.</span></div>
           <span class="repo-language">TypeScript</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="n8n-chat-ui" data-language="html" data-status="original">
-          <span class="repo-index">28</span>
-          <a class="repo-name" href="https://github.com/ildrm/n8n-chat-ui" target="_blank" rel="noopener">n8n-chat-ui</a>
+        <li class="repo-row" data-name="n8n-chat-ui" data-search="n8n-chat-ui no description provided on github." data-language="html" data-status="original">
+          <span class="repo-index" aria-hidden="true">55</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/n8n-chat-ui" target="_blank" rel="noopener noreferrer">n8n-chat-ui</a><span class="repo-summary">No description provided on GitHub.</span></div>
           <span class="repo-language">HTML</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="n8n-free-templates" data-language="not specified" data-status="fork">
-          <span class="repo-index">29</span>
-          <a class="repo-name" href="https://github.com/ildrm/n8n-free-templates" target="_blank" rel="noopener">n8n-free-templates</a>
+        <li class="repo-row" data-name="n8n-free-templates" data-search="n8n-free-templates a curated set of 200+ plug-and-play n8n workflows that fuse classic automation with today’s ai stack—vector dbs, embeddings, and llms. import any json, add your creds, hit activate, and you’re live. built to demo, prototype, or drop straight into production." data-language="not specified" data-status="fork">
+          <span class="repo-index" aria-hidden="true">56</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/n8n-free-templates" target="_blank" rel="noopener noreferrer">n8n-free-templates</a><span class="repo-summary">A curated set of 200+ plug-and-play n8n workflows that fuse classic automation with today’s AI stack—vector DBs, embeddings, and LLMs. Import any JSON, add your creds, hit Activate, and you’re live. Built to demo, prototype, or drop straight into production.</span></div>
           <span class="repo-language">Not specified</span>
           <span class="repo-status" data-kind="fork">Fork</span>
         </li>
-        <li class="repo-row" data-name="offline-sports-photo-analysis" data-language="python" data-status="original">
-          <span class="repo-index">30</span>
-          <a class="repo-name" href="https://github.com/ildrm/offline-sports-photo-analysis" target="_blank" rel="noopener">offline-sports-photo-analysis</a>
-          <span class="repo-language">Python</span>
-          <span class="repo-status" data-kind="original">Original</span>
-        </li>
-        <li class="repo-row" data-name="open-source-ai-interview-platform" data-language="python" data-status="original">
-          <span class="repo-index">31</span>
-          <a class="repo-name" href="https://github.com/ildrm/open-source-ai-interview-platform" target="_blank" rel="noopener">open-source-ai-interview-platform</a>
-          <span class="repo-language">Python</span>
-          <span class="repo-status" data-kind="original">Original</span>
-        </li>
-        <li class="repo-row" data-name="overreacted" data-language="typescript" data-status="original">
-          <span class="repo-index">32</span>
-          <a class="repo-name" href="https://github.com/ildrm/overreacted" target="_blank" rel="noopener">overreacted</a>
+        <li class="repo-row" data-name="nexus-warehouse-management-system" data-search="nexus-warehouse-management-system nexus wms is an open-source, multi-tenant warehouse management system for inventory, receiving, picking, shipping, transfers, cycle counts, returns and lot/serial traceability. includes barcode scanning, fifo/fefo allocation, rbac, audit logs and a mobile pwa. built with next.js, nestjs, typescript, postgresql, prisma, redis, turborepo and openapi." data-language="typescript" data-status="original">
+          <span class="repo-index" aria-hidden="true">57</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/nexus-warehouse-management-system" target="_blank" rel="noopener noreferrer">nexus-warehouse-management-system</a><span class="repo-summary">NEXUS WMS is an open-source, multi-tenant warehouse management system for inventory, receiving, picking, shipping, transfers, cycle counts, returns and lot/serial traceability. Includes barcode scanning, FIFO/FEFO allocation, RBAC, audit logs and a mobile PWA. Built with Next.js, NestJS, TypeScript, PostgreSQL, Prisma, Redis, Turborepo and OpenAPI.</span></div>
           <span class="repo-language">TypeScript</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="persian-crypto-scraper" data-language="php" data-status="original">
-          <span class="repo-index">33</span>
-          <a class="repo-name" href="https://github.com/ildrm/persian-crypto-scraper" target="_blank" rel="noopener">persian-crypto-scraper</a>
+        <li class="repo-row" data-name="nobat-consultation-reservation-and-appointment-system" data-search="nobat-consultation-reservation-and-appointment-system nobat is a consultation reservation and appointment booking system for managing doctors, consultants, patients, schedules, time slots, and online appointments. it provides a structured solution for healthcare appointment scheduling, consultation management, availability tracking, and reservation workflows." data-language="typescript" data-status="original">
+          <span class="repo-index" aria-hidden="true">58</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/nobat-consultation-reservation-and-appointment-system" target="_blank" rel="noopener noreferrer">nobat-consultation-reservation-and-appointment-system</a><span class="repo-summary">Nobat is a consultation reservation and appointment booking system for managing doctors, consultants, patients, schedules, time slots, and online appointments. It provides a structured solution for healthcare appointment scheduling, consultation management, availability tracking, and reservation workflows.</span></div>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="northstar-seo" data-search="northstar-seo open-source technical seo audit platform and website crawler for asynchronous site analysis, deterministic scoring, on-page seo checks, issue prioritization, and actionable recommendations. built with typescript, next.js, nestjs, bullmq, redis, prisma, postgresql, and docker for scalable seo crawling, website audits, and transparent diagnostics." data-language="typescript" data-status="original">
+          <span class="repo-index" aria-hidden="true">59</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/northstar-seo" target="_blank" rel="noopener noreferrer">northstar-seo</a><span class="repo-summary">Open-source technical SEO audit platform and website crawler for asynchronous site analysis, deterministic scoring, on-page SEO checks, issue prioritization, and actionable recommendations. Built with TypeScript, Next.js, NestJS, BullMQ, Redis, Prisma, PostgreSQL, and Docker for scalable SEO crawling, website audits, and transparent diagnostics.</span></div>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="offline-sports-photo-analysis" data-search="offline-sports-photo-analysis offline open-source python toolkit for soccer and sports photo analysis. detect players, balls, referees, poses, faces, apparent emotions, blur, ocr, depth, exif metadata and spatial relationships using local official or community models. generates annotated images, json data and searchable html reports—no cloud apis." data-language="python" data-status="original">
+          <span class="repo-index" aria-hidden="true">60</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/offline-sports-photo-analysis" target="_blank" rel="noopener noreferrer">offline-sports-photo-analysis</a><span class="repo-summary">Offline open-source Python toolkit for soccer and sports photo analysis. Detect players, balls, referees, poses, faces, apparent emotions, blur, OCR, depth, EXIF metadata and spatial relationships using local official or community models. Generates annotated images, JSON data and searchable HTML reports—no cloud APIs.</span></div>
+          <span class="repo-language">Python</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="open-source-ai-interview-platform" data-search="open-source-ai-interview-platform open-source, self-hosted ai interview platform for human-reviewed hiring workflows. includes job templates, candidate invitations, consent and device checks, live interview rooms, transcription, evidence-based scoring, reviewer approval, audit logs, and role-based access. built with react, fastapi, whisper, llama, livekit, docker, and kubernetes." data-language="python" data-status="original">
+          <span class="repo-index" aria-hidden="true">61</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/open-source-ai-interview-platform" target="_blank" rel="noopener noreferrer">open-source-ai-interview-platform</a><span class="repo-summary">Open-source, self-hosted AI interview platform for human-reviewed hiring workflows. Includes job templates, candidate invitations, consent and device checks, live interview rooms, transcription, evidence-based scoring, reviewer approval, audit logs, and role-based access. Built with React, FastAPI, Whisper, Llama, LiveKit, Docker, and Kubernetes.</span></div>
+          <span class="repo-language">Python</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="overreacted" data-search="overreacted no description provided on github." data-language="typescript" data-status="original">
+          <span class="repo-index" aria-hidden="true">62</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/overreacted" target="_blank" rel="noopener noreferrer">overreacted</a><span class="repo-summary">No description provided on GitHub.</span></div>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="paperclip" data-search="paperclip the open-source app everyone uses to manage agents at work" data-language="not specified" data-status="fork">
+          <span class="repo-index" aria-hidden="true">63</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/paperclip" target="_blank" rel="noopener noreferrer">paperclip</a><span class="repo-summary">The open-source app everyone uses to manage agents at work</span></div>
+          <span class="repo-language">Not specified</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="persian_tts" data-search="persian_tts persian text-to-speech with voice cloning, fully offline on cpu (onnx + torch paths)" data-language="not specified" data-status="fork">
+          <span class="repo-index" aria-hidden="true">64</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/persian_tts" target="_blank" rel="noopener noreferrer">persian_tts</a><span class="repo-summary">Persian text-to-speech with voice cloning, fully offline on CPU (ONNX + torch paths)</span></div>
+          <span class="repo-language">Not specified</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="persian-crypto-scraper" data-search="persian-crypto-scraper no description provided on github." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">65</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/persian-crypto-scraper" target="_blank" rel="noopener noreferrer">persian-crypto-scraper</a><span class="repo-summary">No description provided on GitHub.</span></div>
           <span class="repo-language">PHP</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="php-advanced-telegram-uploader-service" data-language="php" data-status="original">
-          <span class="repo-index">34</span>
-          <a class="repo-name" href="https://github.com/ildrm/php-advanced-telegram-uploader-service" target="_blank" rel="noopener">php-advanced-telegram-uploader-service</a>
+        <li class="repo-row" data-name="php-advanced-telegram-uploader-service" data-search="php-advanced-telegram-uploader-service advanced php telegram uploader service for uploading large files, images, videos, and documents to telegram via bot api or mtproto. features secure uploads, queue processing, resumable transfers, api integration, and scalable architecture for automation, cloud storage, and enterprise php applications." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">66</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/php-advanced-telegram-uploader-service" target="_blank" rel="noopener noreferrer">php-advanced-telegram-uploader-service</a><span class="repo-summary">Advanced PHP Telegram Uploader Service for uploading large files, images, videos, and documents to Telegram via Bot API or MTProto. Features secure uploads, queue processing, resumable transfers, API integration, and scalable architecture for automation, cloud storage, and enterprise PHP applications.</span></div>
           <span class="repo-language">PHP</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="php-d3" data-language="html" data-status="original">
-          <span class="repo-index">35</span>
-          <a class="repo-name" href="https://github.com/ildrm/php-d3" target="_blank" rel="noopener">php-d3</a>
+        <li class="repo-row" data-name="php-d3" data-search="php-d3 the php-d3 project provides a php class called d3chartbuilder, inspired by the d3.js gallery, enabling the creation of various d3.js charts using php." data-language="html" data-status="original">
+          <span class="repo-index" aria-hidden="true">67</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/php-d3" target="_blank" rel="noopener noreferrer">php-d3</a><span class="repo-summary">The php-d3 project provides a PHP class called D3ChartBuilder, inspired by the D3.js gallery, enabling the creation of various D3.js charts using PHP.</span></div>
           <span class="repo-language">HTML</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="php-jsfuck" data-language="php" data-status="original">
-          <span class="repo-index">36</span>
-          <a class="repo-name" href="https://github.com/ildrm/php-jsfuck" target="_blank" rel="noopener">php-jsfuck</a>
+        <li class="repo-row" data-name="php-jsfuck" data-search="php-jsfuck no description provided on github." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">68</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/php-jsfuck" target="_blank" rel="noopener noreferrer">php-jsfuck</a><span class="repo-summary">No description provided on GitHub.</span></div>
           <span class="repo-language">PHP</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="php-science-class" data-language="php" data-status="original">
-          <span class="repo-index">37</span>
-          <a class="repo-name" href="https://github.com/ildrm/php-science-class" target="_blank" rel="noopener">php-science-class</a>
+        <li class="repo-row" data-name="php-science-class" data-search="php-science-class php science class is a lightweight scientific computing library for php, providing mathematical, statistical, physics, chemistry, and engineering functions. ideal for calculations, data analysis, scientific applications, education, simulations, and research projects with an easy-to-use object-oriented api." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">69</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/php-science-class" target="_blank" rel="noopener noreferrer">php-science-class</a><span class="repo-summary">PHP Science Class is a lightweight scientific computing library for PHP, providing mathematical, statistical, physics, chemistry, and engineering functions. Ideal for calculations, data analysis, scientific applications, education, simulations, and research projects with an easy-to-use object-oriented API.</span></div>
           <span class="repo-language">PHP</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="php-security" data-language="php" data-status="original">
-          <span class="repo-index">38</span>
-          <a class="repo-name" href="https://github.com/ildrm/php-security" target="_blank" rel="noopener">php-security</a>
+        <li class="repo-row" data-name="php-security" data-search="php-security no description provided on github." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">70</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/php-security" target="_blank" rel="noopener noreferrer">php-security</a><span class="repo-summary">No description provided on GitHub.</span></div>
           <span class="repo-language">PHP</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="php-simple-telegram-uploader-service" data-language="php" data-status="original">
-          <span class="repo-index">39</span>
-          <a class="repo-name" href="https://github.com/ildrm/php-simple-telegram-uploader-service" target="_blank" rel="noopener">php-simple-telegram-uploader-service</a>
+        <li class="repo-row" data-name="php-simple-telegram-uploader-service" data-search="php-simple-telegram-uploader-service lightweight php telegram uploader service for uploading files, images, videos, and documents to telegram using the bot api. simple to integrate, fast, and reliable, with rest api support, secure file handling, and an easy-to-use architecture for php applications, automation, backups, and cloud workflows." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">71</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/php-simple-telegram-uploader-service" target="_blank" rel="noopener noreferrer">php-simple-telegram-uploader-service</a><span class="repo-summary">Lightweight PHP Telegram Uploader Service for uploading files, images, videos, and documents to Telegram using the Bot API. Simple to integrate, fast, and reliable, with REST API support, secure file handling, and an easy-to-use architecture for PHP applications, automation, backups, and cloud workflows.</span></div>
           <span class="repo-language">PHP</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="podflow-podcast-scrapper" data-language="php" data-status="original">
-          <span class="repo-index">40</span>
-          <a class="repo-name" href="https://github.com/ildrm/podflow-podcast-scrapper" target="_blank" rel="noopener">podflow-podcast-scrapper</a>
+        <li class="repo-row" data-name="podflow-podcast-scrapper" data-search="podflow-podcast-scrapper podflow podcast scraper is an open-source podcast aggregation and scraping platform that automatically collects episodes, metadata, and feeds from multiple podcast sources. it streamlines podcast discovery, content synchronization, and data organization, providing a scalable foundation for podcast directories and analytics applications." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">72</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/podflow-podcast-scrapper" target="_blank" rel="noopener noreferrer">podflow-podcast-scrapper</a><span class="repo-summary">PodFlow Podcast Scraper is an open-source podcast aggregation and scraping platform that automatically collects episodes, metadata, and feeds from multiple podcast sources. It streamlines podcast discovery, content synchronization, and data organization, providing a scalable foundation for podcast directories and analytics applications.</span></div>
           <span class="repo-language">PHP</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="prestashop-to-woocommerce" data-language="python" data-status="original">
-          <span class="repo-index">41</span>
-          <a class="repo-name" href="https://github.com/ildrm/PrestaShop-to-WooCommerce" target="_blank" rel="noopener">PrestaShop-to-WooCommerce</a>
+        <li class="repo-row" data-name="postiz-app" data-search="postiz-app 📨 the ultimate agentic social media scheduling tool 🤖" data-language="not specified" data-status="fork">
+          <span class="repo-index" aria-hidden="true">73</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/postiz-app" target="_blank" rel="noopener noreferrer">postiz-app</a><span class="repo-summary">📨 The ultimate agentic social media scheduling tool 🤖</span></div>
+          <span class="repo-language">Not specified</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="poulix-platform" data-search="poulix-platform poulix-platform is a full-stack financial application." data-language="not specified" data-status="fork">
+          <span class="repo-index" aria-hidden="true">74</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/poulix-platform" target="_blank" rel="noopener noreferrer">poulix-platform</a><span class="repo-summary">Poulix-Platform is a full-stack financial application.</span></div>
+          <span class="repo-language">Not specified</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="prestashop-to-woocommerce" data-search="prestashop-to-woocommerce no description provided on github." data-language="python" data-status="original">
+          <span class="repo-index" aria-hidden="true">75</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/PrestaShop-to-WooCommerce" target="_blank" rel="noopener noreferrer">PrestaShop-to-WooCommerce</a><span class="repo-summary">No description provided on GitHub.</span></div>
           <span class="repo-language">Python</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="react-divar" data-language="not specified" data-status="fork">
-          <span class="repo-index">42</span>
-          <a class="repo-name" href="https://github.com/ildrm/react-divar" target="_blank" rel="noopener">react-divar</a>
+        <li class="repo-row" data-name="project-qr" data-search="project-qr smart gallery qr is a wordpress qr code plugin for creating secure digital galleries and shareable experiences with dynamic qr codes, encrypted image/pdf media, access control, invitations, workspace roles, scan analytics, and a react admin interface. build private, public, password-protected, member-only or unlisted galleries." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">76</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/project-qr" target="_blank" rel="noopener noreferrer">project-qr</a><span class="repo-summary">Smart Gallery QR is a WordPress QR code plugin for creating secure digital galleries and shareable experiences with dynamic QR codes, encrypted image/PDF media, access control, invitations, workspace roles, scan analytics, and a React admin interface. Build private, public, password-protected, member-only or unlisted galleries.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="python-deblurring" data-search="python-deblurring python cli for batch image deblurring, image restoration, deconvolution, and classical computer vision. includes wiener, richardson-lucy, tikhonov, tv-admm, and unsupervised wiener methods; motion/gaussian/box/custom psfs; recursive opencv/scikit-image processing; color/grayscale support, edge padding, presets, and json reports." data-language="python" data-status="original">
+          <span class="repo-index" aria-hidden="true">77</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/python-deblurring" target="_blank" rel="noopener noreferrer">python-deblurring</a><span class="repo-summary">Python CLI for batch image deblurring, image restoration, deconvolution, and classical computer vision. Includes Wiener, Richardson-Lucy, Tikhonov, TV-ADMM, and unsupervised Wiener methods; motion/Gaussian/box/custom PSFs; recursive OpenCV/scikit-image processing; color/grayscale support, edge padding, presets, and JSON reports.</span></div>
+          <span class="repo-language">Python</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="python-seo-auditor" data-search="python-seo-auditor atlas is an open-source python seo auditor and technical seo crawler for site audits. it runs 84 evidence-based checks for indexability, robots.txt, sitemaps, canonicals, hreflang, structured data, internal links, content, accessibility and core web vitals, with playwright rendering, google search console, psi/crux and offline html reports via cli." data-language="python" data-status="original">
+          <span class="repo-index" aria-hidden="true">78</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/python-seo-auditor" target="_blank" rel="noopener noreferrer">python-seo-auditor</a><span class="repo-summary">Atlas is an open-source Python SEO auditor and technical SEO crawler for site audits. It runs 84 evidence-based checks for indexability, robots.txt, sitemaps, canonicals, hreflang, structured data, internal links, content, accessibility and Core Web Vitals, with Playwright rendering, Google Search Console, PSI/CrUX and offline HTML reports via CLI.</span></div>
+          <span class="repo-language">Python</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="react-divar" data-search="react-divar no description provided on github." data-language="not specified" data-status="fork">
+          <span class="repo-index" aria-hidden="true">79</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/react-divar" target="_blank" rel="noopener noreferrer">react-divar</a><span class="repo-summary">No description provided on GitHub.</span></div>
           <span class="repo-language">Not specified</span>
           <span class="repo-status" data-kind="fork">Fork</span>
         </li>
-        <li class="repo-row" data-name="servex-php" data-language="php" data-status="original">
-          <span class="repo-index">43</span>
-          <a class="repo-name" href="https://github.com/ildrm/servex-php" target="_blank" rel="noopener">servex-php</a>
-          <span class="repo-language">PHP</span>
-          <span class="repo-status" data-kind="original">Original</span>
-        </li>
-        <li class="repo-row" data-name="servex-service" data-language="php" data-status="original">
-          <span class="repo-index">44</span>
-          <a class="repo-name" href="https://github.com/ildrm/servex-service" target="_blank" rel="noopener">servex-service</a>
-          <span class="repo-language">PHP</span>
-          <span class="repo-status" data-kind="original">Original</span>
-        </li>
-        <li class="repo-row" data-name="servex-storage" data-language="php" data-status="original">
-          <span class="repo-index">45</span>
-          <a class="repo-name" href="https://github.com/ildrm/servex-storage" target="_blank" rel="noopener">servex-storage</a>
-          <span class="repo-language">PHP</span>
-          <span class="repo-status" data-kind="original">Original</span>
-        </li>
-        <li class="repo-row" data-name="servex-warehouse" data-language="php" data-status="original">
-          <span class="repo-index">46</span>
-          <a class="repo-name" href="https://github.com/ildrm/servex-warehouse" target="_blank" rel="noopener">servex-warehouse</a>
-          <span class="repo-language">PHP</span>
-          <span class="repo-status" data-kind="original">Original</span>
-        </li>
-        <li class="repo-row" data-name="superset" data-language="typescript" data-status="fork">
-          <span class="repo-index">47</span>
-          <a class="repo-name" href="https://github.com/ildrm/superset" target="_blank" rel="noopener">superset</a>
-          <span class="repo-language">TypeScript</span>
-          <span class="repo-status" data-kind="fork">Fork</span>
-        </li>
-        <li class="repo-row" data-name="talentsphere-linkedin-clone" data-language="typescript" data-status="original">
-          <span class="repo-index">48</span>
-          <a class="repo-name" href="https://github.com/ildrm/talentsphere-linkedin-clone" target="_blank" rel="noopener">talentsphere-linkedin-clone</a>
+        <li class="repo-row" data-name="relationship-platform" data-search="relationship-platform privacy-first social and relationship network for consent-based discovery, identity verification, privacy-scoped profiles, relationship structures, matching, mutual reveal, messaging, couple and group profiles, safety moderation, blocking, reporting, and appeals." data-language="typescript" data-status="original">
+          <span class="repo-index" aria-hidden="true">80</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/relationship-platform" target="_blank" rel="noopener noreferrer">relationship-platform</a><span class="repo-summary">Privacy-first social and relationship network for consent-based discovery, identity verification, privacy-scoped profiles, relationship structures, matching, mutual reveal, messaging, couple and group profiles, safety moderation, blocking, reporting, and appeals.</span></div>
           <span class="repo-language">TypeScript</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="telegram-anonymous-message-bot" data-language="php" data-status="original">
-          <span class="repo-index">49</span>
-          <a class="repo-name" href="https://github.com/ildrm/telegram-anonymous-message-bot" target="_blank" rel="noopener">telegram-anonymous-message-bot</a>
+        <li class="repo-row" data-name="servex-php" data-search="servex-php servex is a php microservices framework inspired by moleculer, designed for building scalable, event-driven, and distributed applications with support for service management, event handling, caching, and message brokers like rabbitmq and kafka." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">81</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/servex-php" target="_blank" rel="noopener noreferrer">servex-php</a><span class="repo-summary">Servex is a PHP microservices framework inspired by Moleculer, designed for building scalable, event-driven, and distributed applications with support for service management, event handling, caching, and message brokers like RabbitMQ and Kafka.</span></div>
           <span class="repo-language">PHP</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="telegram-auction-platform" data-language="php" data-status="original">
-          <span class="repo-index">50</span>
-          <a class="repo-name" href="https://github.com/ildrm/telegram-auction-platform" target="_blank" rel="noopener">telegram-auction-platform</a>
+        <li class="repo-row" data-name="servex-service" data-search="servex-service the servex service project is a lightweight test service designed for the servex php framework, providing a simple order service as an example for developers to create and integrate custom services within the servex ecosystem." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">82</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/servex-service" target="_blank" rel="noopener noreferrer">servex-service</a><span class="repo-summary">The Servex Service project is a lightweight test service designed for the Servex PHP Framework, providing a simple Order service as an example for developers to create and integrate custom services within the Servex ecosystem.</span></div>
           <span class="repo-language">PHP</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="telegram-crypto-financial-bot" data-language="php" data-status="original">
-          <span class="repo-index">51</span>
-          <a class="repo-name" href="https://github.com/ildrm/telegram-crypto-financial-bot" target="_blank" rel="noopener">telegram-crypto-financial-bot</a>
+        <li class="repo-row" data-name="servex-storage" data-search="servex-storage no description provided on github." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">83</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/servex-storage" target="_blank" rel="noopener noreferrer">servex-storage</a><span class="repo-summary">No description provided on GitHub.</span></div>
           <span class="repo-language">PHP</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="telegram-manage-channel-bot" data-language="php" data-status="original">
-          <span class="repo-index">52</span>
-          <a class="repo-name" href="https://github.com/ildrm/telegram-manage-channel-bot" target="_blank" rel="noopener">telegram-manage-channel-bot</a>
+        <li class="repo-row" data-name="servex-warehouse" data-search="servex-warehouse no description provided on github." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">84</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/servex-warehouse" target="_blank" rel="noopener noreferrer">servex-warehouse</a><span class="repo-summary">No description provided on GitHub.</span></div>
           <span class="repo-language">PHP</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="telegram-manage-group-bot" data-language="php" data-status="original">
-          <span class="repo-index">53</span>
-          <a class="repo-name" href="https://github.com/ildrm/telegram-manage-group-bot" target="_blank" rel="noopener">telegram-manage-group-bot</a>
-          <span class="repo-language">PHP</span>
-          <span class="repo-status" data-kind="original">Original</span>
-        </li>
-        <li class="repo-row" data-name="telegram-poll-bot" data-language="php" data-status="original">
-          <span class="repo-index">54</span>
-          <a class="repo-name" href="https://github.com/ildrm/telegram-poll-bot" target="_blank" rel="noopener">telegram-poll-bot</a>
-          <span class="repo-language">PHP</span>
-          <span class="repo-status" data-kind="original">Original</span>
-        </li>
-        <li class="repo-row" data-name="telegram-send-message-bot" data-language="php" data-status="original">
-          <span class="repo-index">55</span>
-          <a class="repo-name" href="https://github.com/ildrm/telegram-send-message-bot" target="_blank" rel="noopener">telegram-send-message-bot</a>
-          <span class="repo-language">PHP</span>
-          <span class="repo-status" data-kind="original">Original</span>
-        </li>
-        <li class="repo-row" data-name="telegram-ssh" data-language="php" data-status="original">
-          <span class="repo-index">56</span>
-          <a class="repo-name" href="https://github.com/ildrm/telegram-ssh" target="_blank" rel="noopener">telegram-ssh</a>
-          <span class="repo-language">PHP</span>
-          <span class="repo-status" data-kind="original">Original</span>
-        </li>
-        <li class="repo-row" data-name="telegram-woocommerce-bot" data-language="php" data-status="original">
-          <span class="repo-index">57</span>
-          <a class="repo-name" href="https://github.com/ildrm/telegram-woocommerce-bot" target="_blank" rel="noopener">telegram-woocommerce-bot</a>
-          <span class="repo-language">PHP</span>
-          <span class="repo-status" data-kind="original">Original</span>
-        </li>
-        <li class="repo-row" data-name="telegram-wordpress-bot" data-language="php" data-status="original">
-          <span class="repo-index">58</span>
-          <a class="repo-name" href="https://github.com/ildrm/telegram-wordpress-bot" target="_blank" rel="noopener">telegram-wordpress-bot</a>
-          <span class="repo-language">PHP</span>
-          <span class="repo-status" data-kind="original">Original</span>
-        </li>
-        <li class="repo-row" data-name="test-timetracker" data-language="php" data-status="original">
-          <span class="repo-index">59</span>
-          <a class="repo-name" href="https://github.com/ildrm/test-timetracker" target="_blank" rel="noopener">test-timetracker</a>
-          <span class="repo-language">PHP</span>
-          <span class="repo-status" data-kind="original">Original</span>
-        </li>
-        <li class="repo-row" data-name="url-shortener" data-language="not specified" data-status="fork">
-          <span class="repo-index">60</span>
-          <a class="repo-name" href="https://github.com/ildrm/URL-shortener" target="_blank" rel="noopener">URL-shortener</a>
+        <li class="repo-row" data-name="sourcelens" data-search="sourcelens multilingual source-grounded research workspace with agentic rag, cited chat, podcasts, powerpoint, and video." data-language="not specified" data-status="fork">
+          <span class="repo-index" aria-hidden="true">85</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/SourceLens" target="_blank" rel="noopener noreferrer">SourceLens</a><span class="repo-summary">Multilingual source-grounded research workspace with agentic RAG, cited chat, podcasts, PowerPoint, and video.</span></div>
           <span class="repo-language">Not specified</span>
           <span class="repo-status" data-kind="fork">Fork</span>
         </li>
-        <li class="repo-row" data-name="voice-chat-openai" data-language="javascript" data-status="original">
-          <span class="repo-index">61</span>
-          <a class="repo-name" href="https://github.com/ildrm/voice-chat-openai" target="_blank" rel="noopener">voice-chat-openai</a>
+        <li class="repo-row" data-name="superset" data-search="superset apache superset is a data visualization and data exploration platform" data-language="typescript" data-status="fork">
+          <span class="repo-index" aria-hidden="true">86</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/superset" target="_blank" rel="noopener noreferrer">superset</a><span class="repo-summary">Apache Superset is a Data Visualization and Data Exploration Platform</span></div>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="talentsphere-linkedin-clone" data-search="talentsphere-linkedin-clone talentsphere is an open-source linkedin clone and eu-first employment platform built with react, typescript, node.js, turborepo, and postgresql. it combines job search, professional networking, applications, ats, recruiting crm, workplace reviews, learning, gdpr privacy, and governed ai." data-language="typescript" data-status="original">
+          <span class="repo-index" aria-hidden="true">87</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/talentsphere-linkedin-clone" target="_blank" rel="noopener noreferrer">talentsphere-linkedin-clone</a><span class="repo-summary">TalentSphere is an open-source LinkedIn clone and EU-first employment platform built with React, TypeScript, Node.js, Turborepo, and PostgreSQL. It combines job search, professional networking, applications, ATS, recruiting CRM, workplace reviews, learning, GDPR privacy, and governed AI.</span></div>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="telegram-anonymous-message-bot" data-search="telegram-anonymous-message-bot telegram anonymous message bot is a single-file php bot that lets users create anonymous inbox links, receive hidden messages, and optionally reply through private threaded conversations. it uses sqlite for users, inboxes, routing, rate limits, and abuse protection, keeping telegram identities hidden while managing delivery and audit logs privately" data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">88</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/telegram-anonymous-message-bot" target="_blank" rel="noopener noreferrer">telegram-anonymous-message-bot</a><span class="repo-summary">Telegram Anonymous Message Bot is a single-file PHP bot that lets users create anonymous inbox links, receive hidden messages, and optionally reply through private threaded conversations. It uses SQLite for users, inboxes, routing, rate limits, and abuse protection, keeping Telegram identities hidden while managing delivery and audit logs privately</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="telegram-auction-platform" data-search="telegram-auction-platform telegram auction bot built for live bidding, auction automation, participant management, real-time notifications, and seamless telegram bot api integration. ideal for online marketplaces, e-commerce, digital communities, and developers building auction platforms." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">89</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/telegram-auction-platform" target="_blank" rel="noopener noreferrer">telegram-auction-platform</a><span class="repo-summary">Telegram auction bot built for live bidding, auction automation, participant management, real-time notifications, and seamless Telegram Bot API integration. Ideal for online marketplaces, e-commerce, digital communities, and developers building auction platforms.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="telegram-crypto-financial-bot" data-search="telegram-crypto-financial-bot telegram crypto financial bot is a single-file php telegram bot for crypto and market tracking, offering live coin prices, trending coins, global market data, portfolio tracking, price alerts, fear-and-greed sentiment, eth gas data, crypto news, charts, and locally stored user data through sqlite." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">90</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/telegram-crypto-financial-bot" target="_blank" rel="noopener noreferrer">telegram-crypto-financial-bot</a><span class="repo-summary">Telegram Crypto Financial Bot is a single-file PHP Telegram bot for crypto and market tracking, offering live coin prices, trending coins, global market data, portfolio tracking, price alerts, fear-and-greed sentiment, ETH gas data, crypto news, charts, and locally stored user data through SQLite.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="telegram-manage-channel-bot" data-search="telegram-manage-channel-bot telegram manage channel bot is an enterprise-style php bot for managing telegram channels, with tools for creating posts, saving drafts, scheduling content, running campaigns, cross-posting across multiple channels, handling approval workflows, tracking analytics, managing roles and permissions, and automating publishing through rss feeds and other" data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">91</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/telegram-manage-channel-bot" target="_blank" rel="noopener noreferrer">telegram-manage-channel-bot</a><span class="repo-summary">Telegram Manage Channel Bot is an enterprise-style PHP bot for managing Telegram channels, with tools for creating posts, saving drafts, scheduling content, running campaigns, cross-posting across multiple channels, handling approval workflows, tracking analytics, managing roles and permissions, and automating publishing through RSS feeds and other</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="telegram-manage-group-bot" data-search="telegram-manage-group-bot telegram manage group bot is a modular php bot for managing telegram groups, offering moderation, anti-spam protection, captcha verification, anti-link and anti-media controls, welcome and goodbye messages, warnings, user reports, group statistics, scheduled messages, custom commands, and an admin dashboard for configuring group settings." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">92</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/telegram-manage-group-bot" target="_blank" rel="noopener noreferrer">telegram-manage-group-bot</a><span class="repo-summary">Telegram Manage Group Bot is a modular PHP bot for managing Telegram groups, offering moderation, anti-spam protection, CAPTCHA verification, anti-link and anti-media controls, welcome and goodbye messages, warnings, user reports, group statistics, scheduled messages, custom commands, and an admin dashboard for configuring group settings.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="telegram-poll-bot" data-search="telegram-poll-bot telegram poll bot is a single-file php telegram bot for creating and managing customizable polls with multi-step setup, anonymous or public voting, single or multiple answers, quiz mode, expiration dates, live result tracking, inline sharing, poll management, detailed statistics, and csv export." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">93</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/telegram-poll-bot" target="_blank" rel="noopener noreferrer">telegram-poll-bot</a><span class="repo-summary">Telegram Poll Bot is a single-file PHP Telegram bot for creating and managing customizable polls with multi-step setup, anonymous or public voting, single or multiple answers, quiz mode, expiration dates, live result tracking, inline sharing, poll management, detailed statistics, and CSV export.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="telegram-send-message-bot" data-search="telegram-send-message-bot telegram send message bot is a php telegram broadcast and user-collector bot that lets owners collect subscriber metadata, create targeted broadcast campaigns, send text, media, polls, and button messages, manage templates, process delivery through a safe queued system with retries and flood control, and track delivery, clicks, sources, etc." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">94</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/telegram-send-message-bot" target="_blank" rel="noopener noreferrer">telegram-send-message-bot</a><span class="repo-summary">Telegram Send Message Bot is a PHP Telegram broadcast and user-collector bot that lets owners collect subscriber metadata, create targeted broadcast campaigns, send text, media, polls, and button messages, manage templates, process delivery through a safe queued system with retries and flood control, and track delivery, clicks, sources, etc.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="telegram-ssh" data-search="telegram-ssh telegram ssh is an open-source telegram bot that lets users securely create, manage, and monitor ssh accounts through a simple chat interface. it automates account provisioning, user management, expiration handling, and server administration, making ssh services easy to deploy and manage." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">95</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/telegram-ssh" target="_blank" rel="noopener noreferrer">telegram-ssh</a><span class="repo-summary">Telegram SSH is an open-source Telegram bot that lets users securely create, manage, and monitor SSH accounts through a simple chat interface. It automates account provisioning, user management, expiration handling, and server administration, making SSH services easy to deploy and manage.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="telegram-woocommerce-bot" data-search="telegram-woocommerce-bot telegram woocommerce bot is a php telegram storefront bot that connects to woocommerce and lets customers browse products, choose variations, manage carts, apply coupons, complete checkout, track orders, receive order updates, manage wishlists, and interact with a store directly inside telegram." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">96</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/telegram-woocommerce-bot" target="_blank" rel="noopener noreferrer">telegram-woocommerce-bot</a><span class="repo-summary">Telegram WooCommerce Bot is a PHP Telegram storefront bot that connects to WooCommerce and lets customers browse products, choose variations, manage carts, apply coupons, complete checkout, track orders, receive order updates, manage wishlists, and interact with a store directly inside Telegram.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="telegram-wordpress-bot" data-search="telegram-wordpress-bot telegram wordpress bot is a php-based telegram bot for managing wordpress sites from a chat interface, letting users connect one or multiple wordpress installs, manage posts, comments, plugins, themes, updates, users, media, cache, database optimization, woocommerce orders, and multisite networks through secure rest api integration." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">97</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/telegram-wordpress-bot" target="_blank" rel="noopener noreferrer">telegram-wordpress-bot</a><span class="repo-summary">Telegram WordPress Bot is a PHP-based Telegram bot for managing WordPress sites from a chat interface, letting users connect one or multiple WordPress installs, manage posts, comments, plugins, themes, updates, users, media, cache, database optimization, WooCommerce orders, and multisite networks through secure REST API integration.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="test-timetracker" data-search="test-timetracker no description provided on github." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">98</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/test-timetracker" target="_blank" rel="noopener noreferrer">test-timetracker</a><span class="repo-summary">No description provided on GitHub.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="ubuntu-hardener" data-search="ubuntu-hardener this script automates basic security hardening for ubuntu servers." data-language="not specified" data-status="fork">
+          <span class="repo-index" aria-hidden="true">99</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/ubuntu-hardener" target="_blank" rel="noopener noreferrer">ubuntu-hardener</a><span class="repo-summary">This script automates basic security hardening for Ubuntu servers.</span></div>
+          <span class="repo-language">Not specified</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="url-shortener" data-search="url-shortener no description provided on github." data-language="not specified" data-status="fork">
+          <span class="repo-index" aria-hidden="true">100</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/URL-shortener" target="_blank" rel="noopener noreferrer">URL-shortener</a><span class="repo-summary">No description provided on GitHub.</span></div>
+          <span class="repo-language">Not specified</span>
+          <span class="repo-status" data-kind="fork">Fork</span>
+        </li>
+        <li class="repo-row" data-name="veyra-document-manager" data-search="veyra-document-manager veyra is an open-source, multi-tenant enterprise document management and ai document intelligence platform for secure ingestion, permission-aware semantic search, rag, and evidence-grounded answers with exact citations. built with next.js, nestjs, fastapi, postgresql/pgvector, openfga, temporal, s3/minio, valkey, and opentelemetry." data-language="typescript" data-status="original">
+          <span class="repo-index" aria-hidden="true">101</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/veyra-document-manager" target="_blank" rel="noopener noreferrer">veyra-document-manager</a><span class="repo-summary">Veyra is an open-source, multi-tenant enterprise document management and AI document intelligence platform for secure ingestion, permission-aware semantic search, RAG, and evidence-grounded answers with exact citations. Built with Next.js, NestJS, FastAPI, PostgreSQL/pgvector, OpenFGA, Temporal, S3/MinIO, Valkey, and OpenTelemetry.</span></div>
+          <span class="repo-language">TypeScript</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="voice-chat-openai" data-search="voice-chat-openai a web app for voice-based interaction with an ai, transcribing speech and responding with text and audio." data-language="javascript" data-status="original">
+          <span class="repo-index" aria-hidden="true">102</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/voice-chat-openai" target="_blank" rel="noopener noreferrer">voice-chat-openai</a><span class="repo-summary">A web app for voice-based interaction with an AI, transcribing speech and responding with text and audio.</span></div>
           <span class="repo-language">JavaScript</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="wc-message-notifier" data-language="php" data-status="original">
-          <span class="repo-index">62</span>
-          <a class="repo-name" href="https://github.com/ildrm/wc-message-notifier" target="_blank" rel="noopener">wc-message-notifier</a>
+        <li class="repo-row" data-name="wanderline-social-travel-platform" data-search="wanderline-social-travel-platform wanderline is a privacy-first social travel and journey coordination platform for discovering trips, finding travel companions, planning multi-destination itineraries, organizing recreational experiences and tours, and managing travel safely. built with laravel, next.js, postgresql/postgis, redis, docker, and kubernetes." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">103</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/wanderline-social-travel-platform" target="_blank" rel="noopener noreferrer">wanderline-social-travel-platform</a><span class="repo-summary">Wanderline is a privacy-first social travel and journey coordination platform for discovering trips, finding travel companions, planning multi-destination itineraries, organizing recreational experiences and tours, and managing travel safely. Built with Laravel, Next.js, PostgreSQL/PostGIS, Redis, Docker, and Kubernetes.</span></div>
           <span class="repo-language">PHP</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="wc-moadian-connector" data-language="php" data-status="original">
-          <span class="repo-index">63</span>
-          <a class="repo-name" href="https://github.com/ildrm/wc-moadian-connector" target="_blank" rel="noopener">wc-moadian-connector</a>
+        <li class="repo-row" data-name="wc-message-notifier" data-search="wc-message-notifier send woocommerce order notifications to messaging telegram channels and groups" data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">104</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/wc-message-notifier" target="_blank" rel="noopener noreferrer">wc-message-notifier</a><span class="repo-summary">Send WooCommerce order notifications to messaging Telegram channels and groups</span></div>
           <span class="repo-language">PHP</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="windows-drag-and-drop" data-language="not specified" data-status="fork">
-          <span class="repo-index">64</span>
-          <a class="repo-name" href="https://github.com/ildrm/windows-drag-and-drop" target="_blank" rel="noopener">windows-drag-and-drop</a>
+        <li class="repo-row" data-name="wc-moadian-connector" data-search="wc-moadian-connector اتصال فروشگاه ووکامرس به سامانه مودیان مالیاتی ایران" data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">105</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/wc-moadian-connector" target="_blank" rel="noopener noreferrer">wc-moadian-connector</a><span class="repo-summary">اتصال فروشگاه ووکامرس به سامانه مودیان مالیاتی ایران</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wc-product-importer" data-search="wc-product-importer woocommerce product importer is a wordpress plugin for bulk importing and updating products from csv files. it supports field mapping, categories, images, and variable products to speed up store migration and product management." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">106</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/wc-product-importer" target="_blank" rel="noopener noreferrer">wc-product-importer</a><span class="repo-summary">WooCommerce Product Importer is a WordPress plugin for bulk importing and updating products from CSV files. It supports field mapping, categories, images, and variable products to speed up store migration and product management.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="windows-drag-and-drop" data-search="windows-drag-and-drop no description provided on github." data-language="not specified" data-status="fork">
+          <span class="repo-index" aria-hidden="true">107</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/windows-drag-and-drop" target="_blank" rel="noopener noreferrer">windows-drag-and-drop</a><span class="repo-summary">No description provided on GitHub.</span></div>
           <span class="repo-language">Not specified</span>
           <span class="repo-status" data-kind="fork">Fork</span>
         </li>
-        <li class="repo-row" data-name="woocommerce-disable-gateway-by-coupon" data-language="php" data-status="original">
-          <span class="repo-index">65</span>
-          <a class="repo-name" href="https://github.com/ildrm/woocommerce-disable-gateway-by-coupon" target="_blank" rel="noopener">woocommerce-disable-gateway-by-coupon</a>
+        <li class="repo-row" data-name="woocommerce-advanced-report-builder" data-search="woocommerce-advanced-report-builder advanced woocommerce report builder for wordpress with custom datasets, product types, categories, attributes, variations, filters, formulas, pivots, dashboards, csv/xlsx export, jalali/gregorian dates, hpos support, acf/cpt integration, scheduled reports, alerts, analytics and business intelligence." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">108</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/woocommerce-advanced-report-builder" target="_blank" rel="noopener noreferrer">woocommerce-advanced-report-builder</a><span class="repo-summary">Advanced WooCommerce report builder for WordPress with custom datasets, product types, categories, attributes, variations, filters, formulas, pivots, dashboards, CSV/XLSX export, Jalali/Gregorian dates, HPOS support, ACF/CPT integration, scheduled reports, alerts, analytics and business intelligence.</span></div>
           <span class="repo-language">PHP</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="wordpress-helanak-kids-theme" data-language="php" data-status="original">
-          <span class="repo-index">66</span>
-          <a class="repo-name" href="https://github.com/ildrm/wordpress-helanak-kids-theme" target="_blank" rel="noopener">wordpress-helanak-kids-theme</a>
+        <li class="repo-row" data-name="woocommerce-advanced-reports" data-search="woocommerce-advanced-reports woocommerce advanced reports is a powerful wordpress analytics plugin for product, order, customer, inventory and sales reporting with hpos support, jalali/gregorian dates, csv/xlsx export, print views, rfm analytics, saved reports, scheduled email reports and caching." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">109</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/woocommerce-advanced-reports" target="_blank" rel="noopener noreferrer">woocommerce-advanced-reports</a><span class="repo-summary">WooCommerce Advanced Reports is a powerful WordPress analytics plugin for product, order, customer, inventory and sales reporting with HPOS support, Jalali/Gregorian dates, CSV/XLSX export, print views, RFM analytics, saved reports, scheduled email reports and caching.</span></div>
           <span class="repo-language">PHP</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="wordpress-otp-login-pro" data-language="php" data-status="original">
-          <span class="repo-index">67</span>
-          <a class="repo-name" href="https://github.com/ildrm/wordpress-otp-login-pro" target="_blank" rel="noopener">wordpress-otp-login-pro</a>
+        <li class="repo-row" data-name="woocommerce-disable-gateway-by-coupon" data-search="woocommerce-disable-gateway-by-coupon allow selecting payment gateway(s) in coupon edit screen which will be disabled for customers who apply that coupon." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">110</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/woocommerce-disable-gateway-by-coupon" target="_blank" rel="noopener noreferrer">woocommerce-disable-gateway-by-coupon</a><span class="repo-summary">Allow selecting payment gateway(s) in coupon edit screen which will be disabled for customers who apply that coupon.</span></div>
           <span class="repo-language">PHP</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="wp-msgway-sms" data-language="php" data-status="original">
-          <span class="repo-index">68</span>
-          <a class="repo-name" href="https://github.com/ildrm/wp-msgway-sms" target="_blank" rel="noopener">wp-msgway-sms</a>
+        <li class="repo-row" data-name="woocommerce-loyaltyforge" data-search="woocommerce-loyaltyforge loyaltyforge is a woocommerce loyalty and rewards plugin for customer points, membership tiers, referrals, reward coupons, earning campaigns, point expiration and refund reversals. features an auditable points ledger, hpos &amp; cart/checkout blocks support, rest apis, customer dashboards, admin tools and extensible loyalty automation for online shops." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">111</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/woocommerce-loyaltyforge" target="_blank" rel="noopener noreferrer">woocommerce-loyaltyforge</a><span class="repo-summary">LoyaltyForge is a WooCommerce loyalty and rewards plugin for customer points, membership tiers, referrals, reward coupons, earning campaigns, point expiration and refund reversals. Features an auditable points ledger, HPOS &amp; Cart/Checkout Blocks support, REST APIs, customer dashboards, admin tools and extensible loyalty automation for online shops.</span></div>
           <span class="repo-language">PHP</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="wp-telegram-cloud-storage" data-language="php" data-status="original">
-          <span class="repo-index">69</span>
-          <a class="repo-name" href="https://github.com/ildrm/wp-telegram-cloud-storage" target="_blank" rel="noopener">wp-telegram-cloud-storage</a>
+        <li class="repo-row" data-name="woocommerce-marketplace-suite" data-search="woocommerce-marketplace-suite open-source modular multi-vendor marketplace framework for woocommerce with vendor lifecycle management, product ownership, commission primitives, double-entry ledger foundations, rest apis, idempotent financial operations, and hpos/cart &amp; checkout blocks compatibility for secure wordpress marketplace development." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">112</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/woocommerce-marketplace-suite" target="_blank" rel="noopener noreferrer">woocommerce-marketplace-suite</a><span class="repo-summary">Open-source modular multi-vendor marketplace framework for WooCommerce with vendor lifecycle management, product ownership, commission primitives, double-entry ledger foundations, REST APIs, idempotent financial operations, and HPOS/Cart &amp; Checkout Blocks compatibility for secure WordPress marketplace development.</span></div>
           <span class="repo-language">PHP</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="wp-ultimate-map-plugin" data-language="php" data-status="original">
-          <span class="repo-index">70</span>
-          <a class="repo-name" href="https://github.com/ildrm/wp-ultimate-map-plugin" target="_blank" rel="noopener">wp-ultimate-map-plugin</a>
+        <li class="repo-row" data-name="wordpress-aegisguard-security" data-search="wordpress-aegisguard-security aegisguard security is an open-source wordpress security plugin featuring a web application firewall (waf), malware scanner, file integrity monitoring, totp mfa, brute-force/login protection, wordpress hardening, audit logs, incident detection, encrypted quarantine, wp-cli tools, and woocommerce security monitoring." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">113</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/wordpress-aegisguard-security" target="_blank" rel="noopener noreferrer">wordpress-aegisguard-security</a><span class="repo-summary">AegisGuard Security is an open-source WordPress security plugin featuring a Web Application Firewall (WAF), malware scanner, file integrity monitoring, TOTP MFA, brute-force/login protection, WordPress hardening, audit logs, incident detection, encrypted quarantine, WP-CLI tools, and WooCommerce security monitoring.</span></div>
           <span class="repo-language">PHP</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-        <li class="repo-row" data-name="wp-workflow-pipeline" data-language="php" data-status="original">
-          <span class="repo-index">71</span>
-          <a class="repo-name" href="https://github.com/ildrm/wp-workflow-pipeline" target="_blank" rel="noopener">wp-workflow-pipeline</a>
+        <li class="repo-row" data-name="wordpress-apexpress-performance" data-search="wordpress-apexpress-performance apexpress performance is a security-focused wordpress optimization plugin for faster sites: page caching, cache warming, html/css/js optimization, webp/avif images, lazy loading, woocommerce-safe caching, cdn/cloudflare integration, core web vitals monitoring, database cleanup, rest api and wp-cli." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">114</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/wordpress-apexpress-performance" target="_blank" rel="noopener noreferrer">wordpress-apexpress-performance</a><span class="repo-summary">ApexPress Performance is a security-focused WordPress optimization plugin for faster sites: page caching, cache warming, HTML/CSS/JS optimization, WebP/AVIF images, lazy loading, WooCommerce-safe caching, CDN/Cloudflare integration, Core Web Vitals monitoring, database cleanup, REST API and WP-CLI.</span></div>
           <span class="repo-language">PHP</span>
           <span class="repo-status" data-kind="original">Original</span>
         </li>
-      </ol>
-    </div>
-  </section>
+        <li class="repo-row" data-name="wordpress-appbridge-api-gateway" data-search="wordpress-appbridge-api-gateway secure wordpress rest api gateway plugin for mobile apps, headless wordpress/pwa frontends and automation. features bearer authentication, refresh-token rotation, cors, rate limiting, hmac webhooks, notifications and device sessions, with woocommerce, acf, gravity forms, flutter, react native, android and ios support." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">115</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/wordpress-appbridge-api-gateway" target="_blank" rel="noopener noreferrer">wordpress-appbridge-api-gateway</a><span class="repo-summary">Secure WordPress REST API gateway plugin for mobile apps, headless WordPress/PWA frontends and automation. Features bearer authentication, refresh-token rotation, CORS, rate limiting, HMAC webhooks, notifications and device sessions, with WooCommerce, ACF, Gravity Forms, Flutter, React Native, Android and iOS support.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wordpress-auto-print-order-invoice" data-search="wordpress-auto-print-order-invoice wordpress woocommerce invoice printer plugin with automatic order printing via printnode, pdf invoice generation, hpos support, rtl-ready templates, manual and bulk printing, print-job history, safe retries, and customizable invoice layouts for ecommerce stores." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">116</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/wordpress-auto-print-order-invoice" target="_blank" rel="noopener noreferrer">wordpress-auto-print-order-invoice</a><span class="repo-summary">WordPress WooCommerce invoice printer plugin with automatic order printing via PrintNode, PDF invoice generation, HPOS support, RTL-ready templates, manual and bulk printing, print-job history, safe retries, and customizable invoice layouts for eCommerce stores.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wordpress-fetch" data-search="wordpress-fetch wordpress fetch is a secure rss/atom feed importer and content syndication plugin for wordpress. import, transform and map rss 2.0, rdf, atom and opml feeds into posts with deduplication, media handling, editorial rules, queues, rest api, wp-cli, monitoring and seo controls for canonicals, noindex and syndicated content." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">117</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/wordpress-fetch" target="_blank" rel="noopener noreferrer">wordpress-fetch</a><span class="repo-summary">WordPress Fetch is a secure RSS/Atom feed importer and content syndication plugin for WordPress. Import, transform and map RSS 2.0, RDF, Atom and OPML feeds into posts with deduplication, media handling, editorial rules, queues, REST API, WP-CLI, monitoring and SEO controls for canonicals, noindex and syndicated content.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wordpress-helanak-kids-theme" data-search="wordpress-helanak-kids-theme no description provided on github." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">118</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/wordpress-helanak-kids-theme" target="_blank" rel="noopener noreferrer">wordpress-helanak-kids-theme</a><span class="repo-summary">No description provided on GitHub.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wordpress-immersive-gallery-studio" data-search="wordpress-immersive-gallery-studio immersive gallery studio is a modern wordpress gallery plugin with 10 modular layouts, 3d circular galleries, photo books, exhibitions, albums, password protection, qr/barcode sharing, fullscreen lightbox, responsive design, analytics, and secure media workflows for photographers, portfolios, events, and visual storytelling." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">119</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/wordpress-immersive-gallery-studio" target="_blank" rel="noopener noreferrer">wordpress-immersive-gallery-studio</a><span class="repo-summary">Immersive Gallery Studio is a modern WordPress gallery plugin with 10 modular layouts, 3D circular galleries, photo books, exhibitions, albums, password protection, QR/barcode sharing, fullscreen lightbox, responsive design, analytics, and secure media workflows for photographers, portfolios, events, and visual storytelling.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wordpress-kbms-knowledge-platform" data-search="wordpress-kbms-knowledge-platform security-first wordpress knowledge base and knowledge management system (kbms) with private/public spaces, workflows, permission-aware search, rest apis, knowledge graphs, feedback, privacy controls, and optional ai/rag with grounded citations. built for teams that need secure, governed, extensible documentation on wordpress." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">120</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/wordpress-kbms-knowledge-platform" target="_blank" rel="noopener noreferrer">wordpress-kbms-knowledge-platform</a><span class="repo-summary">Security-first WordPress knowledge base and knowledge management system (KBMS) with private/public spaces, workflows, permission-aware search, REST APIs, knowledge graphs, feedback, privacy controls, and optional AI/RAG with grounded citations. Built for teams that need secure, governed, extensible documentation on WordPress.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wordpress-keycloak-bridge" data-search="wordpress-keycloak-bridge wp keycloak bridge is a secure wordpress plugin for keycloak sso using openid connect (oidc), oauth 2.0, pkce and jwt. includes jit user provisioning, role/group mapping, profile sync, single and backchannel logout, and keycloak bearer-token authentication for the wordpress rest api." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">121</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/wordpress-keycloak-bridge" target="_blank" rel="noopener noreferrer">wordpress-keycloak-bridge</a><span class="repo-summary">WP Keycloak Bridge is a secure WordPress plugin for Keycloak SSO using OpenID Connect (OIDC), OAuth 2.0, PKCE and JWT. Includes JIT user provisioning, role/group mapping, profile sync, single and backchannel logout, and Keycloak bearer-token authentication for the WordPress REST API.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wordpress-maildesk" data-search="wordpress-maildesk maildesk for wordpress is a secure, open-source, self-hosted webmail and email client plugin for wordpress admin. features multi-account imap sync, smtp sending, gmail/outlook-style inbox, drafts, contacts, signatures, templates, rules, shared access, encrypted credentials, rest api, diagnostics, and extensible php mail transports." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">122</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/wordpress-maildesk" target="_blank" rel="noopener noreferrer">wordpress-maildesk</a><span class="repo-summary">MailDesk for WordPress is a secure, open-source, self-hosted webmail and email client plugin for WordPress Admin. Features multi-account IMAP sync, SMTP sending, Gmail/Outlook-style inbox, drafts, contacts, signatures, templates, rules, shared access, encrypted credentials, REST API, diagnostics, and extensible PHP mail transports.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wordpress-multilingual" data-search="wordpress-multilingual open-source performance-first multilingual plugin for wordpress with unlimited languages, translation relationships, string translation, translation memory, hreflang, language switcher, rest api, wp-cli, multisite support, and indexed relational storage for scalable multilingual sites." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">123</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/wordpress-multilingual" target="_blank" rel="noopener noreferrer">wordpress-multilingual</a><span class="repo-summary">Open-source performance-first multilingual plugin for WordPress with unlimited languages, translation relationships, string translation, translation memory, hreflang, language switcher, REST API, WP-CLI, multisite support, and indexed relational storage for scalable multilingual sites.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wordpress-navigation-studio" data-search="wordpress-navigation-studio navigation studio is a visual wordpress navigation and menu editor for classic menus and block wp_navigation. build, reorder and bulk-edit menu trees with drafts, revisions, conflict-safe publishing, json import/export, responsive visibility, accessible submenus and mega-menu columns—all while keeping native wordpress data as the source of truth." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">124</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/wordpress-navigation-studio" target="_blank" rel="noopener noreferrer">wordpress-navigation-studio</a><span class="repo-summary">Navigation Studio is a visual WordPress navigation and menu editor for classic menus and block wp_navigation. Build, reorder and bulk-edit menu trees with drafts, revisions, conflict-safe publishing, JSON import/export, responsive visibility, accessible submenus and mega-menu columns—all while keeping native WordPress data as the source of truth.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wordpress-optigraph-seo" data-search="wordpress-optigraph-seo optigraph seo is a wordpress seo plugin for technical seo, schema.org/json-ld, xml sitemaps, redirects, open graph, woocommerce seo, content and link analysis, site audits, aeo/geo and ai search optimization. includes llms.txt, ai crawler controls, rest api, wp-cli, structured metadata and safe ai-assisted seo workflows for modern sites and stores." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">125</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/wordpress-optigraph-seo" target="_blank" rel="noopener noreferrer">wordpress-optigraph-seo</a><span class="repo-summary">OptiGraph SEO is a WordPress SEO plugin for technical SEO, schema.org/JSON-LD, XML sitemaps, redirects, Open Graph, WooCommerce SEO, content and link analysis, site audits, AEO/GEO and AI search optimization. Includes llms.txt, AI crawler controls, REST API, WP-CLI, structured metadata and safe AI-assisted SEO workflows for modern sites and stores.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wordpress-orchestrix-forms" data-search="wordpress-orchestrix-forms open-source wordpress form builder and low-code workflow platform for forms, surveys, quizzes, payment forms, data collection, and workflow automation. server-rendered and progressively enhanced, with php/typescript architecture, shortcode embedding, extensibility, and production-focused testing." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">126</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/wordpress-orchestrix-forms" target="_blank" rel="noopener noreferrer">wordpress-orchestrix-forms</a><span class="repo-summary">Open-source WordPress form builder and low-code workflow platform for forms, surveys, quizzes, payment forms, data collection, and workflow automation. Server-rendered and progressively enhanced, with PHP/TypeScript architecture, shortcode embedding, extensibility, and production-focused testing.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wordpress-otp-login-pro" data-search="wordpress-otp-login-pro wordpress otp login pro enables secure passwordless authentication using one-time passwords (otp) via sms or email. features user registration, login verification, woocommerce compatibility, customizable workflows, rest api support, and enhanced security for modern wordpress websites." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">127</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/wordpress-otp-login-pro" target="_blank" rel="noopener noreferrer">wordpress-otp-login-pro</a><span class="repo-summary">WordPress OTP Login Pro enables secure passwordless authentication using one-time passwords (OTP) via SMS or email. Features user registration, login verification, WooCommerce compatibility, customizable workflows, REST API support, and enhanced security for modern WordPress websites.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wordpress-repodocs-intelligence" data-search="wordpress-repodocs-intelligence repodocs intelligence is a wordpress plugin that transforms github, gitlab, gitea and forgejo repositories into living technical documentation with code intelligence, source browsing, api and dependency analysis, documentation health, secure webhooks, search, ai-assisted q&amp;a, and responsive developer docs." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">128</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/wordpress-repodocs-intelligence" target="_blank" rel="noopener noreferrer">wordpress-repodocs-intelligence</a><span class="repo-summary">RepoDocs Intelligence is a WordPress plugin that transforms GitHub, GitLab, Gitea and Forgejo repositories into living technical documentation with code intelligence, source browsing, API and dependency analysis, documentation health, secure webhooks, search, AI-assisted Q&amp;A, and responsive developer docs.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wordpress-rolechat-messenger" data-search="wordpress-rolechat-messenger secure wordpress chat and messaging plugin with telegram-inspired ui, role-based directional permissions, direct and group messaging, frontend support widget, contacts, reactions, presence, encrypted attachments, moderation, rest api, audit logs, rtl support, and scalable custom database tables." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">129</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/wordpress-rolechat-messenger" target="_blank" rel="noopener noreferrer">wordpress-rolechat-messenger</a><span class="repo-summary">Secure WordPress chat and messaging plugin with Telegram-inspired UI, role-based directional permissions, direct and group messaging, frontend support widget, contacts, reactions, presence, encrypted attachments, moderation, REST API, audit logs, RTL support, and scalable custom database tables.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wordpress-sso-provider" data-search="wordpress-sso-provider wordpress sso provider is a security-focused iam and single sign-on foundation for wordpress. it includes application management, oauth 2.0 + pkce primitives, openid connect discovery, scim filtering, cas tickets, encrypted secrets, audit logging, rest admin apis, policy/claims/session services, and extensible protocol adapters for modern sites." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">130</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/wordpress-sso-provider" target="_blank" rel="noopener noreferrer">wordpress-sso-provider</a><span class="repo-summary">WordPress SSO Provider is a security-focused IAM and Single Sign-On foundation for WordPress. It includes application management, OAuth 2.0 + PKCE primitives, OpenID Connect discovery, SCIM filtering, CAS tickets, encrypted secrets, audit logging, REST admin APIs, policy/claims/session services, and extensible protocol adapters for modern sites.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wp-doctor" data-search="wp-doctor wp doctor is a production-oriented wordpress diagnostics and troubleshooting plugin for site health, php fatal errors, performance issues, database and cron problems, and system changes. adds explainable health scores, change tracking, privacy-safe reports, rest api, wp-cli commands, retention controls, and an optional mu rescue agent for recovery." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">131</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/wp-doctor" target="_blank" rel="noopener noreferrer">wp-doctor</a><span class="repo-summary">WP Doctor is a production-oriented WordPress diagnostics and troubleshooting plugin for site health, PHP fatal errors, performance issues, database and cron problems, and system changes. Adds explainable health scores, change tracking, privacy-safe reports, REST API, WP-CLI commands, retention controls, and an optional MU rescue agent for recovery.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wp-msgway-sms" data-search="wp-msgway-sms افزونه msgway sms یک پلاگین قدرتمند و چندمنظوره وردپرس است که با ادغام با ووکامرس، امکان ارسال پیامک‌های اطلاع‌رسانی، کدهای یکبارمصرف (otp) و پیام‌های تبلیغاتی را با استفاده از api سرویس msgway فراهم می‌کند." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">132</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/wp-msgway-sms" target="_blank" rel="noopener noreferrer">wp-msgway-sms</a><span class="repo-summary">افزونه MsgWay SMS یک پلاگین قدرتمند و چندمنظوره وردپرس است که با ادغام با ووکامرس، امکان ارسال پیامک‌های اطلاع‌رسانی، کدهای یکبارمصرف (OTP) و پیام‌های تبلیغاتی را با استفاده از API سرویس MsgWay فراهم می‌کند.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wp-telegram-cloud-storage" data-search="wp-telegram-cloud-storage store wordpress media in telegram&#39;s cloud with the telegram cloud storage plugin, saving server space and serving files securely via proxy urls." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">133</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/wp-telegram-cloud-storage" target="_blank" rel="noopener noreferrer">wp-telegram-cloud-storage</a><span class="repo-summary">Store WordPress media in Telegram&#39;s cloud with the Telegram Cloud Storage plugin, saving server space and serving files securely via proxy URLs.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wp-ultimate-map-plugin" data-search="wp-ultimate-map-plugin a wordpress plugin for interactive maps with customizable layers, user submissions, and weather data integration." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">134</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/wp-ultimate-map-plugin" target="_blank" rel="noopener noreferrer">wp-ultimate-map-plugin</a><span class="repo-summary">A WordPress plugin for interactive maps with customizable layers, user submissions, and weather data integration.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        <li class="repo-row" data-name="wp-workflow-pipeline" data-search="wp-workflow-pipeline wordpress workflow pipeline: a powerful wordpress automation plugin, like zapier, for fetching data, processing, and creating content with dynamic workflows." data-language="php" data-status="original">
+          <span class="repo-index" aria-hidden="true">135</span>
+          <div class="repo-text"><a class="repo-name" href="https://github.com/ildrm/wp-workflow-pipeline" target="_blank" rel="noopener noreferrer">wp-workflow-pipeline</a><span class="repo-summary">WordPress Workflow Pipeline: A powerful WordPress automation plugin, like Zapier, for fetching data, processing, and creating content with dynamic workflows.</span></div>
+          <span class="repo-language">PHP</span>
+          <span class="repo-status" data-kind="original">Original</span>
+        </li>
+        </ol>
+      </div>
+      <p class="archive-note">Forks are copies under my account and are labeled separately from original work. <a href="contact.html">Discuss an engineering project</a>.</p>
+    </section>
   </main>
   <footer class="foot">
     <nav class="footer-nav" aria-label="Footer navigation">
-      <a href="index.html">Home</a>
+      <a href="/">Home</a>
       <a href="projects.html" aria-current="page">Projects</a>
       <a href="experience.html">Experience</a>
       <a href="contact.html">Contact</a>
     </nav>
-    END OF TRANSMISSION · SIL / SPATIAL SYSTEMS OBSERVATORY · 2026
+    END OF TRANSMISSION · SHAHIN ILDEREMI / SPATIAL SYSTEMS OBSERVATORY
   </footer>
-  <script defer src="assets/js/projects.js"></script>
 </body>
 </html>

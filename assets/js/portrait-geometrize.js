@@ -9,20 +9,12 @@
 
   var context = canvas.getContext('2d');
   var worker = null;
-  var runner = null;
   var sourcePixels = null;
-  var totalShapes = 3000;
+  var totalShapes = 480;
   var shapeCount = 0;
   var paused = !!(window.__siteMotion && window.__siteMotion.paused);
   var ready = false;
   var stepPending = false;
-  var useMainThread = false;
-  var options = {
-    shapeTypes:[1, 2, 3, 4, 5],
-    candidateShapesPerStep:40,
-    shapeMutationsPerStep:70,
-    alpha:150
-  };
 
   document.body.classList.add('portrait-geometrizing');
   context.fillStyle = '#111';
@@ -30,25 +22,6 @@
 
   function rgba(color){
     return 'rgba(' + color[0] + ',' + color[1] + ',' + color[2] + ',' + (color[3] / 255) + ')';
-  }
-
-  function averageColor(pixels){
-    var red = 0;
-    var green = 0;
-    var blue = 0;
-    var count = pixels.length / 4;
-
-    for (var index = 0; index < pixels.length; index += 4){
-      red += pixels[index];
-      green += pixels[index + 1];
-      blue += pixels[index + 2];
-    }
-
-    return [Math.round(red / count), Math.round(green / count), Math.round(blue / count), 255];
-  }
-
-  function packedColor(color){
-    return (color[0] << 24) | (color[1] << 16) | (color[2] << 8) | color[3];
   }
 
   function drawShape(shape){
@@ -134,57 +107,27 @@
     shapeCount += shapes.length;
     announceUpdate();
     if (shapeCount < totalShapes) window.setTimeout(requestStep, 24);
-  }
-
-  function runMainThreadStep(){
-    window.setTimeout(function(){
-      try {
-        var results = runner.step(options);
-        var exported = library.exporter.ShapeJsonExporter.exportShapes(results);
-        handleShapes(JSON.parse('[' + exported + ']'));
-      } catch (error){
-        handleFailure(error && error.message ? error.message : String(error));
-      }
-    }, 0);
+    else document.body.classList.add('portrait-complete');
   }
 
   function requestStep(){
     if (!ready || paused || stepPending || shapeCount >= totalShapes) return;
     stepPending = true;
-    if (useMainThread) runMainThreadStep();
-    else worker.postMessage({ type:'step' });
-  }
-
-  function startMainThread(){
-    if (!sourcePixels) return;
-    if (worker){
-      worker.terminate();
-      worker = null;
-    }
-
-    useMainThread = true;
-    ready = false;
-    stepPending = false;
-    shapeCount = 0;
-    var background = averageColor(sourcePixels);
-    var bitmap = library.bitmap.Bitmap.createFromByteArray(canvas.width, canvas.height, sourcePixels);
-    runner = new library.runner.ImageRunner(bitmap, packedColor(background));
-    handleReady(background);
+    worker.postMessage({ type:'step' });
   }
 
   function handleFailure(message){
-    console.warn('Portrait worker unavailable; using main-thread Geometrize:', message);
-    if (!useMainThread){
-      startMainThread();
-      return;
-    }
+    if (worker) worker.terminate();
+    worker = null;
+    ready = false;
     document.body.classList.add('portrait-failed');
     if (caption) caption.textContent = 'FIG. P-01 · GEOMETRIZE UNAVAILABLE';
+    console.warn('Portrait worker unavailable; showing the source image:', message);
   }
 
   function startWorker(){
     if (!window.Worker || location.protocol === 'file:'){
-      startMainThread();
+      handleFailure('Web Workers are unavailable');
       return;
     }
 
@@ -225,6 +168,10 @@
 
   window.addEventListener('site:motionchange', function(event){
     paused = !!event.detail.paused;
+    if (!paused) requestStep();
+  });
+  document.addEventListener('visibilitychange', function(){
+    paused = document.hidden || !!(window.__siteMotion && window.__siteMotion.paused);
     if (!paused) requestStep();
   });
 })();

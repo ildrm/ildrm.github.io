@@ -22,7 +22,7 @@
 
 ## Engineering Profile
 
-I am a full-spectrum software engineer and technical leader with 25+ years of hands-on experience across software development, system architecture, cloud infrastructure, realtime systems, media processing, AI integration, and intelligent automation.
+I have worked professionally in software engineering since 2012, across software development, system architecture, infrastructure, realtime systems, media processing, AI integration, and automation.
 
 My work focuses on building systems that are scalable, observable, maintainable, and resilient. I design across the full engineering surface: application code, infrastructure, data flow, deployment strategy, automation, developer workflow, and long-term system evolution.
 
