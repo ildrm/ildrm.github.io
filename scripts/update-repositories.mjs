@@ -56,9 +56,9 @@ async function fetchRepositories() {
 async function writeIfChanged(path, content) {
   let previous = '';
   try { previous = await readFile(path, 'utf8'); } catch (error) { if (error.code !== 'ENOENT') throw error; }
-  if (previous === content) return false;
+  if (previous.replace(/\r\n/g, '\n') === content.replace(/\r\n/g, '\n')) return false;
   if (check) throw new Error(`${path} is out of date. Run node scripts/update-repositories.mjs --offline.`);
-  await writeFile(path, content, 'utf8');
+  await writeFile(path, previous.includes('\r\n') ? content.replace(/\r?\n/g, '\r\n') : content, 'utf8');
   return true;
 }
 
