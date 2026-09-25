@@ -5,7 +5,7 @@
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var saveData = !!(navigator.connection && navigator.connection.saveData);
   var desktop = window.matchMedia('(min-width: 900px)').matches;
-  if (body.dataset.page !== 'home' || reduced || saveData || !desktop) {
+  if (body.dataset.page !== 'home' || reduced || saveData) {
     body.classList.add('no-webgl');
     return;
   }
@@ -24,16 +24,30 @@
     });
   }
 
-  function start() {
+  // The portrait worker must keep running even when the optional WebGL scene fails.
+  function startPortrait() {
+    loadScript('assets/js/portrait-geometrize.js')
+      .catch(function () {
+        body.classList.add('portrait-failed');
+        var caption = document.getElementById('portrait-caption');
+        if (caption) caption.textContent = 'FIG. P-01 · SOURCE IMAGE';
+      });
+  }
+
+  function startScene() {
+    if (!desktop) {
+      body.classList.add('no-webgl');
+      return;
+    }
     loadScript('https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.1/three.min.js',
       'sha384-qOkzR5Ke/XkQxuGVJ9hpFEpDlcoLtWwVYhnJf06cLIZa2vaIptSqaubivErzmD5O')
       .then(function () { return loadScript('assets/js/scene.js'); })
-      .then(function () {
-        if (body.dataset.page !== 'home') return;
-        return loadScript('assets/vendor/geometrize/geometrize.js')
-          .then(function () { return loadScript('assets/js/portrait-geometrize.js'); });
-      })
       .catch(function () { body.classList.add('no-webgl'); });
+  }
+
+  function start() {
+    startPortrait();
+    startScene();
   }
 
   if ('requestIdleCallback' in window) window.requestIdleCallback(start, { timeout: 2500 });

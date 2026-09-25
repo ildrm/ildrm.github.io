@@ -4,17 +4,18 @@
   var source = document.getElementById('portrait-source');
   var canvas = document.getElementById('portrait-canvas');
   var caption = document.getElementById('portrait-caption');
-  var library = window.geometrize;
-  if (!source || !canvas || !library) return;
+  if (!source || !canvas) return;
 
   var context = canvas.getContext('2d');
   var worker = null;
   var sourcePixels = null;
-  var totalShapes = 480;
+  var totalShapes = 3000;
   var shapeCount = 0;
-  var paused = !!(window.__siteMotion && window.__siteMotion.paused);
+  var shapeQueue = [];
+  var paused = document.hidden || !!(window.__siteMotion && window.__siteMotion.paused);
   var ready = false;
   var stepPending = false;
+  var framePending = false;
 
   document.body.classList.add('portrait-geometrizing');
   context.fillStyle = '#111';
@@ -101,17 +102,37 @@
     requestStep();
   }
 
-  function handleShapes(shapes){
-    stepPending = false;
-    shapes.forEach(drawShape);
-    shapeCount += shapes.length;
-    announceUpdate();
-    if (shapeCount < totalShapes) window.setTimeout(requestStep, 24);
+  function drawFrame(){
+    framePending = false;
+    if (!ready || paused) return;
+    var count = Math.min(12, shapeQueue.length, totalShapes - shapeCount);
+    shapeQueue.splice(0, count).forEach(drawShape);
+    if (count){
+      shapeCount += count;
+      document.body.classList.add('portrait-ready');
+      announceUpdate();
+    }
+    if (shapeQueue.length) scheduleFrame();
+    else if (shapeCount < totalShapes) window.setTimeout(requestStep, 24);
     else document.body.classList.add('portrait-complete');
   }
 
+  function scheduleFrame(){
+    if (!ready || paused || framePending || !shapeQueue.length) return;
+    framePending = true;
+    window.requestAnimationFrame(drawFrame);
+  }
+
+  function handleShapes(shapes){
+    stepPending = false;
+    var remaining = totalShapes - shapeCount - shapeQueue.length;
+    for (var index = 0; index < Math.min(shapes.length, remaining); index++) shapeQueue.push(shapes[index]);
+    if (shapeQueue.length) scheduleFrame();
+    else window.setTimeout(requestStep, 24);
+  }
+
   function requestStep(){
-    if (!ready || paused || stepPending || shapeCount >= totalShapes) return;
+    if (!ready || paused || stepPending || framePending || shapeQueue.length || shapeCount >= totalShapes) return;
     stepPending = true;
     worker.postMessage({ type:'step' });
   }
@@ -120,6 +141,8 @@
     if (worker) worker.terminate();
     worker = null;
     ready = false;
+    shapeQueue = [];
+    document.body.classList.remove('portrait-ready');
     document.body.classList.add('portrait-failed');
     if (caption) caption.textContent = 'FIG. P-01 · GEOMETRIZE UNAVAILABLE';
     console.warn('Portrait worker unavailable; showing the source image:', message);
@@ -158,8 +181,16 @@
     startWorker();
   }
 
-  if (source.complete && source.naturalWidth) initialize();
-  else source.addEventListener('load', initialize, { once:true });
+  function begin(){
+    if (source.decode) source.decode().then(initialize, function(){
+      if (source.naturalWidth) initialize();
+      else handleFailure('Source image could not be decoded');
+    });
+    else initialize();
+  }
+
+  if (source.complete && source.naturalWidth) begin();
+  else source.addEventListener('load', begin, { once:true });
 
   source.addEventListener('error', function(){
     document.body.classList.add('portrait-failed');
@@ -168,10 +199,16 @@
 
   window.addEventListener('site:motionchange', function(event){
     paused = !!event.detail.paused;
-    if (!paused) requestStep();
+    if (!paused){
+      if (shapeQueue.length) scheduleFrame();
+      else requestStep();
+    }
   });
   document.addEventListener('visibilitychange', function(){
     paused = document.hidden || !!(window.__siteMotion && window.__siteMotion.paused);
-    if (!paused) requestStep();
+    if (!paused){
+      if (shapeQueue.length) scheduleFrame();
+      else requestStep();
+    }
   });
 })();
