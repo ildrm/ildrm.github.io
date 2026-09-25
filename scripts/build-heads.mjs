@@ -121,10 +121,11 @@ for (const page of pages) {
   output = output.replace(/class="hud-telemetry" id="telemetry"(?! aria-hidden=)/g, 'class="hud-telemetry" id="telemetry" aria-hidden="true"');
   output = output.replaceAll('END OF TRANSMISSION · SIL / SPATIAL SYSTEMS OBSERVATORY · 2026', 'END OF TRANSMISSION · SHAHIN ILDEREMI / SPATIAL SYSTEMS OBSERVATORY');
   if (page.file === 'projects.html') output = output.replace(/\s*<script defer src="assets\/js\/projects\.js"><\/script>\s*<\/body>/, '\n</body>');
-  if (output === html && !html.includes(`<title>${escape(page.title)}</title>`)) throw new Error(`Head replacement failed: ${page.file}`);
-  if (output !== html) {
+  const sameContent = output.replace(/\r\n/g, '\n') === html.replace(/\r\n/g, '\n');
+  if (sameContent && !html.includes(`<title>${escape(page.title)}</title>`)) throw new Error(`Head replacement failed: ${page.file}`);
+  if (!sameContent) {
     if (check) throw new Error(`${page.file} metadata is out of date.`);
-    await writeFile(path, output, 'utf8');
+    await writeFile(path, html.includes('\r\n') ? output.replace(/\r?\n/g, '\r\n') : output, 'utf8');
   }
 }
 console.log('Page metadata is current.');

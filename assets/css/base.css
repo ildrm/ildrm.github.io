@@ -1,6 +1,7 @@
 @font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url('../fonts/space-grotesk.woff2') format('woff2')}
 @font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/ibm-plex-mono-400.woff2') format('woff2')}
-@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:500 600;font-display:swap;src:url('../fonts/ibm-plex-mono-500.woff2') format('woff2')}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:500;font-display:swap;src:url('../fonts/ibm-plex-mono-500.woff2') format('woff2')}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:600;font-display:swap;src:url('../fonts/ibm-plex-mono-600.woff2') format('woff2')}
 :root{
     --void:#030609;
     --void-soft:#071016;
@@ -50,6 +51,7 @@
   .sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
   .hero,.sheet,.sheet h2{scroll-margin-top:92px}
   .mobile-nav{display:none}
+  .brand-short{display:none}
 
   #hero-canvas{
     position:fixed!important;inset:0!important;width:100vw!important;height:100vh!important;
