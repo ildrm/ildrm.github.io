@@ -1,41 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Senior systems engineer working across backend architecture, data infrastructure, frontend systems, and AI automation." />
-  <title>Shahin Ilderemi Lotfabad — Spatial Systems Observatory</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/base.css" />
-  <link rel="stylesheet" href="assets/css/components.css" />
-  <link rel="stylesheet" href="assets/css/pages.css" />
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.1/three.min.js"></script>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shahin Ilderemi | Senior Software Engineer &amp; Technical Lead</title>
+  <meta name="description" content="Shahin Ilderemi is a senior software engineer and technical lead working across backend architecture, full-stack systems, data engineering, and AI integration. Explore his work and experience.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#030609">
+  <link rel="canonical" href="https://ildrm.com/">
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Shahin Ilderemi">
+  <meta property="og:title" content="Shahin Ilderemi | Senior Software Engineer &amp; Technical Lead">
+  <meta property="og:description" content="Backend architecture, full-stack systems, data engineering, and AI integration. Explore selected projects and professional experience.">
+  <meta property="og:url" content="https://ildrm.com/">
+  <meta property="og:image" content="https://ildrm.com/assets/images/social-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Shahin Ilderemi — Senior Software Engineer and Technical Lead">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Shahin Ilderemi | Senior Software Engineer &amp; Technical Lead">
+  <meta name="twitter:description" content="Backend architecture, full-stack systems, data engineering, and AI integration. Explore selected projects and professional experience.">
+  <meta name="twitter:image" content="https://ildrm.com/assets/images/social-preview.png">
+  <meta name="twitter:image:alt" content="Shahin Ilderemi — Senior Software Engineer and Technical Lead">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="assets/fonts/space-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
   <script defer src="assets/js/site.js"></script>
-  <script defer src="assets/vendor/geometrize/geometrize.js"></script>
-  <script defer src="assets/js/portrait-geometrize.js"></script>
-  <script defer src="assets/js/scene.js"></script>
-  <script defer src="assets/js/starred-projects.js"></script>
+  <script defer src="assets/js/visual-loader.js"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfilePage","@id":"https://ildrm.com/#profile","mainEntity":{"@type":"Person","@id":"https://ildrm.com/#shahin","name":"Shahin Ilderemi","alternateName":"Shahin Ilderemi Lotfabad","jobTitle":"Senior Software Engineer","description":"Senior software engineer and technical lead working in backend architecture, full-stack systems, data engineering and AI integration.","url":"https://ildrm.com/","image":"https://ildrm.com/assets/images/shahin-ilderemi.jpg","sameAs":["https://github.com/ildrm","https://www.linkedin.com/in/ildrm"]},"url":"https://ildrm.com/","name":"Shahin Ilderemi | Senior Software Engineer & Technical Lead","isPartOf":{"@type":"WebSite","@id":"https://ildrm.com/#website","url":"https://ildrm.com/","name":"Shahin Ilderemi"}}</script>
 </head>
 <body data-page="home">
   <a class="skip-link" href="#main-content">Skip to portfolio content</a>
   <canvas id="hero-canvas" aria-hidden="true"></canvas>
   <div class="hero-vignette" aria-hidden="true"></div>
-  <div class="page-transition" aria-hidden="true"></div>
   <header class="hud-shell" aria-label="Observatory navigation">
-    <a class="hud-brand" href="index.html" aria-current="page"><i aria-hidden="true"></i>SIL / ORBITAL</a>
+    <a class="hud-brand" href="/" aria-current="page"><i aria-hidden="true"></i>SI / SHAHIN ILDEREMI</a>
     <nav class="hud-nav" aria-label="Portfolio pages">
-      <label class="sr-only" for="page-select">Choose a portfolio page</label>
-      <select class="station-select" id="page-select" aria-label="Choose a portfolio page">
-        <option value="home" data-href="index.html">00 / Home</option>
-        <option value="projects" data-href="projects.html">01 / Projects</option>
-        <option value="experience" data-href="experience.html">02 / Experience</option>
-        <option value="contact" data-href="contact.html">03 / Contact</option>
-      </select>
-      <a href="index.html" data-coordinate="00" aria-current="page">Home</a>
+      <details class="mobile-nav"><summary>Menu</summary><div class="mobile-nav-links"><a href="/" aria-current="page">Home</a><a href="projects.html">Projects</a><a href="experience.html">Experience</a><a href="contact.html">Contact</a></div></details>
+      <a href="/" data-coordinate="00" aria-current="page">Home</a>
       <a href="projects.html" data-coordinate="01">Projects</a>
       <a href="experience.html" data-coordinate="02">Experience</a>
       <a href="contact.html" data-coordinate="03">Contact</a>
@@ -46,7 +52,7 @@
     </div>
   </header>
   <div class="hud-status" aria-hidden="true"><i></i><span>Archive engine online</span></div>
-  <div class="hud-telemetry" id="telemetry">LOCAL 00:00:00<br>DEPTH 000%</div>
+  <div class="hud-telemetry" id="telemetry" aria-hidden="true">LOCAL 00:00:00<br>DEPTH 000%</div>
   <main id="main-content" class="page-main home-main">
     <section class="hero" id="hero">
       <div class="hero-identity">
@@ -57,13 +63,15 @@
             <span class="k">STATUS</span><span class="v">Open to Remote — Relocation Considered</span>
             <span class="k">FILED AT</span><span class="v">Mashhad, Iran</span>
           </div>
-          <h1 class="hero-name">Shahin Ilderemi<br>Lotfabad</h1>
-          <p class="hero-role">Senior Software Engineer — Full-Stack · Data Engineering · AI Integration</p>
-          <a class="scroll-cue" href="#sheet-01">ENTER OBSERVATORY</a>
+          <h1 class="hero-name">Shahin<br>Ilderemi</h1>
+          <p class="hero-role">Senior Software Engineer &amp; Technical Lead</p>
+          <p class="hero-intro">I design and build backend platforms, full-stack products, data systems, and AI integrations. Engineering professionally since 2012.</p>
+          <div class="hero-actions"><a class="primary-action" href="projects.html">View projects</a><a class="secondary-action" href="contact.html">Contact me</a></div>
+          <a class="scroll-cue" href="#sheet-01">Explore the profile</a>
         </div>
         <figure class="portrait-stage" data-portrait-tilt aria-labelledby="portrait-caption">
           <div class="portrait-mat">
-            <img class="portrait-source" id="portrait-source" src="assets/images/shahin-ilderemi.jpg" alt="Shahin Ilderemi Lotfabad with his family." width="464" height="522" />
+            <picture><source srcset="assets/images/shahin-ilderemi.webp" type="image/webp"><img class="portrait-source" id="portrait-source" src="assets/images/shahin-ilderemi.jpg" alt="Shahin Ilderemi with his family" width="464" height="522" fetchpriority="high" decoding="async"></picture>
             <canvas class="portrait-canvas" id="portrait-canvas" width="192" height="216" aria-hidden="true"></canvas>
           </div>
           <figcaption class="portrait-index" id="portrait-caption">FIG. P-01 · GEOMETRIZE / INITIALIZING</figcaption>
@@ -72,8 +80,8 @@
     </section>
     <section class="sheet" id="sheet-01" data-sheet="01">
     <span class="clause">[0001]</span>
-    <h2>Abstract</h2>
-    <p class="lede">The applicant is a systems engineer with thirteen years of continuous practice spanning backend architecture, data infrastructure, and — more recently — applied artificial intelligence. Originating in computer hardware and embedded systems, the applicant's practice has since extended through PHP and Laravel service architecture, Node.js and NestJS backends, Apache-based data engineering pipelines, and, in select engagements, full React and Next.js interface delivery. The following dossier catalogs the applicant's field of expertise, prior engagements, and independent works, filed for review.</p>
+    <h2>Engineering profile</h2>
+    <p class="lede">I work across software architecture, backend services, data infrastructure, and full-stack delivery. My professional record begins in 2012 and spans PHP and Laravel systems, WordPress engineering, Node.js and NestJS services, data platforms, and applied AI. <a href="experience.html">Review my experience</a> for roles, responsibilities, education, and publications.</p>
   </section>
 
   <!-- 0002 FIELD OF EXPERTISE -->
@@ -108,66 +116,44 @@
       </div>
     </div>
   </section>
-    <section class="sheet home-preview" id="selected-work" data-sheet="03">
+    <section class="sheet home-preview" id="selected-work" data-sheet="03" aria-labelledby="selected-work-title">
       <span class="clause">[0003]</span>
-      <h2>Selected works</h2>
-      <p class="lede">A regularly refreshed collection of the public repositories I have starred on GitHub, ordered by the date they were added.</p>
-      <p class="starred-status" id="starred-status" role="status" aria-live="polite">Loading the starred repository snapshot...</p>
-      <div class="fig-grid starred-grid" id="starred-projects" data-github-user="ildrm" data-starred-filter="all">
-<article class="fig-card" data-tilt>
-        <div class="fig-head">
-          <span class="fig-label">FIG. 01</span>
-          <div class="cube-scene"><div class="cube">
-            <div class="face f-front"></div><div class="face f-back"></div>
-            <div class="face f-right"></div><div class="face f-left"></div>
-            <div class="face f-top"></div><div class="face f-bottom"></div>
-          </div></div>
-        </div>
-        <h3>Ham-Mahalleh</h3>
-        <p>A hyperlocal marketplace built end-to-end on a Turborepo monorepo: NestJS core API, twin Next.js 16 applications for public and admin surfaces, and PostGIS-backed location discovery.</p>
-        <div class="tags"><span>Next.js 16</span><span>React 19</span><span>NestJS</span><span>PostGIS</span></div>
-        <a class="fig-link" href="https://github.com/ildrm/ham-mahalleh" target="_blank" rel="noopener">View repository →</a>
-      </article>
-<article class="fig-card" data-tilt>
-        <div class="fig-head">
-          <span class="fig-label">FIG. 02</span>
-          <div class="cube-scene"><div class="cube">
-            <div class="face f-front"></div><div class="face f-back"></div>
-            <div class="face f-right"></div><div class="face f-left"></div>
-            <div class="face f-top"></div><div class="face f-bottom"></div>
-          </div></div>
-        </div>
+      <h2 id="selected-work-title">Featured software projects</h2>
+      <p class="lede">A curated selection of my original open-source work, from logistics and local commerce to AI knowledge services.</p>
+      <div class="fig-grid featured-grid">
+      <article class="fig-card featured-card">
+        <div class="fig-head"><span class="fig-label">FIG. 01</span><span class="repo-origin" data-origin="mine">Original work</span></div>
         <h3>LogiCommerce</h3>
-        <p>A multi-tenant logistics and commerce platform unifying warehousing, shipping, and 1PL–5PL fulfillment under one storefront and role-aware operations console.</p>
-        <div class="tags"><span>Next.js</span><span>NestJS</span><span>Fastify</span><span>Multi-Tenant</span></div>
-        <a class="fig-link" href="https://github.com/ildrm/logicommerce-logistic-ecommerce" target="_blank" rel="noopener">View repository →</a>
+        <p>A modular logistics and commerce platform covering warehouse, inventory, shipping, suppliers, and marketplace operations.</p>
+        <div class="tags"><span>Logistics</span><span>Commerce</span><span>TypeScript</span></div>
+        <a class="fig-link" href="https://github.com/ildrm/logicommerce-logistic-ecommerce" target="_blank" rel="noopener noreferrer">View LogiCommerce repository</a>
       </article>
-<article class="fig-card" data-tilt>
-        <div class="fig-head">
-          <span class="fig-label">FIG. 03</span>
-          <div class="cube-scene"><div class="cube">
-            <div class="face f-front"></div><div class="face f-back"></div>
-            <div class="face f-right"></div><div class="face f-left"></div>
-            <div class="face f-top"></div><div class="face f-bottom"></div>
-          </div></div>
-        </div>
-        <h3>Telegram Ops</h3>
-        <p>A deny-by-default remote operations console — server commands issued through a Telegram bot, gated by approval workflows, TOTP, and pinned SSH host keys, with a full audit trail.</p>
-        <div class="tags"><span>Node.js</span><span>Security</span><span>Telegram Bot API</span></div>
-        <a class="fig-link" href="https://github.com/ildrm/telegram-ssh" target="_blank" rel="noopener">View repository →</a>
+      <article class="fig-card featured-card">
+        <div class="fig-head"><span class="fig-label">FIG. 02</span><span class="repo-origin" data-origin="mine">Original work</span></div>
+        <h3>Ham-Mahalleh</h3>
+        <p>A local, multi-vendor marketplace connecting neighborhood sellers and buyers with store, product, order, and payment management.</p>
+        <div class="tags"><span>Marketplace</span><span>NestJS</span><span>Next.js</span></div>
+        <a class="fig-link" href="https://github.com/ildrm/ham-mahalleh" target="_blank" rel="noopener noreferrer">View Ham-Mahalleh repository</a>
+      </article>
+      <article class="fig-card featured-card">
+        <div class="fig-head"><span class="fig-label">FIG. 03</span><span class="repo-origin" data-origin="mine">Original work</span></div>
+        <h3>Atlas RAG as a Service</h3>
+        <p>An open-source knowledge API for document ingestion, embeddings, vector search, and retrieval-augmented applications.</p>
+        <div class="tags"><span>AI</span><span>RAG</span><span>Python</span></div>
+        <a class="fig-link" href="https://github.com/ildrm/atlas-rag-as-service" target="_blank" rel="noopener noreferrer">View Atlas RAG as a Service repository</a>
       </article>
       </div>
-      <a class="page-link" href="https://github.com/ildrm?tab=stars" target="_blank" rel="noopener">View starred repositories on GitHub</a>
+      <a class="page-link" href="projects.html">Explore all projects and repositories</a>
     </section>
   </main>
   <footer class="foot">
     <nav class="footer-nav" aria-label="Footer navigation">
-      <a href="index.html" aria-current="page">Home</a>
+      <a href="/" aria-current="page">Home</a>
       <a href="projects.html">Projects</a>
       <a href="experience.html">Experience</a>
       <a href="contact.html">Contact</a>
     </nav>
-    END OF TRANSMISSION · SIL / SPATIAL SYSTEMS OBSERVATORY · 2026
+    END OF TRANSMISSION · SHAHIN ILDEREMI / SPATIAL SYSTEMS OBSERVATORY
   </footer>
 
 </body>

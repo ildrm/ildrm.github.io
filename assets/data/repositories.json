@@ -1,0 +1,1085 @@
+{
+  "username": "ildrm",
+  "repositories": [
+    {
+      "name": "acf-persian-dropdown-calendar",
+      "url": "https://github.com/ildrm/acf-persian-dropdown-calendar",
+      "description": "Wordpress Advanced Custom Field (ACF) Jalali DatePicker",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "All-Url-Uploader",
+      "url": "https://github.com/ildrm/All-Url-Uploader",
+      "description": "A simple telegram Bot, Upload Media File| video To telegram using the direct download link. (youtube, Mediafire, google drive, mega drive, etc)",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
+      "name": "apertureflow",
+      "url": "https://github.com/ildrm/apertureflow",
+      "description": "AI-powered photography workflow platform for automatic photo culling, image quality assessment, duplicate detection, blur detection, smart photo selection, and post-processing automation. Built for photographers, studios, and computer vision developers.",
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "asset-token",
+      "url": "https://github.com/ildrm/asset-token",
+      "description": "Generic asset tokenization and digital asset management platform for registering assets, ownership units, rights, restrictions, offerings, transfers, portfolios, custody, valuations, distributions, and compliance. Built for tokenized real-world assets, digital assets, investment products, and programmable ownership.",
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "asteria-financial-platform",
+      "url": "https://github.com/ildrm/asteria-financial-platform",
+      "description": "Open-source WordPress financial analytics and paper trading plugin for portfolio simulation, watchlists, synthetic OHLCV market data, risk metrics (Sharpe, VaR, drawdown), Black-Scholes options, bond and FX models, REST APIs, and local-first fintech research—no external market-data service required.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "atlas-qr-menu-service",
+      "url": "https://github.com/ildrm/atlas-qr-menu-service",
+      "description": "AtlasQR is an open-source multi-tenant QR menu and digital catalog SaaS for restaurants, cafes and local businesses. Create dynamic QR code menus, service and price lists with multilingual/RTL content, PWA support, analytics, RBAC and secure tenant isolation. Built using: Next.js, NestJS, TypeScript, PostgreSQL, Redis, Turborepo and Tailwind CSS 4.",
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "atlas-rag-as-service",
+      "url": "https://github.com/ildrm/atlas-rag-as-service",
+      "description": "Open-source RAG as a Service (RAGaaS) platform for building AI knowledge APIs with Retrieval-Augmented Generation. Ingest documents, create embeddings, search with vectors, and serve LLM-powered applications through a scalable REST API.",
+      "language": "Python",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "aurelia-hospitality-hotel-management-system",
+      "url": "https://github.com/ildrm/aurelia-hospitality-hotel-management-system",
+      "description": "Open-source Hotel Management System (PMS) built with Laravel and FilamentPHP. Features hotel reservations, room management, bookings, guests, pricing, invoices, housekeeping, staff management, reports, multi-property support, REST API, and modern admin dashboard. Ideal for hotels, resorts, hostels, and hospitality software.",
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "awesome-llm-apps",
+      "url": "https://github.com/ildrm/awesome-llm-apps",
+      "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
+      "name": "awesome-n8n-templates",
+      "url": "https://github.com/ildrm/awesome-n8n-templates",
+      "description": "Supercharge your workflow automation with this curated collection of n8n templates! Instantly connect your favorite apps-like Gmail, Telegram, Google Drive, Slack, and more-with ready-to-use, AI-powered automations. Save time, boost productivity, and unlock the true potential of n8n in just a few clicks.",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
+      "name": "Backfill-GA4-to-BigQuery",
+      "url": "https://github.com/ildrm/Backfill-GA4-to-BigQuery",
+      "description": "Backfill-GA4-to-BigQuery\" repository offers a solution for users to backfill their GA4 data into BigQuery. This is useful for those who need historical data from the start of their GA4 property, as GA4 data is typically only available in BigQuery after linking the two services. Our solution provides a complete backfill of data to BigQuery",
+      "language": "Jupyter Notebook",
+      "fork": true,
+      "archived": false
+    },
+    {
+      "name": "be-human",
+      "url": "https://github.com/ildrm/be-human",
+      "description": "Be Human is an open-source, privacy-first life planning and personal productivity platform for realistic goals, capacity check-ins, constraint-based scheduling, household sharing, and explainable planning. Built with Next.js, NestJS, Fastify, PostgreSQL, TypeScript, Docker, and evidence-aware domain logic.",
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "casaura-real-estate",
+      "url": "https://github.com/ildrm/casaura-real-estate",
+      "description": "Casaura is an API-first, multi-tenant real estate marketplace and agency platform built with Laravel and Next.js. It combines property listings, agency workflows, RESO data ingestion, collaborative discovery, AI-powered search, Stripe billing and promotion tools in a production-ready, scalable architecture.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "cinemadad-cinema-booking-system",
+      "url": "https://github.com/ildrm/cinemadad-cinema-booking-system",
+      "description": "Open-source, production-ready cinema booking system and multi-tenant movie ticket booking platform built with Next.js, NestJS, TypeScript, PostgreSQL, Prisma, Redis and BullMQ. Features real-time seat selection, payments, QR tickets, cinema management, screening schedules, operator/admin dashboards, RBAC, WebSockets and gate scanning.",
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "claude-skills",
+      "url": "https://github.com/ildrm/claude-skills",
+      "description": "313+ Claude Code skills & agent skills & plugins for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents — engineering, marketing, product, compliance, C-level advisory, research, business operations, commercial & finance, and your daily productivity skills.",
+      "language": "Python",
+      "fork": true,
+      "archived": false
+    },
+    {
+      "name": "countries-investment-model",
+      "url": "https://github.com/ildrm/countries-investment-model",
+      "description": "A Python-based country investment analysis framework that uses official central-bank and macroeconomic data to detect economic regimes, evaluate inflation, growth, interest rates and liquidity, and score assets such as stocks, bonds, gold, currencies and real estate across multiple countries.",
+      "language": "Python",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "digikala-mcp",
+      "url": "https://github.com/ildrm/digikala-mcp",
+      "description": "MCP server for Digikala: search, compare and price-check products on Iran's largest marketplace. Read-only, no API key. 16 tools, hosted on Cloudflare Workers.",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
+      "name": "direction-route",
+      "url": "https://github.com/ildrm/direction-route",
+      "description": "route backend service",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
+      "name": "divar-mcp",
+      "url": "https://github.com/ildrm/divar-mcp",
+      "description": "MCP server for Divar — search, compare and analyze classified ads. Read-only, no API key.",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
+      "name": "doodle-guide-for-drawing",
+      "url": "https://github.com/ildrm/doodle-guide-for-drawing",
+      "description": "DoodleGuide is a privacy-first, browser-based drawing tutor that turns black-and-white line art into ordered vector strokes and animates a pencil along the path. Built with HTML, CSS and JavaScript, it uses image processing, skeletonization, graph traversal, SVG animation, speed control, and local-only processing.",
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "doris-jalali-date",
+      "url": "https://github.com/ildrm/doris-jalali-date",
+      "description": "A set of Java UDFs for Apache Doris enabling Jalali (Persian) calendar date conversions and operations.",
+      "language": "Java",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "economy-os",
+      "url": "https://github.com/ildrm/economy-os",
+      "description": "EconomyOS is an open-source economic intelligence and research platform for point-in-time economic data, causal inference, forecasting, scenario analysis, systemic risk, and economic modeling. Built with TypeScript, Next.js, NestJS, PostgreSQL/TimescaleDB, and Temporal, with provenance, governance, and reproducible research.",
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "envkit-releases",
+      "url": "https://github.com/ildrm/envkit-releases",
+      "description": "EnvKit — free local development environment for Windows & macOS: nginx/Apache, multiple PHP versions, MySQL/MariaDB,   PostgreSQL, Redis, MongoDB, Mailpit, Node.js, trusted .test HTTPS, and a built-in MCP server for AI-assistant control.   A Laragon/XAMPP/Herd alternative.",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
+      "name": "external-request-manager-pro",
+      "url": "https://github.com/ildrm/external-request-manager-pro",
+      "description": "",
+      "language": "PHP",
+      "fork": true,
+      "archived": false
+    },
+    {
+      "name": "ferrum-api-postman-clone",
+      "url": "https://github.com/ildrm/ferrum-api-postman-clone",
+      "description": "Ferrum API is a local-first, native Postman alternative built in Rust for API development, REST API testing, and HTTP requests. Organize collections, environments, variables, and history in a fast egui desktop app with SQLite persistence, streamed responses, secure secret storage, and cross-platform support for Windows, Linux, and macOS.",
+      "language": "Rust",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "foreign-exchange-crisis-early-warning-system",
+      "url": "https://github.com/ildrm/foreign-exchange-crisis-early-warning-system",
+      "description": "FX-CPM is an open-source foreign exchange crisis early warning system for probabilistic forecasting of currency, banking, sovereign, monetary, political and conflict risks. It combines regime-aware Forex indicators, macro-financial data, calibrated models, historical backtesting, alerts, and professional HTML/PDF risk reports.",
+      "language": "Python",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "ga-wp-integration",
+      "url": "https://github.com/ildrm/ga-wp-integration",
+      "description": "The Google Analytics WP Integration plugin seamlessly tracks WordPress and WooCommerce events with Google Analytics via GTM, offering customizable mappings and SEO-enhancing insights.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "geo-araz",
+      "url": "https://github.com/ildrm/geo-araz",
+      "description": "",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
+      "name": "gods-eye-view",
+      "url": "https://github.com/ildrm/gods-eye-view",
+      "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
+      "name": "google-book-writer",
+      "url": "https://github.com/ildrm/google-book-writer",
+      "description": "BOOKGEN-AI is a desktop AI writing tool that uses Google Gemini to turn a book idea into a complete manuscript through a structured workflow for planning, outlining, chapter writing, memory management, editing, and export. It supports multiple languages and lets users save, resume, and export their generated books as DOCX, PDF, Markdown, or TXT.",
+      "language": "Python",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "ham-mahalleh",
+      "url": "https://github.com/ildrm/ham-mahalleh",
+      "description": "پلتفرم هم‌محله یک مارکت‌پلیس محلی و چندفروشنده است که با هدف اتصال فروشندگان و خریداران یک منطقه طراحی شده است. این پروژه امکاناتی مانند مدیریت فروشگاه، محصولات، سفارش‌ها، کاربران، پرداخت و پنل مدیریتی را فراهم می‌کند و بستری مناسب برای توسعه بازارهای آنلاین محلی و منطقه‌ای است.",
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "html-voice-to-voice",
+      "url": "https://github.com/ildrm/html-voice-to-voice",
+      "description": "",
+      "language": "HTML",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "humanity-economy",
+      "url": "https://github.com/ildrm/humanity-economy",
+      "description": "Humanity Economy is an open-source Python research toolkit and dashboard for cross-country macroeconomic analysis using official data, transparent evidence gates, provenance, confidence and sensitivity scoring. Compare inflation, growth, labour, inequality, household pressure and economic risk with reproducible JSON and interactive HTML reports.",
+      "language": "Python",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "ilderemi-advanced-slider",
+      "url": "https://github.com/ildrm/ilderemi-advanced-slider",
+      "description": "Lightweight, accessible WordPress slider and carousel plugin with responsive layouts, autoplay, touch/drag, video, lazy loading and RTL support. Build reusable sliders from images, posts, WooCommerce products and ACF galleries, with native Elementor, Gutenberg, Bricks and Beaver Builder integrations.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "ildrm",
+      "url": "https://github.com/ildrm/ildrm",
+      "description": "Config files for my GitHub profile.",
+      "language": null,
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "ildrm.github.io",
+      "url": "https://github.com/ildrm/ildrm.github.io",
+      "description": "",
+      "language": "HTML",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "image-steganography-lab",
+      "url": "https://github.com/ildrm/image-steganography-lab",
+      "description": "Image Steganography Lab is a Python 3.11+ toolkit for image steganography, data hiding and watermarking research. It provides a registry of 128 techniques—including LSB, PVD, edge-adaptive, palette, coding, DCT/DWT and transform-domain methods—with CLI/menu workflows, capacity checks, verification, compression and optional AES-256-GCM encryption.",
+      "language": "Python",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "interviewflow-lite-interview-scheduling-platform",
+      "url": "https://github.com/ildrm/interviewflow-lite-interview-scheduling-platform",
+      "description": "Open-source, self-hosted interview scheduling and recruiting orchestration platform for hiring teams. Supports candidate self-scheduling, interviewer pools, panel interviews, rooms, calendar sync, scorecards, debriefs, hiring decisions, audit logs, ATS webhooks, Next.js, NestJS, MySQL, Docker Compose, CalDAV, ICS, and OpenAPI.",
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "iranian-cities-with-symbolic-elements",
+      "url": "https://github.com/ildrm/iranian-cities-with-symbolic-elements",
+      "description": "Open Iran cities dataset covering 1,456 Iranian cities across 31 provinces for Solar Hijri 1403 (2024/25), with normalized Persian administrative records linked to curated symbolic elements: landmarks, cultural heritage, archaeological sites, religious places, and natural features. CSV and Excel data for research, mapping, and web projects.",
+      "language": null,
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "kavosh-market-intelligence",
+      "url": "https://github.com/ildrm/kavosh-market-intelligence",
+      "description": "Kavosh is a bilingual English/Persian market-intelligence platform for crypto and FX trading research. It combines deterministic market analysis, evidence, provenance, freshness, disagreement, and invalidation into an explainable decision-support workstation powered by Next.js, NestJS, BullMQ, and TimescaleDB.",
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "laravel-crm",
+      "url": "https://github.com/ildrm/laravel-crm",
+      "description": "Open-source Laravel 13 CRM built with PHP 8.3+ and Filament 4 for customer relationship management and sales workflows. Manage leads, contacts, companies, deals, tasks, projects, campaigns, activities, public forms, reports, REST APIs, role-based permissions, queued email, audit logs, encrypted integrations, and secure backups.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "laravel-ffmpeg",
+      "url": "https://github.com/ildrm/laravel-ffmpeg",
+      "description": "This package provides an integration with FFmpeg for Laravel. Laravel's Filesystem handles the storage of the files.",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
+      "name": "laravel-organization-document-manager",
+      "url": "https://github.com/ildrm/laravel-organization-document-manager",
+      "description": "Laravel Organization Document Manager is a multi-tenant Laravel and Filament system for building forms, managing documents and attachments, automating email reminders, organizing private and team chats, generating reports, and controlling role-based access, with English, Persian, and Jalali date support for organizations of all sizes and workflows!",
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "learn-beam-lms",
+      "url": "https://github.com/ildrm/learn-beam-lms",
+      "description": "Open-source multilingual learning management system (LMS) for courses, cohorts, assessments, exams, creator tools, credentials, and professional growth. Built with Next.js, NestJS, PostgreSQL, Drizzle, Redis/BullMQ, Meilisearch, and S3, featuring i18n/RTL, permissions, media processing, search, analytics, and scalable modular architecture.",
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "ledgerly-international-accounting-platform",
+      "url": "https://github.com/ildrm/ledgerly-international-accounting-platform",
+      "description": "Ledgerly is an open-source international multi-tenant accounting platform with an immutable double-entry ledger, exact decimal money, multi-currency primitives, journal posting/reversals, trial balance, fiscal periods, audit trails, REST/OpenAPI, PostgreSQL RLS, and 11-language RTL/Jalali localization. Built with TypeScript, Next.js and NestJS.",
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "logicommerce-logistic-ecommerce",
+      "url": "https://github.com/ildrm/logicommerce-logistic-ecommerce",
+      "description": "Logicommerce is a modular open-source platform that unifies logistics and eCommerce into a single ecosystem. It supports 1PL–5PL operations with warehouse, inventory, shipping, order, supplier, and marketplace management, providing a scalable foundation for modern supply chain and multi-vendor commerce solutions.",
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "madar-investment-operations-platform",
+      "url": "https://github.com/ildrm/madar-investment-operations-platform",
+      "description": "Open-source multi-tenant investment management and portfolio accounting platform for funds and asset managers. Supports NAV, double-entry fund accounting, investor onboarding, cash flows, trading, reconciliation, risk controls, fees, statements, audit trails, and investor portal. Built with React, Fastify, PostgreSQL, Docker, Terraform, and AWS.",
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "md2pdf-plantuml",
+      "url": "https://github.com/ildrm/md2pdf-plantuml",
+      "description": "A fast and automated Markdown-to-PDF converter that detects PlantUML diagrams, renders them in parallel, and embeds them seamlessly into the final document.",
+      "language": "Python",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "media-studio",
+      "url": "https://github.com/ildrm/media-studio",
+      "description": "Media Studio is a free, open-source FFmpeg GUI and media converter for Windows, macOS, and Linux. Convert and compress video, audio, and images with batch processing, presets, FFprobe inspection, live job progress, advanced codec controls, and local-only processing. Built with Python and PySide6 as a private, cross-platform desktop media converter.",
+      "language": "Python",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "memoria-recording-memories",
+      "url": "https://github.com/ildrm/memoria-recording-memories",
+      "description": "Memoria is an open-source, self-hosted, privacy-first personal diary, digital journal, memory vault, and selective publishing platform built with Laravel 13, Filament 5, Livewire 4, Blade, and Tailwind CSS 4. Record, organize, search, share, and selectively publish memories with privacy review, scheduling, RSS, and social delivery.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "microservice-js",
+      "url": "https://github.com/ildrm/microservice-js",
+      "description": "",
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "mui-php-form-builder",
+      "url": "https://github.com/ildrm/mui-php-form-builder",
+      "description": "",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "multi-dropdown-select-v1",
+      "url": "https://github.com/ildrm/multi-dropdown-select-v1",
+      "description": "",
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "multi-dropdown-select-v2",
+      "url": "https://github.com/ildrm/multi-dropdown-select-v2",
+      "description": "",
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "n8n-chat-ui",
+      "url": "https://github.com/ildrm/n8n-chat-ui",
+      "description": "",
+      "language": "HTML",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "n8n-free-templates",
+      "url": "https://github.com/ildrm/n8n-free-templates",
+      "description": "A curated set of 200+ plug-and-play n8n workflows that fuse classic automation with today’s AI stack—vector DBs, embeddings, and LLMs. Import any JSON, add your creds, hit Activate, and you’re live. Built to demo, prototype, or drop straight into production.",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
+      "name": "nexus-warehouse-management-system",
+      "url": "https://github.com/ildrm/nexus-warehouse-management-system",
+      "description": "NEXUS WMS is an open-source, multi-tenant warehouse management system for inventory, receiving, picking, shipping, transfers, cycle counts, returns and lot/serial traceability. Includes barcode scanning, FIFO/FEFO allocation, RBAC, audit logs and a mobile PWA. Built with Next.js, NestJS, TypeScript, PostgreSQL, Prisma, Redis, Turborepo and OpenAPI.",
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "nobat-consultation-reservation-and-appointment-system",
+      "url": "https://github.com/ildrm/nobat-consultation-reservation-and-appointment-system",
+      "description": "Nobat is a consultation reservation and appointment booking system for managing doctors, consultants, patients, schedules, time slots, and online appointments. It provides a structured solution for healthcare appointment scheduling, consultation management, availability tracking, and reservation workflows.",
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "northstar-seo",
+      "url": "https://github.com/ildrm/northstar-seo",
+      "description": "Open-source technical SEO audit platform and website crawler for asynchronous site analysis, deterministic scoring, on-page SEO checks, issue prioritization, and actionable recommendations. Built with TypeScript, Next.js, NestJS, BullMQ, Redis, Prisma, PostgreSQL, and Docker for scalable SEO crawling, website audits, and transparent diagnostics.",
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "offline-sports-photo-analysis",
+      "url": "https://github.com/ildrm/offline-sports-photo-analysis",
+      "description": "Offline open-source Python toolkit for soccer and sports photo analysis. Detect players, balls, referees, poses, faces, apparent emotions, blur, OCR, depth, EXIF metadata and spatial relationships using local official or community models. Generates annotated images, JSON data and searchable HTML reports—no cloud APIs.",
+      "language": "Python",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "open-source-ai-interview-platform",
+      "url": "https://github.com/ildrm/open-source-ai-interview-platform",
+      "description": "Open-source, self-hosted AI interview platform for human-reviewed hiring workflows. Includes job templates, candidate invitations, consent and device checks, live interview rooms, transcription, evidence-based scoring, reviewer approval, audit logs, and role-based access. Built with React, FastAPI, Whisper, Llama, LiveKit, Docker, and Kubernetes.",
+      "language": "Python",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "overreacted",
+      "url": "https://github.com/ildrm/overreacted",
+      "description": "",
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "paperclip",
+      "url": "https://github.com/ildrm/paperclip",
+      "description": "The open-source app everyone uses to manage agents at work",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
+      "name": "persian_tts",
+      "url": "https://github.com/ildrm/persian_tts",
+      "description": "Persian text-to-speech with voice cloning, fully offline on CPU (ONNX + torch paths)",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
+      "name": "persian-crypto-scraper",
+      "url": "https://github.com/ildrm/persian-crypto-scraper",
+      "description": "",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "php-advanced-telegram-uploader-service",
+      "url": "https://github.com/ildrm/php-advanced-telegram-uploader-service",
+      "description": "Advanced PHP Telegram Uploader Service for uploading large files, images, videos, and documents to Telegram via Bot API or MTProto. Features secure uploads, queue processing, resumable transfers, API integration, and scalable architecture for automation, cloud storage, and enterprise PHP applications.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "php-d3",
+      "url": "https://github.com/ildrm/php-d3",
+      "description": "The php-d3 project provides a PHP class called D3ChartBuilder, inspired by the D3.js gallery, enabling the creation of various D3.js charts using PHP.",
+      "language": "HTML",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "php-jsfuck",
+      "url": "https://github.com/ildrm/php-jsfuck",
+      "description": "",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "php-science-class",
+      "url": "https://github.com/ildrm/php-science-class",
+      "description": "PHP Science Class is a lightweight scientific computing library for PHP, providing mathematical, statistical, physics, chemistry, and engineering functions. Ideal for calculations, data analysis, scientific applications, education, simulations, and research projects with an easy-to-use object-oriented API.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "php-security",
+      "url": "https://github.com/ildrm/php-security",
+      "description": "",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "php-simple-telegram-uploader-service",
+      "url": "https://github.com/ildrm/php-simple-telegram-uploader-service",
+      "description": "Lightweight PHP Telegram Uploader Service for uploading files, images, videos, and documents to Telegram using the Bot API. Simple to integrate, fast, and reliable, with REST API support, secure file handling, and an easy-to-use architecture for PHP applications, automation, backups, and cloud workflows.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "podflow-podcast-scrapper",
+      "url": "https://github.com/ildrm/podflow-podcast-scrapper",
+      "description": "PodFlow Podcast Scraper is an open-source podcast aggregation and scraping platform that automatically collects episodes, metadata, and feeds from multiple podcast sources. It streamlines podcast discovery, content synchronization, and data organization, providing a scalable foundation for podcast directories and analytics applications.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "postiz-app",
+      "url": "https://github.com/ildrm/postiz-app",
+      "description": "📨 The ultimate agentic social media scheduling tool 🤖",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
+      "name": "poulix-platform",
+      "url": "https://github.com/ildrm/poulix-platform",
+      "description": "Poulix-Platform is a full-stack financial application.",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
+      "name": "PrestaShop-to-WooCommerce",
+      "url": "https://github.com/ildrm/PrestaShop-to-WooCommerce",
+      "description": "",
+      "language": "Python",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "project-qr",
+      "url": "https://github.com/ildrm/project-qr",
+      "description": "Smart Gallery QR is a WordPress QR code plugin for creating secure digital galleries and shareable experiences with dynamic QR codes, encrypted image/PDF media, access control, invitations, workspace roles, scan analytics, and a React admin interface. Build private, public, password-protected, member-only or unlisted galleries.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "python-deblurring",
+      "url": "https://github.com/ildrm/python-deblurring",
+      "description": "Python CLI for batch image deblurring, image restoration, deconvolution, and classical computer vision. Includes Wiener, Richardson-Lucy, Tikhonov, TV-ADMM, and unsupervised Wiener methods; motion/Gaussian/box/custom PSFs; recursive OpenCV/scikit-image processing; color/grayscale support, edge padding, presets, and JSON reports.",
+      "language": "Python",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "python-seo-auditor",
+      "url": "https://github.com/ildrm/python-seo-auditor",
+      "description": "Atlas is an open-source Python SEO auditor and technical SEO crawler for site audits. It runs 84 evidence-based checks for indexability, robots.txt, sitemaps, canonicals, hreflang, structured data, internal links, content, accessibility and Core Web Vitals, with Playwright rendering, Google Search Console, PSI/CrUX and offline HTML reports via CLI.",
+      "language": "Python",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "react-divar",
+      "url": "https://github.com/ildrm/react-divar",
+      "description": "",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
+      "name": "relationship-platform",
+      "url": "https://github.com/ildrm/relationship-platform",
+      "description": "Privacy-first social and relationship network for consent-based discovery, identity verification, privacy-scoped profiles, relationship structures, matching, mutual reveal, messaging, couple and group profiles, safety moderation, blocking, reporting, and appeals.",
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "servex-php",
+      "url": "https://github.com/ildrm/servex-php",
+      "description": "Servex is a PHP microservices framework inspired by Moleculer, designed for building scalable, event-driven, and distributed applications with support for service management, event handling, caching, and message brokers like RabbitMQ and Kafka.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "servex-service",
+      "url": "https://github.com/ildrm/servex-service",
+      "description": "The Servex Service project is a lightweight test service designed for the Servex PHP Framework, providing a simple Order service as an example for developers to create and integrate custom services within the Servex ecosystem.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "servex-storage",
+      "url": "https://github.com/ildrm/servex-storage",
+      "description": "",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "servex-warehouse",
+      "url": "https://github.com/ildrm/servex-warehouse",
+      "description": "",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "SourceLens",
+      "url": "https://github.com/ildrm/SourceLens",
+      "description": "Multilingual source-grounded research workspace with agentic RAG, cited chat, podcasts, PowerPoint, and video.",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
+      "name": "superset",
+      "url": "https://github.com/ildrm/superset",
+      "description": "Apache Superset is a Data Visualization and Data Exploration Platform",
+      "language": "TypeScript",
+      "fork": true,
+      "archived": false
+    },
+    {
+      "name": "talentsphere-linkedin-clone",
+      "url": "https://github.com/ildrm/talentsphere-linkedin-clone",
+      "description": "TalentSphere is an open-source LinkedIn clone and EU-first employment platform built with React, TypeScript, Node.js, Turborepo, and PostgreSQL. It combines job search, professional networking, applications, ATS, recruiting CRM, workplace reviews, learning, GDPR privacy, and governed AI.",
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "telegram-anonymous-message-bot",
+      "url": "https://github.com/ildrm/telegram-anonymous-message-bot",
+      "description": "Telegram Anonymous Message Bot is a single-file PHP bot that lets users create anonymous inbox links, receive hidden messages, and optionally reply through private threaded conversations. It uses SQLite for users, inboxes, routing, rate limits, and abuse protection, keeping Telegram identities hidden while managing delivery and audit logs privately",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "telegram-auction-platform",
+      "url": "https://github.com/ildrm/telegram-auction-platform",
+      "description": "Telegram auction bot built for live bidding, auction automation, participant management, real-time notifications, and seamless Telegram Bot API integration. Ideal for online marketplaces, e-commerce, digital communities, and developers building auction platforms.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "telegram-crypto-financial-bot",
+      "url": "https://github.com/ildrm/telegram-crypto-financial-bot",
+      "description": "Telegram Crypto Financial Bot is a single-file PHP Telegram bot for crypto and market tracking, offering live coin prices, trending coins, global market data, portfolio tracking, price alerts, fear-and-greed sentiment, ETH gas data, crypto news, charts, and locally stored user data through SQLite.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "telegram-manage-channel-bot",
+      "url": "https://github.com/ildrm/telegram-manage-channel-bot",
+      "description": "Telegram Manage Channel Bot is an enterprise-style PHP bot for managing Telegram channels, with tools for creating posts, saving drafts, scheduling content, running campaigns, cross-posting across multiple channels, handling approval workflows, tracking analytics, managing roles and permissions, and automating publishing through RSS feeds and other",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "telegram-manage-group-bot",
+      "url": "https://github.com/ildrm/telegram-manage-group-bot",
+      "description": "Telegram Manage Group Bot is a modular PHP bot for managing Telegram groups, offering moderation, anti-spam protection, CAPTCHA verification, anti-link and anti-media controls, welcome and goodbye messages, warnings, user reports, group statistics, scheduled messages, custom commands, and an admin dashboard for configuring group settings.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "telegram-poll-bot",
+      "url": "https://github.com/ildrm/telegram-poll-bot",
+      "description": "Telegram Poll Bot is a single-file PHP Telegram bot for creating and managing customizable polls with multi-step setup, anonymous or public voting, single or multiple answers, quiz mode, expiration dates, live result tracking, inline sharing, poll management, detailed statistics, and CSV export.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "telegram-send-message-bot",
+      "url": "https://github.com/ildrm/telegram-send-message-bot",
+      "description": "Telegram Send Message Bot is a PHP Telegram broadcast and user-collector bot that lets owners collect subscriber metadata, create targeted broadcast campaigns, send text, media, polls, and button messages, manage templates, process delivery through a safe queued system with retries and flood control, and track delivery, clicks, sources, etc.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "telegram-ssh",
+      "url": "https://github.com/ildrm/telegram-ssh",
+      "description": "Telegram SSH is an open-source Telegram bot that lets users securely create, manage, and monitor SSH accounts through a simple chat interface. It automates account provisioning, user management, expiration handling, and server administration, making SSH services easy to deploy and manage.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "telegram-woocommerce-bot",
+      "url": "https://github.com/ildrm/telegram-woocommerce-bot",
+      "description": "Telegram WooCommerce Bot is a PHP Telegram storefront bot that connects to WooCommerce and lets customers browse products, choose variations, manage carts, apply coupons, complete checkout, track orders, receive order updates, manage wishlists, and interact with a store directly inside Telegram.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "telegram-wordpress-bot",
+      "url": "https://github.com/ildrm/telegram-wordpress-bot",
+      "description": "Telegram WordPress Bot is a PHP-based Telegram bot for managing WordPress sites from a chat interface, letting users connect one or multiple WordPress installs, manage posts, comments, plugins, themes, updates, users, media, cache, database optimization, WooCommerce orders, and multisite networks through secure REST API integration.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "test-timetracker",
+      "url": "https://github.com/ildrm/test-timetracker",
+      "description": "",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "ubuntu-hardener",
+      "url": "https://github.com/ildrm/ubuntu-hardener",
+      "description": "This script automates basic security hardening for Ubuntu servers.",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
+      "name": "URL-shortener",
+      "url": "https://github.com/ildrm/URL-shortener",
+      "description": "",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
+      "name": "veyra-document-manager",
+      "url": "https://github.com/ildrm/veyra-document-manager",
+      "description": "Veyra is an open-source, multi-tenant enterprise document management and AI document intelligence platform for secure ingestion, permission-aware semantic search, RAG, and evidence-grounded answers with exact citations. Built with Next.js, NestJS, FastAPI, PostgreSQL/pgvector, OpenFGA, Temporal, S3/MinIO, Valkey, and OpenTelemetry.",
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "voice-chat-openai",
+      "url": "https://github.com/ildrm/voice-chat-openai",
+      "description": "A web app for voice-based interaction with an AI, transcribing speech and responding with text and audio.",
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "wanderline-social-travel-platform",
+      "url": "https://github.com/ildrm/wanderline-social-travel-platform",
+      "description": "Wanderline is a privacy-first social travel and journey coordination platform for discovering trips, finding travel companions, planning multi-destination itineraries, organizing recreational experiences and tours, and managing travel safely. Built with Laravel, Next.js, PostgreSQL/PostGIS, Redis, Docker, and Kubernetes.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "wc-message-notifier",
+      "url": "https://github.com/ildrm/wc-message-notifier",
+      "description": "Send WooCommerce order notifications to messaging Telegram channels and groups",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "wc-moadian-connector",
+      "url": "https://github.com/ildrm/wc-moadian-connector",
+      "description": "اتصال فروشگاه ووکامرس به سامانه مودیان مالیاتی ایران",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "wc-product-importer",
+      "url": "https://github.com/ildrm/wc-product-importer",
+      "description": "WooCommerce Product Importer is a WordPress plugin for bulk importing and updating products from CSV files. It supports field mapping, categories, images, and variable products to speed up store migration and product management.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "windows-drag-and-drop",
+      "url": "https://github.com/ildrm/windows-drag-and-drop",
+      "description": "",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
+      "name": "woocommerce-advanced-report-builder",
+      "url": "https://github.com/ildrm/woocommerce-advanced-report-builder",
+      "description": "Advanced WooCommerce report builder for WordPress with custom datasets, product types, categories, attributes, variations, filters, formulas, pivots, dashboards, CSV/XLSX export, Jalali/Gregorian dates, HPOS support, ACF/CPT integration, scheduled reports, alerts, analytics and business intelligence.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "woocommerce-advanced-reports",
+      "url": "https://github.com/ildrm/woocommerce-advanced-reports",
+      "description": "WooCommerce Advanced Reports is a powerful WordPress analytics plugin for product, order, customer, inventory and sales reporting with HPOS support, Jalali/Gregorian dates, CSV/XLSX export, print views, RFM analytics, saved reports, scheduled email reports and caching.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "woocommerce-disable-gateway-by-coupon",
+      "url": "https://github.com/ildrm/woocommerce-disable-gateway-by-coupon",
+      "description": "Allow selecting payment gateway(s) in coupon edit screen which will be disabled for customers who apply that coupon.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "woocommerce-loyaltyforge",
+      "url": "https://github.com/ildrm/woocommerce-loyaltyforge",
+      "description": "LoyaltyForge is a WooCommerce loyalty and rewards plugin for customer points, membership tiers, referrals, reward coupons, earning campaigns, point expiration and refund reversals. Features an auditable points ledger, HPOS & Cart/Checkout Blocks support, REST APIs, customer dashboards, admin tools and extensible loyalty automation for online shops.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "woocommerce-marketplace-suite",
+      "url": "https://github.com/ildrm/woocommerce-marketplace-suite",
+      "description": "Open-source modular multi-vendor marketplace framework for WooCommerce with vendor lifecycle management, product ownership, commission primitives, double-entry ledger foundations, REST APIs, idempotent financial operations, and HPOS/Cart & Checkout Blocks compatibility for secure WordPress marketplace development.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "wordpress-aegisguard-security",
+      "url": "https://github.com/ildrm/wordpress-aegisguard-security",
+      "description": "AegisGuard Security is an open-source WordPress security plugin featuring a Web Application Firewall (WAF), malware scanner, file integrity monitoring, TOTP MFA, brute-force/login protection, WordPress hardening, audit logs, incident detection, encrypted quarantine, WP-CLI tools, and WooCommerce security monitoring.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "wordpress-apexpress-performance",
+      "url": "https://github.com/ildrm/wordpress-apexpress-performance",
+      "description": "ApexPress Performance is a security-focused WordPress optimization plugin for faster sites: page caching, cache warming, HTML/CSS/JS optimization, WebP/AVIF images, lazy loading, WooCommerce-safe caching, CDN/Cloudflare integration, Core Web Vitals monitoring, database cleanup, REST API and WP-CLI.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "wordpress-appbridge-api-gateway",
+      "url": "https://github.com/ildrm/wordpress-appbridge-api-gateway",
+      "description": "Secure WordPress REST API gateway plugin for mobile apps, headless WordPress/PWA frontends and automation. Features bearer authentication, refresh-token rotation, CORS, rate limiting, HMAC webhooks, notifications and device sessions, with WooCommerce, ACF, Gravity Forms, Flutter, React Native, Android and iOS support.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "wordpress-auto-print-order-invoice",
+      "url": "https://github.com/ildrm/wordpress-auto-print-order-invoice",
+      "description": "WordPress WooCommerce invoice printer plugin with automatic order printing via PrintNode, PDF invoice generation, HPOS support, RTL-ready templates, manual and bulk printing, print-job history, safe retries, and customizable invoice layouts for eCommerce stores.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "wordpress-fetch",
+      "url": "https://github.com/ildrm/wordpress-fetch",
+      "description": "WordPress Fetch is a secure RSS/Atom feed importer and content syndication plugin for WordPress. Import, transform and map RSS 2.0, RDF, Atom and OPML feeds into posts with deduplication, media handling, editorial rules, queues, REST API, WP-CLI, monitoring and SEO controls for canonicals, noindex and syndicated content.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "wordpress-helanak-kids-theme",
+      "url": "https://github.com/ildrm/wordpress-helanak-kids-theme",
+      "description": "",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "wordpress-immersive-gallery-studio",
+      "url": "https://github.com/ildrm/wordpress-immersive-gallery-studio",
+      "description": "Immersive Gallery Studio is a modern WordPress gallery plugin with 10 modular layouts, 3D circular galleries, photo books, exhibitions, albums, password protection, QR/barcode sharing, fullscreen lightbox, responsive design, analytics, and secure media workflows for photographers, portfolios, events, and visual storytelling.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "wordpress-kbms-knowledge-platform",
+      "url": "https://github.com/ildrm/wordpress-kbms-knowledge-platform",
+      "description": "Security-first WordPress knowledge base and knowledge management system (KBMS) with private/public spaces, workflows, permission-aware search, REST APIs, knowledge graphs, feedback, privacy controls, and optional AI/RAG with grounded citations. Built for teams that need secure, governed, extensible documentation on WordPress.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "wordpress-keycloak-bridge",
+      "url": "https://github.com/ildrm/wordpress-keycloak-bridge",
+      "description": "WP Keycloak Bridge is a secure WordPress plugin for Keycloak SSO using OpenID Connect (OIDC), OAuth 2.0, PKCE and JWT. Includes JIT user provisioning, role/group mapping, profile sync, single and backchannel logout, and Keycloak bearer-token authentication for the WordPress REST API.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "wordpress-maildesk",
+      "url": "https://github.com/ildrm/wordpress-maildesk",
+      "description": "MailDesk for WordPress is a secure, open-source, self-hosted webmail and email client plugin for WordPress Admin. Features multi-account IMAP sync, SMTP sending, Gmail/Outlook-style inbox, drafts, contacts, signatures, templates, rules, shared access, encrypted credentials, REST API, diagnostics, and extensible PHP mail transports.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "wordpress-multilingual",
+      "url": "https://github.com/ildrm/wordpress-multilingual",
+      "description": "Open-source performance-first multilingual plugin for WordPress with unlimited languages, translation relationships, string translation, translation memory, hreflang, language switcher, REST API, WP-CLI, multisite support, and indexed relational storage for scalable multilingual sites.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "wordpress-navigation-studio",
+      "url": "https://github.com/ildrm/wordpress-navigation-studio",
+      "description": "Navigation Studio is a visual WordPress navigation and menu editor for classic menus and block wp_navigation. Build, reorder and bulk-edit menu trees with drafts, revisions, conflict-safe publishing, JSON import/export, responsive visibility, accessible submenus and mega-menu columns—all while keeping native WordPress data as the source of truth.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "wordpress-optigraph-seo",
+      "url": "https://github.com/ildrm/wordpress-optigraph-seo",
+      "description": "OptiGraph SEO is a WordPress SEO plugin for technical SEO, schema.org/JSON-LD, XML sitemaps, redirects, Open Graph, WooCommerce SEO, content and link analysis, site audits, AEO/GEO and AI search optimization. Includes llms.txt, AI crawler controls, REST API, WP-CLI, structured metadata and safe AI-assisted SEO workflows for modern sites and stores.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "wordpress-orchestrix-forms",
+      "url": "https://github.com/ildrm/wordpress-orchestrix-forms",
+      "description": "Open-source WordPress form builder and low-code workflow platform for forms, surveys, quizzes, payment forms, data collection, and workflow automation. Server-rendered and progressively enhanced, with PHP/TypeScript architecture, shortcode embedding, extensibility, and production-focused testing.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "wordpress-otp-login-pro",
+      "url": "https://github.com/ildrm/wordpress-otp-login-pro",
+      "description": "WordPress OTP Login Pro enables secure passwordless authentication using one-time passwords (OTP) via SMS or email. Features user registration, login verification, WooCommerce compatibility, customizable workflows, REST API support, and enhanced security for modern WordPress websites.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "wordpress-repodocs-intelligence",
+      "url": "https://github.com/ildrm/wordpress-repodocs-intelligence",
+      "description": "RepoDocs Intelligence is a WordPress plugin that transforms GitHub, GitLab, Gitea and Forgejo repositories into living technical documentation with code intelligence, source browsing, API and dependency analysis, documentation health, secure webhooks, search, AI-assisted Q&A, and responsive developer docs.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "wordpress-rolechat-messenger",
+      "url": "https://github.com/ildrm/wordpress-rolechat-messenger",
+      "description": "Secure WordPress chat and messaging plugin with Telegram-inspired UI, role-based directional permissions, direct and group messaging, frontend support widget, contacts, reactions, presence, encrypted attachments, moderation, REST API, audit logs, RTL support, and scalable custom database tables.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "wordpress-sso-provider",
+      "url": "https://github.com/ildrm/wordpress-sso-provider",
+      "description": "WordPress SSO Provider is a security-focused IAM and Single Sign-On foundation for WordPress. It includes application management, OAuth 2.0 + PKCE primitives, OpenID Connect discovery, SCIM filtering, CAS tickets, encrypted secrets, audit logging, REST admin APIs, policy/claims/session services, and extensible protocol adapters for modern sites.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "wp-doctor",
+      "url": "https://github.com/ildrm/wp-doctor",
+      "description": "WP Doctor is a production-oriented WordPress diagnostics and troubleshooting plugin for site health, PHP fatal errors, performance issues, database and cron problems, and system changes. Adds explainable health scores, change tracking, privacy-safe reports, REST API, WP-CLI commands, retention controls, and an optional MU rescue agent for recovery.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "wp-msgway-sms",
+      "url": "https://github.com/ildrm/wp-msgway-sms",
+      "description": "افزونه MsgWay SMS یک پلاگین قدرتمند و چندمنظوره وردپرس است که با ادغام با ووکامرس، امکان ارسال پیامک‌های اطلاع‌رسانی، کدهای یکبارمصرف (OTP) و پیام‌های تبلیغاتی را با استفاده از API سرویس MsgWay فراهم می‌کند.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "wp-telegram-cloud-storage",
+      "url": "https://github.com/ildrm/wp-telegram-cloud-storage",
+      "description": "Store WordPress media in Telegram's cloud with the Telegram Cloud Storage plugin, saving server space and serving files securely via proxy URLs.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "wp-ultimate-map-plugin",
+      "url": "https://github.com/ildrm/wp-ultimate-map-plugin",
+      "description": "A WordPress plugin for interactive maps with customizable layers, user submissions, and weather data integration.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "wp-workflow-pipeline",
+      "url": "https://github.com/ildrm/wp-workflow-pipeline",
+      "description": "WordPress Workflow Pipeline: A powerful WordPress automation plugin, like Zapier, for fetching data, processing, and creating content with dynamic workflows.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    }
+  ]
+}

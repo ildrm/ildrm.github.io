@@ -21,6 +21,11 @@
       document.body.classList.add('no-webgl');
       if (canvas) canvas.hidden = true;
     }
+    if (canvas) canvas.addEventListener('webglcontextlost', function(event){
+      event.preventDefault();
+      stopLoop();
+      disableWebGL();
+    });
 
     function makeMaterial(color, emissive, options){
       options = options || {};
@@ -239,7 +244,7 @@
       }
 
       var loader = new THREE.TextureLoader();
-      loader.load('assets/images/shahin-ilderemi.png', applyTexture, undefined, function(){ /* Accessible DOM image remains visible. */ });
+      loader.load('assets/images/shahin-ilderemi.jpg', applyTexture, undefined, function(){ /* Accessible DOM image remains visible. */ });
     }
 
     function applyPageComposition(){
@@ -332,6 +337,7 @@
     function animate(now){
       rafId=0;
       if(motionPaused||document.hidden||!renderer)return;
+      if(now-lastFrame<32){rafId=requestAnimationFrame(animate);return;}
       var delta=Math.min(.035,(now-lastFrame)/1000);lastFrame=now;clockTime+=delta;
       pointer.x+=(pointer.targetX-pointer.x)*.045;
       pointer.y+=(pointer.targetY-pointer.y)*.045;
@@ -364,59 +370,12 @@
       },{passive:true});
     }
 
-    function setupGSAP(){
-      if(reduceMotion||!window.gsap||!window.ScrollTrigger)return;
-      gsap.registerPlugin(ScrollTrigger);
-      var intro=gsap.timeline({defaults:{ease:'power3.out'}});
-      intro.fromTo(world.scale,{x:.12,y:.12,z:.12},{x:mobile?.72:1,y:mobile?.72:1,z:mobile?.72:1,duration:1.65},0)
-        .fromTo(world.rotation,{x:1.4,y:-2.3,z:.7},{x:.12,y:-.42,z:.03,duration:1.9},0)
-        .fromTo('.identity-copy',{opacity:0,rotationY:-14,rotationX:7,z:-280},{opacity:1,rotationY:0,rotationX:0,z:0,duration:1.35},.18)
-        .fromTo('.portrait-stage',{opacity:0,rotationY:24,rotationX:-8,z:-360},{opacity:1,rotationY:0,rotationX:0,z:0,duration:1.45},.28)
-        .fromTo('.hud-shell',{opacity:0,y:-30,rotationX:-30},{opacity:1,y:0,rotationX:0,duration:.8},.58);
-
-      var stationStates=[
-        {cam:[0,0,10.2],pos:[2.55,.1,0],rot:[.12,-.42,.03],fog:.038},
-        {cam:[-.5,.2,9],pos:[2.2,-.25,-.4],rot:[.35,.3,.18],fog:.043},
-        {cam:[.4,-.15,8.4],pos:[-2.25,.25,-.8],rot:[-.22,1.15,-.12],fog:.047},
-        {cam:[0,.2,7.7],pos:[0,-.15,-1.15],rot:[.5,2.15,.22],fog:.035},
-        {cam:[-.35,.35,8.5],pos:[2.1,.1,-.4],rot:[-.28,3.1,-.2],fog:.049},
-        {cam:[.4,-.2,8.1],pos:[-2.0,.3,-.65],rot:[.2,4.05,.25],fog:.042},
-        {cam:[-.25,.25,8.8],pos:[1.8,-.2,-.6],rot:[-.18,4.8,-.14],fog:.046},
-        {cam:[0,0,7.2],pos:[0,.15,-.4],rot:[.05,6.25,0],fog:.03}
-      ];
-      if(mobile){stationStates.forEach(function(state,index){state.pos[0]=index%2?-.7:.7;state.pos[1]=-.75;state.cam[2]+=1.5;});}
-      document.querySelectorAll('.sheet').forEach(function(section,index){
-        var previous=stationStates[index],next=stationStates[index+1];
-        var origin=index%2===0?'-12vw':'12vw';
-        gsap.fromTo(section,{opacity:.1,x:origin,z:-420,rotationY:index%2===0?11:-11,rotationX:4,scale:.92},{
-          opacity:1,x:0,z:0,rotationY:0,rotationX:0,scale:1,ease:'power2.out',
-          scrollTrigger:{trigger:section,start:'top 92%',end:'top 58%',scrub:.85}
-        });
-        gsap.timeline({scrollTrigger:{trigger:section,start:'top bottom',end:'top 24%',scrub:1.25}})
-          .fromTo(camera.position,{x:previous.cam[0],y:previous.cam[1],z:previous.cam[2]},{x:next.cam[0],y:next.cam[1],z:next.cam[2],ease:'none',immediateRender:false},0)
-          .fromTo(world.position,{x:previous.pos[0],y:previous.pos[1],z:previous.pos[2]},{x:next.pos[0],y:next.pos[1],z:next.pos[2],ease:'none',immediateRender:false},0)
-          .fromTo(world.rotation,{x:previous.rot[0],y:previous.rot[1],z:previous.rot[2]},{x:next.rot[0],y:next.rot[1],z:next.rot[2],ease:'none',immediateRender:false},0)
-          .fromTo(scene.fog,{density:previous.fog},{density:next.fog,ease:'none',immediateRender:false},0);
-      });
-
-      gsap.fromTo('.class-item',{opacity:.08,z:-210,rotationY:-10},{opacity:1,z:0,rotationY:0,stagger:.09,ease:'power2.out',scrollTrigger:{trigger:'#sheet-02',start:'top 62%',end:'center 58%',scrub:.7}});
-      gsap.fromTo('.fig-card',{opacity:.04,z:-460,rotationX:13,rotationY:function(index){return index%2?-16:16;}},{opacity:1,z:0,rotationX:0,rotationY:0,stagger:.1,ease:'power3.out',scrollTrigger:{trigger:'.fig-grid',start:'top 88%',end:'center 55%',scrub:1}});
-      gsap.fromTo('.tl-item',{opacity:.12,z:-180,rotationX:8},{opacity:1,z:0,rotationX:0,stagger:.08,ease:'power2.out',scrollTrigger:{trigger:'.timeline',start:'top 85%',end:'center 60%',scrub:.8}});
-      gsap.fromTo('.repo-register',{clipPath:'inset(0 0 100% 0)',z:-120,rotationX:6},{clipPath:'inset(0 0 0% 0)',z:0,rotationX:0,ease:'power2.inOut',scrollTrigger:{trigger:'.repo-register',start:'top 88%',end:'top 52%',scrub:.8}});
-    }
-
     function setPaused(paused){
       motionPaused=paused||reduceMotion;
       document.body.classList.toggle('motion-paused',motionPaused);
       if(motionButton){
         motionButton.setAttribute('aria-pressed',userPaused?'true':'false');
         motionButton.textContent=reduceMotion?'Motion reduced':(userPaused?'Resume motion':'Pause motion');
-      }
-      if(window.gsap){
-        if(motionPaused)gsap.globalTimeline.pause();else gsap.globalTimeline.resume();
-      }
-      if(window.ScrollTrigger){
-        ScrollTrigger.getAll().forEach(function(trigger){if(motionPaused)trigger.disable(false,true);else trigger.enable(false);});
       }
       if(motionPaused){stopLoop();renderStatic();}else{startLoop();}
     }
@@ -429,7 +388,6 @@
       setPaused(userPaused);
     });
     initScene();
-    setupGSAP();
     setPaused(motionPaused);
   })();
 

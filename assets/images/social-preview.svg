@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#071820"/><stop offset="1" stop-color="#030609"/></linearGradient>
+    <linearGradient id="ring" x2="1" y2="1"><stop stop-color="#78e8ff"/><stop offset="1" stop-color="#ff775c"/></linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <path d="M45 46h182M45 46v538h1110" fill="none" stroke="#78e8ff" stroke-opacity=".55" stroke-width="2"/>
+  <path d="M1155 46h-160M1155 46v538" fill="none" stroke="#ff775c" stroke-opacity=".7" stroke-width="2"/>
+  <circle cx="947" cy="312" r="173" fill="none" stroke="url(#ring)" stroke-width="3" opacity=".7"/>
+  <ellipse cx="947" cy="312" rx="225" ry="73" transform="rotate(-28 947 312)" fill="none" stroke="#78e8ff" stroke-width="3" opacity=".75"/>
+  <circle cx="1100" cy="196" r="11" fill="#d9ff63"/>
+  <circle cx="947" cy="312" r="83" fill="none" stroke="#78e8ff" stroke-opacity=".4" stroke-width="2"/>
+  <text x="81" y="139" fill="#78e8ff" font-family="Arial,sans-serif" font-size="25" font-weight="700" letter-spacing="5">SI / ORBITAL</text>
+  <text x="80" y="294" fill="#f0f0e8" font-family="Arial,sans-serif" font-size="77" font-weight="700">Shahin Ilderemi</text>
+  <text x="82" y="356" fill="#d9ff63" font-family="Arial,sans-serif" font-size="30" font-weight="700">Senior Software Engineer · Technical Lead</text>
+  <text x="83" y="410" fill="#c2d1d2" font-family="Arial,sans-serif" font-size="25">Backend architecture  /  Full-stack systems</text>
+  <text x="83" y="450" fill="#c2d1d2" font-family="Arial,sans-serif" font-size="25">Data engineering  /  AI integration</text>
+  <text x="83" y="555" fill="#78e8ff" font-family="Arial,sans-serif" font-size="23">ildrm.com</text>
+</svg>

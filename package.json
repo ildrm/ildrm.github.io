@@ -1,0 +1,22 @@
+{
+  "name": "ildrm-portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "serve": "node scripts/serve.mjs",
+    "refresh": "node scripts/update-repositories.mjs",
+    "check:generated": "node scripts/update-repositories.mjs --offline --check",
+    "check:heads": "node scripts/build-heads.mjs --check",
+    "test:static": "node scripts/validate-site.mjs",
+    "test:html": "html-validate index.html projects.html experience.html contact.html 404.html",
+    "test:browser": "playwright test",
+    "capture": "node scripts/capture-site.mjs",
+    "audit:mobile": "node scripts/audit-lighthouse.mjs"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "@playwright/test": "1.63.0",
+    "html-validate": "11.16.0",
+    "lighthouse": "13.5.0"
+  }
+}
