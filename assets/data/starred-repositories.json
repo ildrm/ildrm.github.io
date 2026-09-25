@@ -1,6 +1,6 @@
 {
   "username": "ildrm",
-  "generated_at": "2026-09-24T21:29:35.581Z",
+  "generated_at": "2026-09-25T04:56:04.572Z",
   "repositories": [
     {
       "name": "project-qr",
@@ -60,7 +60,7 @@
         "login": "nextlevelbuilder"
       },
       "language": "Python",
-      "stargazers_count": 130381
+      "stargazers_count": 130454
     },
     {
       "name": "digikala-mcp",
@@ -72,7 +72,7 @@
         "login": "mmdju"
       },
       "language": "JavaScript",
-      "stargazers_count": 118
+      "stargazers_count": 119
     },
     {
       "name": "divar-mcp",
@@ -84,7 +84,7 @@
         "login": "mmdju"
       },
       "language": "JavaScript",
-      "stargazers_count": 64
+      "stargazers_count": 66
     },
     {
       "name": "envkit-releases",
@@ -108,13 +108,13 @@
         "login": "bilawalsidhu"
       },
       "language": "JavaScript",
-      "stargazers_count": 42405
+      "stargazers_count": 42556
     },
     {
       "name": "be-human",
       "full_name": "ildrm/be-human",
       "html_url": "https://github.com/ildrm/be-human",
-      "description": null,
+      "description": "Be Human is an open-source, privacy-first life planning and personal productivity platform for realistic goals, capacity check-ins, constraint-based scheduling, household sharing, and explainable planning. Built with Next.js, NestJS, Fastify, PostgreSQL, TypeScript, Docker, and evidence-aware domain logic.",
       "fork": false,
       "owner": {
         "login": "ildrm"
@@ -744,7 +744,7 @@
         "login": "Shubhamsaboo"
       },
       "language": "Python",
-      "stargazers_count": 139654
+      "stargazers_count": 139687
     },
     {
       "name": "llama-swap",
@@ -756,7 +756,7 @@
         "login": "mostlygeek"
       },
       "language": "Go",
-      "stargazers_count": 5746
+      "stargazers_count": 5748
     },
     {
       "name": "paperclip",
@@ -768,7 +768,7 @@
         "login": "paperclipai"
       },
       "language": "TypeScript",
-      "stargazers_count": 82481
+      "stargazers_count": 82906
     },
     {
       "name": "ubuntu-hardener",
@@ -1236,7 +1236,7 @@
         "login": "decolua"
       },
       "language": "JavaScript",
-      "stargazers_count": 29759
+      "stargazers_count": 29772
     },
     {
       "name": "pinion",
@@ -1260,7 +1260,7 @@
         "login": "asgeirtj"
       },
       "language": "JavaScript",
-      "stargazers_count": 68257
+      "stargazers_count": 68288
     },
     {
       "name": "hazm",
@@ -1284,7 +1284,7 @@
         "login": "apache"
       },
       "language": "Python",
-      "stargazers_count": 74916
+      "stargazers_count": 74918
     },
     {
       "name": "claude-skills",
@@ -1296,7 +1296,7 @@
         "login": "alirezarezvani"
       },
       "language": "Python",
-      "stargazers_count": 26407
+      "stargazers_count": 26420
     },
     {
       "name": "BaleTunnel",
@@ -1344,7 +1344,7 @@
         "login": "deepseek-ai"
       },
       "language": "Python",
-      "stargazers_count": 104488
+      "stargazers_count": 104489
     },
     {
       "name": "llama",
@@ -1356,7 +1356,7 @@
         "login": "meta-llama"
       },
       "language": "Python",
-      "stargazers_count": 59617
+      "stargazers_count": 59615
     },
     {
       "name": "gemma",
@@ -1392,7 +1392,7 @@
         "login": "strands-agents"
       },
       "language": "Python",
-      "stargazers_count": 8216
+      "stargazers_count": 8314
     },
     {
       "name": "ComfyUI-3D-Pack",
@@ -1440,7 +1440,7 @@
         "login": "vllm-project"
       },
       "language": "Python",
-      "stargazers_count": 92639
+      "stargazers_count": 92650
     },
     {
       "name": "doris",
@@ -1452,7 +1452,7 @@
         "login": "apache"
       },
       "language": "Java",
-      "stargazers_count": 15995
+      "stargazers_count": 15997
     },
     {
       "name": "awesome-n8n-templates",
@@ -1476,7 +1476,7 @@
         "login": "ClickHouse"
       },
       "language": "C++",
-      "stargazers_count": 50057
+      "stargazers_count": 50058
     },
     {
       "name": "windows-drag-and-drop",
@@ -1560,7 +1560,7 @@
         "login": "enescingoz"
       },
       "language": null,
-      "stargazers_count": 25558
+      "stargazers_count": 25565
     },
     {
       "name": "voice-chat",
@@ -1584,7 +1584,7 @@
         "login": "n8n-io"
       },
       "language": "TypeScript",
-      "stargazers_count": 205885
+      "stargazers_count": 205904
     },
     {
       "name": "filament-google-maps",
@@ -1632,7 +1632,7 @@
         "login": "expressjs"
       },
       "language": "JavaScript",
-      "stargazers_count": 69470
+      "stargazers_count": 69472
     },
     {
       "name": "whisper",
@@ -1644,7 +1644,7 @@
         "login": "openai"
       },
       "language": "Python",
-      "stargazers_count": 109561
+      "stargazers_count": 109562
     },
     {
       "name": "filament",
@@ -1680,7 +1680,7 @@
         "login": "laravel"
       },
       "language": "Blade",
-      "stargazers_count": 85007
+      "stargazers_count": 85008
     },
     {
       "name": "cakephp",
@@ -1704,7 +1704,7 @@
         "login": "YetiForceCompany"
       },
       "language": "PHP",
-      "stargazers_count": 1789
+      "stargazers_count": 1790
     },
     {
       "name": "bitmovin-player-web-samples",
@@ -1752,7 +1752,7 @@
         "login": "openlayers"
       },
       "language": "JavaScript",
-      "stargazers_count": 12590
+      "stargazers_count": 12592
     },
     {
       "name": "d3",
@@ -1788,7 +1788,7 @@
         "login": "magento"
       },
       "language": "PHP",
-      "stargazers_count": 12199
+      "stargazers_count": 12200
     },
     {
       "name": "opencart",
@@ -1836,7 +1836,7 @@
         "login": "jquery"
       },
       "language": "JavaScript",
-      "stargazers_count": 59786
+      "stargazers_count": 59785
     },
     {
       "name": "angular.js",
