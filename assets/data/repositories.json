@@ -602,10 +602,18 @@
       "archived": false
     },
     {
-      "name": "project-qr",
-      "url": "https://github.com/ildrm/project-qr",
-      "description": "Smart Gallery QR is a WordPress QR code plugin for creating secure digital galleries and shareable experiences with dynamic QR codes, encrypted image/PDF media, access control, invitations, workspace roles, scan analytics, and a React admin interface. Build private, public, password-protected, member-only or unlisted galleries.",
-      "language": "PHP",
+      "name": "private-id",
+      "url": "https://github.com/ildrm/private-id",
+      "description": "Privacy-preserving digital identity and verification infrastructure for secure user onboarding, identity proofs, KYC, authentication, and decentralized applications. Designed as an independent identity service for Web3, asset tokenization, relationship platforms, and privacy-focused applications.",
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "python-atlas-seo-auditor",
+      "url": "https://github.com/ildrm/python-atlas-seo-auditor",
+      "description": "Atlas is an open-source Python SEO auditor and technical SEO crawler for site audits. It runs 84 evidence-based checks for indexability, robots.txt, sitemaps, canonicals, hreflang, structured data, internal links, content, accessibility and Core Web Vitals, with Playwright rendering, Google Search Console, PSI/CrUX and offline HTML reports via CLI.",
+      "language": "Python",
       "fork": false,
       "archived": false
     },
@@ -618,10 +626,10 @@
       "archived": false
     },
     {
-      "name": "python-seo-auditor",
-      "url": "https://github.com/ildrm/python-seo-auditor",
-      "description": "Atlas is an open-source Python SEO auditor and technical SEO crawler for site audits. It runs 84 evidence-based checks for indexability, robots.txt, sitemaps, canonicals, hreflang, structured data, internal links, content, accessibility and Core Web Vitals, with Playwright rendering, Google Search Console, PSI/CrUX and offline HTML reports via CLI.",
-      "language": "Python",
+      "name": "qrlab-qr-generator",
+      "url": "https://github.com/ildrm/qrlab-qr-generator",
+      "description": "",
+      "language": "TypeScript",
       "fork": false,
       "archived": false
     },
@@ -669,6 +677,14 @@
       "name": "servex-warehouse",
       "url": "https://github.com/ildrm/servex-warehouse",
       "description": "",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "smart-gallery-qr",
+      "url": "https://github.com/ildrm/smart-gallery-qr",
+      "description": "Smart Gallery QR is a WordPress QR code plugin for creating secure digital galleries and shareable experiences with dynamic QR codes, encrypted image/PDF media, access control, invitations, workspace roles, scan analytics, and a React admin interface. Build private, public, password-protected, member-only or unlisted galleries.",
       "language": "PHP",
       "fork": false,
       "archived": false
