@@ -170,6 +170,14 @@
       "archived": false
     },
     {
+      "name": "drm",
+      "url": "https://github.com/ildrm/drm",
+      "description": "",
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false
+    },
+    {
       "name": "economy-os",
       "url": "https://github.com/ildrm/economy-os",
       "description": "EconomyOS is an open-source economic intelligence and research platform for point-in-time economic data, causal inference, forecasting, scenario analysis, systemic risk, and economic modeling. Built with TypeScript, Next.js, NestJS, PostgreSQL/TimescaleDB, and Temporal, with provenance, governance, and reproducible research.",
@@ -254,6 +262,14 @@
       "url": "https://github.com/ildrm/html-voice-to-voice",
       "description": "",
       "language": "HTML",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "human-resource-performance-evaluation",
+      "url": "https://github.com/ildrm/human-resource-performance-evaluation",
+      "description": "",
+      "language": null,
       "fork": false,
       "archived": false
     },
@@ -374,6 +390,14 @@
       "url": "https://github.com/ildrm/madar-investment-operations-platform",
       "description": "Open-source multi-tenant investment management and portfolio accounting platform for funds and asset managers. Supports NAV, double-entry fund accounting, investor onboarding, cash flows, trading, reconciliation, risk controls, fees, statements, audit trails, and investor portal. Built with React, Fastify, PostgreSQL, Docker, Terraform, and AWS.",
       "language": "TypeScript",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "marketing",
+      "url": "https://github.com/ildrm/marketing",
+      "description": "Relay is an open-source cross-channel advertising network sandbox for campaign booking, publisher placements, escrow, tracked links, click and conversion tracking, disputes, invoicing, settlement, and auditable ledgers, with sandbox messaging adapters for SMS, WhatsApp, email, RCS, and push. Built with Node.js, SQLite, and Docker.",
+      "language": "JavaScript",
       "fork": false,
       "archived": false
     },
