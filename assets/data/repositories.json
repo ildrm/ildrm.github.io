@@ -1058,6 +1058,14 @@
       "archived": false
     },
     {
+      "name": "wordpress-plugin-skelton-mvc-starter-kit",
+      "url": "https://github.com/ildrm/wordpress-plugin-skelton-mvc-starter-kit",
+      "description": "",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
       "name": "wordpress-repodocs-intelligence",
       "url": "https://github.com/ildrm/wordpress-repodocs-intelligence",
       "description": "RepoDocs Intelligence is a WordPress plugin that transforms GitHub, GitLab, Gitea and Forgejo repositories into living technical documentation with code intelligence, source browsing, API and dependency analysis, documentation health, secure webhooks, search, AI-assisted Q&A, and responsive developer docs.",
@@ -1077,6 +1085,14 @@
       "name": "wordpress-sso-provider",
       "url": "https://github.com/ildrm/wordpress-sso-provider",
       "description": "WordPress SSO Provider is a security-focused IAM and Single Sign-On foundation for WordPress. It includes application management, OAuth 2.0 + PKCE primitives, OpenID Connect discovery, SCIM filtering, CAS tickets, encrypted secrets, audit logging, REST admin APIs, policy/claims/session services, and extensible protocol adapters for modern sites.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "wordpress-theme-skelton-mvc-starter-kit",
+      "url": "https://github.com/ildrm/wordpress-theme-skelton-mvc-starter-kit",
+      "description": "",
       "language": "PHP",
       "fork": false,
       "archived": false
