@@ -138,6 +138,14 @@
       "archived": false
     },
     {
+      "name": "digital-rights-management-platform",
+      "url": "https://github.com/ildrm/digital-rights-management-platform",
+      "description": "Open-source digital rights management (DRM) and licensing platform in TypeScript for policy-based entitlements, device-bound signed licenses, encrypted content packaging, OIDC APIs, PostgreSQL, OpenBao and S3-compatible storage. A self-hosted foundation for secure digital content and software rights.",
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false
+    },
+    {
       "name": "direction-route",
       "url": "https://github.com/ildrm/direction-route",
       "description": "route backend service",
@@ -166,14 +174,6 @@
       "url": "https://github.com/ildrm/doris-jalali-date",
       "description": "A set of Java UDFs for Apache Doris enabling Jalali (Persian) calendar date conversions and operations.",
       "language": "Java",
-      "fork": false,
-      "archived": false
-    },
-    {
-      "name": "drm",
-      "url": "https://github.com/ildrm/drm",
-      "description": "",
-      "language": "TypeScript",
       "fork": false,
       "archived": false
     },
@@ -268,8 +268,8 @@
     {
       "name": "human-resource-performance-evaluation",
       "url": "https://github.com/ildrm/human-resource-performance-evaluation",
-      "description": "",
-      "language": null,
+      "description": "Early-stage open-source HR performance management and employee evaluation platform built with Next.js, NestJS and PostgreSQL. Supports role-based metrics, evidence-backed scoring, calibration, feedback, goals, development plans, appeals, audit trails and longitudinal analysis with traceable, versioned calculations.",
+      "language": "TypeScript",
       "fork": false,
       "archived": false
     },
@@ -652,7 +652,7 @@
     {
       "name": "qrlab-qr-generator",
       "url": "https://github.com/ildrm/qrlab-qr-generator",
-      "description": "",
+      "description": "Privacy-first, client-side QR code generator built with React, TypeScript and Vite. Create customizable QR codes for URLs, Wi-Fi, vCards, events and more; export PNG, SVG or PDF, batch-generate from CSV, verify scannability, save designs locally and work offline—no API, account or tracking.",
       "language": "TypeScript",
       "fork": false,
       "archived": false
@@ -1058,9 +1058,9 @@
       "archived": false
     },
     {
-      "name": "wordpress-plugin-skelton-mvc-starter-kit",
-      "url": "https://github.com/ildrm/wordpress-plugin-skelton-mvc-starter-kit",
-      "description": "",
+      "name": "wordpress-plugin-skeleton-mvc-starter-kit",
+      "url": "https://github.com/ildrm/wordpress-plugin-skeleton-mvc-starter-kit",
+      "description": "Production-minded WordPress MVC plugin starter kit for PHP 8.2+ with dependency injection, service providers, REST/AJAX/admin/CLI routing, form requests, actions, repositories, migrations, Cron jobs, blocks, Vite assets, PHPUnit, PHPStan and WordPress Coding Standards—without Laravel.",
       "language": "PHP",
       "fork": false,
       "archived": false
@@ -1090,9 +1090,9 @@
       "archived": false
     },
     {
-      "name": "wordpress-theme-skelton-mvc-starter-kit",
-      "url": "https://github.com/ildrm/wordpress-theme-skelton-mvc-starter-kit",
-      "description": "",
+      "name": "wordpress-theme-skeleton-mvc-starter-kit",
+      "url": "https://github.com/ildrm/wordpress-theme-skeleton-mvc-starter-kit",
+      "description": "Modern WordPress MVC theme starter kit for PHP 8.2+ with Laravel-inspired architecture. Includes dependency injection, service providers, semantic template routing, controllers, repositories, typed view data, REST/AJAX/admin routes, Vite assets, PHPUnit, PHPStan and WordPress Coding Standards.",
       "language": "PHP",
       "fork": false,
       "archived": false
