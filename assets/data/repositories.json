@@ -706,6 +706,14 @@
       "archived": false
     },
     {
+      "name": "session-streaming",
+      "url": "https://github.com/ildrm/session-streaming",
+      "description": "",
+      "language": "Python",
+      "fork": false,
+      "archived": false
+    },
+    {
       "name": "smart-gallery-qr",
       "url": "https://github.com/ildrm/smart-gallery-qr",
       "description": "Smart Gallery QR is a WordPress QR code plugin for creating secure digital galleries and shareable experiences with dynamic QR codes, encrypted image/PDF media, access control, invitations, workspace roles, scan analytics, and a React admin interface. Build private, public, password-protected, member-only or unlisted galleries.",
@@ -855,6 +863,14 @@
       "description": "A web app for voice-based interaction with an AI, transcribing speech and responding with text and audio.",
       "language": "JavaScript",
       "fork": false,
+      "archived": false
+    },
+    {
+      "name": "VoiceStudio",
+      "url": "https://github.com/ildrm/VoiceStudio",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "language": null,
+      "fork": true,
       "archived": false
     },
     {
@@ -1077,6 +1093,14 @@
       "name": "wordpress-rolechat-messenger",
       "url": "https://github.com/ildrm/wordpress-rolechat-messenger",
       "description": "Secure WordPress chat and messaging plugin with Telegram-inspired UI, role-based directional permissions, direct and group messaging, frontend support widget, contacts, reactions, presence, encrypted attachments, moderation, REST API, audit logs, RTL support, and scalable custom database tables.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "wordpress-social-relay",
+      "url": "https://github.com/ildrm/wordpress-social-relay",
+      "description": "",
       "language": "PHP",
       "fork": false,
       "archived": false
