@@ -250,6 +250,14 @@
       "archived": false
     },
     {
+      "name": "gravatar-clone",
+      "url": "https://github.com/ildrm/gravatar-clone",
+      "description": "",
+      "language": null,
+      "fork": false,
+      "archived": false
+    },
+    {
       "name": "ham-mahalleh",
       "url": "https://github.com/ildrm/ham-mahalleh",
       "description": "پلتفرم هم‌محله یک مارکت‌پلیس محلی و چندفروشنده است که با هدف اتصال فروشندگان و خریداران یک منطقه طراحی شده است. این پروژه امکاناتی مانند مدیریت فروشگاه، محصولات، سفارش‌ها، کاربران، پرداخت و پنل مدیریتی را فراهم می‌کند و بستری مناسب برای توسعه بازارهای آنلاین محلی و منطقه‌ای است.",
