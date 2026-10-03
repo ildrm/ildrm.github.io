@@ -196,7 +196,7 @@
     {
       "name": "external-request-manager-pro",
       "url": "https://github.com/ildrm/external-request-manager-pro",
-      "description": "",
+      "description": "WordPress HTTP API monitoring and firewall plugin for logging, inspecting, blocking and rate-limiting outbound requests by host. Includes redirect enforcement, response timing, URL history with secret redaction, multisite support, retention controls, audit logs and an admin dashboard.",
       "language": "PHP",
       "fork": true,
       "archived": false
@@ -246,14 +246,6 @@
       "url": "https://github.com/ildrm/google-book-writer",
       "description": "BOOKGEN-AI is a desktop AI writing tool that uses Google Gemini to turn a book idea into a complete manuscript through a structured workflow for planning, outlining, chapter writing, memory management, editing, and export. It supports multiple languages and lets users save, resume, and export their generated books as DOCX, PDF, Markdown, or TXT.",
       "language": "Python",
-      "fork": false,
-      "archived": false
-    },
-    {
-      "name": "gravatar-clone",
-      "url": "https://github.com/ildrm/gravatar-clone",
-      "description": "",
-      "language": null,
       "fork": false,
       "archived": false
     },
@@ -442,6 +434,14 @@
       "archived": false
     },
     {
+      "name": "moshaver",
+      "url": "https://github.com/ildrm/moshaver",
+      "description": "Open-source, role-aware education platform for student planning, learning, assessment, communication, reporting, and follow-up. Built with React, NestJS, Tauri, and TypeScript.",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
       "name": "mui-php-form-builder",
       "url": "https://github.com/ildrm/mui-php-form-builder",
       "description": "",
@@ -518,6 +518,14 @@
       "url": "https://github.com/ildrm/open-source-ai-interview-platform",
       "description": "Open-source, self-hosted AI interview platform for human-reviewed hiring workflows. Includes job templates, candidate invitations, consent and device checks, live interview rooms, transcription, evidence-based scoring, reviewer approval, audit logs, and role-based access. Built with React, FastAPI, Whisper, Llama, LiveKit, Docker, and Kubernetes.",
       "language": "Python",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "orbit-identity-gravatar-clone",
+      "url": "https://github.com/ildrm/orbit-identity-gravatar-clone",
+      "description": "Privacy-first Gravatar alternative and identity platform built with Next.js, NestJS, PostgreSQL, Redis and S3. Supports avatars, profiles, passkeys, TOTP, OAuth PKCE, WebFinger, vCard, federation, private credentials/DID, custom domains, migration, moderation, analytics and WordPress integrations.",
+      "language": "TypeScript",
       "fork": false,
       "archived": false
     },
@@ -716,7 +724,7 @@
     {
       "name": "session-streaming",
       "url": "https://github.com/ildrm/session-streaming",
-      "description": "",
+      "description": "Self-hosted paid live-event streaming platform with FastAPI, Next.js, PostgreSQL, Redis, Stripe, MediaMTX, HLS, FFmpeg, Celery and S3. Includes browser broadcasting, paywalled live playback, entitlements, playback leases, protected media delivery and replay/VOD processing.",
       "language": "Python",
       "fork": false,
       "archived": false
@@ -1108,7 +1116,7 @@
     {
       "name": "wordpress-social-relay",
       "url": "https://github.com/ildrm/wordpress-social-relay",
-      "description": "",
+      "description": "WordPress social publishing automation plugin that sends first-publication content to Telegram or signed HTTPS webhooks using rule-based recipes. Supports custom post types and WooCommerce products, templates, taxonomy/field conditions, HMAC signatures, idempotency, retries and a bounded WP-Cron queue.",
       "language": "PHP",
       "fork": false,
       "archived": false
