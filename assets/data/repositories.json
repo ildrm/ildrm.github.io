@@ -314,6 +314,14 @@
       "archived": false
     },
     {
+      "name": "insurance-platform",
+      "url": "https://github.com/ildrm/insurance-platform",
+      "description": "",
+      "language": null,
+      "fork": false,
+      "archived": false
+    },
+    {
       "name": "interviewflow-lite-interview-scheduling-platform",
       "url": "https://github.com/ildrm/interviewflow-lite-interview-scheduling-platform",
       "description": "Open-source, self-hosted interview scheduling and recruiting orchestration platform for hiring teams. Supports candidate self-scheduling, interviewer pools, panel interviews, rooms, calendar sync, scorecards, debriefs, hiring decisions, audit logs, ATS webhooks, Next.js, NestJS, MySQL, Docker Compose, CalDAV, ICS, and OpenAPI.",
@@ -406,6 +414,14 @@
       "url": "https://github.com/ildrm/md2pdf-plantuml",
       "description": "A fast and automated Markdown-to-PDF converter that detects PlantUML diagrams, renders them in parallel, and embeds them seamlessly into the final document.",
       "language": "Python",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "measure-prep",
+      "url": "https://github.com/ildrm/measure-prep",
+      "description": "IELTS, TOEFL iBT, and GRE practice platform built with Next.js, NestJS, Prisma, MySQL, Redis, and Docker. Includes timed mock exams, adaptive GRE testing, automated and AI-assisted scoring, speaking and writing workflows, autosave, test analytics, content management, secure media, role-based admin tools, and REST API documentation.",
+      "language": "TypeScript",
       "fork": false,
       "archived": false
     },
@@ -546,6 +562,14 @@
       "archived": false
     },
     {
+      "name": "PayCore",
+      "url": "https://github.com/ildrm/PayCore",
+      "description": "",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
       "name": "persian_tts",
       "url": "https://github.com/ildrm/persian_tts",
       "description": "Persian text-to-speech with voice cloning, fully offline on CPU (ONNX + torch paths)",
@@ -618,6 +642,14 @@
       "archived": false
     },
     {
+      "name": "polymarket-kalshi-weather-bot",
+      "url": "https://github.com/ildrm/polymarket-kalshi-weather-bot",
+      "description": "Multi-platform prediction market trading bot: trades weather temperature markets on Kalshi (KXHIGH series) and Polymarket using 31-member GFS ensemble forecasts + BTC 5-min microstructure signals. Kelly criterion sizing, signal calibration, React dashboard. (Highest profits $1.8k)",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
       "name": "postiz-app",
       "url": "https://github.com/ildrm/postiz-app",
       "description": "📨 The ultimate agentic social media scheduling tool 🤖",
@@ -687,6 +719,14 @@
       "description": "Privacy-first social and relationship network for consent-based discovery, identity verification, privacy-scoped profiles, relationship structures, matching, mutual reveal, messaging, couple and group profiles, safety moderation, blocking, reporting, and appeals.",
       "language": "TypeScript",
       "fork": false,
+      "archived": false
+    },
+    {
+      "name": "roboinsta",
+      "url": "https://github.com/ildrm/roboinsta",
+      "description": "",
+      "language": null,
+      "fork": true,
       "archived": false
     },
     {
@@ -850,6 +890,14 @@
       "archived": false
     },
     {
+      "name": "totp",
+      "url": "https://github.com/ildrm/totp",
+      "description": "",
+      "language": null,
+      "fork": false,
+      "archived": false
+    },
+    {
       "name": "ubuntu-hardener",
       "url": "https://github.com/ildrm/ubuntu-hardener",
       "description": "This script automates basic security hardening for Ubuntu servers.",
@@ -863,6 +911,14 @@
       "description": "",
       "language": null,
       "fork": true,
+      "archived": false
+    },
+    {
+      "name": "velora-creator-platform",
+      "url": "https://github.com/ildrm/velora-creator-platform",
+      "description": "Velora Creator Platform is an open-source creator economy and community platform for content creators to publish digital content, grow audiences, build memberships, engage followers, and monetize their work. A modern foundation for creator tools, subscriptions, social experiences, and scalable creator communities.",
+      "language": "HTML",
+      "fork": false,
       "archived": false
     },
     {
@@ -958,6 +1014,14 @@
       "url": "https://github.com/ildrm/woocommerce-loyaltyforge",
       "description": "LoyaltyForge is a WooCommerce loyalty and rewards plugin for customer points, membership tiers, referrals, reward coupons, earning campaigns, point expiration and refund reversals. Features an auditable points ledger, HPOS & Cart/Checkout Blocks support, REST APIs, customer dashboards, admin tools and extensible loyalty automation for online shops.",
       "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "woocommerce-marketing",
+      "url": "https://github.com/ildrm/woocommerce-marketing",
+      "description": "",
+      "language": null,
       "fork": false,
       "archived": false
     },
