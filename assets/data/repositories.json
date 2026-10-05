@@ -316,8 +316,8 @@
     {
       "name": "insurance-platform",
       "url": "https://github.com/ildrm/insurance-platform",
-      "description": "",
-      "language": null,
+      "description": "Open-source B2B/B2C insurance platform built with Next.js, NestJS, PostgreSQL, Temporal, NATS, S3 and Docker. Includes quotes, underwriting, policy issuance, renewals, claims, payments, complaints, insurer and partner portals, audit trails, secure document handling, APIs, webhooks and workflow automation.",
+      "language": "TypeScript",
       "fork": false,
       "archived": false
     },
@@ -786,6 +786,14 @@
       "archived": false
     },
     {
+      "name": "still-local-first-authenticator-totp-hotp-mfa-webauthn-passkeys",
+      "url": "https://github.com/ildrm/still-local-first-authenticator-totp-hotp-mfa-webauthn-passkeys",
+      "description": "Secure TOTP/HOTP authenticator and MFA vault with local-first offline OTP generation, encrypted IndexedDB storage, QR scanning, encrypted backups, WebAuthn passkeys, end-to-end encrypted sync, shared vaults, device pairing, privacy mode and an optional developer MFA verification API.",
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false
+    },
+    {
       "name": "superset",
       "url": "https://github.com/ildrm/superset",
       "description": "Apache Superset is a Data Visualization and Data Exploration Platform",
@@ -886,14 +894,6 @@
       "url": "https://github.com/ildrm/test-timetracker",
       "description": "",
       "language": "PHP",
-      "fork": false,
-      "archived": false
-    },
-    {
-      "name": "totp",
-      "url": "https://github.com/ildrm/totp",
-      "description": "",
-      "language": null,
       "fork": false,
       "archived": false
     },
@@ -1018,10 +1018,10 @@
       "archived": false
     },
     {
-      "name": "woocommerce-marketing",
-      "url": "https://github.com/ildrm/woocommerce-marketing",
-      "description": "",
-      "language": null,
+      "name": "woocommerce-marketing-os",
+      "url": "https://github.com/ildrm/woocommerce-marketing-os",
+      "description": "WooCommerce marketing automation plugin for WordPress with campaigns, customer segmentation, automation workflows, consent, multi-channel providers, first-party tracking, QR campaigns, loyalty, referrals, affiliates, coupons, attribution, A/B testing, recommendations, personalization, analytics and durable workers.",
+      "language": "PHP",
       "fork": false,
       "archived": false
     },
@@ -1029,6 +1029,14 @@
       "name": "woocommerce-marketplace-suite",
       "url": "https://github.com/ildrm/woocommerce-marketplace-suite",
       "description": "Open-source modular multi-vendor marketplace framework for WooCommerce with vendor lifecycle management, product ownership, commission primitives, double-entry ledger foundations, REST APIs, idempotent financial operations, and HPOS/Cart & Checkout Blocks compatibility for secure WordPress marketplace development.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "woocommerce-wallet-platform",
+      "url": "https://github.com/ildrm/woocommerce-wallet-platform",
+      "description": "WooCommerce wallet and store credit plugin for WordPress with a ledger-first architecture. Supports customer balances, wallet checkout, funding, holds, refunds, reconciliation, REST API, WP-CLI, reports, privacy tools, WooCommerce Blocks, idempotent transactions, audit logs and financial controls.",
       "language": "PHP",
       "fork": false,
       "archived": false
