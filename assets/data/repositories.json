@@ -1074,6 +1074,38 @@
       "archived": false
     },
     {
+      "name": "wordpress-bbpress-plugin",
+      "url": "https://github.com/ildrm/wordpress-bbpress-plugin",
+      "description": "",
+      "language": null,
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "wordpress-buddypress-plugin",
+      "url": "https://github.com/ildrm/wordpress-buddypress-plugin",
+      "description": "Open-source WordPress BuddyPress community and social network plugin for member discovery, activity feeds, Q&A, skills and expertise search, moderation, privacy controls, reports, automations, analytics, REST API, and WordPress Multisite. BuddyPress Intelligence runs locally with no separate app server and supports optional AI providers.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "wordpress-control-contents",
+      "url": "https://github.com/ildrm/wordpress-control-contents",
+      "description": "",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "wordpress-control-uploads",
+      "url": "https://github.com/ildrm/wordpress-control-uploads",
+      "description": "",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
       "name": "wordpress-fetch",
       "url": "https://github.com/ildrm/wordpress-fetch",
       "description": "WordPress Fetch is a secure RSS/Atom feed importer and content syndication plugin for WordPress. Import, transform and map RSS 2.0, RDF, Atom and OPML feeds into posts with deduplication, media handling, editorial rules, queues, REST API, WP-CLI, monitoring and SEO controls for canonicals, noindex and syndicated content.",
