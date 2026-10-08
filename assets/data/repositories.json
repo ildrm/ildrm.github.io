@@ -234,6 +234,14 @@
       "archived": false
     },
     {
+      "name": "geo-sleuth",
+      "url": "https://github.com/ildrm/geo-sleuth",
+      "description": "An agent skill that finds where a photo was taken — OpenStreetMap geometry, elevation skylines, satellite imagery and street view — and shows its work. Works with Claude Code, Codex, Cursor, Gemini CLI, OpenCode and GitHub Copilot.",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
       "name": "gods-eye-view",
       "url": "https://github.com/ildrm/gods-eye-view",
       "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
@@ -1197,6 +1205,14 @@
       "name": "wordpress-plugin-skeleton-mvc-starter-kit",
       "url": "https://github.com/ildrm/wordpress-plugin-skeleton-mvc-starter-kit",
       "description": "Production-minded WordPress MVC plugin starter kit for PHP 8.2+ with dependency injection, service providers, REST/AJAX/admin/CLI routing, form requests, actions, repositories, migrations, Cron jobs, blocks, Vite assets, PHPUnit, PHPStan and WordPress Coding Standards—without Laravel.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "wordpress-publishing-calendar",
+      "url": "https://github.com/ildrm/wordpress-publishing-calendar",
+      "description": "",
       "language": "PHP",
       "fork": false,
       "archived": false
