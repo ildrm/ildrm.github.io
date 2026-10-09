@@ -242,6 +242,14 @@
       "archived": false
     },
     {
+      "name": "global-financial-operating-system",
+      "url": "https://github.com/ildrm/global-financial-operating-system",
+      "description": "",
+      "language": null,
+      "fork": false,
+      "archived": false
+    },
+    {
       "name": "gods-eye-view",
       "url": "https://github.com/ildrm/gods-eye-view",
       "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
@@ -1100,7 +1108,7 @@
     {
       "name": "wordpress-control-contents",
       "url": "https://github.com/ildrm/wordpress-control-contents",
-      "description": "",
+      "description": "WordPress content moderation and profanity filtering plugin (development preview) for posts, pages and comments. Use Unicode-aware term matching, Persian/Arabic normalization, versioned policy rules, shadow mode, pending-review enforcement, a moderation playground and privacy-focused audit logs. Not production-ready.",
       "language": "PHP",
       "fork": false,
       "archived": false
@@ -1108,7 +1116,7 @@
     {
       "name": "wordpress-control-uploads",
       "url": "https://github.com/ildrm/wordpress-control-uploads",
-      "description": "",
+      "description": "WordPress upload security and content firewall plugin (engineering preview). Privately inspect uploaded files with policy rules, ClamD malware scanning, DLP/QR checks, image and SVG reconstruction, human review, audit logs, privacy controls and optional third-party scanners. Not production-ready.",
       "language": "PHP",
       "fork": false,
       "archived": false
@@ -1212,7 +1220,7 @@
     {
       "name": "wordpress-publishing-calendar",
       "url": "https://github.com/ildrm/wordpress-publishing-calendar",
-      "description": "",
+      "description": "Read-only WordPress editorial and publishing calendar plugin for scheduled posts and custom post types. Browse monthly schedules, filter post types, view authors, exact site-time publication dates, previews and missed-schedule diagnostics. Timezone-aware, permission-safe, accessible, and powered by FullCalendar.",
       "language": "PHP",
       "fork": false,
       "archived": false
