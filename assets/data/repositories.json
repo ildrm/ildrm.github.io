@@ -1018,6 +1018,14 @@
       "archived": false
     },
     {
+      "name": "woocommerce-app-auto-print",
+      "url": "https://github.com/ildrm/woocommerce-app-auto-print",
+      "description": "",
+      "language": null,
+      "fork": false,
+      "archived": false
+    },
+    {
       "name": "woocommerce-disable-gateway-by-coupon",
       "url": "https://github.com/ildrm/woocommerce-disable-gateway-by-coupon",
       "description": "Allow selecting payment gateway(s) in coupon edit screen which will be disabled for customers who apply that coupon.",
@@ -1092,8 +1100,8 @@
     {
       "name": "wordpress-bbpress-plugin",
       "url": "https://github.com/ildrm/wordpress-bbpress-plugin",
-      "description": "",
-      "language": null,
+      "description": "Forum Intelligence for bbPress is an open-source WordPress plugin that upgrades forums with accepted answers, advanced search, optional semantic search and citation-grounded AI answers, knowledge bases, duplicate detection, moderation, reputation, polls, notifications and private messaging—all with permission-aware access controls.",
+      "language": "PHP",
       "fork": false,
       "archived": false
     },
