@@ -245,7 +245,7 @@
       "name": "global-financial-operating-system",
       "url": "https://github.com/ildrm/global-financial-operating-system",
       "description": "",
-      "language": null,
+      "language": "TypeScript",
       "fork": false,
       "archived": false
     },
@@ -1020,8 +1020,8 @@
     {
       "name": "woocommerce-app-auto-print",
       "url": "https://github.com/ildrm/woocommerce-app-auto-print",
-      "description": "",
-      "language": null,
+      "description": "WooCommerce automatic order printing desktop app built with Rust, Tauri 2, React and TypeScript. Sync multiple stores, route orders to printers, design invoice and receipt templates, configure A4 and thermal paper sizes, and monitor a persistent print queue. Includes background processing, PDF output, multilingual RTL UI and crash recovery.",
+      "language": "TypeScript",
       "fork": false,
       "archived": false
     },
@@ -1092,7 +1092,7 @@
     {
       "name": "wordpress-auto-print-order-invoice",
       "url": "https://github.com/ildrm/wordpress-auto-print-order-invoice",
-      "description": "WordPress WooCommerce invoice printer plugin with automatic order printing via PrintNode, PDF invoice generation, HPOS support, RTL-ready templates, manual and bulk printing, print-job history, safe retries, and customizable invoice layouts for eCommerce stores.",
+      "description": "Open-source WooCommerce automatic invoice printing plugin for WordPress. Print paid orders via a free Windows, macOS or Linux print agent or self-hosted CUPS. Includes PDF invoices, A4/A5 layouts, 58/80mm thermal receipts, shipping labels, packing lists, bulk printing, HPOS support, multilingual RTL templates and print-job tracking.",
       "language": "PHP",
       "fork": false,
       "archived": false
