@@ -26,6 +26,22 @@
       "archived": false
     },
     {
+      "name": "artcraft",
+      "url": "https://github.com/ildrm/artcraft",
+      "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
+      "name": "artcraftx",
+      "url": "https://github.com/ildrm/artcraftx",
+      "description": "ArtCraft-X",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
       "name": "asset-token",
       "url": "https://github.com/ildrm/asset-token",
       "description": "Generic asset tokenization and digital asset management platform for registering assets, ownership units, rights, restrictions, offerings, transfers, portfolios, custody, valuations, distributions, and compliance. Built for tokenized real-world assets, digital assets, investment products, and programmable ownership.",
@@ -130,6 +146,22 @@
       "archived": false
     },
     {
+      "name": "deckcraft",
+      "url": "https://github.com/ildrm/deckcraft",
+      "description": "Presentations and slide shows: an open-source, clean-room reimplementation of Microsoft PowerPoint in pure Rust. Part of the ArtCraft Crafting Apps.",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
+      "name": "designcraft",
+      "url": "https://github.com/ildrm/designcraft",
+      "description": "DesignCraft: An open-source page and layout design editor written by scratch in pure Rust",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
       "name": "digikala-mcp",
       "url": "https://github.com/ildrm/digikala-mcp",
       "description": "MCP server for Digikala: search, compare and price-check products on Iran's largest marketplace. Read-only, no API key. 16 tools, hosted on Cloudflare Workers.",
@@ -210,6 +242,14 @@
       "archived": false
     },
     {
+      "name": "filmcraft",
+      "url": "https://github.com/ildrm/filmcraft",
+      "description": "FilmCraft: An open-source, nonlinear video editor written by scratch in pure Rust",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
       "name": "foreign-exchange-crisis-early-warning-system",
       "url": "https://github.com/ildrm/foreign-exchange-crisis-early-warning-system",
       "description": "FX-CPM is an open-source foreign exchange crisis early warning system for probabilistic forecasting of currency, banking, sovereign, monetary, political and conflict risks. It combines regime-aware Forex indicators, macro-financial data, calibrated models, historical backtesting, alerts, and professional HTML/PDF risk reports.",
@@ -244,7 +284,7 @@
     {
       "name": "global-financial-operating-system",
       "url": "https://github.com/ildrm/global-financial-operating-system",
-      "description": "",
+      "description": "GFOS is an open-source financial operating system for personal, household, and small-business finance. Built with Next.js, NestJS, TypeScript, and PostgreSQL, its development-stage core supports double-entry accounting, income and expense tracking, transfers, borrowing, immutable ledgers, account balances, audit trails, and cash flow reports.",
       "language": "TypeScript",
       "fork": false,
       "archived": false
@@ -399,6 +439,14 @@
       "description": "Ledgerly is an open-source international multi-tenant accounting platform with an immutable double-entry ledger, exact decimal money, multi-currency primitives, journal posting/reversals, trial balance, fiscal periods, audit trails, REST/OpenAPI, PostgreSQL RLS, and 11-language RTL/Jalali localization. Built with TypeScript, Next.js and NestJS.",
       "language": "TypeScript",
       "fork": false,
+      "archived": false
+    },
+    {
+      "name": "lightcraft",
+      "url": "https://github.com/ildrm/lightcraft",
+      "description": "LightCraft: An open-source non-destructive photo editor written by scratch in pure Rust",
+      "language": null,
+      "fork": true,
       "archived": false
     },
     {
@@ -586,6 +634,14 @@
       "archived": false
     },
     {
+      "name": "pdfcraft",
+      "url": "https://github.com/ildrm/pdfcraft",
+      "description": "PdfCraft: An open-source PDF reader and editor written by scratch in pure Rust",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
       "name": "persian_tts",
       "url": "https://github.com/ildrm/persian_tts",
       "description": "Persian text-to-speech with voice cloning, fully offline on CPU (ONNX + torch paths)",
@@ -599,6 +655,14 @@
       "description": "",
       "language": "PHP",
       "fork": false,
+      "archived": false
+    },
+    {
+      "name": "photocraft",
+      "url": "https://github.com/ildrm/photocraft",
+      "description": "PhotoCraft: An open-source, photo editor written by scratch in pure Rust",
+      "language": null,
+      "fork": true,
       "archived": false
     },
     {
@@ -791,6 +855,14 @@
       "description": "Smart Gallery QR is a WordPress QR code plugin for creating secure digital galleries and shareable experiences with dynamic QR codes, encrypted image/PDF media, access control, invitations, workspace roles, scan analytics, and a React admin interface. Build private, public, password-protected, member-only or unlisted galleries.",
       "language": "PHP",
       "fork": false,
+      "archived": false
+    },
+    {
+      "name": "soundcraft",
+      "url": "https://github.com/ildrm/soundcraft",
+      "description": "An open-source, clean-room reimplementation of Avid Pro Tools in pure Rust",
+      "language": null,
+      "fork": true,
       "archived": false
     },
     {
@@ -1034,6 +1106,14 @@
       "archived": false
     },
     {
+      "name": "woocommerce-invoice-printer-for-auto-printing",
+      "url": "https://github.com/ildrm/woocommerce-invoice-printer-for-auto-printing",
+      "description": "Open-source WooCommerce automatic invoice printing plugin for WordPress. Print paid orders via a free Windows, macOS or Linux print agent or self-hosted CUPS. Includes PDF invoices, A4/A5 layouts, 58/80mm thermal receipts, shipping labels, packing lists, bulk printing, HPOS support, multilingual RTL templates and print-job tracking.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
       "name": "woocommerce-loyaltyforge",
       "url": "https://github.com/ildrm/woocommerce-loyaltyforge",
       "description": "LoyaltyForge is a WooCommerce loyalty and rewards plugin for customer points, membership tiers, referrals, reward coupons, earning campaigns, point expiration and refund reversals. Features an auditable points ledger, HPOS & Cart/Checkout Blocks support, REST APIs, customer dashboards, admin tools and extensible loyalty automation for online shops.",
@@ -1066,6 +1146,14 @@
       "archived": false
     },
     {
+      "name": "wordcraft",
+      "url": "https://github.com/ildrm/wordcraft",
+      "description": "An open-source, clean-room reimplementation of Microsoft Word in pure Rust",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
       "name": "wordpress-aegisguard-security",
       "url": "https://github.com/ildrm/wordpress-aegisguard-security",
       "description": "AegisGuard Security is an open-source WordPress security plugin featuring a Web Application Firewall (WAF), malware scanner, file integrity monitoring, TOTP MFA, brute-force/login protection, WordPress hardening, audit logs, incident detection, encrypted quarantine, WP-CLI tools, and WooCommerce security monitoring.",
@@ -1085,14 +1173,6 @@
       "name": "wordpress-appbridge-api-gateway",
       "url": "https://github.com/ildrm/wordpress-appbridge-api-gateway",
       "description": "Secure WordPress REST API gateway plugin for mobile apps, headless WordPress/PWA frontends and automation. Features bearer authentication, refresh-token rotation, CORS, rate limiting, HMAC webhooks, notifications and device sessions, with WooCommerce, ACF, Gravity Forms, Flutter, React Native, Android and iOS support.",
-      "language": "PHP",
-      "fork": false,
-      "archived": false
-    },
-    {
-      "name": "wordpress-auto-print-order-invoice",
-      "url": "https://github.com/ildrm/wordpress-auto-print-order-invoice",
-      "description": "Open-source WooCommerce automatic invoice printing plugin for WordPress. Print paid orders via a free Windows, macOS or Linux print agent or self-hosted CUPS. Includes PDF invoices, A4/A5 layouts, 58/80mm thermal receipts, shipping labels, packing lists, bulk printing, HPOS support, multilingual RTL templates and print-job tracking.",
       "language": "PHP",
       "fork": false,
       "archived": false
