@@ -114,6 +114,14 @@
       "archived": false
     },
     {
+      "name": "cadcraft",
+      "url": "https://github.com/ildrm/cadcraft",
+      "description": "CADCraft: computer-aided design and drafting — an open-source, clean-room AutoCAD-style app in pure Rust",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
       "name": "casaura-real-estate",
       "url": "https://github.com/ildrm/casaura-real-estate",
       "description": "Casaura is an API-first, multi-tenant real estate marketplace and agency platform built with Laravel and Next.js. It combines property listings, agency workflows, RESO data ingestion, collaborative discovery, AI-powered search, Stripe billing and promotion tools in a production-ready, scalable architecture.",
@@ -215,6 +223,14 @@
       "description": "EconomyOS is an open-source economic intelligence and research platform for point-in-time economic data, causal inference, forecasting, scenario analysis, systemic risk, and economic modeling. Built with TypeScript, Next.js, NestJS, PostgreSQL/TimescaleDB, and Temporal, with provenance, governance, and reproducible research.",
       "language": "TypeScript",
       "fork": false,
+      "archived": false
+    },
+    {
+      "name": "effectcraft",
+      "url": "https://github.com/ildrm/effectcraft",
+      "description": "EffectCraft: An open-source motion graphics and compositing tool written by scratch in pure Rust",
+      "language": null,
+      "fork": true,
       "archived": false
     },
     {
@@ -997,6 +1013,14 @@
       "name": "URL-shortener",
       "url": "https://github.com/ildrm/URL-shortener",
       "description": "",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
+      "name": "vectorcraft",
+      "url": "https://github.com/ildrm/vectorcraft",
+      "description": "VectorCraft: An open-source, vector art tool written by scratch in pure Rust",
       "language": null,
       "fork": true,
       "archived": false
