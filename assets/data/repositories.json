@@ -618,6 +618,14 @@
       "archived": false
     },
     {
+      "name": "OpenTerminal",
+      "url": "https://github.com/ildrm/OpenTerminal",
+      "description": "A Terminal-style trading dashboard built entirely on free public market data. No API keys, no subscriptions.",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
       "name": "orbit-identity-gravatar-clone",
       "url": "https://github.com/ildrm/orbit-identity-gravatar-clone",
       "description": "Privacy-first Gravatar alternative and identity platform built with Next.js, NestJS, PostgreSQL, Redis and S3. Supports avatars, profiles, passkeys, TOTP, OAuth PKCE, WebFinger, vCard, federation, private credentials/DID, custom domains, migration, moderation, analytics and WordPress integrations.",
