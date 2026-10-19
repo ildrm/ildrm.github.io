@@ -986,6 +986,14 @@
       "archived": false
     },
     {
+      "name": "telegram-wallet-bot",
+      "url": "https://github.com/ildrm/telegram-wallet-bot",
+      "description": "",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
       "name": "telegram-woocommerce-bot",
       "url": "https://github.com/ildrm/telegram-woocommerce-bot",
       "description": "Telegram WooCommerce Bot is a PHP Telegram storefront bot that connects to WooCommerce and lets customers browse products, choose variations, manage carts, apply coupons, complete checkout, track orders, receive order updates, manage wishlists, and interact with a store directly inside Telegram.",
