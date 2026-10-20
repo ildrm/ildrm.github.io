@@ -10,6 +10,14 @@
       "archived": false
     },
     {
+      "name": "ad-pilot",
+      "url": "https://github.com/ildrm/ad-pilot",
+      "description": "",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
       "name": "All-Url-Uploader",
       "url": "https://github.com/ildrm/All-Url-Uploader",
       "description": "A simple telegram Bot, Upload Media File| video To telegram using the direct download link. (youtube, Mediafire, google drive, mega drive, etc)",
@@ -146,6 +154,14 @@
       "archived": false
     },
     {
+      "name": "cod-verity",
+      "url": "https://github.com/ildrm/cod-verity",
+      "description": "",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
       "name": "countries-investment-model",
       "url": "https://github.com/ildrm/countries-investment-model",
       "description": "A Python-based country investment analysis framework that uses official central-bank and macroeconomic data to detect economic regimes, evaluate inflation, growth, interest rates and liquidity, and score assets such as stocks, bonds, gold, currencies and real estate across multiple countries.",
@@ -255,6 +271,14 @@
       "description": "Ferrum API is a local-first, native Postman alternative built in Rust for API development, REST API testing, and HTTP requests. Organize collections, environments, variables, and history in a fast egui desktop app with SQLite persistence, streamed responses, secure secret storage, and cross-platform support for Windows, Linux, and macOS.",
       "language": "Rust",
       "fork": false,
+      "archived": false
+    },
+    {
+      "name": "Filee",
+      "url": "https://github.com/ildrm/Filee",
+      "description": "Free, open-source file converter. Convert 244+ formats offline by drag & drop — images, PDF, Word, Excel, PowerPoint, HWP/HWPX, video, audio, e-books and archives. No upload, no Office needed.",
+      "language": null,
+      "fork": true,
       "archived": false
     },
     {
@@ -418,6 +442,14 @@
       "archived": false
     },
     {
+      "name": "Kronos",
+      "url": "https://github.com/ildrm/Kronos",
+      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
       "name": "laravel-crm",
       "url": "https://github.com/ildrm/laravel-crm",
       "description": "Open-source Laravel 13 CRM built with PHP 8.3+ and Filament 4 for customer relationship management and sales workflows. Manage leads, contacts, companies, deals, tasks, projects, campaigns, activities, public forms, reports, REST APIs, role-based permissions, queued email, audit logs, encrypted integrations, and secure backups.",
@@ -438,6 +470,14 @@
       "url": "https://github.com/ildrm/laravel-organization-document-manager",
       "description": "Laravel Organization Document Manager is a multi-tenant Laravel and Filament system for building forms, managing documents and attachments, automating email reminders, organizing private and team chats, generating reports, and controlling role-based access, with English, Persian, and Jalali date support for organizations of all sizes and workflows!",
       "language": "JavaScript",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "leadflow-ai",
+      "url": "https://github.com/ildrm/leadflow-ai",
+      "description": "",
+      "language": "TypeScript",
       "fork": false,
       "archived": false
     },
@@ -922,6 +962,14 @@
       "archived": false
     },
     {
+      "name": "tele-tire",
+      "url": "https://github.com/ildrm/tele-tire",
+      "description": "",
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false
+    },
+    {
       "name": "telegram-anonymous-message-bot",
       "url": "https://github.com/ildrm/telegram-anonymous-message-bot",
       "description": "Telegram Anonymous Message Bot is a single-file PHP bot that lets users create anonymous inbox links, receive hidden messages, and optionally reply through private threaded conversations. It uses SQLite for users, inboxes, routing, rate limits, and abuse protection, keeping Telegram identities hidden while managing delivery and audit logs privately",
@@ -1381,6 +1429,14 @@
       "name": "wordpress-sso-provider",
       "url": "https://github.com/ildrm/wordpress-sso-provider",
       "description": "WordPress SSO Provider is a security-focused IAM and Single Sign-On foundation for WordPress. It includes application management, OAuth 2.0 + PKCE primitives, OpenID Connect discovery, SCIM filtering, CAS tickets, encrypted secrets, audit logging, REST admin APIs, policy/claims/session services, and extensible protocol adapters for modern sites.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "wordpress-subsidiary-vault-knowledge-management",
+      "url": "https://github.com/ildrm/wordpress-subsidiary-vault-knowledge-management",
+      "description": "Enterprise Document & Knowledge Management for WordPress",
       "language": "PHP",
       "fork": false,
       "archived": false
