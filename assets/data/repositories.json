@@ -90,6 +90,14 @@
       "archived": false
     },
     {
+      "name": "awesome-iran-mcp",
+      "url": "https://github.com/ildrm/awesome-iran-mcp",
+      "description": "24 MCP servers (385 tools) that give AI agents the Iranian web: Digikala, Torob, Divar, Snappfood, Jabama, MrBilit, Paziresh24, Taaghche and more. Prices in Toman.",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
       "name": "awesome-llm-apps",
       "url": "https://github.com/ildrm/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
