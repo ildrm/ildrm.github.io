@@ -164,7 +164,7 @@
     {
       "name": "cod-verity",
       "url": "https://github.com/ildrm/cod-verity",
-      "description": "",
+      "description": "CODVerity is a WordPress WooCommerce cash-on-delivery (COD) order verification plugin. Verify customer intent through secure email confirmation links, hold pending orders, automate reminders and expiry, review duplicate-order warnings, and manage verification queues, reports, audit logs and CSV exports. Supports HPOS and Checkout Blocks.",
       "language": "PHP",
       "fork": false,
       "archived": false
@@ -484,7 +484,7 @@
     {
       "name": "leadflow-ai",
       "url": "https://github.com/ildrm/leadflow-ai",
-      "description": "",
+      "description": "LeadFlow AI is a multi-tenant salon CRM and appointment booking platform for nonmedical beauty businesses. Capture inquiries, track leads, manage follow-ups, schedule conflict-free appointments, queue email notifications and measure conversions. Built with Next.js, TypeScript, Prisma, PostgreSQL and BullMQ. Local MVP; autonomous AI not implemented.",
       "language": "TypeScript",
       "fork": false,
       "archived": false
@@ -972,7 +972,7 @@
     {
       "name": "tele-tire",
       "url": "https://github.com/ildrm/tele-tire",
-      "description": "",
+      "description": "TeleTier is an open-source Telegram Stars membership management platform for paid Telegram groups and channels. Manage subscription plans, payments, refunds, join requests, renewals, access expiry, reminders and audit trails from a Next.js dashboard with NestJS, PostgreSQL and BullMQ. Locally tested; live Telegram integration pending.",
       "language": "TypeScript",
       "fork": false,
       "archived": false
@@ -1044,7 +1044,7 @@
     {
       "name": "telegram-wallet-bot",
       "url": "https://github.com/ildrm/telegram-wallet-bot",
-      "description": "",
+      "description": "Telegram cryptocurrency wallet bot sandbox built with Laravel, PHP and MySQL. Simulates Ethereum (ETH) deposits, internal transfers, withdrawals, balances, fee settlement and reconciliation using an immutable double-entry ledger, role-based admin controls and durable queues. Fake custody only: no real blockchain transactions or customer funds.",
       "language": "PHP",
       "fork": false,
       "archived": false
@@ -1444,7 +1444,7 @@
     {
       "name": "wordpress-subsidiary-vault-knowledge-management",
       "url": "https://github.com/ildrm/wordpress-subsidiary-vault-knowledge-management",
-      "description": "Enterprise Document & Knowledge Management for WordPress",
+      "description": "Open-source, self-hosted document and knowledge management system with a WordPress plugin connector. Supports multi-tenant subsidiary access, independent authentication, RBAC/ACL permissions, encrypted document versions, metadata search, approval workflows, audit trails and records retention. Engineering release candidate; not production-ready.",
       "language": "PHP",
       "fork": false,
       "archived": false
