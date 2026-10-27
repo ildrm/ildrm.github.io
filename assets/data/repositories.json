@@ -594,6 +594,14 @@
       "archived": false
     },
     {
+      "name": "multi-cloud-archive",
+      "url": "https://github.com/ildrm/multi-cloud-archive",
+      "description": "",
+      "language": "Rust",
+      "fork": false,
+      "archived": false
+    },
+    {
       "name": "multi-dropdown-select-v1",
       "url": "https://github.com/ildrm/multi-dropdown-select-v1",
       "description": "",
