@@ -12,7 +12,7 @@
     {
       "name": "ad-pilot",
       "url": "https://github.com/ildrm/ad-pilot",
-      "description": "",
+      "description": "AdPilot is a self-hosted WordPress advertising and ad management plugin for publishers and advertisers. Manage ad inventory, responsive placements, campaign schedules, native ad moderation and fixed-price reservations through a visual Layout Studio and advertiser portal. Supports Gutenberg blocks and shortcodes. Development preview.",
       "language": "PHP",
       "fork": false,
       "archived": false
@@ -242,6 +242,14 @@
       "archived": false
     },
     {
+      "name": "DrugSafe",
+      "url": "https://github.com/ildrm/DrugSafe",
+      "description": "DrugSafe is a healthcare management system for organizing drug information and managing potential drug interactions. Built with NestJS and PostgreSQL, it provides a centralized platform for efficient medication data management. Designed to simplify workflows and make drug-related information easier to access.",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
       "name": "economy-os",
       "url": "https://github.com/ildrm/economy-os",
       "description": "EconomyOS is an open-source economic intelligence and research platform for point-in-time economic data, causal inference, forecasting, scenario analysis, systemic risk, and economic modeling. Built with TypeScript, Next.js, NestJS, PostgreSQL/TimescaleDB, and Temporal, with provenance, governance, and reproducible research.",
@@ -282,6 +290,14 @@
       "archived": false
     },
     {
+      "name": "ffmpeg-skill",
+      "url": "https://github.com/ildrm/ffmpeg-skill",
+      "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
       "name": "Filee",
       "url": "https://github.com/ildrm/Filee",
       "description": "Free, open-source file converter. Convert 244+ formats offline by drag & drop — images, PDF, Word, Excel, PowerPoint, HWP/HWPX, video, audio, e-books and archives. No upload, no Office needed.",
@@ -295,6 +311,22 @@
       "description": "FilmCraft: An open-source, nonlinear video editor written by scratch in pure Rust",
       "language": null,
       "fork": true,
+      "archived": false
+    },
+    {
+      "name": "Flow2Short",
+      "url": "https://github.com/ildrm/Flow2Short",
+      "description": "وب اپلیکیشن ادیت ویدئو",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
+      "name": "flows",
+      "url": "https://github.com/ildrm/flows",
+      "description": "",
+      "language": null,
+      "fork": false,
       "archived": false
     },
     {
@@ -596,7 +628,7 @@
     {
       "name": "multi-cloud-archive",
       "url": "https://github.com/ildrm/multi-cloud-archive",
-      "description": "",
+      "description": "CloudWeave is an experimental, local-first file backup and archive app built with Rust and Dioxus. It offers zstd compression, client-side encryption, recovery keys and verified restores. A Windows GUI and CLI run locally; multi-account Google Drive and Dropbox integrations await live validation.",
       "language": "Rust",
       "fork": false,
       "archived": false
@@ -693,6 +725,14 @@
       "name": "overreacted",
       "url": "https://github.com/ildrm/overreacted",
       "description": "",
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "panah-insurance-platform",
+      "url": "https://github.com/ildrm/panah-insurance-platform",
+      "description": "Panah is a Persian (RTL) InsurTech platform prototype built with Next.js, NestJS, TypeScript and PostgreSQL. Its local insurance sandbox covers quotes, checkout, policy issuance, claims intake, wallets, installments, commissions and simulated insurer integrations. In development; not production-ready.",
       "language": "TypeScript",
       "fork": false,
       "archived": false
@@ -838,6 +878,14 @@
       "url": "https://github.com/ildrm/private-id",
       "description": "Privacy-preserving digital identity and verification infrastructure for secure user onboarding, identity proofs, KYC, authentication, and decentralized applications. Designed as an independent identity service for Web3, asset tokenization, relationship platforms, and privacy-focused applications.",
       "language": "TypeScript",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "publisher",
+      "url": "https://github.com/ildrm/publisher",
+      "description": "",
+      "language": null,
       "fork": false,
       "archived": false
     },
@@ -1122,6 +1170,14 @@
       "archived": false
     },
     {
+      "name": "video-studio",
+      "url": "https://github.com/ildrm/video-studio",
+      "description": "",
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false
+    },
+    {
       "name": "voice-chat-openai",
       "url": "https://github.com/ildrm/voice-chat-openai",
       "description": "A web app for voice-based interaction with an AI, transcribing speech and responding with text and audio.",
@@ -1252,8 +1308,8 @@
     {
       "name": "wooshop",
       "url": "https://github.com/ildrm/wooshop",
-      "description": "",
-      "language": null,
+      "description": "WooShop is a modular WordPress and WooCommerce toolkit combining a reusable Full Site Editing (FSE) block theme with a companion PHP plugin. It supports independent storefronts, catalogs and customer workflows, with multivendor marketplace, inventory and transaction foundations under development.",
+      "language": "PHP",
       "fork": false,
       "archived": false
     },
@@ -1333,7 +1389,7 @@
       "name": "wordpress-helanak-kids-theme",
       "url": "https://github.com/ildrm/wordpress-helanak-kids-theme",
       "description": "",
-      "language": "PHP",
+      "language": "Python",
       "fork": false,
       "archived": false
     },
