@@ -82,6 +82,14 @@
       "archived": false
     },
     {
+      "name": "audio-studio",
+      "url": "https://github.com/ildrm/audio-studio",
+      "description": "",
+      "language": null,
+      "fork": false,
+      "archived": false
+    },
+    {
       "name": "aurelia-hospitality-hotel-management-system",
       "url": "https://github.com/ildrm/aurelia-hospitality-hotel-management-system",
       "description": "Open-source Hotel Management System (PMS) built with Laravel and FilamentPHP. Features hotel reservations, room management, bookings, guests, pricing, invoices, housekeeping, staff management, reports, multi-property support, REST API, and modern admin dashboard. Ideal for hotels, resorts, hostels, and hospitality software.",
@@ -319,14 +327,6 @@
       "description": "وب اپلیکیشن ادیت ویدئو",
       "language": null,
       "fork": true,
-      "archived": false
-    },
-    {
-      "name": "flows",
-      "url": "https://github.com/ildrm/flows",
-      "description": "",
-      "language": null,
-      "fork": false,
       "archived": false
     },
     {
@@ -885,7 +885,7 @@
       "name": "publisher",
       "url": "https://github.com/ildrm/publisher",
       "description": "",
-      "language": null,
+      "language": "Python",
       "fork": false,
       "archived": false
     },
@@ -1197,6 +1197,14 @@
       "name": "wanderline-social-travel-platform",
       "url": "https://github.com/ildrm/wanderline-social-travel-platform",
       "description": "Wanderline is a privacy-first social travel and journey coordination platform for discovering trips, finding travel companions, planning multi-destination itineraries, organizing recreational experiences and tours, and managing travel safely. Built with Laravel, Next.js, PostgreSQL/PostGIS, Redis, Docker, and Kubernetes.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "waypoint",
+      "url": "https://github.com/ildrm/waypoint",
+      "description": "",
       "language": "PHP",
       "fork": false,
       "archived": false
