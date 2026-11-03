@@ -258,6 +258,14 @@
       "archived": false
     },
     {
+      "name": "ECC",
+      "url": "https://github.com/ildrm/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
       "name": "economy-os",
       "url": "https://github.com/ildrm/economy-os",
       "description": "EconomyOS is an open-source economic intelligence and research platform for point-in-time economic data, causal inference, forecasting, scenario analysis, systemic risk, and economic modeling. Built with TypeScript, Next.js, NestJS, PostgreSQL/TimescaleDB, and Temporal, with provenance, governance, and reproducible research.",
@@ -383,6 +391,14 @@
       "description": "BOOKGEN-AI is a desktop AI writing tool that uses Google Gemini to turn a book idea into a complete manuscript through a structured workflow for planning, outlining, chapter writing, memory management, editing, and export. It supports multiple languages and lets users save, resume, and export their generated books as DOCX, PDF, Markdown, or TXT.",
       "language": "Python",
       "fork": false,
+      "archived": false
+    },
+    {
+      "name": "gumroad",
+      "url": "https://github.com/ildrm/gumroad",
+      "description": "See what sticks",
+      "language": null,
+      "fork": true,
       "archived": false
     },
     {
