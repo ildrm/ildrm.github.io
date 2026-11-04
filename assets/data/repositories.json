@@ -290,6 +290,14 @@
       "archived": false
     },
     {
+      "name": "event-seat-manager",
+      "url": "https://github.com/ildrm/event-seat-manager",
+      "description": "",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
       "name": "external-request-manager-pro",
       "url": "https://github.com/ildrm/external-request-manager-pro",
       "description": "WordPress HTTP API monitoring and firewall plugin for logging, inspecting, blocking and rate-limiting outbound requests by host. Includes redirect enforcement, response timing, URL history with secret redaction, multisite support, retention controls, audit logs and an admin dashboard.",
