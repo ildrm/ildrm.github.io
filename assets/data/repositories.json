@@ -292,7 +292,7 @@
     {
       "name": "event-seat-manager",
       "url": "https://github.com/ildrm/event-seat-manager",
-      "description": "",
+      "description": "Open-source WordPress & WooCommerce event ticketing plugin with interactive seat maps, venue layout designer, seat reservations, QR-code tickets, online check-in, ticket sales, attendance reports, REST API, Elementor widgets, and bilingual English/Persian RTL support.",
       "language": "PHP",
       "fork": false,
       "archived": false
@@ -908,7 +908,7 @@
     {
       "name": "publisher",
       "url": "https://github.com/ildrm/publisher",
-      "description": "",
+      "description": "Publisher is an open-source multilingual book-writing and manuscript management studio built with React, TypeScript, Tiptap and Python. Features a rich-text chapter editor, autosave, version history, private project sharing, DOCX/Markdown import, portable exports and RTL language support.",
       "language": "Python",
       "fork": false,
       "archived": false
@@ -1196,7 +1196,7 @@
     {
       "name": "video-studio",
       "url": "https://github.com/ildrm/video-studio",
-      "description": "",
+      "description": "Video Studio is an open-source, browser-based video editor built with Next.js, TypeScript, Python and FFmpeg. Features timeline editing, video/audio trimming, clip splitting, transitions, manual captions, project autosave, media management and MP4 export in multiple aspect ratios.",
       "language": "TypeScript",
       "fork": false,
       "archived": false
@@ -1228,7 +1228,7 @@
     {
       "name": "waypoint",
       "url": "https://github.com/ildrm/waypoint",
-      "description": "",
+      "description": "Waypoint is an open-source Laravel platform for startup planning and software project discovery. Features adaptive assessments, explainable cost and timeline estimates, project planning, solution matching, versioned reports, multilingual support, and a Filament admin dashboard.",
       "language": "PHP",
       "fork": false,
       "archived": false
