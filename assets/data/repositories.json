@@ -378,6 +378,14 @@
       "archived": false
     },
     {
+      "name": "geostream-maps",
+      "url": "https://github.com/ildrm/geostream-maps",
+      "description": "GeoStream Maps: an end-to-end data streaming pipeline for traffic using Redpanda, Spark/Sedona, Iceberg, Postgres/PostGIS, and ClickHouse. Includes a live map, Jupyter notebooks with ready-to-use streaming queries, and AI-friendly instructions.",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
       "name": "global-financial-operating-system",
       "url": "https://github.com/ildrm/global-financial-operating-system",
       "description": "GFOS is an open-source financial operating system for personal, household, and small-business finance. Built with Next.js, NestJS, TypeScript, and PostgreSQL, its development-stage core supports double-entry accounting, income and expense tracking, transfers, borrowing, immutable ledgers, account balances, audit trails, and cash flow reports.",
