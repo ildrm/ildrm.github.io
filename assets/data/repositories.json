@@ -85,7 +85,7 @@
       "name": "audio-studio",
       "url": "https://github.com/ildrm/audio-studio",
       "description": "",
-      "language": null,
+      "language": "TypeScript",
       "fork": false,
       "archived": false
     },
@@ -94,6 +94,14 @@
       "url": "https://github.com/ildrm/aurelia-hospitality-hotel-management-system",
       "description": "Open-source Hotel Management System (PMS) built with Laravel and FilamentPHP. Features hotel reservations, room management, bookings, guests, pricing, invoices, housekeeping, staff management, reports, multi-property support, REST API, and modern admin dashboard. Ideal for hotels, resorts, hostels, and hospitality software.",
       "language": "TypeScript",
+      "fork": false,
+      "archived": false
+    },
+    {
+      "name": "autolane",
+      "url": "https://github.com/ildrm/autolane",
+      "description": "Autolane is an open-source used car marketplace and automotive operations platform featuring vehicle listings, seller onboarding, inspection appointments, dealer-only auctions, bidding, CRM, and transaction tracking. Built with Django REST Framework, Next.js, TypeScript, and PostgreSQL. Work in progress.",
+      "language": "Python",
       "fork": false,
       "archived": false
     },
