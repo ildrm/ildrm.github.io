@@ -84,7 +84,7 @@
     {
       "name": "audio-studio",
       "url": "https://github.com/ildrm/audio-studio",
-      "description": "",
+      "description": "Audio Studio is an open-source, browser-based digital audio workstation (DAW) built with React, TypeScript and Web Audio API. Create multitrack projects, record and edit audio, arrange MIDI in a piano roll, mix with EQ and effects, save locally in IndexedDB, back up sessions and export stereo WAV. Early-stage prototype.",
       "language": "TypeScript",
       "fork": false,
       "archived": false
