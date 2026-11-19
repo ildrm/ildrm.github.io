@@ -978,6 +978,14 @@
       "archived": false
     },
     {
+      "name": "RustGIS",
+      "url": "https://github.com/ildrm/RustGIS",
+      "description": "A fast, free and open-source GIS in pure Rust.",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
       "name": "servex-php",
       "url": "https://github.com/ildrm/servex-php",
       "description": "Servex is a PHP microservices framework inspired by Moleculer, designed for building scalable, event-driven, and distributed applications with support for service management, event handling, caching, and message brokers like RabbitMQ and Kafka.",
