@@ -1180,7 +1180,7 @@
     {
       "name": "travel-agency",
       "url": "https://github.com/ildrm/travel-agency",
-      "description": "",
+      "description": "Atlas Leisure is an open-source WordPress and WooCommerce travel agency booking platform with a bilingual English/Persian RTL block theme and modular plugins for tours, events, accommodation, rentals, courses, inventory management, partner portals, agency operations, payments, and customer support.",
       "language": "PHP",
       "fork": false,
       "archived": false
