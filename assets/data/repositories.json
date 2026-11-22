@@ -1074,6 +1074,14 @@
       "archived": false
     },
     {
+      "name": "teaching-system",
+      "url": "https://github.com/ildrm/teaching-system",
+      "description": "",
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false
+    },
+    {
       "name": "tele-tire",
       "url": "https://github.com/ildrm/tele-tire",
       "description": "TeleTier is an open-source Telegram Stars membership management platform for paid Telegram groups and channels. Manage subscription plans, payments, refunds, join requests, renewals, access expiry, reminders and audit trails from a Next.js dashboard with NestJS, PostgreSQL and BullMQ. Locally tested; live Telegram integration pending.",
