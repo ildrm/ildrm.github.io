@@ -21,7 +21,7 @@
       "name": "All-Url-Uploader",
       "url": "https://github.com/ildrm/All-Url-Uploader",
       "description": "A simple telegram Bot, Upload Media File| video To telegram using the direct download link. (youtube, Mediafire, google drive, mega drive, etc)",
-      "language": null,
+      "language": "Python",
       "fork": true,
       "archived": false
     },
@@ -37,7 +37,7 @@
       "name": "artcraft",
       "url": "https://github.com/ildrm/artcraft",
       "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
-      "language": null,
+      "language": "Rust",
       "fork": true,
       "archived": false
     },
@@ -45,7 +45,7 @@
       "name": "artcraftx",
       "url": "https://github.com/ildrm/artcraftx",
       "description": "ArtCraft-X",
-      "language": null,
+      "language": "Rust",
       "fork": true,
       "archived": false
     },
@@ -109,7 +109,7 @@
       "name": "awesome-iran-mcp",
       "url": "https://github.com/ildrm/awesome-iran-mcp",
       "description": "24 MCP servers (385 tools) that give AI agents the Iranian web: Digikala, Torob, Divar, Snappfood, Jabama, MrBilit, Paziresh24, Taaghche and more. Prices in Toman.",
-      "language": null,
+      "language": "Python",
       "fork": true,
       "archived": false
     },
@@ -117,7 +117,7 @@
       "name": "awesome-llm-apps",
       "url": "https://github.com/ildrm/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "language": null,
+      "language": "Python",
       "fork": true,
       "archived": false
     },
@@ -146,10 +146,18 @@
       "archived": false
     },
     {
+      "name": "bigbluebutton",
+      "url": "https://github.com/ildrm/bigbluebutton",
+      "description": "A complete web conferencing system for virtual classes and more!",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
       "name": "cadcraft",
       "url": "https://github.com/ildrm/cadcraft",
       "description": "CADCraft: computer-aided design and drafting — an open-source, clean-room AutoCAD-style app in pure Rust",
-      "language": null,
+      "language": "Rust",
       "fork": true,
       "archived": false
     },
@@ -197,7 +205,7 @@
       "name": "deckcraft",
       "url": "https://github.com/ildrm/deckcraft",
       "description": "Presentations and slide shows: an open-source, clean-room reimplementation of Microsoft PowerPoint in pure Rust. Part of the ArtCraft Crafting Apps.",
-      "language": null,
+      "language": "Rust",
       "fork": true,
       "archived": false
     },
@@ -205,7 +213,7 @@
       "name": "designcraft",
       "url": "https://github.com/ildrm/designcraft",
       "description": "DesignCraft: An open-source page and layout design editor written by scratch in pure Rust",
-      "language": null,
+      "language": "Rust",
       "fork": true,
       "archived": false
     },
@@ -213,7 +221,7 @@
       "name": "digikala-mcp",
       "url": "https://github.com/ildrm/digikala-mcp",
       "description": "MCP server for Digikala: search, compare and price-check products on Iran's largest marketplace. Read-only, no API key. 16 tools, hosted on Cloudflare Workers.",
-      "language": null,
+      "language": "JavaScript",
       "fork": true,
       "archived": false
     },
@@ -237,7 +245,7 @@
       "name": "divar-mcp",
       "url": "https://github.com/ildrm/divar-mcp",
       "description": "MCP server for Divar — search, compare and analyze classified ads. Read-only, no API key.",
-      "language": null,
+      "language": "JavaScript",
       "fork": true,
       "archived": false
     },
@@ -285,7 +293,7 @@
       "name": "effectcraft",
       "url": "https://github.com/ildrm/effectcraft",
       "description": "EffectCraft: An open-source motion graphics and compositing tool written by scratch in pure Rust",
-      "language": null,
+      "language": "Rust",
       "fork": true,
       "archived": false
     },
@@ -293,7 +301,7 @@
       "name": "envkit-releases",
       "url": "https://github.com/ildrm/envkit-releases",
       "description": "EnvKit — free local development environment for Windows & macOS: nginx/Apache, multiple PHP versions, MySQL/MariaDB,   PostgreSQL, Redis, MongoDB, Mailpit, Node.js, trusted .test HTTPS, and a built-in MCP server for AI-assistant control.   A Laragon/XAMPP/Herd alternative.",
-      "language": null,
+      "language": "Python",
       "fork": true,
       "archived": false
     },
@@ -333,7 +341,7 @@
       "name": "Filee",
       "url": "https://github.com/ildrm/Filee",
       "description": "Free, open-source file converter. Convert 244+ formats offline by drag & drop — images, PDF, Word, Excel, PowerPoint, HWP/HWPX, video, audio, e-books and archives. No upload, no Office needed.",
-      "language": null,
+      "language": "C#",
       "fork": true,
       "archived": false
     },
@@ -341,6 +349,14 @@
       "name": "filmcraft",
       "url": "https://github.com/ildrm/filmcraft",
       "description": "FilmCraft: An open-source, nonlinear video editor written by scratch in pure Rust",
+      "language": "Rust",
+      "fork": true,
+      "archived": false
+    },
+    {
+      "name": "fleetbase",
+      "url": "https://github.com/ildrm/fleetbase",
+      "description": "Modular logistics and supply chain operating system (LSOS)",
       "language": null,
       "fork": true,
       "archived": false
@@ -349,7 +365,7 @@
       "name": "Flow2Short",
       "url": "https://github.com/ildrm/Flow2Short",
       "description": "وب اپلیکیشن ادیت ویدئو",
-      "language": null,
+      "language": "JavaScript",
       "fork": true,
       "archived": false
     },
@@ -405,7 +421,7 @@
       "name": "gods-eye-view",
       "url": "https://github.com/ildrm/gods-eye-view",
       "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
-      "language": null,
+      "language": "JavaScript",
       "fork": true,
       "archived": false
     },
@@ -541,7 +557,7 @@
       "name": "laravel-ffmpeg",
       "url": "https://github.com/ildrm/laravel-ffmpeg",
       "description": "This package provides an integration with FFmpeg for Laravel. Laravel's Filesystem handles the storage of the files.",
-      "language": null,
+      "language": "PHP",
       "fork": true,
       "archived": false
     },
@@ -581,7 +597,7 @@
       "name": "lightcraft",
       "url": "https://github.com/ildrm/lightcraft",
       "description": "LightCraft: An open-source non-destructive photo editor written by scratch in pure Rust",
-      "language": null,
+      "language": "Rust",
       "fork": true,
       "archived": false
     },
@@ -653,7 +669,7 @@
       "name": "moshaver",
       "url": "https://github.com/ildrm/moshaver",
       "description": "Open-source, role-aware education platform for student planning, learning, assessment, communication, reporting, and follow-up. Built with React, NestJS, Tauri, and TypeScript.",
-      "language": null,
+      "language": "TypeScript",
       "fork": true,
       "archived": false
     },
@@ -781,7 +797,7 @@
       "name": "paperclip",
       "url": "https://github.com/ildrm/paperclip",
       "description": "The open-source app everyone uses to manage agents at work",
-      "language": null,
+      "language": "TypeScript",
       "fork": true,
       "archived": false
     },
@@ -789,7 +805,7 @@
       "name": "PayCore",
       "url": "https://github.com/ildrm/PayCore",
       "description": "",
-      "language": null,
+      "language": "TypeScript",
       "fork": true,
       "archived": false
     },
@@ -797,7 +813,7 @@
       "name": "pdfcraft",
       "url": "https://github.com/ildrm/pdfcraft",
       "description": "PdfCraft: An open-source PDF reader and editor written by scratch in pure Rust",
-      "language": null,
+      "language": "Rust",
       "fork": true,
       "archived": false
     },
@@ -805,7 +821,7 @@
       "name": "persian_tts",
       "url": "https://github.com/ildrm/persian_tts",
       "description": "Persian text-to-speech with voice cloning, fully offline on CPU (ONNX + torch paths)",
-      "language": null,
+      "language": "Python",
       "fork": true,
       "archived": false
     },
@@ -821,7 +837,7 @@
       "name": "photocraft",
       "url": "https://github.com/ildrm/photocraft",
       "description": "PhotoCraft: An open-source, photo editor written by scratch in pure Rust",
-      "language": null,
+      "language": "Rust",
       "fork": true,
       "archived": false
     },
@@ -893,7 +909,7 @@
       "name": "postiz-app",
       "url": "https://github.com/ildrm/postiz-app",
       "description": "📨 The ultimate agentic social media scheduling tool 🤖",
-      "language": null,
+      "language": "TypeScript",
       "fork": true,
       "archived": false
     },
@@ -901,7 +917,7 @@
       "name": "poulix-platform",
       "url": "https://github.com/ildrm/poulix-platform",
       "description": "Poulix-Platform is a full-stack financial application.",
-      "language": null,
+      "language": "TypeScript",
       "fork": true,
       "archived": false
     },
@@ -986,6 +1002,14 @@
       "archived": false
     },
     {
+      "name": "sepehr-academic-timetable-management",
+      "url": "https://github.com/ildrm/sepehr-academic-timetable-management",
+      "description": "Sepehr is an open-source university management and academic scheduling system with a Persian RTL student portal, course registration, transactional enrollment, waitlists, degree audits, batch seat allocation, and constraint-based timetable optimization. Built with Next.js, NestJS, TypeScript, PostgreSQL, Prisma, Redis, BullMQ, and Python OR-Tools.",
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false
+    },
+    {
       "name": "servex-php",
       "url": "https://github.com/ildrm/servex-php",
       "description": "Servex is a PHP microservices framework inspired by Moleculer, designed for building scalable, event-driven, and distributed applications with support for service management, event handling, caching, and message brokers like RabbitMQ and Kafka.",
@@ -1037,7 +1061,7 @@
       "name": "soundcraft",
       "url": "https://github.com/ildrm/soundcraft",
       "description": "An open-source, clean-room reimplementation of Avid Pro Tools in pure Rust",
-      "language": null,
+      "language": "Rust",
       "fork": true,
       "archived": false
     },
@@ -1061,7 +1085,7 @@
       "name": "superset",
       "url": "https://github.com/ildrm/superset",
       "description": "Apache Superset is a Data Visualization and Data Exploration Platform",
-      "language": "TypeScript",
+      "language": "Python",
       "fork": true,
       "archived": false
     },
@@ -1069,14 +1093,6 @@
       "name": "talentsphere-linkedin-clone",
       "url": "https://github.com/ildrm/talentsphere-linkedin-clone",
       "description": "TalentSphere is an open-source LinkedIn clone and EU-first employment platform built with React, TypeScript, Node.js, Turborepo, and PostgreSQL. It combines job search, professional networking, applications, ATS, recruiting CRM, workplace reviews, learning, GDPR privacy, and governed AI.",
-      "language": "TypeScript",
-      "fork": false,
-      "archived": false
-    },
-    {
-      "name": "teaching-system",
-      "url": "https://github.com/ildrm/teaching-system",
-      "description": "",
       "language": "TypeScript",
       "fork": false,
       "archived": false
@@ -1197,7 +1213,7 @@
       "name": "ubuntu-hardener",
       "url": "https://github.com/ildrm/ubuntu-hardener",
       "description": "This script automates basic security hardening for Ubuntu servers.",
-      "language": null,
+      "language": "Shell",
       "fork": true,
       "archived": false
     },
@@ -1213,7 +1229,7 @@
       "name": "vectorcraft",
       "url": "https://github.com/ildrm/vectorcraft",
       "description": "VectorCraft: An open-source, vector art tool written by scratch in pure Rust",
-      "language": null,
+      "language": "Rust",
       "fork": true,
       "archived": false
     },
@@ -1253,7 +1269,7 @@
       "name": "VoiceStudio",
       "url": "https://github.com/ildrm/VoiceStudio",
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
-      "language": null,
+      "language": "Python",
       "fork": true,
       "archived": false
     },
@@ -1301,7 +1317,7 @@
       "name": "windows-drag-and-drop",
       "url": "https://github.com/ildrm/windows-drag-and-drop",
       "description": "",
-      "language": null,
+      "language": "CSS",
       "fork": true,
       "archived": false
     },
@@ -1362,6 +1378,14 @@
       "archived": false
     },
     {
+      "name": "woocommerce-marketplace-bridge",
+      "url": "https://github.com/ildrm/woocommerce-marketplace-bridge",
+      "description": "",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
       "name": "woocommerce-marketplace-suite",
       "url": "https://github.com/ildrm/woocommerce-marketplace-suite",
       "description": "Open-source modular multi-vendor marketplace framework for WooCommerce with vendor lifecycle management, product ownership, commission primitives, double-entry ledger foundations, REST APIs, idempotent financial operations, and HPOS/Cart & Checkout Blocks compatibility for secure WordPress marketplace development.",
@@ -1389,7 +1413,7 @@
       "name": "wordcraft",
       "url": "https://github.com/ildrm/wordcraft",
       "description": "An open-source, clean-room reimplementation of Microsoft Word in pure Rust",
-      "language": null,
+      "language": "Rust",
       "fork": true,
       "archived": false
     },
