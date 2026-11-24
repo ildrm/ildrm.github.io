@@ -154,6 +154,14 @@
       "archived": false
     },
     {
+      "name": "boardgames",
+      "url": "https://github.com/ildrm/boardgames",
+      "description": "Tablemate is an open-source, self-hosted multiplayer board game platform for playing Tic-Tac-Toe and Four in a Row (Connect Four) online with friends. Create private rooms, share invite links, and play in real time without accounts, with rematches and reconnect recovery. Built with TypeScript, React, NestJS, Socket.IO, PostgreSQL, Redis and Docker.",
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false
+    },
+    {
       "name": "cadcraft",
       "url": "https://github.com/ildrm/cadcraft",
       "description": "CADCraft: computer-aided design and drafting — an open-source, clean-room AutoCAD-style app in pure Rust",
@@ -1380,7 +1388,7 @@
     {
       "name": "woocommerce-marketplace-bridge",
       "url": "https://github.com/ildrm/woocommerce-marketplace-bridge",
-      "description": "",
+      "description": "Open-source WordPress plugin integrating WooCommerce with Torob and Digikala, two Iranian e-commerce platforms. Includes Torob Product API v3, price and stock availability feeds, product-change webhooks, attribution tracking, multiple Digikala seller accounts, SKU mapping, encrypted credentials, and a read-only OpenAPI browser. Alpha; staging only.",
       "language": "PHP",
       "fork": false,
       "archived": false
