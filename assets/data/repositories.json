@@ -682,6 +682,14 @@
       "archived": false
     },
     {
+      "name": "MotionBERT",
+      "url": "https://github.com/ildrm/MotionBERT",
+      "description": "[ICCV 2023] PyTorch Implementation of \"MotionBERT: A Unified Perspective on Learning Human Motion Representations\"",
+      "language": null,
+      "fork": true,
+      "archived": false
+    },
+    {
       "name": "mui-php-form-builder",
       "url": "https://github.com/ildrm/mui-php-form-builder",
       "description": "",
