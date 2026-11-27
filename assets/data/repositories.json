@@ -1066,6 +1066,14 @@
       "archived": false
     },
     {
+      "name": "shield-captcha",
+      "url": "https://github.com/ildrm/shield-captcha",
+      "description": "ShieldCaptcha is a privacy-first, self-hosted CAPTCHA and bot protection solution. An alternative to Google reCAPTCHA, hCaptcha and Cloudflare Turnstile, featuring 100 challenge types, adaptive risk scoring, SHA-256 proof of work, spam prevention, audio CAPTCHA, single-use tokens and a lightweight JavaScript widget without tracking cookies.",
+      "language": "PHP",
+      "fork": false,
+      "archived": false
+    },
+    {
       "name": "smart-gallery-qr",
       "url": "https://github.com/ildrm/smart-gallery-qr",
       "description": "Smart Gallery QR is a WordPress QR code plugin for creating secure digital galleries and shareable experiences with dynamic QR codes, encrypted image/PDF media, access control, invitations, workspace roles, scan analytics, and a React admin interface. Build private, public, password-protected, member-only or unlisted galleries.",
